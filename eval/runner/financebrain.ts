@@ -184,9 +184,10 @@ async function main() {
   if (needsEmbeddings) {
     const cfg = loadConfig() || ({} as any);
 
-    // LiteLLM proxy setup: default model is text-embedding-004 (Vertex AI, 768 dims)
-    const embeddingModel = cfg.embedding_model ?? 'litellm:text-embedding-004';
-    const embeddingDims  = cfg.embedding_dimensions ?? 768;
+    // LiteLLM proxy → Vertex AI: gemini-embedding-001 @ 1536 dims.
+    // The proxy must be running (see eval/litellm_config.yaml for setup).
+    const embeddingModel = cfg.embedding_model ?? 'litellm:gemini-embedding-001';
+    const embeddingDims  = cfg.embedding_dimensions ?? 1536;
     const litellmBaseUrl = process.env.LITELLM_BASE_URL ?? 'http://localhost:4000';
 
     configureGateway({

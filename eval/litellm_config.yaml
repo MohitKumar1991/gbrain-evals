@@ -1,0 +1,20 @@
+# LiteLLM proxy config for FinanceBrain eval
+# Routes embeddings to Vertex AI via gcloud application default credentials.
+#
+# Start the proxy:
+#   GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_credentials.json \
+#   VERTEXAI_PROJECT=finai-adhi-dev \
+#   VERTEXAI_LOCATION=us-central1 \
+#   litellm --config eval/litellm_config.yaml --port 4000
+#
+# Or set those env vars in .env.local and source it first.
+
+model_list:
+  - model_name: gemini-embedding-001
+    litellm_params:
+      model: vertex_ai/gemini-embedding-001
+      vertex_project: finai-adhi-dev
+      vertex_location: us-central1
+
+general_settings:
+  drop_params: true   # silently drop unsupported params instead of erroring
