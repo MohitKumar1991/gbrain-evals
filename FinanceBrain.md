@@ -51,13 +51,14 @@ eval/
       portfolio/               ← 2 pages   IBKR live holdings snapshot
       sec/                     ← 302 pages SEC EDGAR filings
         NVDA/ MSFT/ GOOGL/ META/ AAPL/
-      embed-cache/             ← SQLite embedding cache (warm after first run)
+      embed-cache/             ← SQLite embedding cache (warm, ~61MB)
       test-queries.json        ← 9 smoke-test queries, one per source_type
   runner/
     financebrain.ts            ← main eval runner (indexes corpus, runs queries, scores)
     longmemeval-cache.ts       ← shared embedding cache (reused by financebrain runner)
     questions-ui.ts            ← local web UI for building questions.json (http://localhost:3456)
     questions-ui.html          ← UI frontend (served by questions-ui.ts)
+  litellm_config.yaml          ← LiteLLM proxy config for Vertex AI embeddings
 
 FinanceBrain.md                ← THIS FILE
 
@@ -139,7 +140,7 @@ type FinancePage = {
 `quarter_context` field on every page.
 
 ```
-NVDA  fiscal year ends Jan 31  → Q1 FY2026 earnings: 2025-05-28
+NVDA  fiscal year ends Jan 31  → Q1 FY2027 earnings: 2026-05-28 (est)
 MSFT  fiscal year ends Jun 30  → Q3 FY2026 earnings: 2026-04-30 (est)
 GOOGL calendar year            → Q1 FY2026 earnings: 2026-04-29 (est)
 META  calendar year            → Q1 FY2026 earnings: 2026-04-30 (est)
@@ -151,29 +152,86 @@ within a 90-day window.
 
 ---
 
+## Embedding Setup — LiteLLM → Vertex AI (Google)
+
+Embeddings use **`gemini-embedding-001` at 1536 dims** via a LiteLLM proxy
+pointed at Vertex AI. No OpenAI API key needed.
+
+**GCP config:**
+- Project: `finai-adhi-dev`
+- Location: `us-central1`
+- Auth: gcloud application default credentials (ADC)
+- Model: `gemini-embedding-001` (natively 3072 dims; locked to 1536 via
+  `outputDimensionality` parameter, which LiteLLM maps from the `dimensions`
+  field in the OpenAI-compatible request)
+
+**Start the proxy before running vector/hybrid adapters:**
+```bash
+GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_credentials.json \
+VERTEXAI_PROJECT=finai-adhi-dev \
+VERTEXAI_LOCATION=us-central1 \
+litellm --config eval/litellm_config.yaml --port 4000
+```
+
+`eval/litellm_config.yaml` is committed to the repo. It contains:
+```yaml
+model_list:
+  - model_name: gemini-embedding-001
+    litellm_params:
+      model: vertex_ai/gemini-embedding-001
+      vertex_project: finai-adhi-dev
+      vertex_location: us-central1
+
+litellm_settings:
+  drop_params: true   # vertex_ai rejects encoding_format=float; drop it silently
+```
+
+**How the runner wires into LiteLLM:**
+gbrain's openai-compatible path calls `textEmbeddingModel(id)` without a
+`dimensions` argument, so the AI SDK omits it and the proxy returns 3072 by
+default. The runner works around this by bypassing the AI SDK and calling the
+LiteLLM proxy directly via HTTP, injecting `dimensions: 1536` into every
+embedding request.
+
+**Embedding cache:** `eval/data/financebrain-v1/embed-cache/embed-cache-litellm_gemini-embedding-001@1536.sqlite`
+
+Once warmed (~61MB, ~390 API calls for 7,792 chunks from 1,910 pages), vector
+and hybrid adapter runs are fast and free. Commit this file to share across
+machines/agents.
+
+**Cache gotcha:** if a run fails while the proxy is misconfigured (e.g., proxy
+returns 3072 dims before fix), wrong-dim vectors are written to cache. Symptom:
+`Embedding dim mismatch: model gemini-embedding-001 returned 3072 but schema
+expects 1536` even after fixing the proxy.
+Fix: `rm eval/data/financebrain-v1/embed-cache/*.sqlite`, then re-run.
+
+---
+
 ## Scrapers — How to Run
 
 All scrapers read API keys from env vars. Copy `.env.example` → `.env.local`.
 
 ### Substack (ai-supremacy.com)
 ```bash
-TWITTERAPI_IO_KEY=... bun eval/scrapers/substack.ts          # full 977 articles
-bun eval/scrapers/substack.ts --limit 10                      # smoke test
-bun eval/scrapers/substack.ts --since 2025-01-01             # incremental
-bun eval/scrapers/substack.ts --no-cache                      # re-fetch all
+bun eval/scrapers/substack.ts                  # full 977 articles
+bun eval/scrapers/substack.ts --limit 10       # smoke test
+bun eval/scrapers/substack.ts --since 2025-01-01  # incremental
+bun eval/scrapers/substack.ts --no-cache       # re-fetch all
 ```
 Output: `eval/data/financebrain-v1/substack/<slug>.json`
+No API key needed — public Substack. Rate limit: 600ms/request.
 
 ### FMP — Financials, Transcripts, Price
 ```bash
-FMP_API_KEY=... bun eval/scrapers/fmp.ts                      # all 5 tickers
-FMP_API_KEY=... bun eval/scrapers/fmp.ts --ticker NVDA        # one ticker
-FMP_API_KEY=... bun eval/scrapers/fmp.ts --no-cache           # re-fetch
+FMP_API_KEY=... bun eval/scrapers/fmp.ts                # all 5 tickers
+FMP_API_KEY=... bun eval/scrapers/fmp.ts --ticker NVDA  # one ticker
+FMP_API_KEY=... bun eval/scrapers/fmp.ts --no-cache     # re-fetch
 ```
 Downloads per ticker:
 - Quarterly income + balance + cash flow statements (limit=24)
 - Earnings call transcripts Q1–Q4 for years 2022–present
 - Daily price history 2022-01-01 to today + quarterly summaries
+
 Output: `eval/data/financebrain-v1/{financials,transcripts,price}/`
 
 ### Twitter
@@ -183,7 +241,7 @@ TWITTERAPI_IO_KEY=... bun eval/scrapers/twitter.ts --handle dylan522p --no-cache
 ```
 Output: `eval/data/financebrain-v1/social/<handle>/`
 Note: twitterapi.io rate-limits aggressively. The scraper uses 2s between pages
-+ exponential backoff on 429s. ~977 pages takes ~10–15 min.
++ exponential backoff on 429s. ~450 pages takes ~20–30 min.
 
 ### IBKR Portfolio
 ```bash
@@ -199,7 +257,7 @@ bun eval/scrapers/edgar.ts --ticker NVDA --forms 8-K          # one ticker, one 
 bun eval/scrapers/edgar.ts --since 2025-01-01 --no-cache      # incremental
 ```
 Output: `eval/data/financebrain-v1/sec/<TICKER>/<form>-<date>.json`
-Rate limit: 600ms between requests (EDGAR requires polite crawling, User-Agent header).
+Rate limit: 600ms between requests (EDGAR requires polite crawling + User-Agent).
 
 For 8-Ks: fetches the filing index HTML to find the press release exhibit
 (EX-99.1) rather than the boilerplate XBRL form.
@@ -210,18 +268,33 @@ by scanning all occurrences to skip TOC entries (requires 1,500+ chars).
 
 ## Runner — How to Use
 
+**Step 1: Start the LiteLLM proxy** (required for vector/hybrid, not keyword):
 ```bash
-# Smoke test: 9 dummy queries, keyword-only (no API keys needed)
+GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_credentials.json \
+VERTEXAI_PROJECT=finai-adhi-dev \
+VERTEXAI_LOCATION=us-central1 \
+litellm --config eval/litellm_config.yaml --port 4000
+```
+
+**Step 2: Run the eval:**
+```bash
+# Keyword only (no proxy needed, no API keys)
 bun eval/runner/financebrain.ts --queries test --keyword-only --top-k 5
 
-# Smoke test: hybrid adapter (needs LiteLLM proxy + ANTHROPIC_API_KEY)
+# Vector adapter (proxy must be running)
+LITELLM_BASE_URL=http://localhost:4000 \
+  bun eval/runner/financebrain.ts --queries test --adapters vector --top-k 5
+
+# Hybrid adapter (proxy + Anthropic for expansion)
 LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
   bun eval/runner/financebrain.ts --queries test --adapters hybrid --top-k 5
 
-# Full run: all 4 adapters against a question bank
+# Full run: all 4 adapters against the question bank
 LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
-  bun eval/runner/financebrain.ts --queries eval/data/financebrain-v1/questions.json \
-  --adapters keyword,vector,hybrid,hybrid+expansion --top-k 5
+  bun eval/runner/financebrain.ts \
+  --queries eval/data/financebrain-v1/questions.json \
+  --adapters keyword,vector,hybrid,hybrid+expansion \
+  --top-k 5
 
 # Other flags
 --limit N           # run only first N queries (for smoke tests)
@@ -232,76 +305,50 @@ LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
 1. Loads all 1,910 `FinancePage` JSONs from `eval/data/financebrain-v1/`
 2. For each adapter: creates a fresh PGLiteEngine, indexes all pages via
    `importFromContent`, runs each query, scores Recall@K
-3. For keyword: FTS via `engine.searchKeyword` (no embeddings)
-4. For vector: `embed(q)` → `engine.searchVector`
-5. For hybrid: `hybridSearch(engine, q, {expansion: false})`
-6. For hybrid+expansion: `hybridSearch(engine, q, {expansion: true, expandFn: expandQuery})`
+3. For keyword: FTS via `engine.searchKeyword` (no embeddings, fast, ~26s total)
+4. For vector: direct HTTP calls to LiteLLM proxy → Vertex AI, cached in SQLite
+5. For hybrid: keyword + vector RRF fusion via `hybridSearch`
+6. For hybrid+expansion: adds Claude Haiku query rewriting before hybrid search
 7. Writes JSON report to `eval/reports/financebrain/financebrain-<timestamp>.json`
-
-**Known behavior:**
-- Indexing 1,910 pages takes ~26s for keyword-only (no embeddings)
-- Keyword recall is low (~22%) on natural language queries — expected. FTS needs
-  exact term matches; financial data uses tickers and structured formatting that
-  doesn't always FTS-match natural language questions
-- Hybrid+expansion should score significantly higher (semantic retrieval)
-
-**Embedding setup — LiteLLM → Vertex AI:**
-Embeddings use Google's `text-embedding-004` (768 dims) via LiteLLM proxy.
-The runner's `configureGateway` call sets `embedding_model: 'litellm:text-embedding-004'`
-and points the `litellm` recipe at `LITELLM_BASE_URL`.
-
-Required LiteLLM proxy config (in your `litellm_config.yaml`):
-```yaml
-model_list:
-  - model_name: text-embedding-004
-    litellm_params:
-      model: vertex_ai/text-embedding-004
-      vertex_project: <your-gcp-project>
-      vertex_location: us-central1
-```
-
-**Embedding cache:** `eval/data/financebrain-v1/embed-cache/embed-cache-litellm_gemini-embedding-001@1536.sqlite`
-Once warmed (~61MB), vector/hybrid runs skip all ~390 Vertex AI API calls.
-Commit the cache file so parallel agents don't re-embed.
-
-**Cache key gotcha:** the cache is keyed by `(model, dims)`. If you run any
-vector/hybrid query while the proxy is misconfigured (returning wrong dims),
-wrong-dim vectors get written to cache. Symptom: `Embedding dim mismatch`
-even after fixing the proxy. Fix: `rm eval/data/financebrain-v1/embed-cache/*.sqlite`
-then re-run to rebuild from scratch with the correct dimensions.
 
 ---
 
-## Smoke Test Results (keyword adapter, 9 queries, top-K=5)
+## Smoke Test Results
 
-Ran 2026-05-13. Result file: `eval/reports/financebrain/financebrain-smoke-2026-05-13T09-37-40.json`
+### Keyword adapter (9 queries, top-K=5) — 2026-05-13
+```
+substack-01    substack    ✓  NVIDIA AI infrastructure article found
+financials-01  financials  ✗  FTS misses ticker vs full company name
+transcript-01  transcript  ✗  Multiple transcripts rank similarly
+price-01       price       ✗  CY2023-Q2 slug tokens don't FTS-stem
+social-01      social      ✗  Query terms too generic for FTS
+portfolio-01   portfolio   ✓  NVDA shares P&L found correctly
+sec-8k-01      sec-8k      ✗  Wrong quarter (multiple "record revenue" 8-Ks)
+sec-10k-01     sec-10k     ✗  0 results — risk factor terms too generic
+sec-10q-01     sec-10q     ✗  Finds 8-K instead of 10-Q
 
-| Query ID | Category | Hit? | Notes |
-|----------|----------|------|-------|
-| substack-01 | substack | ✓ | NVIDIA AI infrastructure articles found |
-| financials-01 | financials | ✗ | FTS exact-term miss on ticker vs company name |
-| transcript-01 | transcript | ✗ | Multiple transcripts rank similarly |
-| price-01 | price | ✗ | CY2023-Q2 slug tokens don't FTS-stem well |
-| social-01 | social | ✗ | 0 results — query terms too generic for FTS |
-| portfolio-01 | portfolio | ✓ | NVDA shares P&L found correctly |
-| sec-8k-01 | sec-8k | ✗ | Wrong quarter — multiple "record revenue" 8-Ks |
-| sec-10k-01 | sec-10k | ✗ | 0 results — risk factors / business terms too generic |
-| sec-10q-01 | sec-10q | ✗ | Finds 8-K instead of 10-Q |
+Keyword Recall@5: 2/9 = 22%
+```
+Expected — keyword FTS requires exact term matches. Natural language queries
+for financial data need vector/hybrid retrieval.
 
-**Keyword Recall@5: 2/9 = 22.2%**
+### Vector adapter (3 queries, top-K=5) — 2026-05-13
+```
+substack-01    substack    ✗  Broad topic, many similar articles score equally
+financials-01  financials  ✓  NVDA Q3 FY2025 revenue page found correctly
+transcript-01  transcript  ✗  Similar transcript from different quarter ranked higher
 
-This is expected. Keyword FTS on financial data is weak because: (a) natural
-language queries don't share exact terms with structured financial text, (b)
-tickers ("NVDA") vs company names ("NVIDIA") mismatch, (c) date encoding
-(CY2023-Q2 in slugs) doesn't FTS-stem. Vector/hybrid will score higher.
+Vector Recall@5: 1/3 = 33%
+```
+First confirmed working run through LiteLLM → Vertex AI → 1536-dim embeddings.
+Cache is warm at 61MB. Full 9-query vector run pending.
 
 ---
 
 ## Test Queries
 
-`eval/data/financebrain-v1/test-queries.json` contains 9 smoke-test queries.
-Format:
-
+`eval/data/financebrain-v1/test-queries.json` — 9 smoke-test queries, one per
+source_type. Format:
 ```json
 {
   "id": "financials-01",
@@ -312,10 +359,10 @@ Format:
 }
 ```
 
-Scoring: a query is a hit if any slug from `answer_slugs` appears (via
-`retrieved.some(r => r.includes(s))`) in the top-K results. For queries with
-`answer_slug_pattern` (no fixed answer_slug), any retrieved slug containing
-the pattern is a hit.
+Scoring: a query is a hit if any `answer_slugs` entry appears in the top-K
+retrieved slugs (via `retrieved.some(r => r.includes(s))`). For queries with
+`answer_slug_pattern` (no fixed slug), any retrieved slug matching the pattern
+is a hit.
 
 ---
 
@@ -323,81 +370,86 @@ the pattern is a hit.
 
 ### High Priority
 
-**1. Build the full question bank**
-File to create: `eval/data/financebrain-v1/questions.json`
-Format: same as `test-queries.json`.
+**1. Run full 9-query vector + hybrid smoke test**
+The warm cache makes this cheap. Start the proxy, then:
+```bash
+LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
+  bun eval/runner/financebrain.ts --queries test \
+  --adapters vector,hybrid,hybrid+expansion --top-k 5
+```
+This will confirm hybrid+expansion recall vs keyword (22%) and vector (33% on 3Q).
 
-Use the question builder UI to add questions interactively:
+**2. Build the full question bank**
+File to create: `eval/data/financebrain-v1/questions.json`
+Use the question builder UI:
 ```bash
 bun eval/runner/questions-ui.ts   # opens at http://localhost:3456
 ```
+Write 10–20 questions per source_type (9 categories × ~15 = ~135 total):
+- `financials`: revenue, margins, EPS, YoY/QoQ deltas by quarter
+- `transcript`: CEO quotes, guidance, specific discussion topics (AI, capex, layoffs)
+- `price`: quarterly return, high/low, post-earnings price move window
+- `social`: sentiment before/after earnings, specific event opinions
+- `substack`: AI trend analysis, company deep-dives
+- `portfolio`: position size, P&L, % NAV, cost basis
+- `sec-8k`: acquisition announcements, leadership changes, earnings press releases
+- `sec-10k`: risk factors, business segment descriptions, competitive landscape
+- `sec-10q`: Azure cloud (MSFT), Data Center (NVDA), quarterly MD&A narrative
 
-Write 10–20 questions per source_type category (9 categories × ~15 questions
-= ~135 total). Rules:
-- Each question must have verified `answer_slugs` (check the file exists on disk)
-- Include a mix of: single-answer (one page), multi-answer (2–3 pages), and
-  cross-source questions (answer spans two different source_types)
-- Temporal questions (e.g. "what was NVDA sentiment 2 weeks before Q2 FY2025
-  earnings?") are high-value — they test the `quarter_context` field
-- Write questions that work for both keyword (use exact terms) AND natural
-  language (use full sentences) — or write two variants
+Rules:
+- Every `answer_slug` must be verified to exist on disk
+- Include temporal questions (e.g. "what was analyst sentiment 10 days before
+  NVDA Q2 FY2025 earnings?") — these test the `quarter_context` field
+- Mix single-answer and multi-answer questions
+- Include at least 5 cross-source questions (e.g. "what did the 8-K say about
+  the acquisition that was discussed on the earnings call?")
 
-Question types to cover per source_type:
-- `financials`: revenue, margins, EPS, YoY/QoQ deltas, specific quarters
-- `transcript`: CEO quotes, guidance language, specific topics (AI, capex)
-- `price`: quarterly return, high/low, post-earnings price move
-- `social`: opinion on a company event, sentiment before/after earnings
-- `substack`: analysis of AI trends, company coverage
-- `portfolio`: position size, P&L, weight in portfolio
-- `sec-8k`: acquisition announcements, leadership changes, earnings events
-- `sec-10k`: risk factors, business segments, competitive landscape
-- `sec-10q`: Azure/Cloud revenue (MSFT), Data Center (NVDA), quarterly MD&A
-
-**2. Run full eval with vector + hybrid adapters**
-Requires: `OPENAI_API_KEY` + `ANTHROPIC_API_KEY`
-Command:
+**3. Run full eval with all adapters + full question bank**
 ```bash
-OPENAI_API_KEY=... ANTHROPIC_API_KEY=... \
+LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
   bun eval/runner/financebrain.ts \
   --queries eval/data/financebrain-v1/questions.json \
   --adapters keyword,vector,hybrid,hybrid+expansion \
   --top-k 5
 ```
-First run: build embedding cache (costs ~$5–15 for 1,910 pages at
-text-embedding-3-large). Subsequent runs: free from cache.
 
-**3. Build the chart generator**
+**4. Build chart generator**
 File to create: `eval/runner/financebrain-chart.ts`
 Mirror `eval/runner/longmemeval-chart.ts`. Produce two SVGs:
 - Headline bar chart: Recall@5 per adapter (horizontal bars)
-- Per-source-type grouped bar chart: one bar per adapter per source_type
+- Per-source-type grouped bar: one bar per adapter per source_type
 
-Store SVGs in `docs/benchmarks/2026-05-13-financebrain-bigtech-v1/`.
+Store in `docs/benchmarks/2026-05-13-financebrain-bigtech-v1/`.
 
-**4. Write the published benchmark report**
+**5. Write the published benchmark report**
 File: `docs/benchmarks/2026-05-13-financebrain-bigtech-v1.md`
-Follow the 12-section template in `CLAUDE.md`. All sections are currently
-`[pending]`. Fill after the full eval run has results.
+Follow the 12-section template in `CLAUDE.md`. Fill after the full eval run.
 
-**5. Add more Twitter handles**
-Current: only `@dylan522p` (SemiAnalysis). Add:
-- Company CEOs: `@satyanadella` (MSFT), `@tim_cook` (AAPL), etc.
-- AI analysts: `@karpathy`, `@sama`, others
-- Use: `TWITTERAPI_IO_KEY=... bun eval/scrapers/twitter.ts --handle <handle> --years 2`
-- Output lands in `eval/data/financebrain-v1/social/<handle>/`
-- Indexes automatically into corpus (runner walks the full tree)
+**6. Add more Twitter handles**
+Current: only `@dylan522p`. Add company executives, AI analysts, sector
+commentators:
+```bash
+TWITTERAPI_IO_KEY=... bun eval/scrapers/twitter.ts --handle <handle> --years 2
+```
+Output lands in `social/<handle>/` and is picked up automatically by the runner.
 
-**6. Company website crawl**
-Not yet implemented. Would add `company-overview` source_type pages.
-Suggested: crawl investor relations pages, product pages for each company.
-Scraper to create: `eval/scrapers/company-crawl.ts`
+**7. Commit warm embedding cache**
+`eval/data/financebrain-v1/embed-cache/embed-cache-litellm_gemini-embedding-001@1536.sqlite`
+is 61MB and gitignored. Commit it (add explicit exception to `.gitignore`) so
+parallel agents get the warm cache on clone. Or host it separately and document
+the download URL.
 
 ### Lower Priority
 
-**9. Commit warm embedding cache**
-After first hybrid/vector run, commit `eval/data/financebrain-v1/embed-cache/*.sqlite`.
-This makes subsequent runs free and makes the corpus portable (like LongMemEval).
-Note: the cache file is large (~150MB for full corpus) — check gitignore rules.
+**8. Company website crawl**
+Would add `company-overview` source_type pages (IR pages, product pages).
+Scraper to create: `eval/scrapers/company-crawl.ts`
+
+**9. Refresh data on cadence**
+- Portfolio: run `ibkr.ts` weekly for fresh snapshots
+- Substack/Twitter: run with `--since <last-date>` for new posts
+- SEC EDGAR: run with `--since <last-date>` after each earnings cycle
+- FMP: run `fmp.ts --ticker <X>` after each earnings report
 
 ---
 
@@ -411,56 +463,76 @@ Copy `.env.example` to `.env.local` (gitignored). Required vars:
 | `TWITTERAPI_IO_KEY` | `twitter.ts` | twitterapi.io — tweet downloads |
 | `IBKR_FLEX_TOKEN` | `ibkr.ts` | IBKR Flex Web Service token |
 | `IBKR_FLEX_QUERY_ID` | `ibkr.ts` | Flex query ID (configured in IBKR Account Mgmt) |
-| `LITELLM_BASE_URL` | runner (vector/hybrid) | LiteLLM proxy URL, default `http://localhost:4000` |
+| `LITELLM_BASE_URL` | runner (vector/hybrid) | Proxy URL, default `http://localhost:4000` |
 | `LITELLM_API_KEY` | runner (vector/hybrid) | Optional — only if proxy requires auth |
-| `GBRAIN_EMBEDDING_MODEL` | runner | Default `litellm:text-embedding-004` |
-| `GBRAIN_EMBEDDING_DIMENSIONS` | runner | Default `768` (Google text-embedding-004) |
+| `GBRAIN_EMBEDDING_MODEL` | runner | Default `litellm:gemini-embedding-001` |
+| `GBRAIN_EMBEDDING_DIMENSIONS` | runner | Default `1536` |
 | `ANTHROPIC_API_KEY` | runner (hybrid+expansion) | Query expansion via Claude Haiku |
-
-SEC EDGAR requires no API key but requires a `User-Agent` header
-(`gbrain-evals research@gbrain.ai` — set in the scraper).
+| `GOOGLE_APPLICATION_CREDENTIALS` | LiteLLM proxy | Path to gcloud ADC JSON |
+| `VERTEXAI_PROJECT` | LiteLLM proxy | GCP project (`finai-adhi-dev`) |
+| `VERTEXAI_LOCATION` | LiteLLM proxy | Region (`us-central1`) |
 
 **No `OPENAI_API_KEY` needed.** Embeddings go through LiteLLM → Vertex AI.
-OpenAI is no longer in the embedding path for FinanceBrain.
+
+SEC EDGAR needs no key but requires `User-Agent: gbrain-evals research@gbrain.ai`
+(set in `edgar.ts`).
 
 ---
 
 ## Data Quality Notes
 
 - **All 1,910 pages have valid `published_at` dates** — verified by audit
-- **FMP financials now include full company name** in compiled_truth header
-  (e.g. "NVIDIA Corporation (NVDA) — Q3 CY2025...") so FTS matches company name
-- **source_type labels were fixed on 2026-05-13**: FMP financials were labeled
-  `sec-10q` (wrong), now `financials`. FMP transcripts were `sec-10q`, now
-  `transcript`
-- **EDGAR 10-K section extraction** scans all occurrences of item headers to skip
-  TOC entries (requires 1,500+ char minimum to count as real section). Works for
-  all 5 tickers
-- **Substack articles with paywall** are flagged via `_facts.paywall: true`
-  but still included with whatever content was accessible
-- **Social pages with no company mentions** (`companies_mentioned: []`) are
-  included in the corpus (453 pages total, 141 mention at least one target ticker)
+- **FMP financials include full company name** in `compiled_truth` header (e.g.
+  "NVIDIA Corporation (NVDA) — Q3 CY2025...") so FTS can match "NVIDIA" not
+  just "NVDA"
+- **source_types corrected 2026-05-13**: FMP financials were `sec-10q` → fixed
+  to `financials`. FMP transcripts were `sec-10q` → fixed to `transcript`
+- **EDGAR 10-K extraction** scans all occurrences of item headers to skip TOC
+  entries (requires 1,500+ chars). Works for all 5 tickers
+- **Substack articles with paywall** flagged via `_facts.paywall: true`; still
+  included with whatever content was accessible
+- **Social pages**: 453 total, 141 mention at least one target company ticker
 
 ---
 
 ## gbrain Integration Notes
 
-The runner uses gbrain's PGLite engine (in-memory Postgres). Key API points:
+The runner uses gbrain's PGLite engine (in-memory Postgres). Key patterns:
 
 ```typescript
 import { PGLiteEngine } from 'gbrain/pglite-engine';
 import { importFromContent } from 'gbrain/import-file';
 import { hybridSearch } from 'gbrain/search/hybrid';
 import { expandQuery } from 'gbrain/search/expansion';
+import { configureGateway, __setEmbedTransportForTests }
+  from './node_modules/gbrain/src/core/ai/gateway.ts';
+
+// Configure before engine creation
+configureGateway({
+  embedding_model: 'litellm:gemini-embedding-001',
+  embedding_dimensions: 1536,
+  base_urls: { litellm: 'http://localhost:4000' },
+  env: { ...process.env },
+});
+
+// Wire direct HTTP transport (bypasses AI SDK to inject dimensions=1536)
+__setEmbedTransportForTests(makeCachingTransport(async (params) => {
+  const res = await fetch('http://localhost:4000/embeddings', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ model: 'gemini-embedding-001', input: params.values, dimensions: 1536 }),
+  });
+  const data = await res.json();
+  return { embeddings: data.data.map(d => d.embedding) };
+}, cache));
 
 // Per adapter: fresh engine, index all pages, run queries
 const engine = new PGLiteEngine();
 await engine.connect({});
 await engine.initSchema();
 
-// Index a page
 await importFromContent(engine, slug.toLowerCase(), page.compiled_truth, {
-  noEmbed: adapter === 'keyword'  // skip embeddings for keyword-only
+  noEmbed: adapter === 'keyword'
 });
 
 // Search
@@ -469,17 +541,17 @@ const results = await hybridSearch(engine, query, { limit: 5, expansion: false }
 const results = await hybridSearch(engine, query, {
   limit: 5, expansion: true, expandFn: expandQuery
 });
-
-// Results have: result.slug (the indexed slug)
 ```
 
 **Hard excludes:** gbrain excludes slugs starting with `test/`, `archive/`,
-`attachments/`, `.raw/` from search results. Our slugs use none of these
-prefixes — they are `financials/`, `transcripts/`, `price/`, `social/`,
-`substack/`, `portfolio/`, `sec/`.
+`attachments/`, `.raw/`. Our slugs (`financials/`, `transcripts/`, `price/`,
+`social/`, `substack/`, `portfolio/`, `sec/`) are all safe.
 
-**Slug normalization:** gbrain lowercases slugs. Our pages already use
-lowercase slugs in `_facts`. Scoring compares `retrieved.some(r => r.includes(answerSlug))`.
+**Slug normalization:** gbrain lowercases slugs via `validateSlug`. Scoring
+uses `retrieved.some(r => r.includes(answerSlug.toLowerCase()))`.
+
+**Stale cache danger:** If wrong-dim vectors are cached, delete
+`eval/data/financebrain-v1/embed-cache/*.sqlite` before re-running.
 
 ---
 
@@ -496,12 +568,14 @@ git push
 ```
 
 Recent commits on this branch:
+- `3871d89` — fix(financebrain): confirmed working end-to-end vector retrieval via Vertex AI
+- `1f886b9` — fix(financebrain): inject dimensions=1536 into embedding transport
+- `b801aac` — feat(financebrain): switch to gemini-embedding-001 @ 1536d via LiteLLM + Vertex AI
+- `b57c3b9` — feat(financebrain): use LiteLLM proxy for embeddings (Vertex AI / Google)
+- `a1dab5a` — docs(financebrain): full context dump for parallel agent handoff
 - `b0f29b2` — feat(financebrain): end-to-end runner + data fixes
 - `9365e57` — feat(financebrain): IBKR portfolio + SEC EDGAR scrapers
 - `69d0c86` — feat(financebrain): Substack full corpus + @dylan522p tweets
-- `7467ff0` — feat(financebrain): complete FMP data + Twitter scraper
-- `54e257a` — feat(financebrain): FMP scraper — financials, transcripts, price data
-- `2f584f4` — feat(financebrain): Substack scraper + earnings calendar
 
 ---
 
@@ -539,5 +613,4 @@ social/dylan522p/  453 pages  May 2024 – May 2026
 
 ---
 
-*Last updated: 2026-05-13. Generated from conversation context during initial
-FinanceBrain corpus build session.*
+*Last updated: 2026-05-13.*
