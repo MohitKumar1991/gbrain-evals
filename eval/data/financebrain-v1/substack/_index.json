@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-13T07:15:55.679Z",
+  "articles": [
+    {
+      "slug": "substack/openai-momentum-is-spiraling-down-ipo-2027",
+      "title": "OpenAI's Momentum is Spiraling Down ▼",
+      "published_at": "2026-05-12T10:28:53+00:00",
+      "companies_mentioned": [
+        "NVDA",
+        "MSFT",
+        "GOOGL",
+        "META",
+        "AAPL"
+      ]
+    },
+    {
+      "slug": "substack/is-generative-ai-creating-more-jobs-than-it-disrupts-early-2026",
+      "title": "Is Generative AI creating more Jobs?",
+      "published_at": "2026-05-07T10:05:55+00:00",
+      "companies_mentioned": [
+        "MSFT"
+      ]
+    },
+    {
+      "slug": "substack/what-jfk-can-teach-us-about-ai-job-loss-automation-1960s-2020s",
+      "title": "What JFK can teach us about AI job loss ",
+      "published_at": "2026-05-06T09:25:22+00:00",
+      "companies_mentioned": []
+    }
+  ]
+}
