@@ -208,7 +208,12 @@ async function main() {
       const cacheKey = `${embeddingModel}@${embeddingDims}`;
       const cachePath = join(CACHE_DIR, `embed-cache-${cacheKey.replace(/[^a-z0-9@-]/gi, '_')}.sqlite`);
       cache = new EmbeddingCache(cachePath, cacheKey);
-      const realTransport = async (params: any) => aiSdkEmbedMany(params);
+      // Inject dimensions into every call so the LiteLLM proxy forwards
+      // outputDimensionality=1536 to Vertex AI. Without this, gbrain's
+      // openai-compatible path calls textEmbeddingModel(id) without dimensions,
+      // and the proxy returns the model default (3072 for gemini-embedding-001).
+      const realTransport = async (params: any) =>
+        aiSdkEmbedMany({ ...params, dimensions: embeddingDims });
       __setEmbedTransportForTests(makeCachingTransport(realTransport, cache));
       console.log(`Embedding cache: ${cachePath}`);
     }

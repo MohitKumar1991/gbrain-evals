@@ -15,6 +15,7 @@ model_list:
       model: vertex_ai/gemini-embedding-001
       vertex_project: finai-adhi-dev
       vertex_location: us-central1
+      # output_dimensionality is passed at call time via dimensions= param
 
-general_settings:
-  drop_params: true   # silently drop unsupported params instead of erroring
+litellm_settings:
+  drop_params: true   # vertex_ai rejects encoding_format=float; drop it silently
