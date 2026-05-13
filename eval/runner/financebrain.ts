@@ -17,8 +17,22 @@
  *   bun eval/runner/financebrain.ts --top-k 5 --limit 20
  *
  * Env vars required for vector/hybrid adapters:
- *   OPENAI_API_KEY   (embeddings via text-embedding-3-large)
- *   ANTHROPIC_API_KEY (expansion via Claude Haiku)
+ *   LITELLM_BASE_URL      LiteLLM proxy URL (default: http://localhost:4000)
+ *   LITELLM_API_KEY       optional proxy auth key
+ *   ANTHROPIC_API_KEY     query expansion via Claude Haiku
+ *
+ * Embedding model (set in gbrain.yml or via env, default: litellm:text-embedding-004):
+ *   GBRAIN_EMBEDDING_MODEL      e.g. litellm:text-embedding-004
+ *   GBRAIN_EMBEDDING_DIMENSIONS e.g. 768 (Google text-embedding-004)
+ *
+ * The LiteLLM proxy should be configured to route the embedding model to
+ * Vertex AI. Example litellm proxy config snippet:
+ *   model_list:
+ *     - model_name: text-embedding-004
+ *       litellm_params:
+ *         model: vertex_ai/text-embedding-004
+ *         vertex_project: <your-gcp-project>
+ *         vertex_location: us-central1
  */
 
 import { readFileSync, readdirSync, statSync, writeFileSync, mkdirSync } from 'fs';
@@ -160,25 +174,37 @@ async function main() {
   for (const [t, n] of Object.entries(byType).sort()) console.log(`  ${t.padEnd(20)} ${n}`);
   console.log();
 
-  // Configure embedding gateway for vector adapters
+  // Configure embedding gateway for vector adapters.
+  // Embeddings route through LiteLLM proxy → Vertex AI (Google).
+  // GBRAIN_EMBEDDING_MODEL / GBRAIN_EMBEDDING_DIMENSIONS are read by
+  // loadConfig() from env, but we also set explicit defaults here so the
+  // runner works without a gbrain.yml file.
   const needsEmbeddings = ALL_ADAPTERS.some(a => a !== 'keyword');
   let cache: EmbeddingCache | null = null;
   if (needsEmbeddings) {
     const cfg = loadConfig() || ({} as any);
+
+    // LiteLLM proxy setup: default model is text-embedding-004 (Vertex AI, 768 dims)
+    const embeddingModel = cfg.embedding_model ?? 'litellm:text-embedding-004';
+    const embeddingDims  = cfg.embedding_dimensions ?? 768;
+    const litellmBaseUrl = process.env.LITELLM_BASE_URL ?? 'http://localhost:4000';
+
     configureGateway({
-      embedding_model: cfg.embedding_model,
-      embedding_dimensions: cfg.embedding_dimensions,
-      expansion_model: cfg.expansion_model,
-      chat_model: cfg.chat_model,
-      chat_fallback_chain: cfg.chat_fallback_chain,
-      base_urls: cfg.provider_base_urls,
+      embedding_model:      embeddingModel,
+      embedding_dimensions: embeddingDims,
+      expansion_model:      cfg.expansion_model,
+      chat_model:           cfg.chat_model,
+      chat_fallback_chain:  cfg.chat_fallback_chain,
+      // Merge file-level base_urls with the LiteLLM proxy URL so the litellm
+      // recipe resolves correctly regardless of gbrain.yml contents.
+      base_urls: { ...cfg.provider_base_urls, litellm: litellmBaseUrl },
       env: { ...process.env },
     });
 
+    console.log(`Embedding: ${embeddingModel} (${embeddingDims}d) via ${litellmBaseUrl}`);
+
     if (!NO_CACHE) {
-      const cacheModel = cfg.embedding_model || 'text-embedding-3-large';
-      const cacheDims = cfg.embedding_dimensions || 1536;
-      const cacheKey = `${cacheModel}@${cacheDims}`;
+      const cacheKey = `${embeddingModel}@${embeddingDims}`;
       const cachePath = join(CACHE_DIR, `embed-cache-${cacheKey.replace(/[^a-z0-9@-]/gi, '_')}.sqlite`);
       cache = new EmbeddingCache(cachePath, cacheKey);
       const realTransport = async (params: any) => aiSdkEmbedMany(params);

@@ -209,15 +209,15 @@ by scanning all occurrences to skip TOC entries (requires 1,500+ chars).
 ## Runner — How to Use
 
 ```bash
-# Smoke test: 9 dummy queries, keyword-only (no API key needed)
+# Smoke test: 9 dummy queries, keyword-only (no API keys needed)
 bun eval/runner/financebrain.ts --queries test --keyword-only --top-k 5
 
-# Smoke test: hybrid adapter (needs OPENAI_API_KEY + ANTHROPIC_API_KEY)
-OPENAI_API_KEY=... ANTHROPIC_API_KEY=... \
+# Smoke test: hybrid adapter (needs LiteLLM proxy + ANTHROPIC_API_KEY)
+LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
   bun eval/runner/financebrain.ts --queries test --adapters hybrid --top-k 5
 
 # Full run: all 4 adapters against a question bank
-OPENAI_API_KEY=... ANTHROPIC_API_KEY=... \
+LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
   bun eval/runner/financebrain.ts --queries eval/data/financebrain-v1/questions.json \
   --adapters keyword,vector,hybrid,hybrid+expansion --top-k 5
 
@@ -243,9 +243,29 @@ OPENAI_API_KEY=... ANTHROPIC_API_KEY=... \
   doesn't always FTS-match natural language questions
 - Hybrid+expansion should score significantly higher (semantic retrieval)
 
-**Embedding cache:** `eval/data/financebrain-v1/embed-cache/embed-cache-text-embedding-3-large@1536.sqlite`
-Once warmed, vector/hybrid runs are fast and cheap. Commit the cache file so
-parallel agents don't each pay the embedding cost.
+**Embedding setup — LiteLLM → Vertex AI:**
+Embeddings use Google's `text-embedding-004` (768 dims) via LiteLLM proxy.
+The runner's `configureGateway` call sets `embedding_model: 'litellm:text-embedding-004'`
+and points the `litellm` recipe at `LITELLM_BASE_URL`.
+
+Required LiteLLM proxy config (in your `litellm_config.yaml`):
+```yaml
+model_list:
+  - model_name: text-embedding-004
+    litellm_params:
+      model: vertex_ai/text-embedding-004
+      vertex_project: <your-gcp-project>
+      vertex_location: us-central1
+```
+
+**Embedding cache:** `eval/data/financebrain-v1/embed-cache/embed-cache-litellm:text-embedding-004@768.sqlite`
+Once warmed, vector/hybrid runs are fast and free. Commit the cache so
+parallel agents don't re-embed. Cache is keyed by `(model, dims)` — switching
+models invalidates it automatically.
+
+**Dimensions change from OpenAI:** Google `text-embedding-004` produces 768-dim
+vectors vs OpenAI `text-embedding-3-large`'s 1536. The PGLite schema stores
+whatever dim the first import uses — don't mix models within a single run.
 
 ---
 
@@ -366,18 +386,6 @@ Scraper to create: `eval/scrapers/company-crawl.ts`
 
 ### Lower Priority
 
-**7. Refresh portfolio data**
-Run `bun eval/scrapers/ibkr.ts` periodically to get fresh holdings snapshots.
-Each run creates a new dated file; `latest.json` is overwritten.
-IBKR Flex token may expire — generate a new one in Account Management if needed.
-
-**8. Refresh Substack and Twitter**
-Run with `--since <last-run-date>` to fetch only new posts:
-```bash
-bun eval/scrapers/substack.ts --since 2026-05-13
-TWITTERAPI_IO_KEY=... bun eval/scrapers/twitter.ts --handle dylan522p --since 2026-05-13
-```
-
 **9. Commit warm embedding cache**
 After first hybrid/vector run, commit `eval/data/financebrain-v1/embed-cache/*.sqlite`.
 This makes subsequent runs free and makes the corpus portable (like LongMemEval).
@@ -395,11 +403,17 @@ Copy `.env.example` to `.env.local` (gitignored). Required vars:
 | `TWITTERAPI_IO_KEY` | `twitter.ts` | twitterapi.io — tweet downloads |
 | `IBKR_FLEX_TOKEN` | `ibkr.ts` | IBKR Flex Web Service token |
 | `IBKR_FLEX_QUERY_ID` | `ibkr.ts` | Flex query ID (configured in IBKR Account Mgmt) |
-| `OPENAI_API_KEY` | runner (vector/hybrid) | Embeddings via text-embedding-3-large |
+| `LITELLM_BASE_URL` | runner (vector/hybrid) | LiteLLM proxy URL, default `http://localhost:4000` |
+| `LITELLM_API_KEY` | runner (vector/hybrid) | Optional — only if proxy requires auth |
+| `GBRAIN_EMBEDDING_MODEL` | runner | Default `litellm:text-embedding-004` |
+| `GBRAIN_EMBEDDING_DIMENSIONS` | runner | Default `768` (Google text-embedding-004) |
 | `ANTHROPIC_API_KEY` | runner (hybrid+expansion) | Query expansion via Claude Haiku |
 
 SEC EDGAR requires no API key but requires a `User-Agent` header
 (`gbrain-evals research@gbrain.ai` — set in the scraper).
+
+**No `OPENAI_API_KEY` needed.** Embeddings go through LiteLLM → Vertex AI.
+OpenAI is no longer in the embedding path for FinanceBrain.
 
 ---
 
