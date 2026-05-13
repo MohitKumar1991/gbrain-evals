@@ -48,7 +48,6 @@ import {
   __setEmbedTransportForTests,
 } from '../../node_modules/gbrain/src/core/ai/gateway.ts';
 import { embed } from '../../node_modules/gbrain/src/core/embedding.ts';
-import { embedMany as aiSdkEmbedMany } from '../../node_modules/ai/dist/index.mjs';
 import { EmbeddingCache, makeCachingTransport } from './longmemeval-cache.ts';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -208,12 +207,31 @@ async function main() {
       const cacheKey = `${embeddingModel}@${embeddingDims}`;
       const cachePath = join(CACHE_DIR, `embed-cache-${cacheKey.replace(/[^a-z0-9@-]/gi, '_')}.sqlite`);
       cache = new EmbeddingCache(cachePath, cacheKey);
-      // Inject dimensions into every call so the LiteLLM proxy forwards
-      // outputDimensionality=1536 to Vertex AI. Without this, gbrain's
-      // openai-compatible path calls textEmbeddingModel(id) without dimensions,
-      // and the proxy returns the model default (3072 for gemini-embedding-001).
-      const realTransport = async (params: any) =>
-        aiSdkEmbedMany({ ...params, dimensions: embeddingDims });
+
+      // gbrain's openai-compatible path calls textEmbeddingModel(id) without
+      // dimensions, so the AI SDK omits it from the request and the proxy
+      // returns the model default (3072 for gemini-embedding-001). Bypass the
+      // AI SDK entirely and call the LiteLLM proxy directly with explicit
+      // dimensions so Vertex AI returns exactly embeddingDims vectors.
+      const modelId = embeddingModel.replace(/^litellm:/, ''); // 'gemini-embedding-001'
+      const litellmApiKey = process.env.LITELLM_API_KEY;
+      const realTransport = async (params: { values: string[] } & Record<string, unknown>) => {
+        const res = await fetch(`${litellmBaseUrl}/embeddings`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(litellmApiKey ? { Authorization: `Bearer ${litellmApiKey}` } : {}),
+          },
+          body: JSON.stringify({ model: modelId, input: params.values, dimensions: embeddingDims }),
+        });
+        if (!res.ok) {
+          const err = await res.text();
+          throw new Error(`LiteLLM embedding error ${res.status}: ${err.slice(0, 200)}`);
+        }
+        const data = await res.json() as { data: Array<{ embedding: number[] }> };
+        return { embeddings: data.data.map(d => d.embedding) };
+      };
+
       __setEmbedTransportForTests(makeCachingTransport(realTransport, cache));
       console.log(`Embedding cache: ${cachePath}`);
     }

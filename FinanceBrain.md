@@ -56,6 +56,8 @@ eval/
   runner/
     financebrain.ts            ← main eval runner (indexes corpus, runs queries, scores)
     longmemeval-cache.ts       ← shared embedding cache (reused by financebrain runner)
+    questions-ui.ts            ← local web UI for building questions.json (http://localhost:3456)
+    questions-ui.html          ← UI frontend (served by questions-ui.ts)
 
 FinanceBrain.md                ← THIS FILE
 
@@ -258,14 +260,15 @@ model_list:
       vertex_location: us-central1
 ```
 
-**Embedding cache:** `eval/data/financebrain-v1/embed-cache/embed-cache-litellm:text-embedding-004@768.sqlite`
-Once warmed, vector/hybrid runs are fast and free. Commit the cache so
-parallel agents don't re-embed. Cache is keyed by `(model, dims)` — switching
-models invalidates it automatically.
+**Embedding cache:** `eval/data/financebrain-v1/embed-cache/embed-cache-litellm_gemini-embedding-001@1536.sqlite`
+Once warmed (~61MB), vector/hybrid runs skip all ~390 Vertex AI API calls.
+Commit the cache file so parallel agents don't re-embed.
 
-**Dimensions change from OpenAI:** Google `text-embedding-004` produces 768-dim
-vectors vs OpenAI `text-embedding-3-large`'s 1536. The PGLite schema stores
-whatever dim the first import uses — don't mix models within a single run.
+**Cache key gotcha:** the cache is keyed by `(model, dims)`. If you run any
+vector/hybrid query while the proxy is misconfigured (returning wrong dims),
+wrong-dim vectors get written to cache. Symptom: `Embedding dim mismatch`
+even after fixing the proxy. Fix: `rm eval/data/financebrain-v1/embed-cache/*.sqlite`
+then re-run to rebuild from scratch with the correct dimensions.
 
 ---
 
@@ -323,6 +326,11 @@ the pattern is a hit.
 **1. Build the full question bank**
 File to create: `eval/data/financebrain-v1/questions.json`
 Format: same as `test-queries.json`.
+
+Use the question builder UI to add questions interactively:
+```bash
+bun eval/runner/questions-ui.ts   # opens at http://localhost:3456
+```
 
 Write 10–20 questions per source_type category (9 categories × ~15 questions
 = ~135 total). Rules:
