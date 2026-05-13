@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1820200553512841239",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-08-04",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1820200553512841239",
+  "published_at": "2024-08-04T20:50:04.000Z",
+  "compiled_truth": "Nvidia's Blackwell Reworked - Shipment Delays &amp; GB200A Reworked Platforms\nMGX GB200A NVL36 vs GB200A NVL64\nB102\nB20\nCoWoS-L vs CoWoS-S,\nConnectX-8 Switch Mode\nLiquid Cooling vs Air Cooling\nNVLink Backplane, PCB, CCL, Substrate, BMC, Power Delivery\nhttps://t.co/QZkwX0vt7h\n  > Quoting @dylan522p: People keep asking about Blackwell delays\nWe already sent out the our update 2 weeks ago, July 22nd to our hyperscaler, semiconductor, and investor clients\nSell side and media are quite late\nThey still have multiple things wrong too\nVolumes, ASP, etc below\nhttps://t.co/frahauIDRt https://t.co/Oap8CSdZBr\n2024-08-04T20:50:04.000Z [241 likes · 40 RTs · 98460 views]",
+  "timeline": "- **2024-08-04** | 23d before NVDA Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-08-28",
+      "days_relative": -23,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1820200553512841239"
+    ],
+    "conversation_id": "1820200553512841239",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 241,
+    "lead_views": 98460,
+    "lead_bookmarks": 75,
+    "published_at": "2024-08-04T20:50:04.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-08-28",
+        "days_relative": -23,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

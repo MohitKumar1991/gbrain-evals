@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1986209768344539198",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-11-05",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1986209768344539198",
+  "published_at": "2025-11-05T23:11:25.000Z",
+  "compiled_truth": "are we going to get TPUs in orbit before we get first class TPU support in PyTorch?\n  > Quoting @sundarpichai: Our TPUs are headed to space! \n\nInspired by our history of moonshots, from quantum computing to autonomous driving, Project Suncatcher is exploring how we could one day build scalable ML compute systems in space, harnessing more of the sun’s power (which emits more power than 100 trillion times humanity’s total electricity production).\n\nLike any moonshot, it’s going to require us to solve a lot of complex engineering challenges. Early research shows our Trillium-generation TPUs (our tensor processing units, purpose-built for AI) survived without damage when tested in a particle accelerator to simulate low-earth orbit levels of radiation. However, significant challenges still remain like thermal management and on-orbit system reliability. \n\nMore testing and breakthroughs will be needed as we count down to launch two prototype satellites with @planet by early 2027, our next milestone of many. Excited for us to be a part of all the innovation happening in (this) space!\n2025-11-05T23:11:25.000Z [385 likes · 6 RTs · 53437 views]",
+  "timeline": "- **2025-11-05** | 9d after GOOGL Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-10-28",
+      "days_relative": 9,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1986209768344539198"
+    ],
+    "conversation_id": "1986209768344539198",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 385,
+    "lead_views": 53437,
+    "lead_bookmarks": 25,
+    "published_at": "2025-11-05T23:11:25.000Z",
+    "companies_mentioned": [
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "GOOGL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-10-28",
+        "days_relative": 9,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

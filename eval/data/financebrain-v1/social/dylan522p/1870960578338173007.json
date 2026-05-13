@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1870960578338173007",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-22",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1870960578338173007",
+  "published_at": "2024-12-22T22:32:17.000Z",
+  "compiled_truth": "Our 5-month journey conducting independent analysis &amp; benchmarking of AMD MI300X vs Nvidia H100 + H200\nDetailed, open source low-level benchmarks\nperformance vs TCO\nComprehensive public recommendations\nIt’s not just immature software, they need to change how they do development\n  > Quoting @SemiAnalysis_: MI300X vs H100 vs H200 Benchmark Part 1: Training\nCUDA Moat Still Alive\nOur 5 month journey conducting independent analysis + benchmarking\nUser Experience, Usability\nGEMM + attention\nInfiniBand vs Spectrum-X vs RoCEv2 Ethernet\nSHARP\nTotal Cost of Ownership\nhttps://t.co/A5utrO9Ht9\n2024-12-22T22:32:17.000Z [774 likes · 56 RTs · 632143 views]",
+  "timeline": "- **2024-12-22** | 33d after NVDA Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-11-20",
+      "days_relative": 33,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1870960578338173007"
+    ],
+    "conversation_id": "1870960578338173007",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 774,
+    "lead_views": 632143,
+    "lead_bookmarks": 210,
+    "published_at": "2024-12-22T22:32:17.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-11-20",
+        "days_relative": 33,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1889128785687236769",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-11",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1889128785687236769",
+  "published_at": "2025-02-11T01:46:15.000Z",
+  "compiled_truth": "The point of Elon's offer to buy OpenAI for $97.4B to try to fuck over the non-profit to for-profit conversion\nA standing offer from many accredited investors to buy the non-profit portion OAI prolly tanks the argument to IRS/states\nWhich then maybe kills future fundraising\n  > Quoting @sama: no thank you but we will buy twitter for $9.74 billion if you want\n2025-02-11T01:46:15.000Z [3419 likes · 135 RTs · 764666 views]",
+  "timeline": "- **2025-02-11** | 13d after MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 13,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1889128785687236769"
+    ],
+    "conversation_id": "1889128785687236769",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 3419,
+    "lead_views": 764666,
+    "lead_bookmarks": 464,
+    "published_at": "2025-02-11T01:46:15.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 13,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

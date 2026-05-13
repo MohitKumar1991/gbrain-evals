@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2036986609451856156",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-03-26",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2036986609451856156",
+  "published_at": "2026-03-26T02:00:27.000Z",
+  "compiled_truth": "Our hackathon was sick and and there were so many cool projects there that are actually useful. \nCheck out the thread to see the projects\n  > Quoting @SemiAnalysis_: 296 hackers. 18,432 B200 GPU hours. $180K in compute credits. 60,000mg of caffeine.\n\nWe kicked off GTC with @fluidstack for From Silicon to Scale — the most full-stack AI hackathon ever built. 48 hours. 1 DGX Spark signed by Jensen. Here's what happened.(1/7)🧵 https://t.co/UOKTC9twQE\n2026-03-26T02:00:27.000Z [176 likes · 11 RTs · 35930 views]",
+  "timeline": "- **2026-03-26** | 28d after NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": 28,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2036986609451856156"
+    ],
+    "conversation_id": "2036986609451856156",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 176,
+    "lead_views": 35930,
+    "lead_bookmarks": 47,
+    "published_at": "2026-03-26T02:00:27.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": 28,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

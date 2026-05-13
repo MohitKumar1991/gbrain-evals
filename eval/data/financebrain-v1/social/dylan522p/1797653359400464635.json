@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1797653359400464635",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-06-03",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1797653359400464635",
+  "published_at": "2024-06-03T15:35:34.000Z",
+  "compiled_truth": "OpenAI Chip Team Is Now Serious\nPoaching Aggressively\nhttps://t.co/BMpbkSinSI\n2024-06-03T15:35:34.000Z [157 likes · 21 RTs · 45079 views]",
+  "timeline": "- **2024-06-03** | 40d after MSFT Q3 FY2024 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-04-25",
+      "days_relative": 40,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1797653359400464635"
+    ],
+    "conversation_id": "1797653359400464635",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 157,
+    "lead_views": 45079,
+    "lead_bookmarks": 55,
+    "published_at": "2024-06-03T15:35:34.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-04-25",
+        "days_relative": 40,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

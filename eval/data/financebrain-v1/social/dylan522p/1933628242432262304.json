@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1933628242432262304",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-06-13",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1933628242432262304",
+  "published_at": "2025-06-13T20:51:12.000Z",
+  "compiled_truth": "AMD is making big moves in winning over the neocloud ecosystem through their balance sheet.\nAt the same time Nvidia is alienating many with DGX Lepton\nMI355 is great perf per TCO againist HGX B200 but it is not rack scale unlike GB200 nvl72\nMI355 is rack scale from temu dot com\n  > Quoting @SemiAnalysis_: AMD Advancing AI: MI350X, MI400 UALoE72, MI500 UAL256\nRapid Software Improvement\nMarketing RDF\nAMD Fostering Neocloud\nMI355 is not Rack Scale, MI400 is UALoE, Not UALink\n\nhttps://t.co/Ybiaf9uJhT\n2025-06-13T20:51:12.000Z [317 likes · 14 RTs · 55513 views]",
+  "timeline": "- **2025-06-13** | 17d after NVDA Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-05-28",
+      "days_relative": 17,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1933628242432262304"
+    ],
+    "conversation_id": "1933628242432262304",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 317,
+    "lead_views": 55513,
+    "lead_bookmarks": 97,
+    "published_at": "2025-06-13T20:51:12.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-05-28",
+        "days_relative": 17,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

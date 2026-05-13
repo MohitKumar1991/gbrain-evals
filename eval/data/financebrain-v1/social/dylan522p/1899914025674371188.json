@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1899914025674371188",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-03-12",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1899914025674371188",
+  "published_at": "2025-03-12T20:02:57.000Z",
+  "compiled_truth": "Our banger hackathon this Sunday\nOver 100 B200 / GB200 to hack on\nParticipants from every lab\nPrizes of Blackwell GPUs + more\nSpeakers - Phil Tillet OpenAI, Horace He Thinking Machines, Tri Dao Together, Vijay Nvidia, and Mark GPUMode/PT\n30 spots left\nApply NOW\nLink in next tweet https://t.co/CDHLbBf6WQ\n  > Quoting @cHHillee: I'll be here and talking about ML systems! There'll be some of the best GPU folk I know here, so come and learn more together about Blackwell GPUs!\n2025-03-12T20:02:57.000Z [190 likes · 19 RTs · 53120 views]",
+  "timeline": "- **2025-03-12** | 15d after NVDA Q4 FY2025 earnings\n- **2025-03-12** | 43d after MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": 15,
+      "phase": "post-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 43,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1899914025674371188"
+    ],
+    "conversation_id": "1899914025674371188",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 190,
+    "lead_views": 53120,
+    "lead_bookmarks": 42,
+    "published_at": "2025-03-12T20:02:57.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": 15,
+        "phase": "post-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 43,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

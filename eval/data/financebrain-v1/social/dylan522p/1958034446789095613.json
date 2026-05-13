@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1958034446789095613",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-08-20",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1958034446789095613",
+  "published_at": "2025-08-20T05:12:45.000Z",
+  "compiled_truth": "We dove into the H100's performance improvement over time from software over 2 years.\nCovered power usage + $ cost for training in a very detailed way for training runs on thousands of GPUs\nEquating this to US household power consumption @JeffDean \n+ GB200 reliability challenges\n  > Quoting @SemiAnalysis_: H100 vs GB200 NVL72 Training Benchmarks\nPower, TCO, and Reliability Analysis,\nSoftware Improvement Over Time\nJoules per Token, TCO Per Million Tokens, MFU\nTokens Per US Annual Household Energy Usage, DeepSeek 670B\nGB200 Unreliability, Backplane Downtime\nhttps://t.co/DDDitLaT2N\n2025-08-20T05:12:45.000Z [178 likes · 8 RTs · 47739 views]",
+  "timeline": "- **2025-08-20** | 7d before NVDA Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-08-27",
+      "days_relative": -7,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1958034446789095613"
+    ],
+    "conversation_id": "1958034446789095613",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 178,
+    "lead_views": 47739,
+    "lead_bookmarks": 46,
+    "published_at": "2025-08-20T05:12:45.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-08-27",
+        "days_relative": -7,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

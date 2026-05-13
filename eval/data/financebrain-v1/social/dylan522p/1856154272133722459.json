@@ -1,0 +1,28 @@
+{
+  "slug": "social/dylan522p/1856154272133722459",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-11-12",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1856154272133722459",
+  "published_at": "2024-11-12T01:57:18.000Z",
+  "compiled_truth": "Gave a lecture today at Stanford in CS 229S - Systems for Machine Learning\nTopics were AI infrastructure, multi-datacenter training, and asynchronous fault tolerance\nAlso our inference simulator to quantify cost impact of reasoning + throughput vs latency\nhttps://t.co/CoGOJlZHKQ https://t.co/ZETKZq3psn\n2024-11-12T01:57:18.000Z [516 likes · 21 RTs · 57605 views]",
+  "companies_mentioned": [],
+  "quarter_context": {},
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1856154272133722459"
+    ],
+    "conversation_id": "1856154272133722459",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 516,
+    "lead_views": 57605,
+    "lead_bookmarks": 208,
+    "published_at": "2024-11-12T01:57:18.000Z",
+    "companies_mentioned": [],
+    "quarter_context": {}
+  }
+}

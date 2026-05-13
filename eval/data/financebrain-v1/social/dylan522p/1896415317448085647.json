@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1896415317448085647",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-03-03",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1896415317448085647",
+  "published_at": "2025-03-03T04:20:20.000Z",
+  "compiled_truth": "Intel is a company with stage 4 cancer\nPat Gelsinger is the doctor trying to save the patient for years\nFrank Yeary is the long term hospital director\nHe walks into the hospital room\nFires the doctor\nShoots the patient\nAll cuz his directive is to end the cancer\n@insane_analyst\n  > Quoting @dylan522p: Intel on the Brink of Death\nBoard Short Circuits, Cultural Rot, Product Focus Is Flawed\nx86 Has No Moat\nFoundry Must Survive\nNvidia's PC CPU Push - 3 chip tegra strategy \nSierra Forest, Granite Rapid, Clearwater Forest, Diamond Rapids, Rogue River Forest\nhttps://t.co/1DopHfoiNn\n2025-03-03T04:20:20.000Z [840 likes · 53 RTs · 199389 views]",
+  "timeline": "- **2025-03-03** | 5d after NVDA Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": 5,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1896415317448085647"
+    ],
+    "conversation_id": "1896415317448085647",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 840,
+    "lead_views": 199389,
+    "lead_bookmarks": 149,
+    "published_at": "2025-03-03T04:20:20.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": 5,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

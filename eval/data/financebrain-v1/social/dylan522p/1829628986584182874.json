@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1829628986584182874",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-08-30",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1829628986584182874",
+  "published_at": "2024-08-30T21:15:17.000Z",
+  "compiled_truth": "Some folks are worried Jensen has sold $580M of stock this year (he has over $100B).\nBut the reality is Jensen is just the biggest memer ever.\nHe is simply seizing the opportunity to do the funniest thing ever. https://t.co/WoR1QN7H8C\n2024-08-30T21:15:17.000Z [444 likes · 15 RTs · 76688 views]",
+  "timeline": "- **2024-08-30** | 3d after NVDA Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-08-28",
+      "days_relative": 3,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1829628986584182874"
+    ],
+    "conversation_id": "1829628986584182874",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 444,
+    "lead_views": 76688,
+    "lead_bookmarks": 46,
+    "published_at": "2024-08-30T21:15:17.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-08-28",
+        "days_relative": 3,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

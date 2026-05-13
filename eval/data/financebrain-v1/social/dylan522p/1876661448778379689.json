@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1876661448778379689",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-01-07",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1876661448778379689",
+  "published_at": "2025-01-07T16:05:30.000Z",
+  "compiled_truth": "The US Government to provide \n*checks notes* \none quarter of MSFT CapEx to build new DCs\nWould be much better off going to fabs where the US isn't gaining much share vs DCs where all we need is deregulation to keep the US ahead. https://t.co/yVfptUTce4\n2025-01-07T16:05:30.000Z [277 likes · 16 RTs · 29728 views]",
+  "timeline": "- **2025-01-07** | 21d before MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": -21,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1876661448778379689"
+    ],
+    "conversation_id": "1876661448778379689",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 277,
+    "lead_views": 29728,
+    "lead_bookmarks": 35,
+    "published_at": "2025-01-07T16:05:30.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": -21,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

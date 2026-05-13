@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1859302712803807696",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-11-20",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1859302712803807696",
+  "published_at": "2024-11-20T18:28:05.000Z",
+  "compiled_truth": "Deepseek has over 50k Hopper GPUs to be clear.\nPeople need to stop acting like they only have that 10k A100 cluster.\nThey are omega cracked on ML research and infra management but they aren't doing it with that many fewer GPUs\n  > Quoting @deepseek_ai: 🚀 DeepSeek-R1-Lite-Preview is now live: unleashing supercharged reasoning power!\n\n🔍 o1-preview-level performance on AIME &amp; MATH benchmarks.\n💡 Transparent thought process in real-time.\n🛠️ Open-source models &amp; API coming soon!\n\n🌐 Try it now at https://t.co/v1TFy7LHNy\n#DeepSeek https://t.co/saslkq4a1s\n2024-11-20T18:28:05.000Z [1224 likes · 114 RTs · 445799 views]",
+  "timeline": "- **2024-11-20** | earnings day — NVDA Q3 FY2025",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-11-20",
+      "days_relative": 1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1859302712803807696"
+    ],
+    "conversation_id": "1859302712803807696",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1224,
+    "lead_views": 445799,
+    "lead_bookmarks": 422,
+    "published_at": "2024-11-20T18:28:05.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-11-20",
+        "days_relative": 1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

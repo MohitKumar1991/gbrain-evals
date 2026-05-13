@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1912373100668137883",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-16",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1912373100668137883",
+  "published_at": "2025-04-16T05:10:52.000Z",
+  "compiled_truth": "Huawei's new AI server is insanely good\nPeople need to reset their priors \nThis is why banning H20 without banning tools and sub components is idiotic because Huawei is not far behind H20.\nThe admin needs to act fast to slow down Huawei's ramp or the H20 ban will be useless\n  > Quoting @SemiAnalysis_: Huawei AI CloudMatrix 384\nChina’s Answer to Nvidia GB200 NVL72\nChina Abundance of Power, 100% Optics, 0% Copper\nPower Inefficiency\n2.6x lower FLOP per Watt\n14 Transceivers per Chip, Linear Pluggable Optics\nhttps://t.co/EhhcgXmDLs\n2025-04-16T05:10:52.000Z [1435 likes · 185 RTs · 547557 views]",
+  "timeline": "- **2025-04-16** | 42d before NVDA Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-05-28",
+      "days_relative": -42,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1912373100668137883"
+    ],
+    "conversation_id": "1912373100668137883",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1435,
+    "lead_views": 547557,
+    "lead_bookmarks": 381,
+    "published_at": "2025-04-16T05:10:52.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-05-28",
+        "days_relative": -42,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

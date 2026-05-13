@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2033623439953826179",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-03-16",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2033623439953826179",
+  "published_at": "2026-03-16T19:16:25.000Z",
+  "compiled_truth": "I just witnessed someone in front of me market buy Nvidia stock as Jensen is talking and then post screenshots on WeChat alongside his view from the crowd\n2026-03-16T19:16:25.000Z [1134 likes · 14 RTs · 135314 views]",
+  "timeline": "- **2026-03-16** | 19d after NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": 19,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2033623439953826179"
+    ],
+    "conversation_id": "2033623439953826179",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1134,
+    "lead_views": 135314,
+    "lead_bookmarks": 65,
+    "published_at": "2026-03-16T19:16:25.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": 19,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

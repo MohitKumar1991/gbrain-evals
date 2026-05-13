@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1880082893789360544",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-01-17",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1880082893789360544",
+  "published_at": "2025-01-17T02:41:06.000Z",
+  "compiled_truth": "Nvidia will be a robotics company at the end of the day, not just semiconductor.\nFew understand the moves they are doing at the lowest level from manufacturing up to software.\nClassic extend embrace extinguish.\nThey are going to sell robots and this is from Jensen straight up\n2025-01-17T02:41:06.000Z [3933 likes · 336 RTs · 365754 views]",
+  "timeline": "- **2025-01-17** | 40d before NVDA Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": -40,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1880082893789360544"
+    ],
+    "conversation_id": "1880082893789360544",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 3933,
+    "lead_views": 365754,
+    "lead_bookmarks": 847,
+    "published_at": "2025-01-17T02:41:06.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": -40,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

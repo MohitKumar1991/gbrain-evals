@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2007655625682235809",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-01-04",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2007655625682235809",
+  "published_at": "2026-01-04T03:29:36.000Z",
+  "compiled_truth": "The US used to destabilize countries for oil but now it's done for turbines\nThere's 2 GW of power generation sitting in Venezuela at less than 30% utilization \nTermozulia 1 - 2x GE 7F.03 (2x~170 MW) + 180 MW ST = 520 MW\nTermozulia 2 - 2x Siemens SGT6-5000F (2x260 MW) + 200 MW ST = 720 MW\nTermozulia 3 - 2x Siemens SGT6-5000F (2x260 MW) + 225 MW ST = 745 MW\n@sama @gdb @realDonaldTrump have been in the cahoots recently discussing how to solve the US power problem, and how to expand to the new Stargate Venezuela site.\n@elonmusk is considering lifting these turbines and installing them for  Collosus 3\nFor people that make it this far the only factual thing is that these are the turbines sitting here extremely underutilized, there's no plan to actually use them for DCs.\n  > Quoting @dylan522p: As the US and China compete for scarce DRAM reserves in the AI race\nDonald Trump took unprecedented action\nLast night Seal Team 6 used Chinook helicopters to abduct South Korean President Lee Jae-myung\nSK Hynix and Samsung committed to devoting all production to Nvidia + Broadcom https://t.co/jSjHY8jgTQ\n2026-01-04T03:29:36.000Z [768 likes · 54 RTs · 210653 views]",
+  "timeline": "- **2026-01-04** | 46d after NVDA Q3 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-11-19",
+      "days_relative": 46,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2007655625682235809"
+    ],
+    "conversation_id": "2007655625682235809",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 768,
+    "lead_views": 210653,
+    "lead_bookmarks": 306,
+    "published_at": "2026-01-04T03:29:36.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-11-19",
+        "days_relative": 46,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

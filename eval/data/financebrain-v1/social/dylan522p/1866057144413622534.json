@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1866057144413622534",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-09",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1866057144413622534",
+  "published_at": "2024-12-09T09:47:47.000Z",
+  "compiled_truth": "Intel on the Brink of Death\nBoard Short Circuits, Cultural Rot, Product Focus Is Flawed\nx86 Has No Moat\nFoundry Must Survive\nNvidia's PC CPU Push - 3 chip tegra strategy \nSierra Forest, Granite Rapid, Clearwater Forest, Diamond Rapids, Rogue River Forest\nhttps://t.co/1DopHfoiNn\n2024-12-09T09:47:47.000Z [382 likes · 38 RTs · 263418 views]",
+  "timeline": "- **2024-12-09** | 19d after NVDA Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-11-20",
+      "days_relative": 19,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1866057144413622534"
+    ],
+    "conversation_id": "1866057144413622534",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 382,
+    "lead_views": 263418,
+    "lead_bookmarks": 145,
+    "published_at": "2024-12-09T09:47:47.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-11-20",
+        "days_relative": 19,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

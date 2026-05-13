@@ -1,0 +1,81 @@
+{
+  "slug": "social/dylan522p/1871878908272128182",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-25",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1871878908272128182",
+  "published_at": "2024-12-25T11:21:24.000Z",
+  "compiled_truth": "Merry Christmas, present for yall\nShortest post we've done in like months, but information dense\nChallenges the BS narrative around inference\nCovers some major supply chain shifts\nAlso Meta helped me make toy Jensen into Santa Huang, and the memes flow through out.\n  > Quoting @SemiAnalysis_: Nvidia’s Christmas Present: GB300 &amp; B300\nReasoning Inference\nAmazon, Microsoft Orders\nMemory, Supply Chain, Blackwell Delays, GB300 BOM, Nvidia Gross Margin, ConnectX-8, VRMs, Micron, Samsung, SK Hynix, Wistron, FII Foxconn, Aspeed, Axiado\nhttps://t.co/YiMlqKqTLb\n2024-12-25T11:21:24.000Z [391 likes · 20 RTs · 65390 views]",
+  "timeline": "- **2024-12-25** | 35d after NVDA Q3 FY2025 earnings\n- **2024-12-25** | 35d before MSFT Q2 FY2025 earnings\n- **2024-12-25** | 35d before META Q4 FY2024 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "META"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-11-20",
+      "days_relative": 35,
+      "phase": "post-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": -35,
+      "phase": "pre-earnings"
+    },
+    "META": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2025-01-29",
+      "days_relative": -35,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1871878908272128182"
+    ],
+    "conversation_id": "1871878908272128182",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 391,
+    "lead_views": 65390,
+    "lead_bookmarks": 80,
+    "published_at": "2024-12-25T11:21:24.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "META"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-11-20",
+        "days_relative": 35,
+        "phase": "post-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": -35,
+        "phase": "pre-earnings"
+      },
+      "META": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2025-01-29",
+        "days_relative": -35,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

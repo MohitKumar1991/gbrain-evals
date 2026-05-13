@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1908721246231056618",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-06",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1908721246231056618",
+  "published_at": "2025-04-06T03:19:42.000Z",
+  "compiled_truth": "Alibaba and Deepseek upcoming releases mog Meta to be clear\n  > Quoting @natolambert: It’s very common for leadership at top labs to be in the know of other lab’s release schedules, so the simplest explanation to Meta releasing today is that next week is going to be bonkers, or at least plausibly outshine llama 4 (and they wanted to release last week, but other news was too big).\n2025-04-06T03:19:42.000Z [528 likes · 24 RTs · 94953 views]",
+  "timeline": "- **2025-04-06** | 24d before META Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {
+    "META": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": -24,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1908721246231056618"
+    ],
+    "conversation_id": "1908721246231056618",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 528,
+    "lead_views": 94953,
+    "lead_bookmarks": 85,
+    "published_at": "2025-04-06T03:19:42.000Z",
+    "companies_mentioned": [
+      "META"
+    ],
+    "quarter_context": {
+      "META": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": -24,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

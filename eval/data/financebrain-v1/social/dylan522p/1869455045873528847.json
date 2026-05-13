@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1869455045873528847",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-18",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1869455045873528847",
+  "published_at": "2024-12-18T18:49:50.000Z",
+  "compiled_truth": "Microsoft might be investing in Anthropic's new round at $59B.\nMicrosoft wants to have Claude in their pocket to push back against OpenAI who is increasingly rambunctious with Microsoft.\nVery uncomfortable partnership between the two.\n2024-12-18T18:49:50.000Z [4427 likes · 224 RTs · 645060 views]",
+  "timeline": "- **2024-12-18** | 41d before MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": -41,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1869455045873528847"
+    ],
+    "conversation_id": "1869455045873528847",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 4427,
+    "lead_views": 645060,
+    "lead_bookmarks": 564,
+    "published_at": "2024-12-18T18:49:50.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": -41,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

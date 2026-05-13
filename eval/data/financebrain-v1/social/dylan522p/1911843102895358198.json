@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1911843102895358198",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-14",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1911843102895358198",
+  "published_at": "2025-04-14T18:04:50.000Z",
+  "compiled_truth": "OpenAI succesfully wasted an hour of time for every person in pre-training by making them pay the upmost attention for insane possible alpha, but subsequently having none\nhttps://t.co/sNdhMw4Z0I\n2025-04-14T18:04:50.000Z [513 likes · 19 RTs · 151744 views]",
+  "timeline": "- **2025-04-14** | 15d before MSFT Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": -15,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1911843102895358198"
+    ],
+    "conversation_id": "1911843102895358198",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 513,
+    "lead_views": 151744,
+    "lead_bookmarks": 152,
+    "published_at": "2025-04-14T18:04:50.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": -15,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

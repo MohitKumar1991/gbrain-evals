@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1883324591105523950",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-01-26",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1883324591105523950",
+  "published_at": "2025-01-26T01:22:27.000Z",
+  "compiled_truth": "OpenAI should have been a religion not a non profit\nImagine the tax savings\nMorman church in shambles\n2025-01-26T01:22:27.000Z [900 likes · 32 RTs · 96265 views]",
+  "timeline": "- **2025-01-26** | 3d before MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": -3,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1883324591105523950"
+    ],
+    "conversation_id": "1883324591105523950",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 900,
+    "lead_views": 96265,
+    "lead_bookmarks": 42,
+    "published_at": "2025-01-26T01:22:27.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": -3,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

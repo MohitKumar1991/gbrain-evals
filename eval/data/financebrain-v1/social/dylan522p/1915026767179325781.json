@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1915026767179325781",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-23",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1915026767179325781",
+  "published_at": "2025-04-23T12:55:35.000Z",
+  "compiled_truth": "AMD software is improving rapidly\nCuda isn't a moat forever, but Nvidia is building new ones with the Python DSL, Dynamo, and more\nMeanwhile Nvidia hardware advantage is huge this year, but perf/TCO of 355X has attracted some customers\nMI450X is actually competitive with Rubin\n  > Quoting @SemiAnalysis_: AMD 2.0 – New Sense of Urgency\nMI450X Chance to Beat Nvidia\nNvidia’s New Moat\nMI325X, MI355X\nMI430X UL4, MI450X Architecture, IF64/IF128, Flexible IO, UALink Disaster, IFoE\nRapid Improvements, Developers First Approach\nLow AMD AI Software Engineer Pay\nhttps://t.co/WC3QA9Rrwp\n2025-04-23T12:55:35.000Z [529 likes · 52 RTs · 82666 views]",
+  "timeline": "- **2025-04-23** | 34d before NVDA Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-05-28",
+      "days_relative": -34,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1915026767179325781"
+    ],
+    "conversation_id": "1915026767179325781",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 529,
+    "lead_views": 82666,
+    "lead_bookmarks": 124,
+    "published_at": "2025-04-23T12:55:35.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-05-28",
+        "days_relative": -34,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

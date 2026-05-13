@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1815591183034560705",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-07-23",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1815591183034560705",
+  "published_at": "2024-07-23T03:34:04.000Z",
+  "compiled_truth": "I bow down to Elon, he is so fucking good. Deleted the tweet.\nYes only 8MW now from grid, 50MW Aug 1st once they sign TVA deal. 200MW by EOY, only need 155MW for 100k GPU but\n32k online now and rest online in Q4.\n3 months on 100k h100 will get them similar to current GPT 5 run https://t.co/NQp3M5ruu8\n2024-07-23T03:34:04.000Z [837 likes · 50 RTs · 159396 views]",
+  "timeline": "- **2024-07-23** | 36d before NVDA Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-08-28",
+      "days_relative": -36,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1815591183034560705"
+    ],
+    "conversation_id": "1815591183034560705",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 837,
+    "lead_views": 159396,
+    "lead_bookmarks": 342,
+    "published_at": "2024-07-23T03:34:04.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-08-28",
+        "days_relative": -36,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

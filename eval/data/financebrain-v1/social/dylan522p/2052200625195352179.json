@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2052200625195352179",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-05-07",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2052200625195352179",
+  "published_at": "2026-05-07T01:35:31.000Z",
+  "compiled_truth": "I wish you could filter resteruant reviews and rankings on Google maps searches for by race\nGotta authentic ethnic food max\nToo much overly fancy slop catered for the masses\n2026-05-07T01:35:31.000Z [268 likes · 2 RTs · 40959 views]",
+  "timeline": "- **2026-05-07** | 8d after GOOGL Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-04-29",
+      "days_relative": 8,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2052200625195352179"
+    ],
+    "conversation_id": "2052200625195352179",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 268,
+    "lead_views": 40959,
+    "lead_bookmarks": 24,
+    "published_at": "2026-05-07T01:35:31.000Z",
+    "companies_mentioned": [
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "GOOGL": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-04-29",
+        "days_relative": 8,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

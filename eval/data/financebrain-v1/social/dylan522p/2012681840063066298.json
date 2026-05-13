@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2012681840063066298",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-01-18",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2012681840063066298",
+  "published_at": "2026-01-18T00:21:59.000Z",
+  "compiled_truth": "\"If I was a rapper I would be called Blackwell\" https://t.co/rzwDQmSDE8\n2026-01-18T00:21:59.000Z [135 likes · 1 RTs · 19692 views]",
+  "timeline": "- **2026-01-18** | 39d before NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": -39,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2012681840063066298"
+    ],
+    "conversation_id": "2012681840063066298",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 135,
+    "lead_views": 19692,
+    "lead_bookmarks": 5,
+    "published_at": "2026-01-18T00:21:59.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": -39,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

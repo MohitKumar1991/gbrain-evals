@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2002135815233970295",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-12-19",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2002135815233970295",
+  "published_at": "2025-12-19T21:55:50.000Z",
+  "compiled_truth": "SemiAnalysis InferenceMAX showing GPT OSS on Blackwell is 33% more tokens per $ in just 1 month thanks to the awesome work of @vllm_project and @nvidia\n  > Quoting @vllm_project: vLLM delivers even more inference performance with the same GPU platform.\n\nIn just 1 month, we've worked with NVIDIA to increase @nvidia Blackwell maximum throughput per GPU by up to 33% -- significantly reducing cost per token -- while also enabling even higher peak speed for the most latency-sensitive use cases powered by deep PyTorch integration and collaboration.\n2025-12-19T21:55:50.000Z [191 likes · 12 RTs · 56418 views]",
+  "timeline": "- **2025-12-19** | 31d after NVDA Q3 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-11-19",
+      "days_relative": 31,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2002135815233970295"
+    ],
+    "conversation_id": "2002135815233970295",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 191,
+    "lead_views": 56418,
+    "lead_bookmarks": 57,
+    "published_at": "2025-12-19T21:55:50.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-11-19",
+        "days_relative": 31,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

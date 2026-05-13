@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1930421315175100479",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-06-05",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1930421315175100479",
+  "published_at": "2025-06-05T00:28:01.000Z",
+  "compiled_truth": "My hand movements and the topic make me look like Patrick the star https://t.co/Z60vETFUP6\n  > Quoting @iScienceLuvr: Good talk by @dylan522p at @aiDotEngineer about the geopolitics of AI infra:\n- US simply isn't able to scale up enough power for data centers\n- Chinese companies like Huawei are easily able to circumvent sanctions, and domestic capabilities/data centers/etc. scaling up rapidly\n- billions of dollars of Middle East investment into data centers pushed by Microsoft/OpenAI/Oracle/etc.\n2025-06-05T00:28:01.000Z [78 likes · 1 RTs · 27813 views]",
+  "timeline": "- **2025-06-05** | 36d after MSFT Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": 36,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1930421315175100479"
+    ],
+    "conversation_id": "1930421315175100479",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 78,
+    "lead_views": 27813,
+    "lead_bookmarks": 8,
+    "published_at": "2025-06-05T00:28:01.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": 36,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

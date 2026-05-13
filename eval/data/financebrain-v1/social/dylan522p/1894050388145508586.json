@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1894050388145508586",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-24",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1894050388145508586",
+  "published_at": "2025-02-24T15:42:56.000Z",
+  "compiled_truth": "On Friday, there was a report stating that Microsoft was canceling datacenter leases for several hundred of MWs – alluding to a high risk of overbuild/oversupply.\nWe discussed this in December in our Datacenter Model where we track every individual DC.\nLet's break it down cause it's quite silly.\nThis was months late info probably from PTC.\nP much everyone knew this was happening in the DC industry because contracts were lagging / not being signed \nMicrosoft was exceptionally aggressive in 2023 and H1 2024 – with Blackstone-owned QTS getting the largest chunk of that capacity.\nIn Q2 2024, 59% of the total hyperscaler preleased capacity, well over $100B was contracted by Microsoft, also over 100B!\nSince Q2 2024, Microsoft’s preleased balance has stopped growing.\nThis aligns with with our channel checks, as we have been hearing a lot of rumors that, in 2023 and H1 2024, Microsoft was essentially “freezing” the Colocation market by entering into non-binding LOIs with a lot of colocation campuses.\nOur Core Research product also noted this for Vertiv $VRT. Everyone was surprised their book to bill was so low, but Microsoft has a huge commit of capacity and near term plans weren't shifting.\nMicrosoft slowdown is more evident in Australia, Spain, and UK as per our datacenter model.\nBeing vauge on numbers here but full detail in datacenter model below.\nAll in all of Microsoft were to build everything they have scheduled, that's eons above any other analyst who doesn't track by DC like we do\nhttps://t.co/SY0g6kpqm6\n2025-02-24T15:42:56.000Z [943 likes · 116 RTs · 229015 views]",
+  "timeline": "- **2025-02-24** | 27d after MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 27,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1894050388145508586"
+    ],
+    "conversation_id": "1894050388145508586",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 943,
+    "lead_views": 229015,
+    "lead_bookmarks": 584,
+    "published_at": "2025-02-24T15:42:56.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 27,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

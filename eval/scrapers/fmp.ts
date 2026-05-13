@@ -29,7 +29,8 @@ import type { FinancePage } from './types.ts';
 
 // ── Config ─────────────────────────────────────────────────────────────────────
 
-const API_KEY = 'T2yftPGQ0yGnXqH5n0VyWStN9U8ra3ai';
+const API_KEY = process.env.FMP_API_KEY;
+if (!API_KEY) { console.error('FMP_API_KEY env var required'); process.exit(1); }
 const BASE = 'https://financialmodelingprep.com/api';
 const RATE_MS = 300;  // 300ms between calls → ~200 req/min, well within limits
 const TICKERS = ['NVDA', 'MSFT', 'GOOGL', 'META', 'AAPL'];
@@ -61,7 +62,7 @@ async function fmpGet<T>(path: string): Promise<T> {
   if (wait > 0) await sleep(wait);
   lastRequest = Date.now();
 
-  const url = `${BASE}${path}${path.includes('?') ? '&' : '?'}apikey=${API_KEY}`;
+  const url = `${BASE}${path}${path.includes('?') ? '&' : '?'}apikey=${API_KEY!}`;
   const res = await fetch(url, { headers: { 'User-Agent': 'gbrain-evals/1.0' } });
   if (!res.ok) throw new Error(`FMP ${res.status}: ${url}`);
   return res.json() as T;

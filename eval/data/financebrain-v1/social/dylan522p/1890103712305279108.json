@@ -1,0 +1,97 @@
+{
+  "slug": "social/dylan522p/1890103712305279108",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-13",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1890103712305279108",
+  "published_at": "2025-02-13T18:20:16.000Z",
+  "compiled_truth": "The anatomy of datacenters is like peering into the the heart of AGI or something\nUnsung heros of data center design are cooling folks\nThe difference in architecture between various firms in the AI arms race is quite drastically different\n  > Quoting @SemiAnalysis_: Datacenter Anatomy Part 2 - Cooling Systems\nL2A, L2L, Immersion, Two-Phase\nGoogle vs Meta vs Microsoft vs Amazon Water Cooling Design\nWUE &amp; PUE\nNvidia Rubin Power &amp; Cooling Architecture\nAnd much more\nhttps://t.co/ndzUxhAXpY\n2025-02-13T18:20:16.000Z [405 likes · 20 RTs · 68317 views]",
+  "timeline": "- **2025-02-13** | 12d before NVDA Q4 FY2025 earnings\n- **2025-02-13** | 16d after MSFT Q2 FY2025 earnings\n- **2025-02-13** | 10d after GOOGL Q4 FY2024 earnings\n- **2025-02-13** | 16d after META Q4 FY2024 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": -12,
+      "phase": "pre-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 16,
+      "phase": "post-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2025-02-04",
+      "days_relative": 10,
+      "phase": "post-earnings"
+    },
+    "META": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2025-01-29",
+      "days_relative": 16,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1890103712305279108"
+    ],
+    "conversation_id": "1890103712305279108",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 405,
+    "lead_views": 68317,
+    "lead_bookmarks": 108,
+    "published_at": "2025-02-13T18:20:16.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "GOOGL",
+      "META"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": -12,
+        "phase": "pre-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 16,
+        "phase": "post-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2025-02-04",
+        "days_relative": 10,
+        "phase": "post-earnings"
+      },
+      "META": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2025-01-29",
+        "days_relative": 16,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

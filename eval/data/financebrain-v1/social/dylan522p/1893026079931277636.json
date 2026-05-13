@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1893026079931277636",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-21",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1893026079931277636",
+  "published_at": "2025-02-21T19:52:42.000Z",
+  "compiled_truth": "SemiAnalysis is hosting Blackwell &amp; low level GPU Hackathon 🚀\nHacking, prizes, and insights from top industry leaders like @cHHillee, @tri_dao, @marksaroufim, Phil Tillet from TogetherAI, GPUMode, OpenAI, Coreweave, Lambda, etc\nLimited spots, apply here!\nhttps://t.co/FNdU460pUP https://t.co/tAEoZKCIvh\n2025-02-21T19:52:42.000Z [279 likes · 24 RTs · 41863 views]",
+  "timeline": "- **2025-02-21** | 4d before NVDA Q4 FY2025 earnings\n- **2025-02-21** | 24d after MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": -4,
+      "phase": "pre-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 24,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1893026079931277636"
+    ],
+    "conversation_id": "1893026079931277636",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 279,
+    "lead_views": 41863,
+    "lead_bookmarks": 68,
+    "published_at": "2025-02-21T19:52:42.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": -4,
+        "phase": "pre-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 24,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

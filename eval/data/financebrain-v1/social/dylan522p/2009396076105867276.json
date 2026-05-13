@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2009396076105867276",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-01-08",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2009396076105867276",
+  "published_at": "2026-01-08T22:45:31.000Z",
+  "compiled_truth": "This is the most in depth piece on TSMC and Apple ever.\nWe dove through the beginnings, the rise, generations of chips and the future.\nIt's possible the most quantified free and paid newsletter piece we've ever done too.\nUsually this level detail is reserved for model customers.\n  > Quoting @SemiAnalysis_: Apple-TSMC: The Partnership That Built Modern Semiconductors\nWafer Demand Model,\nNode Economics,\nand the shifting power dynamics as AI reshapes the foundry landscape\nhttps://t.co/7oZCFnNIJS https://t.co/ATl8ORVy39\n2026-01-08T22:45:31.000Z [610 likes · 38 RTs · 112501 views]",
+  "timeline": "- **2026-01-08** | 20d before AAPL Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "AAPL"
+  ],
+  "quarter_context": {
+    "AAPL": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-01-29",
+      "days_relative": -20,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2009396076105867276"
+    ],
+    "conversation_id": "2009396076105867276",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 610,
+    "lead_views": 112501,
+    "lead_bookmarks": 473,
+    "published_at": "2026-01-08T22:45:31.000Z",
+    "companies_mentioned": [
+      "AAPL"
+    ],
+    "quarter_context": {
+      "AAPL": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-01-29",
+        "days_relative": -20,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

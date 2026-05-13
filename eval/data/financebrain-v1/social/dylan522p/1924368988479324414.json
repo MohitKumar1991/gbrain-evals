@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1924368988479324414",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-05-19",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1924368988479324414",
+  "published_at": "2025-05-19T07:38:14.000Z",
+  "compiled_truth": "Even in Nvidia Omniverse™️ Digital Twin, NVL72 backplane yields are doing poorly\nI was memeing before but holy shit it was in the actual presentation https://t.co/yWZSZIdCC6\n  > Quoting @dylan522p: Nvidia Omniverse™️ Digital Twins are required to get GPU allocations\nNvidia Omniverse™️ Digital Twins can solve all of the world's issues except for backplane yields https://t.co/tnGoWvk153\n2025-05-19T07:38:14.000Z [138 likes · 10 RTs · 50759 views]",
+  "timeline": "- **2025-05-19** | 9d before NVDA Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-05-28",
+      "days_relative": -9,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1924368988479324414"
+    ],
+    "conversation_id": "1924368988479324414",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 138,
+    "lead_views": 50759,
+    "lead_bookmarks": 29,
+    "published_at": "2025-05-19T07:38:14.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-05-28",
+        "days_relative": -9,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

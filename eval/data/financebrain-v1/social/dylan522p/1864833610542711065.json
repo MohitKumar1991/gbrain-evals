@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1864833610542711065",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-06",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1864833610542711065",
+  "published_at": "2024-12-06T00:45:54.000Z",
+  "compiled_truth": "O1 released today is worse than O1 preview in many ways as per OpenAI's own benchmarks\nWhat did OpenAI do to mess this up?\nI'm guessing over quantize or decrease the thinking time generally to make it more servable, but not sure... https://t.co/OUV7SxIkTF\n2024-12-06T00:45:54.000Z [609 likes · 26 RTs · 227834 views]",
+  "timeline": "- **2024-12-06** | 37d after MSFT Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-10-30",
+      "days_relative": 37,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1864833610542711065"
+    ],
+    "conversation_id": "1864833610542711065",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 609,
+    "lead_views": 227834,
+    "lead_bookmarks": 142,
+    "published_at": "2024-12-06T00:45:54.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-10-30",
+        "days_relative": 37,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2042416273599185254",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-04-10",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2042416273599185254",
+  "published_at": "2026-04-10T01:36:00.000Z",
+  "compiled_truth": "The Information wrote that Meta consumes 60.2T tokens per month, or ~750M per employee.\nMeta is getting absolutely token-mogged by us currently.\nSemiAnalysis employees consume 1.86B tokens per month.\nFrom our Tokenomics Model post \"Everyone Keeps Estimating Token Prices Wrong\" https://t.co/BbrCZr8oks\n2026-04-10T01:36:00.000Z [362 likes · 18 RTs · 69353 views]",
+  "timeline": "- **2026-04-10** | 20d before META Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {
+    "META": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-04-30",
+      "days_relative": -20,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2042416273599185254"
+    ],
+    "conversation_id": "2042416273599185254",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 362,
+    "lead_views": 69353,
+    "lead_bookmarks": 177,
+    "published_at": "2026-04-10T01:36:00.000Z",
+    "companies_mentioned": [
+      "META"
+    ],
+    "quarter_context": {
+      "META": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-04-30",
+        "days_relative": -20,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

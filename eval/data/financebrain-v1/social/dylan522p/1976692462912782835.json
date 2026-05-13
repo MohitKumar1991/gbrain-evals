@@ -1,0 +1,81 @@
+{
+  "slug": "social/dylan522p/1976692462912782835",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-10-10",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1976692462912782835",
+  "published_at": "2025-10-10T16:53:02.000Z",
+  "compiled_truth": "InferenceMAX shows how stupid people are\nThey pretend stuff without looking at the data \nWe have cost per token, reflecting AMD lower TCO\nWe have models that favor AMD, GPT OSS\nAccelerator model clients had 2027 MI450X sales at 27B 3 months ago\nNumber is different now ofc\n  > Quoting @MikeLongTerm: $AMD $NVDA & the @AMD Bear @SemiAnalysis_ 🧵\n\nHere are some facts:\n$META allocated 42% AI GPUs to $AMD\n@OpenAI allocated 6GW(38%) to $AMD\n \n1. Model-Specific Bias:\n\nLlama 3.3 70B graph favored NVIDIA due to TRT-LLM optimizations, highlighting throughput and latency where Blackwell excels. In contrast, the GPT-OSS 120B chart shifts focus to cost and interactivity, where MI355X shines. This selective model choice clearly suggests SemiAnalysis tailors benchmarks to reinforce narratives—NVIDIA’s dominance in speed (Llama 3.3) and AMD’s niche in cost (GPT-OSS).\n\nGPT-OSS 120B, with its sparse attention mechanisms (similar to DeepSeek-V3.2-Exp), shows AMD’s CDNA 4 architecture, while Llama 3.3’s dense attention favors NVIDIA’s Tensor Cores. SemiAnalysis’ decision to emphasize Llama 3.3 initially could reflect its AMD bear stance.\n\n2. The way Data is presented \n\nThe Llama 3.3 graph focused on raw performance metrics (throughput vs. latency), downplaying cost, where AMD holds an edge. This new chart, buried in follow-up posts, reveals AMD’s strength but receives less prominence, suggesting a curated narrative.\n\nLabeling variability (e.g., B200 with/without TRT) and the lack of uniform scaling across graphs indicate potential cherry-picking of configurations to favor NVIDIA’s optimized setups.\n\n3. Historical Context:\n\nSemiAnalysis’ past critiques of AMD’s R&D and ROCm (web results from May 2025) align with a bearish outlook. Their own hype/brand around NVIDIA’s 15x ROI contrasts with muted coverage of AMD’s cost advantages, reinforcing bias.\n\nDespite AMD’s participation in InferenceMAX, the benchmark’s framing (e.g., prioritizing Blackwell’s ROI) reflect SemiAnalysis’ market predictions rather than balanced analysis.\n\nLastly, AMD’s Instinct MI355X proves superior in inference and cost per million tokens for the GPT-OSS 120B model, offering a 25% cost advantage over NVIDIA’s H200 at moderate-to-high interactivity levels. This efficiency, driven by AMD’s memory bandwidth and FP4 support, makes it a better choice for cost-sensitive, multi-user deployments over a three-year horizon. However, SemiAnalysis’ sole focus(presentation graph) on Llama 3.3—where NVIDIA excels demonstrates a pattern of cherry-picking models and data to favor @nvidia , consistent with its historical AMD bearish stance. This selective presentation risks misleading stakeholders by overshadowing @AMD  economic strengths.\n\nMy personal take: I would trust Dr. @LisaSu, and @gdb @sama take on AMD and how they viewed and allocated 6GW for AMD over @SemiAnalysis_ . \n\nAt the end of the day, Large customers pay when it works. $Meta allocated 42% AI GPUs to $AMD for a reason. And the \"secret weapon\" will improve energy consumption by 20-50%, meaning at 6GW, OpenAI would be able to deploy 25-50% more MI450 at a much better cost advantage, higher memory bandwidth, and the queen of Inference! \n\nOh and ROCm 8 is expected to be on par with CUDA in 2026.\n2025-10-10T16:53:02.000Z [255 likes · 17 RTs · 58862 views]",
+  "timeline": "- **2025-10-10** | 39d before NVDA Q3 FY2026 earnings\n- **2025-10-10** | 18d before MSFT Q1 FY2026 earnings\n- **2025-10-10** | 18d before META Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "META"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-11-19",
+      "days_relative": -39,
+      "phase": "pre-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-10-29",
+      "days_relative": -18,
+      "phase": "pre-earnings"
+    },
+    "META": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-10-29",
+      "days_relative": -18,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1976692462912782835"
+    ],
+    "conversation_id": "1976692462912782835",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 255,
+    "lead_views": 58862,
+    "lead_bookmarks": 94,
+    "published_at": "2025-10-10T16:53:02.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "META"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-11-19",
+        "days_relative": -39,
+        "phase": "pre-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-10-29",
+        "days_relative": -18,
+        "phase": "pre-earnings"
+      },
+      "META": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-10-29",
+        "days_relative": -18,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

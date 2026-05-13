@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2018446703377191267",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-02-02",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2018446703377191267",
+  "published_at": "2026-02-02T22:09:29.000Z",
+  "compiled_truth": "Google now owns more than 10% of Anthropic and XAI\nGoogle owned 14% of SpaceX\nhttps://t.co/fK1TkuhF84\n2026-02-02T22:09:29.000Z [1546 likes · 50 RTs · 146302 views]",
+  "timeline": "- **2026-02-02** | earnings day — GOOGL Q4 FY2025",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2026-02-03",
+      "days_relative": 0,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2018446703377191267"
+    ],
+    "conversation_id": "2018446703377191267",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1546,
+    "lead_views": 146302,
+    "lead_bookmarks": 181,
+    "published_at": "2026-02-02T22:09:29.000Z",
+    "companies_mentioned": [
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "GOOGL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2026-02-03",
+        "days_relative": 0,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

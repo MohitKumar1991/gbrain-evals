@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1820503612591919375",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-08-05",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1820503612591919375",
+  "published_at": "2024-08-05T16:54:19.000Z",
+  "compiled_truth": "People freaking out about Pat Gelsinger's religious tweets, but he's always been doing it\nHe believes he is working on the most important problem of this generation, saving Western semiconductor manufacturing\nHe is God's bravest soldier\nGod is giving him the greatest adversities\n  > Quoting @dylan522p: We tried to do a sentiment analysis for @PGelsinger religious tweets + Intel stock price.\nI thought maybe there could be some Alpha given some quotes are like God is great and others are about battling through adversity.\nWith GPT-4 + code interpreter, it didn't take long.\n$INTC https://t.co/KicgfSpB4P\n2024-08-05T16:54:19.000Z [228 likes · 13 RTs · 46030 views]",
+  "timeline": "- **2024-08-05** | 7d after MSFT Q4 FY2024 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-07-30",
+      "days_relative": 7,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1820503612591919375"
+    ],
+    "conversation_id": "1820503612591919375",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 228,
+    "lead_views": 46030,
+    "lead_bookmarks": 30,
+    "published_at": "2024-08-05T16:54:19.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-07-30",
+        "days_relative": 7,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1870213495641256109",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-20",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1870213495641256109",
+  "published_at": "2024-12-20T21:03:38.000Z",
+  "compiled_truth": "Motherfuckers were market buying Nvidia stock cause OpenAI O3 is so fucking good\n2024-12-20T21:03:38.000Z [844 likes · 27 RTs · 156586 views]",
+  "timeline": "- **2024-12-20** | 31d after NVDA Q3 FY2025 earnings\n- **2024-12-20** | 39d before MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-11-20",
+      "days_relative": 31,
+      "phase": "post-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": -39,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1870213495641256109"
+    ],
+    "conversation_id": "1870213495641256109",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 844,
+    "lead_views": 156586,
+    "lead_bookmarks": 108,
+    "published_at": "2024-12-20T21:03:38.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-11-20",
+        "days_relative": 31,
+        "phase": "post-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": -39,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

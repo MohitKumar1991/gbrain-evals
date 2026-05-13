@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2029676976035017177",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-03-05",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2029676976035017177",
+  "published_at": "2026-03-05T21:54:35.000Z",
+  "compiled_truth": "Who t f wrote this cause it wasn't @marksaroufim lmfao\n  > Quoting @GPU_MODE: 黄老板所说的 “买得越多，省得越多” 真的靠谱么？\n3月7日，GPU Mode 第100场激情拆解。黄老板亲传子弟 Dylan Patel，基于 @SemiAnalysis 全新 InferenceX 基准，直播拆解 GB300 NVL72（假设你能买到）和 H100 的真实推理性能天花板，扒一扒核弹厂的底裤。\n顺便，InferenceX 实锤：老黄的刀法，确实比苏妈的芯片更锋利 🔪\n算力军火商的私房课，来了\n2026-03-05T21:54:35.000Z [51 likes · 1 RTs · 29768 views]",
+  "timeline": "- **2026-03-05** | 8d after NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": 8,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2029676976035017177"
+    ],
+    "conversation_id": "2029676976035017177",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 51,
+    "lead_views": 29768,
+    "lead_bookmarks": 6,
+    "published_at": "2026-03-05T21:54:35.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": 8,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

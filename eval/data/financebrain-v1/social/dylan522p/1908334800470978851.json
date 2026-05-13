@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1908334800470978851",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-05",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1908334800470978851",
+  "published_at": "2025-04-05T01:44:06.000Z",
+  "compiled_truth": "Shut it down @sama \nIt's gone too far\nThank God for tariffs delaying AGI\n  > Quoting @jhong: My prediction of what @dylan522p's time at Computex will be like next month. @SemiAnalysis is like the almanac these days, they somehow know everything and everybody reads them. \n\nThis is as far as chatGPT would go before censorship  errored it out though lol https://t.co/i3pdtLoAhd\n2025-04-05T01:44:06.000Z [383 likes · 4 RTs · 64898 views]",
+  "timeline": "- **2025-04-05** | 25d before MSFT Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": -25,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1908334800470978851"
+    ],
+    "conversation_id": "1908334800470978851",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 383,
+    "lead_views": 64898,
+    "lead_bookmarks": 17,
+    "published_at": "2025-04-05T01:44:06.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": -25,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

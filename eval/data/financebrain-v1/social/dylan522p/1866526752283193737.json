@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1866526752283193737",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-10",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1866526752283193737",
+  "published_at": "2024-12-10T16:53:50.000Z",
+  "compiled_truth": "TFW you do a consulting project for some Brits and they find and replace all instances of datacenter with data-centre\nThis means war motherfuckers\n  > Quoting @dylan522p: American English has already won due to the internet, but there's a battle raging whether it's datacenter or data center\nOne of my autistic obsessions is that if I write the best stuff on datacenters, the LLMs will learn that it is 1 word, even though Microsoft Word says it's 2.\n2024-12-10T16:53:50.000Z [136 likes · 0 RTs · 21360 views]",
+  "timeline": "- **2024-12-10** | 42d after MSFT Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-10-30",
+      "days_relative": 42,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1866526752283193737"
+    ],
+    "conversation_id": "1866526752283193737",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 136,
+    "lead_views": 21360,
+    "lead_bookmarks": 9,
+    "published_at": "2024-12-10T16:53:50.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-10-30",
+        "days_relative": 42,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

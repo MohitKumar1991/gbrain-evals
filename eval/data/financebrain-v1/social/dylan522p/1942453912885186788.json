@@ -1,0 +1,113 @@
+{
+  "slug": "social/dylan522p/1942453912885186788",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-07-08",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1942453912885186788",
+  "published_at": "2025-07-08T05:21:16.000Z",
+  "compiled_truth": "Custom silicon vendors were pitching NVLink fusion in January and February\nUALink 1.0 spec had no surprises for anyone because consortiums discuss everything for 6 months before anything released\nNvidia is far more worried about Broadcom SUE not UALink.\nExpert calls are just random people whether it be some bozo Google PM saying GPUs useful life is years or clueless TSMC people inventing a fake EUV layer count when they work on some completely unrelated technology and are siloed from actual info. \nSome expert calls are great. Most are terrible because it's people incentived to yap for $300 to $2500 an hour. The incentive structure means they are bias confirmation machines if you aren't careful.\n  > Quoting @RihardJarc: More fascinating insights on the $NVDA vs $AMD topic. A former high-ranking $NVDA employee working on NVLink explains the background on how $NVDA sees the recent UALink consortium and how it could benefit $AMD with its scale-up network issues:\n\n1. $NVDA got scared when UALink 1.0 was announced on April 8th this year. Their response to UALink came just a month later with the announcement of NVLink Fusion, which, on paper, opens up the NVLink ecosystem. The expert mentioned how challenging it was to implement this step internally at $NVDA, as clients like $META wanted to use NVLink for their MTIA back when he was working there, but it was met with a firm \"no\" from $NVDA.\n\n2. The problem for clients with NVLink Fusion is that $NVDA will not provide public specs; they will provide the soft IP to specific vendors, but the spec remains proprietary. The problem is that with your own accelerator, such as TPU or MTIA, you still need to integrate both NVLink and also have $NVDA's C2C (chip-to-chip). Part of it remains proprietary to $NVDA, as the NVLink IP communicates with the chip in a proprietary manner. $NVDA forces you to have to use their C2C.\n\n3. He gives the example that if you want to use it for, say, $AMZN's Trainium, you have to open the Trainium and buy a chiplet from the vendors that $NVDA has specified. The connection to Trainium would be $NVDA proprietary C2C, and externally on the other side, it's NVLink. He thinks clients are now figuring that out, and there is a fear that with this, you get even further locked into $NVDA by having their proprietary technology in your custom ASIC, so UALink is still an alternative.\n\n4. He thinks the biggest competitor or threat to $NVDA is the UALink consortium, as you have companies like $AMZN AWS, and $AAPL now joining it. It also helps $AMD as they have the scale-up network problem that UALink can solve. Because $AVGO dropped out of the consortium, the key company in providing the switches in the future is now $ALAB.\n\n5. He mentions that $AVGO receives $1B from $ GOOGL for one custom ASIC line.\n\n6. When it comes to $AMD's ROCm, he thinks it is significantly behind CUDA and mentions that for it to catch up to CUDA, even if $NVDA doesn't introduce any innovations in the coming years, it would take 3-4 years to catch up. That being said, he still thinks $AMD will make ROCM stable and performant, so that people like $MSFT can deploy it. Those who want performance per dollar can go to $AMD. He thinks that $AMD, with the acquisition of ZT, will be more of a system provider like $NVDA, but thinks that for switches and other components, they will still have to rely on someone outside.\n2025-07-08T05:21:16.000Z [251 likes · 14 RTs · 59357 views]",
+  "timeline": "- **2025-07-08** | 41d after NVDA Q1 FY2026 earnings\n- **2025-07-08** | 21d before MSFT Q4 FY2025 earnings\n- **2025-07-08** | 21d before GOOGL Q2 FY2025 earnings\n- **2025-07-08** | 22d before META Q2 FY2025 earnings\n- **2025-07-08** | 23d before AAPL Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AAPL"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-05-28",
+      "days_relative": 41,
+      "phase": "post-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-29",
+      "days_relative": -21,
+      "phase": "pre-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-29",
+      "days_relative": -21,
+      "phase": "pre-earnings"
+    },
+    "META": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-30",
+      "days_relative": -22,
+      "phase": "pre-earnings"
+    },
+    "AAPL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-31",
+      "days_relative": -23,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1942453912885186788"
+    ],
+    "conversation_id": "1942453912885186788",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 251,
+    "lead_views": 59357,
+    "lead_bookmarks": 147,
+    "published_at": "2025-07-08T05:21:16.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "GOOGL",
+      "META",
+      "AAPL"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-05-28",
+        "days_relative": 41,
+        "phase": "post-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-29",
+        "days_relative": -21,
+        "phase": "pre-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-29",
+        "days_relative": -21,
+        "phase": "pre-earnings"
+      },
+      "META": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-30",
+        "days_relative": -22,
+        "phase": "pre-earnings"
+      },
+      "AAPL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-31",
+        "days_relative": -23,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

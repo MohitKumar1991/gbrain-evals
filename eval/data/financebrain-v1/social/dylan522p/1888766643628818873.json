@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1888766643628818873",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-10",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1888766643628818873",
+  "published_at": "2025-02-10T01:47:14.000Z",
+  "compiled_truth": "Took 3 Google's to get the score of the game meanwhile ChatGPT and Perplexity took a single try\nThis is why Google is trash\nAlmost as trash as Patrick Mahomes tbh https://t.co/B5fWjevbee\n2025-02-10T01:47:14.000Z [504 likes · 8 RTs · 133992 views]",
+  "timeline": "- **2025-02-10** | 12d after MSFT Q2 FY2025 earnings\n- **2025-02-10** | 6d after GOOGL Q4 FY2024 earnings",
+  "companies_mentioned": [
+    "MSFT",
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 12,
+      "phase": "post-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2025-02-04",
+      "days_relative": 6,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1888766643628818873"
+    ],
+    "conversation_id": "1888766643628818873",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 504,
+    "lead_views": 133992,
+    "lead_bookmarks": 41,
+    "published_at": "2025-02-10T01:47:14.000Z",
+    "companies_mentioned": [
+      "MSFT",
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 12,
+        "phase": "post-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2025-02-04",
+        "days_relative": 6,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

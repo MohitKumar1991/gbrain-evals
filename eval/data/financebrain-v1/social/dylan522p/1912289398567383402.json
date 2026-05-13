@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1912289398567383402",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-15",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1912289398567383402",
+  "published_at": "2025-04-15T23:38:15.000Z",
+  "compiled_truth": "I realized all the AI safety folks treat successful alignment of AGI &amp; ASI as if the digital god treats us in one of two ways.\n1. A pet, like a dog or cat\n2. You are the parents or grandparents and the ASI is helping us with tech support logging into facebook or fixing the wifi\n2025-04-15T23:38:15.000Z [127 likes · 2 RTs · 20735 views]",
+  "timeline": "- **2025-04-15** | 14d before META Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {
+    "META": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": -14,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1912289398567383402"
+    ],
+    "conversation_id": "1912289398567383402",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 127,
+    "lead_views": 20735,
+    "lead_bookmarks": 9,
+    "published_at": "2025-04-15T23:38:15.000Z",
+    "companies_mentioned": [
+      "META"
+    ],
+    "quarter_context": {
+      "META": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": -14,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

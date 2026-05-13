@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1966336511735116154",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-09-12",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1966336511735116154",
+  "published_at": "2025-09-12T03:02:11.000Z",
+  "compiled_truth": "Had a blast doing a Super Micro factory tour with Charles Liang the founder and CEO of SuperMicro.\nSaw GB300, B300, MI355X, and much more! https://t.co/N9B9l9wZxK\n2025-09-12T03:02:11.000Z [1189 likes · 47 RTs · 97328 views]",
+  "timeline": "- **2025-09-12** | 16d after NVDA Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-08-27",
+      "days_relative": 16,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1966336511735116154"
+    ],
+    "conversation_id": "1966336511735116154",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1189,
+    "lead_views": 97328,
+    "lead_bookmarks": 103,
+    "published_at": "2025-09-12T03:02:11.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-08-27",
+        "days_relative": 16,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

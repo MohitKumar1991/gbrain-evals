@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1997106585513197804",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-12-06",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1997106585513197804",
+  "published_at": "2025-12-06T00:51:29.000Z",
+  "compiled_truth": "Anyone who knows how Jensen operates knows that he reads and replies to ungodly numbers of emails.\nJust do some basic research.\n  > Quoting @neilcybart: Jensen Huang told Joe Rogan that he reads several thousand emails in the morning. Every day. Including holidays. He framed the behavior as an example of why NVIDIA has a certain corporate culture. \n\nI have some thoughts about this. \n\nDo the math and you would need to read an email every two seconds for two hours to reach 3,600 emails. I can’t even open emails that quickly. “Maybe Jensen meant he scans or organizes thousands of emails every day.” If that’s what he meant, he's clearly not reading the emails, and his whole point in bringing the email thing up was to talk about paying attention. \n\nWhy does this matter? Isn’t Jensen just having fun with Joe Rogan with some exaggerated stories? Who cares, right? \n\nThat’s the whole point. \n\nJensen Huang needs to be a compelling storytelling because he needs AI mania to continue so that NVIDIA’s customers have the confidence to continue buying what NVIDIA is selling. You can also make the argument that Jensen needs to sell NVIDIA to shareholders etc. to maintain a certain multiplier that would be placed against the company’s earnings. \n\nMost household names in AI are in the same boat. Their storytelling needs to be good to keep people excited and optimistic about all things AI (to keep funding rounds greased, user metrics elevated, etc.)\n\nElon Musk fits the same mold. Elon needs compelling stories to keep things going. EV sales not great / autonomous competition heating up = not a problem for Tesla as Musk shifts to talking about how Tesla humanoid robots will save humanity. He has the captive audience who will eat the stories up too. \n\nTo a certain degree every CEO / founder / company needs to be a good storyteller. The problem is found when people actually believe the stories. If Jensen exaggerates his email reading habits, what else is he exaggerating?\n\nLook at the comments to Dr Magoo’s tweet and some people legitimately believe Jensen Huang reads several thousand emails every day, 365 days a year. \n\nA small fib about email reading habits may seem innocent enough. However, it ends up saying a ton about how manias form, grow, and are then nurtured.\n\nMoral of the story: Don’t fall victim to exaggerated storytelling.\n2025-12-06T00:51:29.000Z [844 likes · 18 RTs · 365960 views]",
+  "timeline": "- **2025-12-06** | 17d after NVDA Q3 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-11-19",
+      "days_relative": 17,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1997106585513197804"
+    ],
+    "conversation_id": "1997106585513197804",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 844,
+    "lead_views": 365960,
+    "lead_bookmarks": 209,
+    "published_at": "2025-12-06T00:51:29.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-11-19",
+        "days_relative": 17,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

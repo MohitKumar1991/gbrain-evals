@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1792204307196244115",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-05-19",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1792204307196244115",
+  "published_at": "2024-05-19T14:42:59.000Z",
+  "compiled_truth": "Japanese dude got sent to run the new Honda plant in Ohio cuz '80s trade war\nHe coverts to eating McDonald every day for 40 years straight\nHe then saves Nvidia despite multiple failed chips, establishing American AI leadership\nGod bless McDees + trans fat\nhttps://t.co/hGFvg383HK\n2024-05-19T14:42:59.000Z [44 likes · 2 RTs · 6276 views]",
+  "timeline": "- **2024-05-19** | 2d before NVDA Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-05-22",
+      "days_relative": -2,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1792204307196244115"
+    ],
+    "conversation_id": "1792204307196244115",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 44,
+    "lead_views": 6276,
+    "lead_bookmarks": 11,
+    "published_at": "2024-05-19T14:42:59.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-05-22",
+        "days_relative": -2,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

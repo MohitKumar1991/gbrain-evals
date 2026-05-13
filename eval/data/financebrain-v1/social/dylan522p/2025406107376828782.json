@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2025406107376828782",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-02-22",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2025406107376828782",
+  "published_at": "2026-02-22T03:03:40.000Z",
+  "compiled_truth": "Finally I can have some input on the skincare conversation \nThank you @LOrealUSA and Nvidia\n @LOrealGroupe @lorealparisfr https://t.co/OPq4KVmes6\n2026-02-22T03:03:40.000Z [58 likes · 0 RTs · 15511 views]",
+  "timeline": "- **2026-02-22** | 4d before NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": -4,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2025406107376828782"
+    ],
+    "conversation_id": "2025406107376828782",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 58,
+    "lead_views": 15511,
+    "lead_bookmarks": 13,
+    "published_at": "2026-02-22T03:03:40.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": -4,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

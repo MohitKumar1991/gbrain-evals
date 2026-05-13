@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1906129475349487742",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-03-29",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1906129475349487742",
+  "published_at": "2025-03-29T23:40:55.000Z",
+  "compiled_truth": "Datacenter capex is going to 0\nGrok struggling deploying\nAnthropic extremely low rate limits for paid + Cursor\nGoogle not offering 2.5 on API \nOAI not serving o3, struggling to serve 4o image\nAzure, still not serving many models including o1, o3, deep research, 4.5\n  > Quoting @grok: grok is seeing high usage across the world and we're working hard to scale the GPUs up to meet the demand - you might see some temporary issues as we scale\n2025-03-29T23:40:55.000Z [2605 likes · 177 RTs · 919256 views]",
+  "timeline": "- **2025-03-29** | 31d before MSFT Q3 FY2025 earnings\n- **2025-03-29** | 30d before GOOGL Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT",
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": -31,
+      "phase": "pre-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-29",
+      "days_relative": -30,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1906129475349487742"
+    ],
+    "conversation_id": "1906129475349487742",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 2605,
+    "lead_views": 919256,
+    "lead_bookmarks": 730,
+    "published_at": "2025-03-29T23:40:55.000Z",
+    "companies_mentioned": [
+      "MSFT",
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": -31,
+        "phase": "pre-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-29",
+        "days_relative": -30,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1874283550058627546",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-01-01",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1874283550058627546",
+  "published_at": "2025-01-01T02:36:35.000Z",
+  "compiled_truth": "Google Photos review just cooked me unbelievablely hard\nGot her a car though few days ago though\nNext year Google Photos better be featuring my future wife https://t.co/0HFRgFgccT\n2025-01-01T02:36:35.000Z [321 likes · 0 RTs · 57658 views]",
+  "timeline": "- **2025-01-01** | 34d before GOOGL Q4 FY2024 earnings",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2025-02-04",
+      "days_relative": -34,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1874283550058627546"
+    ],
+    "conversation_id": "1874283550058627546",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 321,
+    "lead_views": 57658,
+    "lead_bookmarks": 20,
+    "published_at": "2025-01-01T02:36:35.000Z",
+    "companies_mentioned": [
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "GOOGL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2025-02-04",
+        "days_relative": -34,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1849518817564848545",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-10-24",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1849518817564848545",
+  "published_at": "2024-10-24T18:30:23.000Z",
+  "compiled_truth": "Just so everyone knows how stupid this \"architect\" is, he said Gemini was trained on GPUs.\nHe has no clue about his own infra let alone external.\nThis is why expert calls are the funniest shit ever because people constantly say incorrect things.\nThere's a ton of Coreweave cope that's wrong in there too\n  > Quoting @techfund1: AI architect at Google mentions the lifetime of datacenter GPUs at current utilization levels to be 3 years at most. This is v bullish for $NVDA end-demand as most analysts were assuming a lifetime of around 5 years. https://t.co/zI3LHHwFoJ\n2024-10-24T18:30:23.000Z [320 likes · 11 RTs · 82361 views]",
+  "timeline": "- **2024-10-24** | 26d before NVDA Q3 FY2025 earnings\n- **2024-10-24** | 4d before GOOGL Q3 FY2024 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-11-20",
+      "days_relative": -26,
+      "phase": "pre-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-10-29",
+      "days_relative": -4,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1849518817564848545"
+    ],
+    "conversation_id": "1849518817564848545",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 320,
+    "lead_views": 82361,
+    "lead_bookmarks": 88,
+    "published_at": "2024-10-24T18:30:23.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-11-20",
+        "days_relative": -26,
+        "phase": "pre-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-10-29",
+        "days_relative": -4,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

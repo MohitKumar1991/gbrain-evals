@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1792695106052719005",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-05-20",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1792695106052719005",
+  "published_at": "2024-05-20T23:13:14.000Z",
+  "compiled_truth": "She sued Disney and won.\nOpenAI directly drew the comparison, asked multiple times for consent, and did it anyways.\nScarlett bout to get that bag\n2024-05-20T23:13:14.000Z [2531 likes · 95 RTs · 272836 views]",
+  "timeline": "- **2024-05-20** | 26d after MSFT Q3 FY2024 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-04-25",
+      "days_relative": 26,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1792695106052719005"
+    ],
+    "conversation_id": "1792695106052719005",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 2531,
+    "lead_views": 272836,
+    "lead_bookmarks": 123,
+    "published_at": "2024-05-20T23:13:14.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-04-25",
+        "days_relative": 26,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

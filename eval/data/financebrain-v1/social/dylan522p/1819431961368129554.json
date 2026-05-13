@@ -1,0 +1,28 @@
+{
+  "slug": "social/dylan522p/1819431961368129554",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-08-02",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1819431961368129554",
+  "published_at": "2024-08-02T17:55:57.000Z",
+  "compiled_truth": "DeepSeek is the level of cracked when a quant finance firm from China is forced to work on AI cuz the government says they're not contributing to society\nImagine if all the perf guys at US quants worked on useful important stuff instead of making markets 0.1 second more efficient\n  > Quoting @deepseek_ai: 🎉Exciting news! DeepSeek API now launches context caching on disk, with no code changes required! This new feature automatically caches frequently referenced contexts on distributed storage, slashing API costs by up to 90%. For a 128K prompt with high reference, the first token latency is cut from 13s to just 500ms.  \n\nBenefit Scenarios: \n- Multi-turn conversations where subsequent rounds hit the previous context cache. \n- Data analysis with recurring queries on the same documents/files. \n- Code analysis/debugging with repeated repository references.  \n\nDeepSeek API disk caching is now live with unlimited concurrency. Billing is automatic based on actual cache hits. Learn more at https://t.co/Bjw7psHzyd\n#DeepSeek #ContextCaching\n2024-08-02T17:55:57.000Z [292 likes · 22 RTs · 143404 views]",
+  "companies_mentioned": [],
+  "quarter_context": {},
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1819431961368129554"
+    ],
+    "conversation_id": "1819431961368129554",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 292,
+    "lead_views": 143404,
+    "lead_bookmarks": 122,
+    "published_at": "2024-08-02T17:55:57.000Z",
+    "companies_mentioned": [],
+    "quarter_context": {}
+  }
+}

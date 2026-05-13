@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1828316816273195452",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-08-27",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1828316816273195452",
+  "published_at": "2024-08-27T06:21:12.000Z",
+  "compiled_truth": "Deepseek doesn't need NVLink or even 8 NICs per node.\nJust pure, raw, skill.\nI repeat, Deepseek is the level of cracked when a quant finance firm from China is forced to work on AI cuz the government says they're not contributing to society.\nhttps://t.co/q1ZEMgjqGb https://t.co/7QKcnt5NcZ\n  > Quoting @dylan522p: DeepSeek is the level of cracked when a quant finance firm from China is forced to work on AI cuz the government says they're not contributing to society\nImagine if all the perf guys at US quants worked on useful important stuff instead of making markets 0.1 second more efficient\n2024-08-27T06:21:12.000Z [689 likes · 95 RTs · 203923 views]",
+  "timeline": "- **2024-08-27** | earnings day — NVDA Q2 FY2025",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-08-28",
+      "days_relative": -1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1828316816273195452"
+    ],
+    "conversation_id": "1828316816273195452",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 689,
+    "lead_views": 203923,
+    "lead_bookmarks": 423,
+    "published_at": "2024-08-27T06:21:12.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-08-28",
+        "days_relative": -1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

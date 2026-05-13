@@ -1,0 +1,81 @@
+{
+  "slug": "social/dylan522p/1886218096316469362",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-03",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1886218096316469362",
+  "published_at": "2025-02-03T01:00:13.000Z",
+  "compiled_truth": "Honored to be @lexfridman podcast with the homie @natolambert \n5 hour podcast dropped and it's a banger covering a lot of different topics.\nWe had so much fun riffing.\nThe secret to the hostage images Lex takes are now revealed with this nato selfie https://t.co/nOcy20WPFQ\n  > Quoting @lexfridman: Here's my 5-hour conversation with @dylan522p and @natolambert on DeepSeek, China, OpenAI, NVIDIA, xAI, Google, Anthropic, Meta, Microsoft, TSMC, Stargate, megacluster buildouts, RL, reasoning, and a lot of other topics at the cutting edge of AI. This is was a mind-blowing, super-technical, and fun conversation.\n\nYes, we discuss r1 and o3-mini, but more importantly we look into the future of technology, geopolitics, and humanity in a world that stands on the precipice of a global AI revolution.\n\nThe first 4 hours are here on X (4 hours is current limit), and the full 5 hours are up everywhere else. Links in comment.\n\nTimestamps:\n0:00 - Introduction\n3:33 - DeepSeek-R1 and DeepSeek-V3\n25:07 - Low cost of training\n51:25 - DeepSeek compute cluster\n58:57 - Export controls on GPUs to China\n1:09:16 - AGI timeline\n1:18:41 - China's manufacturing capacity\n1:26:36 - Cold war with China\n1:31:05 - TSMC and Taiwan\n1:54:44 - Best GPUs for AI\n2:09:36 - Why DeepSeek is so cheap\n2:22:55 - Espionage\n2:31:57 - Censorship\n2:44:52 - Andrej Karpathy and magic of RL\n2:55:23 - OpenAI o3-mini vs DeepSeek r1\n3:14:31 - NVIDIA\n3:18:58 - GPU smuggling\n3:25:36 - DeepSeek training on OpenAI data\n3:36:04 - AI megaclusters\n4:11:26 - Who wins the race to AGI?\n4:21:39 - AI agents\n4:30:21 - Programming and AI\n4:37:49 - Open source\n4:47:01 - Stargate\n4:54:30 - Future of AI\n2025-02-03T01:00:13.000Z [934 likes · 47 RTs · 166964 views]",
+  "timeline": "- **2025-02-03** | 23d before NVDA Q4 FY2025 earnings\n- **2025-02-03** | 5d after MSFT Q2 FY2025 earnings\n- **2025-02-03** | earnings day — GOOGL Q4 FY2024",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": -23,
+      "phase": "pre-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 5,
+      "phase": "post-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2025-02-04",
+      "days_relative": -1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1886218096316469362"
+    ],
+    "conversation_id": "1886218096316469362",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 934,
+    "lead_views": 166964,
+    "lead_bookmarks": 189,
+    "published_at": "2025-02-03T01:00:13.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": -23,
+        "phase": "pre-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 5,
+        "phase": "post-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2025-02-04",
+        "days_relative": -1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

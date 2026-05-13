@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1852732053806354686",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-11-02",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1852732053806354686",
+  "published_at": "2024-11-02T15:18:38.000Z",
+  "compiled_truth": "American English has already won due to the internet, but there's a battle raging whether it's datacenter or data center\nOne of my autistic obsessions is that if I write the best stuff on datacenters, the LLMs will learn that it is 1 word, even though Microsoft Word says it's 2.\n  > Quoting @functi0nZer0: I am going to bomb a data centre https://t.co/tSZOVpLoGt\n2024-11-02T15:18:38.000Z [72 likes · 0 RTs · 38278 views]",
+  "timeline": "- **2024-11-02** | 4d after MSFT Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-10-30",
+      "days_relative": 4,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1852732053806354686"
+    ],
+    "conversation_id": "1852732053806354686",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 72,
+    "lead_views": 38278,
+    "lead_bookmarks": 6,
+    "published_at": "2024-11-02T15:18:38.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-10-30",
+        "days_relative": 4,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

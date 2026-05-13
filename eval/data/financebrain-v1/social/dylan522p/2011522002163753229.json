@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2011522002163753229",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-01-14",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2011522002163753229",
+  "published_at": "2026-01-14T19:33:12.000Z",
+  "compiled_truth": "OpenAI couldn’t get Microsoft to backstop the deals anymore, so they opted for a backstop with a lower credit rating: the U.S. government. https://t.co/iOylnIbOqx\n2026-01-14T19:33:12.000Z [316 likes · 4 RTs · 45154 views]",
+  "timeline": "- **2026-01-14** | 14d before MSFT Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-01-29",
+      "days_relative": -14,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2011522002163753229"
+    ],
+    "conversation_id": "2011522002163753229",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 316,
+    "lead_views": 45154,
+    "lead_bookmarks": 35,
+    "published_at": "2026-01-14T19:33:12.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-01-29",
+        "days_relative": -14,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

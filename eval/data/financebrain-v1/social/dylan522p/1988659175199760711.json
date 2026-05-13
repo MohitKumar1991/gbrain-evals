@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1988659175199760711",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-11-12",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1988659175199760711",
+  "published_at": "2025-11-12T17:24:29.000Z",
+  "compiled_truth": "It was absolutely amazing and surreal to get to grill Satya on his AI strategy.\nHe has some really good responses, but also some areas where we disagree.\nSee the interview below and the report we wrote up and posted today!\nhttps://t.co/Ah1SOWVsE2\n  > Quoting @dwarkesh_sp: .@satyanadella gave me and @dylan522p an exclusive tour of Fairwater 2, the most powerful AI datacenter in the world.\n\nWe then chatted through Satya's vision for Microsoft in a world with AGI.\n\n0:00:00 - Fairwater 2\n0:04:15 - Business models for AGI\n0:13:42 - Copilot\n0:20:56 - Whose margins will expand most?\n0:37:12 - MAI\n0:48:42 - The hyperscale business\n1:03:39 - In-house chip & OpenAI partnership\n1:10:30 - The CAPEX explosion\n1:16:01 - Will the world trust US companies to lead AI?\n\nLook up Dwarkesh Podcast on Youtube, Apple Podcasts or Spotify to tune in.\n2025-11-12T17:24:29.000Z [1058 likes · 86 RTs · 250768 views]",
+  "timeline": "- **2025-11-12** | 15d after MSFT Q1 FY2026 earnings\n- **2025-11-12** | 14d after AAPL Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT",
+    "AAPL"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-10-29",
+      "days_relative": 15,
+      "phase": "post-earnings"
+    },
+    "AAPL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-10-30",
+      "days_relative": 14,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1988659175199760711"
+    ],
+    "conversation_id": "1988659175199760711",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1058,
+    "lead_views": 250768,
+    "lead_bookmarks": 659,
+    "published_at": "2025-11-12T17:24:29.000Z",
+    "companies_mentioned": [
+      "MSFT",
+      "AAPL"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-10-29",
+        "days_relative": 15,
+        "phase": "post-earnings"
+      },
+      "AAPL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-10-30",
+        "days_relative": 14,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

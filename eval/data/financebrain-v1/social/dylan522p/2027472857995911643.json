@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2027472857995911643",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-02-27",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2027472857995911643",
+  "published_at": "2026-02-27T19:56:12.000Z",
+  "compiled_truth": "SemiAnalysis x Fluidstack are kicking off GTC with A Full-Stack AI Infra GPU Hackathon\nPower to Prefill, Dirt to Decode\nBuild with the best, win prizes, and hear @marksaroufim GPU MODE, @cHHillee Thinking Machines, Thomas Raoux OpenAI, @garywu\nApply below\nhttps://t.co/8ITqQLwo50\n2026-02-27T19:56:12.000Z [90 likes · 9 RTs · 19977 views]",
+  "timeline": "- **2026-02-27** | 30d after MSFT Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-01-29",
+      "days_relative": 30,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2027472857995911643"
+    ],
+    "conversation_id": "2027472857995911643",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 90,
+    "lead_views": 19977,
+    "lead_bookmarks": 23,
+    "published_at": "2026-02-27T19:56:12.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-01-29",
+        "days_relative": 30,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

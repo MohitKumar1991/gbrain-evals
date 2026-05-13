@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1983257990796062890",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-10-28",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1983257990796062890",
+  "published_at": "2025-10-28T19:42:06.000Z",
+  "compiled_truth": "Jensen spent 2 min on InferenceMAX at the GTC keynote 😎\nInferenceMAX is completely open source and completely impartial, with the support of AMD, OpenAI, Nvidia, Microsoft, Oracle, Pytorch, SGLang, vLLM, Cursoe, Nebius, Tensorwave, etc https://t.co/AgoHaw01jG\n2025-10-28T19:42:06.000Z [812 likes · 57 RTs · 87202 views]",
+  "timeline": "- **2025-10-28** | 21d before NVDA Q3 FY2026 earnings\n- **2025-10-28** | earnings day — MSFT Q1 FY2026",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-11-19",
+      "days_relative": -21,
+      "phase": "pre-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-10-29",
+      "days_relative": 0,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1983257990796062890"
+    ],
+    "conversation_id": "1983257990796062890",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 812,
+    "lead_views": 87202,
+    "lead_bookmarks": 211,
+    "published_at": "2025-10-28T19:42:06.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-11-19",
+        "days_relative": -21,
+        "phase": "pre-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-10-29",
+        "days_relative": 0,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

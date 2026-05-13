@@ -1,0 +1,81 @@
+{
+  "slug": "social/dylan522p/1996664302242263448",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-12-04",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1996664302242263448",
+  "published_at": "2025-12-04T19:34:00.000Z",
+  "compiled_truth": "Only NVIDIA, AWS, Google have successfully deployed rack scale architecture\nTrn3 is the 2nd after Nvidia with switched scale up topology, which is better for frontier mixture of experts models\nAWS Trainium3 course corrects on software\nSwitch design choices are... interesting\n  > Quoting @SemiAnalysis_: AWS Trainium3 Deep Dive,\nA Potential Challenger Approaching,\nStep-Function Software &amp; System Improvements, \n“Amazon Basics” GB200 NVL36x2, \nNL72x2/NL32x2 Scale Up Rack Architecture, \nOptimized Perf per TCO, Trainium4\n\nhttps://t.co/HFCLkibtS4 https://t.co/CcN45pFw36\n2025-12-04T19:34:00.000Z [333 likes · 23 RTs · 124994 views]",
+  "timeline": "- **2025-12-04** | 16d after NVDA Q3 FY2026 earnings\n- **2025-12-04** | 38d after GOOGL Q3 FY2025 earnings\n- **2025-12-04** | 36d after AAPL Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "GOOGL",
+    "AAPL"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-11-19",
+      "days_relative": 16,
+      "phase": "post-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-10-28",
+      "days_relative": 38,
+      "phase": "post-earnings"
+    },
+    "AAPL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-10-30",
+      "days_relative": 36,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1996664302242263448"
+    ],
+    "conversation_id": "1996664302242263448",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 333,
+    "lead_views": 124994,
+    "lead_bookmarks": 156,
+    "published_at": "2025-12-04T19:34:00.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "GOOGL",
+      "AAPL"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-11-19",
+        "days_relative": 16,
+        "phase": "post-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-10-28",
+        "days_relative": 38,
+        "phase": "post-earnings"
+      },
+      "AAPL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-10-30",
+        "days_relative": 36,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

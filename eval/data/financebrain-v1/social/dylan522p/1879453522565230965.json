@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1879453522565230965",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-01-15",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1879453522565230965",
+  "published_at": "2025-01-15T09:00:12.000Z",
+  "compiled_truth": "Huge depth and breath from the team on covering the Earth shattering AI Diffusion regulations\nHuge impacts globally\nAll the coverage on this has been shallow, but we quantified + dove into actual impacts\nAlso easter egg for my twitter folks in the very last line of piece, IYKYK\n  > Quoting @SemiAnalysis_: 2025 AI Diffusion Export Controls\nMicrosoft Regulatory Capture\nOracle Tears\nImpacts Quantified\nModel Restrictions\nMalaysia's Stranded Capacity\nIndia Brazil Middle East Concerns\nSovereign AI Killed\nAnd Much Much More\nhttps://t.co/jWCJxPP2VO\n2025-01-15T09:00:12.000Z [255 likes · 21 RTs · 60537 views]",
+  "timeline": "- **2025-01-15** | 14d before MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": -14,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1879453522565230965"
+    ],
+    "conversation_id": "1879453522565230965",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 255,
+    "lead_views": 60537,
+    "lead_bookmarks": 66,
+    "published_at": "2025-01-15T09:00:12.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": -14,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

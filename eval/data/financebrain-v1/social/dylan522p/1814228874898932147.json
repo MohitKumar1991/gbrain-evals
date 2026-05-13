@@ -1,0 +1,28 @@
+{
+  "slug": "social/dylan522p/1814228874898932147",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-07-19",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1814228874898932147",
+  "published_at": "2024-07-19T09:20:45.000Z",
+  "compiled_truth": "Y2K24 - fuckload Windows Machines are absolutely fucked.\nCrowdstrike $crdw down 19% premarket\nThey pushed out a buggy update (.sys files are kernel drivers, Crowdstrike’s agent lives in the kernel)\nPeople’s computers crashed\nIt also fucks up booting into loading\nAll affected machine will require at least 10-15 min to fix\nWhat is even worse is there are XDR policies in Falcon that disable Safe Mode\nMany laptops have safe mode disabled, leaving millions of machines in a precarious state\nHow many machines are truly fucked?\nIt may be that 99.999% of people have to boot into safe mode and delete one file… but that might be PR bullshit\nMany enterprises have disabled safe mode on endpoints.\nMeaning most employees will have to send their machines in to IT to have them reinstall Windows\n1 week of downtown time and some lost file in the worst worst case\n  > Quoting @SwiftOnSecurity: Note this will not work if your machine is bitlocker encrypted without getting the recovery key for each machine...\n2024-07-19T09:20:45.000Z [386 likes · 45 RTs · 146683 views]",
+  "companies_mentioned": [],
+  "quarter_context": {},
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1814228874898932147"
+    ],
+    "conversation_id": "1814228874898932147",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 386,
+    "lead_views": 146683,
+    "lead_bookmarks": 76,
+    "published_at": "2024-07-19T09:20:45.000Z",
+    "companies_mentioned": [],
+    "quarter_context": {}
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1886509867814543695",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-03",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1886509867814543695",
+  "published_at": "2025-02-03T20:19:36.000Z",
+  "compiled_truth": "AMD reused our code + modified for the benchmarks that show they're faster than Nvidia for training\nFew major caveats\nThey didn't use pytorch native attention backend\nThey used out of tree attention for MI300, but didn't give NV the same benefit or even the main tree version\n1/2\n  > Quoting @dylan522p: SemiAnalysis code is the basis of AMD's training benchmarks 🫡 https://t.co/pxvCpzKjAw\n2025-02-03T20:19:36.000Z [463 likes · 30 RTs · 156127 views]",
+  "timeline": "- **2025-02-03** | 22d before NVDA Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": -22,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1886509867814543695"
+    ],
+    "conversation_id": "1886509867814543695",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 463,
+    "lead_views": 156127,
+    "lead_bookmarks": 127,
+    "published_at": "2025-02-03T20:19:36.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": -22,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2037662994407227666",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-03-27",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2037662994407227666",
+  "published_at": "2026-03-27T22:48:10.000Z",
+  "compiled_truth": "Silicon Welfare: Nvidia GPUs are happiest when they are running Claude Capybara\n2026-03-27T22:48:10.000Z [330 likes · 6 RTs · 54032 views]",
+  "timeline": "- **2026-03-27** | 30d after NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": 30,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2037662994407227666"
+    ],
+    "conversation_id": "2037662994407227666",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 330,
+    "lead_views": 54032,
+    "lead_bookmarks": 24,
+    "published_at": "2026-03-27T22:48:10.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": 30,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

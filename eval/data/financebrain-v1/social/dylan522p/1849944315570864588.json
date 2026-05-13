@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1849944315570864588",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-10-25",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1849944315570864588",
+  "published_at": "2024-10-25T22:41:09.000Z",
+  "compiled_truth": "There's 3 possibilities if it isn't BS reporting like they did with Huawei 910B just earlier this week.\n1. Comparing N4 in Arizona vs N3 in Taiwan\n2. Favorable mix of Apple SoC w/ fewer metal layers vs HPC in TW w/ more\n3. Has newer tools like ASML 3600D vs 3400C, better overlay\n  > Quoting @bayeslord: awaiting semi analysis post about whether this arizona tsmc thing is legit or mid\n2024-10-25T22:41:09.000Z [367 likes · 17 RTs · 73506 views]",
+  "timeline": "- **2024-10-25** | 5d before AAPL Q4 FY2024 earnings",
+  "companies_mentioned": [
+    "AAPL"
+  ],
+  "quarter_context": {
+    "AAPL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-10-31",
+      "days_relative": -5,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1849944315570864588"
+    ],
+    "conversation_id": "1849944315570864588",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 367,
+    "lead_views": 73506,
+    "lead_bookmarks": 70,
+    "published_at": "2024-10-25T22:41:09.000Z",
+    "companies_mentioned": [
+      "AAPL"
+    ],
+    "quarter_context": {
+      "AAPL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-10-31",
+        "days_relative": -5,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

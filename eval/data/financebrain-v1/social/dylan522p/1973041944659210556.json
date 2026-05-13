@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1973041944659210556",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-09-30",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1973041944659210556",
+  "published_at": "2025-09-30T15:07:11.000Z",
+  "compiled_truth": "I been going on a lot of podcast recently but Invest Like The Best with Patrick O'Shaughnessy is one my favorites\nI was expecting it to be way more market focused which we do cover ofc\nBut we also drove down to the fundamental technological inflections of models + infrastructure\n  > Quoting @patrick_oshag: My conversation with @dylan522p on everything you ever wanted to know about the incredible buildout happening in AI infrastructure\n\nThis is a whirlwind tour through the companies, deals, models, chips, power sources, partnerships, and people powering AI\n\nDylan is some sort of genius. I wish a version of him existed for every subject. I hope you enjoy this as much as I did.\n\nTimestamps:\n0:00 Introduction\n0:39 The Infinite Money Glitch\n4:42 Oracle's Bet on OpenAI\n6:06 Nvidia's Strategic Investment and Deal Mechanics\n9:17 Why Bigger Models Aren't Always Better\n15:07 The Adoption Curve Problem\n19:01 The Tokenomics of AI\n23:59 Over-Parameterization and Model Learning\n28:10 Building Environments for AI Training\n32:16 AI in Everyday Life\n34:46 The Future of Reasoning and Compute Scaling\n44:34 The Spectrum of AI Optimism\n46:29 Timeline to AGI\n49:25 Talent Wars\n58:37 Power Dynamics in the AI Ecosystem\n1:18:42 AI for Material Science and Hard Tech\n1:22:21 Building Infrastructure\n1:29:55 US vs China: Who Really Needs AI to Win?\n1:37:42 Favorite AI Bears\n1:48:08 Speed Round: Company Impressions\n1:55:11 The Death of Traditional SaaS Business Models\n2:00:24 The Kindest Thing\n2025-09-30T15:07:11.000Z [586 likes · 27 RTs · 99231 views]",
+  "timeline": "- **2025-09-30** | 35d after NVDA Q2 FY2026 earnings\n- **2025-09-30** | 28d before MSFT Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-08-27",
+      "days_relative": 35,
+      "phase": "post-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-10-29",
+      "days_relative": -28,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1973041944659210556"
+    ],
+    "conversation_id": "1973041944659210556",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 586,
+    "lead_views": 99231,
+    "lead_bookmarks": 343,
+    "published_at": "2025-09-30T15:07:11.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-08-27",
+        "days_relative": 35,
+        "phase": "post-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-10-29",
+        "days_relative": -28,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

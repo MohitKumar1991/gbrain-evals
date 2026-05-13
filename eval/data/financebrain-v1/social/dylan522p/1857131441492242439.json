@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1857131441492242439",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-11-14",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1857131441492242439",
+  "published_at": "2024-11-14T18:40:14.000Z",
+  "compiled_truth": "Scaling laws are still true because all the labs use Google Sheets and can't fit a sigmoid in that, just straight lines on log log plots.\nAll the finance Excel bros freaking out because they can plot a sigmoid but don't know what that means.\n2024-11-14T18:40:14.000Z [221 likes · 9 RTs · 29322 views]",
+  "timeline": "- **2024-11-14** | 17d after GOOGL Q3 FY2024 earnings",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-10-29",
+      "days_relative": 17,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1857131441492242439"
+    ],
+    "conversation_id": "1857131441492242439",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 221,
+    "lead_views": 29322,
+    "lead_bookmarks": 39,
+    "published_at": "2024-11-14T18:40:14.000Z",
+    "companies_mentioned": [
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "GOOGL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-10-29",
+        "days_relative": 17,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

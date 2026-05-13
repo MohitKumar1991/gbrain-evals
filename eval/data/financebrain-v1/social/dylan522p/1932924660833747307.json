@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1932924660833747307",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-06-11",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1932924660833747307",
+  "published_at": "2025-06-11T22:15:25.000Z",
+  "compiled_truth": "Meta Scale AI deal is wild\nLotta folks are criticizing it\nMultiple labs now backing away from Scale data\nMeta fell behind despite lotta spend on compute + team + data\nSnagging @alexandr_wang + crazy salaries for talent\nIs it desperation or leadership?\nWhat should they have done?\n2025-06-11T22:15:25.000Z [237 likes · 14 RTs · 58146 views]",
+  "timeline": "- **2025-06-11** | 43d after META Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {
+    "META": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": 43,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1932924660833747307"
+    ],
+    "conversation_id": "1932924660833747307",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 237,
+    "lead_views": 58146,
+    "lead_bookmarks": 81,
+    "published_at": "2025-06-11T22:15:25.000Z",
+    "companies_mentioned": [
+      "META"
+    ],
+    "quarter_context": {
+      "META": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": 43,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

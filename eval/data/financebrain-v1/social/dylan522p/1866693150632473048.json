@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1866693150632473048",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-11",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1866693150632473048",
+  "published_at": "2024-12-11T03:55:03.000Z",
+  "compiled_truth": "Scaling Laws\nO1 Pro Architecture\nReasoning Infrastructure\nOrion and Claude 3.5 Opus “Failures”\nAI Lab Synthetic Data Infrastructure\nInference Tokenomics of Test Time Compute\nThe Data Wall\nEvaluation's are Broken\nRLAIF\nInference Time Search\nScale is Needed\nhttps://t.co/807oWNbobO\n2024-12-11T03:55:03.000Z [581 likes · 55 RTs · 210867 views]",
+  "timeline": "- **2024-12-11** | 42d after MSFT Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-10-30",
+      "days_relative": 42,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1866693150632473048"
+    ],
+    "conversation_id": "1866693150632473048",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 581,
+    "lead_views": 210867,
+    "lead_bookmarks": 411,
+    "published_at": "2024-12-11T03:55:03.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-10-30",
+        "days_relative": 42,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

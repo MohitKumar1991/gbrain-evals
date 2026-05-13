@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1806577638817091951",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-06-28",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1806577638817091951",
+  "published_at": "2024-06-28T06:37:28.000Z",
+  "compiled_truth": "Everyone's talking about sleepy Joe tonight, but who cares\nThe GPU rich are talking about the H100 variants\nSpecifically the \"Skinny Joe\" SKU\n  > Quoting @memorypaladin: Been studying PCI lately. Really incredible how many different SKUs there are for NVIDIA's cards. Attached is everyting corresponding to \"GH100\". Anyone know what the \"L\" in \"H100L\" might mean?\n\nSource: https://t.co/aErPPsiYRD https://t.co/tfqSTGBZf3\n2024-06-28T06:37:28.000Z [105 likes · 5 RTs · 17425 views]",
+  "timeline": "- **2024-06-28** | 37d after NVDA Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-05-22",
+      "days_relative": 37,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1806577638817091951"
+    ],
+    "conversation_id": "1806577638817091951",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 105,
+    "lead_views": 17425,
+    "lead_bookmarks": 13,
+    "published_at": "2024-06-28T06:37:28.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-05-22",
+        "days_relative": 37,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

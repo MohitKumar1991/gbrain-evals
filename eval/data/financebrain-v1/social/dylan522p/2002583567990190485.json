@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2002583567990190485",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-12-21",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2002583567990190485",
+  "published_at": "2025-12-21T03:35:03.000Z",
+  "compiled_truth": "Uber driver and internal combustion engine have long term economic prospects\nDatacenters will displace all new power generation causing US grid instability \nWaymo's are failing all over SF\n2025-12-21T03:35:03.000Z [226 likes · 6 RTs · 65303 views]",
+  "timeline": "- **2025-12-21** | 44d before GOOGL Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2026-02-03",
+      "days_relative": -44,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2002583567990190485"
+    ],
+    "conversation_id": "2002583567990190485",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 226,
+    "lead_views": 65303,
+    "lead_bookmarks": 45,
+    "published_at": "2025-12-21T03:35:03.000Z",
+    "companies_mentioned": [
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "GOOGL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2026-02-03",
+        "days_relative": -44,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

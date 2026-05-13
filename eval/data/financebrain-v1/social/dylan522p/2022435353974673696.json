@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2022435353974673696",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-02-13",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2022435353974673696",
+  "published_at": "2026-02-13T22:18:58.000Z",
+  "compiled_truth": "Bruh the weebs have infected my company\n  > Quoting @SemiAnalysis_: This is how OpenAI comes back and beats Anthropic https://t.co/5ONX5aQHK1\n2026-02-13T22:18:58.000Z [190 likes · 5 RTs · 28714 views]",
+  "timeline": "- **2026-02-13** | 16d after MSFT Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-01-29",
+      "days_relative": 16,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2022435353974673696"
+    ],
+    "conversation_id": "2022435353974673696",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 190,
+    "lead_views": 28714,
+    "lead_bookmarks": 21,
+    "published_at": "2026-02-13T22:18:58.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-01-29",
+        "days_relative": 16,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

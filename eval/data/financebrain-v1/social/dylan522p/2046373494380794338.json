@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2046373494380794338",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-04-20",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2046373494380794338",
+  "published_at": "2026-04-20T23:40:35.000Z",
+  "compiled_truth": "Johny Sroji, the GOAT who made Apple silicon program what it is, is now in charge of all hardware at Apple as Chief Hardware Officer https://t.co/sJrtay56V3\n  > Quoting @MacRumors: Johny Srouji Taking Over as Apple's Chief Hardware Officer as John Ternus Transitions to CEO https://t.co/6xfvPeArRc https://t.co/nf9rfNWVhq\n2026-04-20T23:40:35.000Z [278 likes · 10 RTs · 83340 views]",
+  "timeline": "- **2026-04-20** | 10d before AAPL Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "AAPL"
+  ],
+  "quarter_context": {
+    "AAPL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-05-01",
+      "days_relative": -10,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2046373494380794338"
+    ],
+    "conversation_id": "2046373494380794338",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 278,
+    "lead_views": 83340,
+    "lead_bookmarks": 36,
+    "published_at": "2026-04-20T23:40:35.000Z",
+    "companies_mentioned": [
+      "AAPL"
+    ],
+    "quarter_context": {
+      "AAPL": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-05-01",
+        "days_relative": -10,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

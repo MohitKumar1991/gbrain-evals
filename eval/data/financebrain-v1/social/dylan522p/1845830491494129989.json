@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1845830491494129989",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-10-14",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1845830491494129989",
+  "published_at": "2024-10-14T14:14:17.000Z",
+  "compiled_truth": "Datacenter Anatomy Part 1: Electrical Systems\nMeta Datacenter Scrapped\nDatacenter Bill Of Materials By Component\nTransformers, Switchgear, Redundancy, UPS, ATS, OCP Busbar, Generator Sets, Substation\nVertiv, Schneider Electric, Eaton, and many more\nhttps://t.co/O9iQdGOVEA\n2024-10-14T14:14:17.000Z [264 likes · 34 RTs · 34845 views]",
+  "timeline": "- **2024-10-14** | 15d before META Q3 FY2024 earnings",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {
+    "META": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-10-30",
+      "days_relative": -15,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1845830491494129989"
+    ],
+    "conversation_id": "1845830491494129989",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 264,
+    "lead_views": 34845,
+    "lead_bookmarks": 158,
+    "published_at": "2024-10-14T14:14:17.000Z",
+    "companies_mentioned": [
+      "META"
+    ],
+    "quarter_context": {
+      "META": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-10-30",
+        "days_relative": -15,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "social/dylan522p/1944346090385420603",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-07-13",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1944346090385420603",
+  "published_at": "2025-07-13T10:40:06.000Z",
+  "compiled_truth": "AI bros when I tell them Boeing outperformed Nvidia, Meta, Google, Broadcom, AMD, Microsoft this year https://t.co/3sondUsC7G\n2025-07-13T10:40:06.000Z [367 likes · 7 RTs · 43747 views]",
+  "timeline": "- **2025-07-13** | 45d before NVDA Q2 FY2026 earnings\n- **2025-07-13** | 16d before MSFT Q4 FY2025 earnings\n- **2025-07-13** | 16d before GOOGL Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-08-27",
+      "days_relative": -45,
+      "phase": "pre-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-29",
+      "days_relative": -16,
+      "phase": "pre-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-29",
+      "days_relative": -16,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1944346090385420603"
+    ],
+    "conversation_id": "1944346090385420603",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 367,
+    "lead_views": 43747,
+    "lead_bookmarks": 27,
+    "published_at": "2025-07-13T10:40:06.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-08-27",
+        "days_relative": -45,
+        "phase": "pre-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-29",
+        "days_relative": -16,
+        "phase": "pre-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-29",
+        "days_relative": -16,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

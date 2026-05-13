@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2019490550911766763",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-02-05",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2019490550911766763",
+  "published_at": "2026-02-05T19:17:22.000Z",
+  "compiled_truth": "4% of GitHub public commits are being authored by Claude Code right now.\nAt the current trajectory, we believe that Claude Code will be 20%+ of all daily commits by the end of 2026.\nWhile you blinked, AI consumed all of software development.\nRead more 👇 https://t.co/HzK4nbe2vy https://t.co/E1kIjfrNgk\n  > Quoting @SemiAnalysis_: Claude Code is the Inflection Point,\nWhat It Is,\nHow We Use It,\nIndustry Repercussions,\nMicrosoft's Dilemma,\nWhy Anthropic Is Winning. \nhttps://t.co/VIuF5Qohf5\n2026-02-05T19:17:22.000Z [3952 likes · 544 RTs · 1138330 views]",
+  "timeline": "- **2026-02-05** | 8d after MSFT Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-01-29",
+      "days_relative": 8,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2019490550911766763"
+    ],
+    "conversation_id": "2019490550911766763",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 3952,
+    "lead_views": 1138330,
+    "lead_bookmarks": 1427,
+    "published_at": "2026-02-05T19:17:22.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-01-29",
+        "days_relative": 8,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

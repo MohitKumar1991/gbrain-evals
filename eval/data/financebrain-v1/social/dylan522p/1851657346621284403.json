@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1851657346621284403",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-10-30",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1851657346621284403",
+  "published_at": "2024-10-30T16:08:08.000Z",
+  "compiled_truth": "AI reveals all frauds\nSupermicro accounting, stuffing channels, having servers shipped to China $SMCI\nBank research is actually SemiAnalysis reports in bullet points\nHalf the bullet points are ctrl + c / ctrl + v\nThey didn't even rephrase with chatGPT 😭\nhttps://t.co/NzQSnRphVe https://t.co/8yTQvQt7T3\n  > Quoting @matthew_sigel: Seven #Bitcoin Miners in Cantor's \"AI Neocloud\" Ecosystem 👀\n\n\"AI Neoclouds\" offer GPU compute rental, allowing developers to bybass the capital-intensive process of purcashing infrastructure and setting up network connectivity\" https://t.co/fRpOOIBlIX\n2024-10-30T16:08:08.000Z [164 likes · 6 RTs · 38027 views]",
+  "timeline": "- **2024-10-30** | earnings day — MSFT Q1 FY2025",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-10-30",
+      "days_relative": 1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1851657346621284403"
+    ],
+    "conversation_id": "1851657346621284403",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 164,
+    "lead_views": 38027,
+    "lead_bookmarks": 81,
+    "published_at": "2024-10-30T16:08:08.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-10-30",
+        "days_relative": 1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

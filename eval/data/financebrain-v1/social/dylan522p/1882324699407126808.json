@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1882324699407126808",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-01-23",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1882324699407126808",
+  "published_at": "2025-01-23T07:09:14.000Z",
+  "compiled_truth": "We breakdown what the OpenAI Stargate Joint Venture is including the winners and lowers, and where the money actually comes from?\nWe also have estimates for the breakdown of costs for the clusters and sizing.\n  > Quoting @SemiAnalysis_: OpenAI Stargate Joint Venture Demystified\nMicrosoft Sore Loser\nDoes Softbank Have The Capital?\nTexas GigaCampus\nWinners &amp; Losers\nThe Real Numbers Behind Stargate\nLancium, Crusoe, Oracle, MGX\nCost Breakdown\nArm Is Fake News\nhttps://t.co/bF4FLDYju7\n2025-01-23T07:09:14.000Z [484 likes · 21 RTs · 123581 views]",
+  "timeline": "- **2025-01-23** | 6d before MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": -6,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1882324699407126808"
+    ],
+    "conversation_id": "1882324699407126808",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 484,
+    "lead_views": 123581,
+    "lead_bookmarks": 211,
+    "published_at": "2025-01-23T07:09:14.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": -6,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2017344503196103130",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-01-30",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2017344503196103130",
+  "published_at": "2026-01-30T21:09:44.000Z",
+  "compiled_truth": "We had fairwater + other DC delays in datacenter model vs the 40% YoY growth we previously posted before said delays.\nIf you have access to the data you'd see our strength is constantly updating and tuning estimates because physical infra never goes perfectly\n  > Quoting @PythiaR: @TBU12345678 @Citrini7 @SemiAnalysis_ Bro semianalysis is down like 25% on MSFT reaccel lol\n2026-01-30T21:09:44.000Z [106 likes · 1 RTs · 49467 views]",
+  "timeline": "- **2026-01-30** | 2d after MSFT Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-01-29",
+      "days_relative": 2,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2017344503196103130"
+    ],
+    "conversation_id": "2017344503196103130",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 106,
+    "lead_views": 49467,
+    "lead_bookmarks": 35,
+    "published_at": "2026-01-30T21:09:44.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-01-29",
+        "days_relative": 2,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

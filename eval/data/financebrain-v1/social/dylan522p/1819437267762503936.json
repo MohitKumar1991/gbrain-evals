@@ -1,0 +1,81 @@
+{
+  "slug": "social/dylan522p/1819437267762503936",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-08-02",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1819437267762503936",
+  "published_at": "2024-08-02T18:17:02.000Z",
+  "compiled_truth": "VCs keep taking L's from big tech, the one they love to say they will disrupt.\nFirst Microsoft Inflection\nThen Amazon Adept\nNow Google Character\nWho is next? Meta Mistral?\nTBF, Inflection and Character especially have had pretty good returns for the shareholders.\n2024-08-02T18:17:02.000Z [153 likes · 11 RTs · 29838 views]",
+  "timeline": "- **2024-08-02** | 4d after MSFT Q4 FY2024 earnings\n- **2024-08-02** | 11d after GOOGL Q2 FY2024 earnings\n- **2024-08-02** | 3d after META Q2 FY2024 earnings",
+  "companies_mentioned": [
+    "MSFT",
+    "GOOGL",
+    "META"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-07-30",
+      "days_relative": 4,
+      "phase": "post-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-07-23",
+      "days_relative": 11,
+      "phase": "post-earnings"
+    },
+    "META": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-07-31",
+      "days_relative": 3,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1819437267762503936"
+    ],
+    "conversation_id": "1819437267762503936",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 153,
+    "lead_views": 29838,
+    "lead_bookmarks": 29,
+    "published_at": "2024-08-02T18:17:02.000Z",
+    "companies_mentioned": [
+      "MSFT",
+      "GOOGL",
+      "META"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-07-30",
+        "days_relative": 4,
+        "phase": "post-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-07-23",
+        "days_relative": 11,
+        "phase": "post-earnings"
+      },
+      "META": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-07-31",
+        "days_relative": 3,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

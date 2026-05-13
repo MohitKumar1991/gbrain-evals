@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1998926309486113020",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-12-11",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1998926309486113020",
+  "published_at": "2025-12-11T01:22:25.000Z",
+  "compiled_truth": "Our team is so cracked\nJeremie, Nick, Doug, Wei put out a banger piece on OpenAI's Abeline Texas Stargate delay 2 weeks ago\nWe called the -11.5% move in $ORCL stock today\nWe also called out the $CRWV miss before earnings\n2 minutes high alpha notes, DC model\nSales@semianalysis.com https://t.co/KhHQNN0FcK\n2025-12-11T01:22:25.000Z [368 likes · 21 RTs · 76244 views]",
+  "timeline": "- **2025-12-11** | 43d after MSFT Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-10-29",
+      "days_relative": 43,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1998926309486113020"
+    ],
+    "conversation_id": "1998926309486113020",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 368,
+    "lead_views": 76244,
+    "lead_bookmarks": 152,
+    "published_at": "2025-12-11T01:22:25.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-10-29",
+        "days_relative": 43,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

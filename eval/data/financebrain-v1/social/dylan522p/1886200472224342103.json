@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1886200472224342103",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-02",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1886200472224342103",
+  "published_at": "2025-02-02T23:50:11.000Z",
+  "compiled_truth": "OpenAI people are hyping their drop so fucking much.\n2025-02-02T23:50:11.000Z [1911 likes · 31 RTs · 308350 views]",
+  "timeline": "- **2025-02-02** | 5d after MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 5,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1886200472224342103"
+    ],
+    "conversation_id": "1886200472224342103",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1911,
+    "lead_views": 308350,
+    "lead_bookmarks": 163,
+    "published_at": "2025-02-02T23:50:11.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 5,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

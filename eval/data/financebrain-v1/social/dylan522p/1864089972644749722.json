@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1864089972644749722",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-03",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1864089972644749722",
+  "published_at": "2024-12-03T23:30:57.000Z",
+  "compiled_truth": "400k Tranium 2 cluster for Anthropic by Amazon\nWho said scaling was dead again?\nSee full architecture, server, and software details below. https://t.co/LfECdFOrQL\n  > Quoting @dylan522p: Amazon’s AI Self Sufficiency\nTrainium2 Architecture &amp; Networking\nTrn2, Trn2-Ultra\nPerformance vs TCO\nSoftware\nNeuronLinkv3, EFAv3, 3D Torus\nSupply Chain\nOur first post after leaving Substack please try logging into new site lmk if email didn't hit\nhttps://t.co/IPZfA3BtYA\n2024-12-03T23:30:57.000Z [46 likes · 4 RTs · 11264 views]",
+  "timeline": "- **2024-12-03** | 34d after AAPL Q4 FY2024 earnings",
+  "companies_mentioned": [
+    "AAPL"
+  ],
+  "quarter_context": {
+    "AAPL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-10-31",
+      "days_relative": 34,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1864089972644749722"
+    ],
+    "conversation_id": "1864089972644749722",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 46,
+    "lead_views": 11264,
+    "lead_bookmarks": 15,
+    "published_at": "2024-12-03T23:30:57.000Z",
+    "companies_mentioned": [
+      "AAPL"
+    ],
+    "quarter_context": {
+      "AAPL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-10-31",
+        "days_relative": 34,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1909645684174942529",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-08",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1909645684174942529",
+  "published_at": "2025-04-08T16:33:05.000Z",
+  "compiled_truth": "the amount of parameters they lost seems to coincide directly with the tariff % on Taiwan...\ncoincidence?\n  > Quoting @kuchaev: We are excited to release Llama-Nemotron-Ultra! This is a reasoning ON/OFF, dense 253B model. Open weights and post-training data. https://t.co/dCTacylBR8 We started with llama-405B, changed it via NAS pruning then followed by reasoning-focused post-training: SFT + RL in FP8. https://t.co/GXA1MXQnkM\n2025-04-08T16:33:05.000Z [93 likes · 1 RTs · 23920 views]",
+  "timeline": "- **2025-04-08** | 42d after NVDA Q4 FY2025 earnings\n- **2025-04-08** | 21d before META Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "META"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": 42,
+      "phase": "post-earnings"
+    },
+    "META": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": -21,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1909645684174942529"
+    ],
+    "conversation_id": "1909645684174942529",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 93,
+    "lead_views": 23920,
+    "lead_bookmarks": 10,
+    "published_at": "2025-04-08T16:33:05.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "META"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": 42,
+        "phase": "post-earnings"
+      },
+      "META": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": -21,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

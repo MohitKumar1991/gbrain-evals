@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2033592077133779110",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-03-16",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2033592077133779110",
+  "published_at": "2026-03-16T17:11:48.000Z",
+  "compiled_truth": "Im a speaker presenting InferenceX and had to ask a top executive for passes fwiw\nWe aren't \"analysts\" either lol https://t.co/YnQ5YC3PCA\n  > Quoting @IanCutress: Unfortunately, it's a limited GTC for me this year. My NVIDIA official contacts 'ran out' of passes, and said the analyst program was oversubscribed, so even if I did attend I would be unable to get executive access and insights this year. It's a shame how this has come about, especially as I've not had a clear answer as to why I'm seemingly Tier 3, or lower, on the list. I pride myself on clear and accurate communication within the rules, and it's been unclear from the contact I do have what level of professionalism I'm failing to meet. This is despite being the warm up act to Jensen and Sassine at Synopsys last week and getting so much positive feedback. To my NVIDIA friends inside the company, I appreciate your continued support, as always!\n\nAs for the show itself, thankfully one of my clients pulled through with an exhibitor hall-only pass. I'll be on the show floor in person, but unable to attend the keynote and talks. I'll see you at the show ! :)\n\nI'll also be over at OFC later in the week, certainly looking forward to that one. Lots happening in CPO that makes me really excited.\n2026-03-16T17:11:48.000Z [537 likes · 5 RTs · 126483 views]",
+  "timeline": "- **2026-03-16** | 19d after NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": 19,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2033592077133779110"
+    ],
+    "conversation_id": "2033592077133779110",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 537,
+    "lead_views": 126483,
+    "lead_bookmarks": 63,
+    "published_at": "2026-03-16T17:11:48.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": 19,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2020302299827171430",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-02-08",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2020302299827171430",
+  "published_at": "2026-02-08T01:02:58.000Z",
+  "compiled_truth": "Open models show 2.5x faster, 6x more expensive\nLower batch size, speculative decoding harder\nPareto optimal curve for Deepseek at https://t.co/d9dNCumX0I shows this\nClaude Opus 4.6 is 100 Tok/s/user\nDeepseek at 100 is 6k Tok/s/GPU\nAt 250 tok/s/user it's closer to 1k https://t.co/X294HzM3Zo\n  > Quoting @Yuchenj_UW: 2.5x faster but 6x more expensive.\n\nThis can’t be achieved by inference optimization, must be new chips.\n\nTPU? B200? AWS Inferentia? Cerebras?\n2026-02-08T01:02:58.000Z [297 likes · 18 RTs · 164810 views]",
+  "timeline": "- **2026-02-08** | 18d before NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": -18,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2020302299827171430"
+    ],
+    "conversation_id": "2020302299827171430",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 297,
+    "lead_views": 164810,
+    "lead_bookmarks": 143,
+    "published_at": "2026-02-08T01:02:58.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": -18,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

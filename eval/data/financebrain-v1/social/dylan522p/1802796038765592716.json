@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1802796038765592716",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-06-17",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1802796038765592716",
+  "published_at": "2024-06-17T20:10:44.000Z",
+  "compiled_truth": "100,000 H100 Clusters\nPower Challenges\nNetwork Topology\nEthernet vs InfiniBand\nReliability, Failures, Checkpointing, Fault recovery through memory reconstruction\nFrontier model scaling challenges and requirements\nRack layouts\nhttps://t.co/AJigXkjyel\n2024-06-17T20:10:44.000Z [380 likes · 59 RTs · 71229 views]",
+  "timeline": "- **2024-06-17** | 27d after NVDA Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-05-22",
+      "days_relative": 27,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1802796038765592716"
+    ],
+    "conversation_id": "1802796038765592716",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 380,
+    "lead_views": 71229,
+    "lead_bookmarks": 181,
+    "published_at": "2024-06-17T20:10:44.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-05-22",
+        "days_relative": 27,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

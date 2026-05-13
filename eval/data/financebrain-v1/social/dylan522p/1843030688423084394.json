@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1843030688423084394",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-10-06",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1843030688423084394",
+  "published_at": "2024-10-06T20:48:52.000Z",
+  "compiled_truth": "According to @ylecun tweets, this is not research.\n  > Quoting @Meta: Meta Movie Gen is on the scene! Our breakthrough generative AI research for media enables:\n\n-turning text into video \n-creation of personalized video\n-precision video editing \n-audio creation\n\nAnd while it’s just research today, we can’t wait to see all the ways people enhance their creativity in the future. Stay tuned for more info on Meta Movie Gen’s release.\n2024-10-06T20:48:52.000Z [50 likes · 0 RTs · 12613 views]",
+  "timeline": "- **2024-10-06** | 23d before META Q3 FY2024 earnings",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {
+    "META": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-10-30",
+      "days_relative": -23,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1843030688423084394"
+    ],
+    "conversation_id": "1843030688423084394",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 50,
+    "lead_views": 12613,
+    "lead_bookmarks": 4,
+    "published_at": "2024-10-06T20:48:52.000Z",
+    "companies_mentioned": [
+      "META"
+    ],
+    "quarter_context": {
+      "META": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-10-30",
+        "days_relative": -23,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1960817396048126387",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-08-27",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1960817396048126387",
+  "published_at": "2025-08-27T21:31:12.000Z",
+  "compiled_truth": "Interesting coincidence that Cantor Fitzgerald has first question on Nvidia earnings after the H20 unbanned 🤔 https://t.co/coK19uBLHA\n2025-08-27T21:31:12.000Z [375 likes · 17 RTs · 59000 views]",
+  "timeline": "- **2025-08-27** | earnings day — NVDA Q2 FY2026",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-08-27",
+      "days_relative": 1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1960817396048126387"
+    ],
+    "conversation_id": "1960817396048126387",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 375,
+    "lead_views": 59000,
+    "lead_bookmarks": 55,
+    "published_at": "2025-08-27T21:31:12.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-08-27",
+        "days_relative": 1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

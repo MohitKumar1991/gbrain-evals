@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1879375143044350072",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-01-15",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1879375143044350072",
+  "published_at": "2025-01-15T03:48:45.000Z",
+  "compiled_truth": "Apparantly yesterday Jensen was kinda pissed and downed 3 scotches on stage at their event last night for AI in Healthcare lmfao\nNote this is hearsay, I wasn't there cause reading regs\n  > Quoting @dylan522p: Tomorrow gonna be nuts with the AI Diffusion Regulations\nSo many companies / countries gonna be pissed\nMain thing @SemiAnalysis_ team is doing is quantifying how much upcoming datacenter capacity / companies fucked ex-AI 20 countries\n+ how much worse DC shortage in USA cuz of it\n2025-01-15T03:48:45.000Z [372 likes · 7 RTs · 103030 views]",
+  "timeline": "- **2025-01-15** | 42d before NVDA Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": -42,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1879375143044350072"
+    ],
+    "conversation_id": "1879375143044350072",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 372,
+    "lead_views": 103030,
+    "lead_bookmarks": 79,
+    "published_at": "2025-01-15T03:48:45.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": -42,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

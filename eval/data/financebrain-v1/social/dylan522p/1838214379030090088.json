@@ -1,0 +1,28 @@
+{
+  "slug": "social/dylan522p/1838214379030090088",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-09-23",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1838214379030090088",
+  "published_at": "2024-09-23T13:50:34.000Z",
+  "compiled_truth": "SRAM scaling from N5 to N3E to N2 to A16 is very complicated.\nHeadline bitcell size itself doesn't shrink much, but periphery seems to scale a lot through different DTCO.\nI'm trying to wrap my head around the methods of how/why\nAnyone of my followers wanna chat or DM about it? https://t.co/8la5GQ4GWR\n2024-09-23T13:50:34.000Z [130 likes · 10 RTs · 21297 views]",
+  "companies_mentioned": [],
+  "quarter_context": {},
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1838214379030090088"
+    ],
+    "conversation_id": "1838214379030090088",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 130,
+    "lead_views": 21297,
+    "lead_bookmarks": 37,
+    "published_at": "2024-09-23T13:50:34.000Z",
+    "companies_mentioned": [],
+    "quarter_context": {}
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1803995558815895958",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-06-21",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1803995558815895958",
+  "published_at": "2024-06-21T03:37:12.000Z",
+  "compiled_truth": "Mfer is calling rear door heat exchangers liquid cooling.\nMyself and like 3 other people who care too much about infra malding about technicalities as we speak.\nI guess he's right, but I thought they were at least badass with early version of XE9680L instead of standard XE9680\n  > Quoting @elonmusk: @AravSrinivas Given the pace of technology improvement, it’s not worth sinking 1GW of power into H100s.\n\nThe @xAI 100k H100 liquid-cooled training cluster will be online in a few months. \n\nNext big step would probably be ~300k B200s with CX8 networking next summer.\n2024-06-21T03:37:12.000Z [64 likes · 0 RTs · 22611 views]",
+  "timeline": "- **2024-06-21** | 30d after NVDA Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-05-22",
+      "days_relative": 30,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1803995558815895958"
+    ],
+    "conversation_id": "1803995558815895958",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 64,
+    "lead_views": 22611,
+    "lead_bookmarks": 18,
+    "published_at": "2024-06-21T03:37:12.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-05-22",
+        "days_relative": 30,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

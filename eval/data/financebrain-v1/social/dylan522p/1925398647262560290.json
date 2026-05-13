@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1925398647262560290",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-05-22",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1925398647262560290",
+  "published_at": "2025-05-22T03:49:44.000Z",
+  "compiled_truth": "NVIDIA NCP now required to use gold plated power supplies too https://t.co/rQCBztjvf7\n2025-05-22T03:49:44.000Z [105 likes · 3 RTs · 22956 views]",
+  "timeline": "- **2025-05-22** | 6d before NVDA Q1 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-05-28",
+      "days_relative": -6,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1925398647262560290"
+    ],
+    "conversation_id": "1925398647262560290",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 105,
+    "lead_views": 22956,
+    "lead_bookmarks": 14,
+    "published_at": "2025-05-22T03:49:44.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-05-28",
+        "days_relative": -6,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

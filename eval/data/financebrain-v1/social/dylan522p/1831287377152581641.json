@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1831287377152581641",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-09-04",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1831287377152581641",
+  "published_at": "2024-09-04T11:05:09.000Z",
+  "compiled_truth": "Multi-Datacenter Training\nOpenAI's Ambitious Plan To Beat Google's Infrastructure\nGigawatt Clusters, Telecom Networking, Long Haul Fiber, Hierarchical &amp; Asynchronous SGD, Distributed Infrastructure Winners, Silent Data Corruption, Stragglers\nhttps://t.co/unluurzsnd\n2024-09-04T11:05:09.000Z [247 likes · 30 RTs · 44692 views]",
+  "timeline": "- **2024-09-04** | 36d after MSFT Q4 FY2024 earnings\n- **2024-09-04** | 43d after GOOGL Q2 FY2024 earnings",
+  "companies_mentioned": [
+    "MSFT",
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-07-30",
+      "days_relative": 36,
+      "phase": "post-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-07-23",
+      "days_relative": 43,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1831287377152581641"
+    ],
+    "conversation_id": "1831287377152581641",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 247,
+    "lead_views": 44692,
+    "lead_bookmarks": 101,
+    "published_at": "2024-09-04T11:05:09.000Z",
+    "companies_mentioned": [
+      "MSFT",
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-07-30",
+        "days_relative": 36,
+        "phase": "post-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-07-23",
+        "days_relative": 43,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1910255795603963923",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-10",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1910255795603963923",
+  "published_at": "2025-04-10T08:57:27.000Z",
+  "compiled_truth": "The tariffs are much more complicated than they seem\nIndustry and the market are misunderstanding the ramifications\nWe cover everything from fabs to packaging to servers to cables to optical modules to datacenter equipment\nThe impacts differ greatly\nWe also found a huge loophole\n  > Quoting @SemiAnalysis_: Tariff Armageddon?\nGPU Loopholes\nMexico Supply Chain Shift\nWafer Fab Equipment\nOptical Module Pricing\nUPS, Generators, Transformers, Switchgear, Power Distribution Equipment, Cooling, Pumps\nOEM &amp; ODM Supply Chain\nSoftbank Impact\nNvidia Balance Sheet Usage\nhttps://t.co/AvTVBsHTmu\n2025-04-10T08:57:27.000Z [286 likes · 20 RTs · 80271 views]",
+  "timeline": "- **2025-04-10** | 43d after NVDA Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": 43,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1910255795603963923"
+    ],
+    "conversation_id": "1910255795603963923",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 286,
+    "lead_views": 80271,
+    "lead_bookmarks": 91,
+    "published_at": "2025-04-10T08:57:27.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": 43,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

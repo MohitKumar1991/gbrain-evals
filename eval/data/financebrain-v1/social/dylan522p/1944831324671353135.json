@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1944831324671353135",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-07-14",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1944831324671353135",
+  "published_at": "2025-07-14T18:48:15.000Z",
+  "compiled_truth": "When zucc mentions you https://t.co/xzpdJk3iVm\n  > Quoting @SemiAnalysis_: Zucc confirms that they are building multiple GW clusters. 1000MW Prometheus will come online in 2026 and Hyperion will be built in phases and be able to scale to 5000MW+. For context, the largest H100/H200 clusters operational today is only 150-200MW.\n\nLink to full article below 👇\n\n1/2\n2025-07-14T18:48:15.000Z [632 likes · 12 RTs · 54029 views]",
+  "timeline": "- **2025-07-14** | 43d before NVDA Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-08-27",
+      "days_relative": -43,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1944831324671353135"
+    ],
+    "conversation_id": "1944831324671353135",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 632,
+    "lead_views": 54029,
+    "lead_bookmarks": 37,
+    "published_at": "2025-07-14T18:48:15.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-08-27",
+        "days_relative": -43,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1885192860657717328",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-01-31",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1885192860657717328",
+  "published_at": "2025-01-31T05:06:17.000Z",
+  "compiled_truth": "We did a lot of content regarding DeepSeek for clients this week but eventually had to do a newsletter post when my brother texted me about deep seal https://t.co/ecSdwrxaR7\n  > Quoting @SemiAnalysis_: DeepSeek Debates: Chinese Leadership On Cost, True Training Cost, Closed Model Margin Impacts\nH100 Pricing Soaring, Subsidized Inference Pricing, Export Controls, MLA\nhttps://t.co/VHw5vY1IPD\n2025-01-31T05:06:17.000Z [666 likes · 13 RTs · 97559 views]",
+  "timeline": "- **2025-01-31** | 26d before NVDA Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": -26,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1885192860657717328"
+    ],
+    "conversation_id": "1885192860657717328",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 666,
+    "lead_views": 97559,
+    "lead_bookmarks": 74,
+    "published_at": "2025-01-31T05:06:17.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": -26,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

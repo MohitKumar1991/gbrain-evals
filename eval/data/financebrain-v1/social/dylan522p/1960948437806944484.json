@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1960948437806944484",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-08-28",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1960948437806944484",
+  "published_at": "2025-08-28T06:11:54.000Z",
+  "compiled_truth": "Bless up https://t.co/OoukHCuxdV\n  > Quoting @withtenacity: thank you NVDA\nthank you AVGO\nthank you TSM\nthank you CRWV\nthank you LRCX\nthank you ASML\nthank you MU\nthank you INTC\nthank you TSEM\n2025-08-28T06:11:54.000Z [1344 likes · 27 RTs · 157616 views]",
+  "timeline": "- **2025-08-28** | earnings day — NVDA Q2 FY2026",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-08-27",
+      "days_relative": 1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1960948437806944484"
+    ],
+    "conversation_id": "1960948437806944484",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1344,
+    "lead_views": 157616,
+    "lead_bookmarks": 185,
+    "published_at": "2025-08-28T06:11:54.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-08-27",
+        "days_relative": 1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

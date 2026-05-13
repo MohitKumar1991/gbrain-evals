@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1791972020433105244",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-05-18",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1791972020433105244",
+  "published_at": "2024-05-18T23:19:57.000Z",
+  "compiled_truth": "When your friend gets these and calls them Jensen Huang and Lisa Su plushies https://t.co/banCPQZzcp\n2024-05-18T23:19:57.000Z [138 likes · 6 RTs · 14923 views]",
+  "timeline": "- **2024-05-18** | 3d before NVDA Q1 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-05-22",
+      "days_relative": -3,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1791972020433105244"
+    ],
+    "conversation_id": "1791972020433105244",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 138,
+    "lead_views": 14923,
+    "lead_bookmarks": 8,
+    "published_at": "2024-05-18T23:19:57.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-05-22",
+        "days_relative": -3,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2040213520411709565",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-04-03",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2040213520411709565",
+  "published_at": "2026-04-03T23:43:03.000Z",
+  "compiled_truth": "NVIDIA has now open sourced their trtllmgen MoE kernels!\nGreat to see that parts of NVIDIA move towards open kernels! open source kernels drive innovation\nIt is now time for SemiAnalysis to nag NVIDIA to open source their trtllmgen attention kernels too!\n  > Quoting @cudagdb: Trtllmgen kernels are now open. Fastest prefill and decode kernels for our target workloads. We wrote these to win InferenceX, MLPerf, other benchmarks. Powering some of today’s top served models. Dive in, learn, use them, or level up your own. Enjoy.\n\nhttps://t.co/2aQBwcdnZL\n2026-04-03T23:43:03.000Z [366 likes · 28 RTs · 55268 views]",
+  "timeline": "- **2026-04-03** | 37d after NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": 37,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2040213520411709565"
+    ],
+    "conversation_id": "2040213520411709565",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 366,
+    "lead_views": 55268,
+    "lead_bookmarks": 139,
+    "published_at": "2026-04-03T23:43:03.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": 37,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

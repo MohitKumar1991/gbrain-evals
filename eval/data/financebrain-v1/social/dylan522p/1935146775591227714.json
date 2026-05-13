@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1935146775591227714",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-06-18",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1935146775591227714",
+  "published_at": "2025-06-18T01:25:19.000Z",
+  "compiled_truth": "These 8 and 9 figure offers may not convince the cultists at OpenAI and Anthropic, but there's plenty of mercenaries out there\nSome at OpenAI\nA lot at XAI\n2025-06-18T01:25:19.000Z [1295 likes · 21 RTs · 196772 views]",
+  "timeline": "- **2025-06-18** | 41d before MSFT Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-29",
+      "days_relative": -41,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1935146775591227714"
+    ],
+    "conversation_id": "1935146775591227714",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1295,
+    "lead_views": 196772,
+    "lead_bookmarks": 149,
+    "published_at": "2025-06-18T01:25:19.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-29",
+        "days_relative": -41,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

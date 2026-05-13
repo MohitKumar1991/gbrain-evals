@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1907172258856194382",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-01",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1907172258856194382",
+  "published_at": "2025-04-01T20:44:34.000Z",
+  "compiled_truth": "Peltier cooling is generally a meme but it's actually in high volume use\nAll 1.6T trancievers with EMLs including Nvidia LinkX ship with a peltier cooler for the laser\nPhononic has shipped over 30 million\nThey had a peltier freezer with ice cream that was delicious\nMade on wafers https://t.co/xf9p6Z9Mip\n2025-04-01T20:44:34.000Z [101 likes · 6 RTs · 16290 views]",
+  "timeline": "- **2025-04-01** | 35d after NVDA Q4 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-02-26",
+      "days_relative": 35,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1907172258856194382"
+    ],
+    "conversation_id": "1907172258856194382",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 101,
+    "lead_views": 16290,
+    "lead_bookmarks": 21,
+    "published_at": "2025-04-01T20:44:34.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-02-26",
+        "days_relative": 35,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

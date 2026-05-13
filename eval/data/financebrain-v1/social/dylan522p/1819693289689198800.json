@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1819693289689198800",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-08-03",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1819693289689198800",
+  "published_at": "2024-08-03T11:14:23.000Z",
+  "compiled_truth": "People keep asking about Blackwell delays\nWe already sent out the our update 2 weeks ago, July 22nd to our hyperscaler, semiconductor, and investor clients\nSell side and media are quite late\nThey still have multiple things wrong too\nVolumes, ASP, etc below\nhttps://t.co/frahauIDRt https://t.co/Oap8CSdZBr\n2024-08-03T11:14:23.000Z [349 likes · 35 RTs · 170585 views]",
+  "timeline": "- **2024-08-03** | 25d before NVDA Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-08-28",
+      "days_relative": -25,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1819693289689198800"
+    ],
+    "conversation_id": "1819693289689198800",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 349,
+    "lead_views": 170585,
+    "lead_bookmarks": 143,
+    "published_at": "2024-08-03T11:14:23.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-08-28",
+        "days_relative": -25,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

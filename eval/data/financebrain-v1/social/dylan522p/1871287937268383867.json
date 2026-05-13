@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1871287937268383867",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-12-23",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1871287937268383867",
+  "published_at": "2024-12-23T20:13:05.000Z",
+  "compiled_truth": "Met with @LisaSu today for 1.5 hours as we went through everything\nShe acknowledged the gaps in AMD software stack\nShe took our specific recommendations seriously\nShe asked her team and us a lot of questions\nMany changes are in flight already!\nExcited to see improvements coming\n  > Quoting @dylan522p: Our 5-month journey conducting independent analysis &amp; benchmarking of AMD MI300X vs Nvidia H100 + H200\nDetailed, open source low-level benchmarks\nperformance vs TCO\nComprehensive public recommendations\nIt’s not just immature software, they need to change how they do development\n2024-12-23T20:13:05.000Z [3456 likes · 195 RTs · 596883 views]",
+  "timeline": "- **2024-12-23** | 34d after NVDA Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-11-20",
+      "days_relative": 34,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1871287937268383867"
+    ],
+    "conversation_id": "1871287937268383867",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 3456,
+    "lead_views": 596883,
+    "lead_bookmarks": 622,
+    "published_at": "2024-12-23T20:13:05.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-11-20",
+        "days_relative": 34,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

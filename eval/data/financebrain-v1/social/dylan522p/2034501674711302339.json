@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2034501674711302339",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-03-19",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2034501674711302339",
+  "published_at": "2026-03-19T05:26:13.000Z",
+  "compiled_truth": "Jensen name-dropped me in the keynote and posed with our belt.\nHe has a physical belt too but they just showed the pic\nIntially I made fun of the 35X perf improvement being bogus, I thought it was an exaggeration of performance \nTurns out he was sandbagging, and perf is 50x https://t.co/q5lLa61Hyh\n2026-03-19T05:26:13.000Z [1916 likes · 69 RTs · 177169 views]",
+  "timeline": "- **2026-03-19** | 21d after NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": 21,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2034501674711302339"
+    ],
+    "conversation_id": "2034501674711302339",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1916,
+    "lead_views": 177169,
+    "lead_bookmarks": 415,
+    "published_at": "2026-03-19T05:26:13.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": 21,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2023449823442354595",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-02-16",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2023449823442354595",
+  "published_at": "2026-02-16T17:30:06.000Z",
+  "compiled_truth": "InferenceX, formerly InferenceMAX, is changing the industry\nPerformance of hardware + software is constantly evolving with new models and new ML Systems techniques\nAll major GPUs from AMD and Nvidia + soon TPUs / Trainium\nAMD said they'd send a pic of Lisa with their belt soon! https://t.co/NauZyBPr33\n  > Quoting @SemiAnalysis_: InferenceX v2: NVIDIA Blackwell Vs AMD vs Hopper - Formerly InferenceMAX,\nGB300 NVL72, MI355X, B200, H100, \nDisaggregated Serving,\nWide Expert Parallelism,\nLarge Mixture of Experts,\nSGLang, vLLM, TRTLLM\n\nhttps://t.co/TG9lBwL6iL\n2026-02-16T17:30:06.000Z [263 likes · 21 RTs · 70132 views]",
+  "timeline": "- **2026-02-16** | 9d before NVDA Q4 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-02-26",
+      "days_relative": -9,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2023449823442354595"
+    ],
+    "conversation_id": "2023449823442354595",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 263,
+    "lead_views": 70132,
+    "lead_bookmarks": 54,
+    "published_at": "2026-02-16T17:30:06.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-02-26",
+        "days_relative": -9,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

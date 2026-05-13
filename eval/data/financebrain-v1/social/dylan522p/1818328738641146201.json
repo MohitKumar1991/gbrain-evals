@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1818328738641146201",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-07-30",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1818328738641146201",
+  "published_at": "2024-07-30T16:52:08.000Z",
+  "compiled_truth": "SearchGPT is pretty based, lot less locked down. \nSystem prompt is tiny too\n\"You are SearchGPT, a large language model trained by OpenAI.\nToday is Tuesday, July 30, 2024 at 06:50:30 PM in the time zone 'Europe/Amsterdam'. The user is in Amsterdam, Noord-Holland, Netherlands.\"\n2024-07-30T16:52:08.000Z [70 likes · 1 RTs · 10993 views]",
+  "timeline": "- **2024-07-30** | earnings day — MSFT Q4 FY2024",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-07-30",
+      "days_relative": 1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1818328738641146201"
+    ],
+    "conversation_id": "1818328738641146201",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 70,
+    "lead_views": 10993,
+    "lead_bookmarks": 14,
+    "published_at": "2024-07-30T16:52:08.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-07-30",
+        "days_relative": 1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

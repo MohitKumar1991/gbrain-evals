@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1793792706445246816",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-05-23",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1793792706445246816",
+  "published_at": "2024-05-23T23:54:42.000Z",
+  "compiled_truth": "Remember when Zuck and Elon were in a dick measuring contest?\nWhat if it happens with open source LLMs?\nBoth will have 100k+ H100 clusters. \nLlama 3 405B is only 24k H100, and ~4e25.\nImagine if they fight to open source a ~5e26 model.\nOne can have hopium, but I doubt it honestly.\n  > Quoting @ryanmonsurate: I got to ask Elon to commit to a more open AI ecosystem…\n\nAnd he said yes!\n\nThank you @elonmusk! https://t.co/McoFT51b5V\n2024-05-23T23:54:42.000Z [34 likes · 0 RTs · 12833 views]",
+  "timeline": "- **2024-05-23** | 2d after NVDA Q1 FY2025 earnings\n- **2024-05-23** | 30d after META Q1 FY2024 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "META"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-05-22",
+      "days_relative": 2,
+      "phase": "post-earnings"
+    },
+    "META": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-04-24",
+      "days_relative": 30,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1793792706445246816"
+    ],
+    "conversation_id": "1793792706445246816",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 34,
+    "lead_views": 12833,
+    "lead_bookmarks": 11,
+    "published_at": "2024-05-23T23:54:42.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "META"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-05-22",
+        "days_relative": 2,
+        "phase": "post-earnings"
+      },
+      "META": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-04-24",
+        "days_relative": 30,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

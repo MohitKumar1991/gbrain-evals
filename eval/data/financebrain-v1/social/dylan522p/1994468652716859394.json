@@ -1,0 +1,81 @@
+{
+  "slug": "social/dylan522p/1994468652716859394",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-11-28",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1994468652716859394",
+  "published_at": "2025-11-28T18:09:16.000Z",
+  "compiled_truth": "OpenAI hasn’t even deployed TPUs yet and they’ve already saved ~30% on their entire lab wide NVIDIA fleet. This demonstrates how the perf per TCO advantage of TPUs is so strong that you already get the gains from adopting TPUs even before turning one on.\nThe piece covers a lot https://t.co/lfDzw1thB3\n  > Quoting @SemiAnalysis_: TPUv7: Google Takes a Swing at the King\nPotential end of the CUDA Moat?\nAnthropic’s 1GW+ TPU Purchase,\nThe more (TPU) Meta/SSI/xAI/OAI/Anthro buy the more (GPU capex) you save, \nNext Generation TPUv8AX and TPUv8X versus Vera Rubin,\nAll the 3D Torus Cube Diagrams you could possibly want and more...\n\nhttps://t.co/Xh1ohGxVjB\n2025-11-28T18:09:16.000Z [1198 likes · 101 RTs · 375183 views]",
+  "timeline": "- **2025-11-28** | 10d after NVDA Q3 FY2026 earnings\n- **2025-11-28** | 31d after MSFT Q1 FY2026 earnings\n- **2025-11-28** | 32d after GOOGL Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-11-19",
+      "days_relative": 10,
+      "phase": "post-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-10-29",
+      "days_relative": 31,
+      "phase": "post-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-10-28",
+      "days_relative": 32,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1994468652716859394"
+    ],
+    "conversation_id": "1994468652716859394",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 1198,
+    "lead_views": 375183,
+    "lead_bookmarks": 679,
+    "published_at": "2025-11-28T18:09:16.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-11-19",
+        "days_relative": 10,
+        "phase": "post-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-10-29",
+        "days_relative": 31,
+        "phase": "post-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-10-28",
+        "days_relative": 32,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

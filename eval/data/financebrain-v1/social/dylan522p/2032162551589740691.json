@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2032162551589740691",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-03-12",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2032162551589740691",
+  "published_at": "2026-03-12T18:31:22.000Z",
+  "compiled_truth": "OpenAI Codex 5.4 + CLI sucks\nLazy as fuck and slow, it just uses my local files, tries to make up an answer from that rather than creating something\nDoesn't have plugins like this\nhttps://t.co/gJA8lSKtVa\nNo /statusline to auto config my status bar either https://t.co/QZPpR8G4y6\n2026-03-12T18:31:22.000Z [124 likes · 2 RTs · 29029 views]",
+  "timeline": "- **2026-03-12** | 43d after MSFT Q2 FY2026 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-01-29",
+      "days_relative": 43,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2032162551589740691"
+    ],
+    "conversation_id": "2032162551589740691",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 124,
+    "lead_views": 29029,
+    "lead_bookmarks": 110,
+    "published_at": "2026-03-12T18:31:22.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-01-29",
+        "days_relative": 43,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

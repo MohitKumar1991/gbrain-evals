@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/2038784543579423184",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2026-03-31",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/2038784543579423184",
+  "published_at": "2026-03-31T01:04:48.000Z",
+  "compiled_truth": "Microsoft Office 365 is such a dog shit product.\nLiterally been breaking for the last 2 weeks when we try to buy more licenses. \nWe use Gmail and Slack, so it's silly to even use this.\nSharepoint is buggy a f too.\nWhy no one else make a functional collaborative file systems :( https://t.co/kO9ur2JYeP\n2026-03-31T01:04:48.000Z [547 likes · 19 RTs · 101065 views]",
+  "timeline": "- **2026-03-31** | 30d before MSFT Q3 FY2026 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-04-30",
+      "days_relative": -30,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "2038784543579423184"
+    ],
+    "conversation_id": "2038784543579423184",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 547,
+    "lead_views": 101065,
+    "lead_bookmarks": 84,
+    "published_at": "2026-03-31T01:04:48.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2026-04-30",
+        "days_relative": -30,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

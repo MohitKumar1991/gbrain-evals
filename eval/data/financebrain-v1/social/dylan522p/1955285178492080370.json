@@ -1,0 +1,81 @@
+{
+  "slug": "social/dylan522p/1955285178492080370",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-08-12",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1955285178492080370",
+  "published_at": "2025-08-12T15:08:08.000Z",
+  "compiled_truth": "There's a revolutionary change coming to HBM4 with custom base dies\nVarious different accelerators are doing many things differently with custom HBM including OpenAI, Nvidia, and AMD\nThere are many problems beingnsolved including shoreline area, memory controller offload, repeater PHYs, LPDDR + HBM combos, and various beachfront expansion techniques\nSRAM tags, compute under memory, supply chain implications, and Samsung\n  > Quoting @SemiAnalysis_: Our deep dive into HBM is here! For subscribers, we will also address the major questions on Samsung’s future viability as a supplier. In view of this piece, we will like to share more about the Hanmi and Hanwha Drama 🧵🍿\n\nhttps://t.co/9EhyJs5Yyx https://t.co/Xy0L1jQYle\n2025-08-12T15:08:08.000Z [156 likes · 10 RTs · 39635 views]",
+  "timeline": "- **2025-08-12** | 14d before NVDA Q2 FY2026 earnings\n- **2025-08-12** | 15d after MSFT Q4 FY2025 earnings\n- **2025-08-12** | 13d after AAPL Q3 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "AAPL"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-08-27",
+      "days_relative": -14,
+      "phase": "pre-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-29",
+      "days_relative": 15,
+      "phase": "post-earnings"
+    },
+    "AAPL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-31",
+      "days_relative": 13,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1955285178492080370"
+    ],
+    "conversation_id": "1955285178492080370",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 156,
+    "lead_views": 39635,
+    "lead_bookmarks": 56,
+    "published_at": "2025-08-12T15:08:08.000Z",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "AAPL"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-08-27",
+        "days_relative": -14,
+        "phase": "pre-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-29",
+        "days_relative": 15,
+        "phase": "post-earnings"
+      },
+      "AAPL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-31",
+        "days_relative": 13,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

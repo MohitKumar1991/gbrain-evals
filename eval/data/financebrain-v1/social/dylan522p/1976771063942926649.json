@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1976771063942926649",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-10-10",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1976771063942926649",
+  "published_at": "2025-10-10T22:05:22.000Z",
+  "compiled_truth": "Tbh didn't even know this was a big deal.\nI thought everyone knew Alibaba Megaspeed?\nWe've had them in the accelerator model for a long long time\n  > Quoting @Byron_Wan: On a June night in 2024, Nvidia CEO Jensen Huang held court with several of his company’s major Asian customers at a bar in Taipei. Next to him was Huang Xiaole (黄小乐) aka Alice Huang, an executive of Megaspeed, a shady Singapore-based data center company.\n\nNvidia’s compliance team has looked into Megaspeed and determined it’s “wholly owned and operated by a company based and headquartered outside China, with no China shareholder.”\n\nMegaspeed was created in 2023 when 🇨🇳 7Road, a gaming company with ties to 🇨🇳 state-backed investors, split off its overseas operation in Singapore and renamed it Megaspeed, which in early 2024 set up Speedmatrix, a subsidiary in Malaysia that quickly snapped up ~$2B worth of Nvidia’s most advanced chips. Most of those chips came from Aivres, the US subsidiary of 🇨🇳 Inspur, a major tech company added to the 🇺🇸 Entity List in 2023 for supporting 🇨🇳 military 👉🏻 Nvidia is barred from selling its technology to Inspur without a special license. But since Aivres is based in California and records sales as a US company, it can buy Nvidia chips freely.\n\nMegaspeed has funneled those chips to data centers in Malaysia and Indonesia that appear to remotely serve customers in China. That is not necessarily illegal, but it can be found unlawful if it is done on behalf of a 🇨🇳 company. US officials have also been scrutinizing whether Megaspeed diverted some of those chips on to China, in violation of US law.\n\nMegaspeed is also facing scrutiny from Singaporean police.\n\nMegaspeed listed Alice Huang as its managing director for its first 8 months, and its current director James Tan is from Singapore but is based in Shanghai.\n\nIt’s not clear when Jensen Huang and Alice Huang, who are not related, first met. She was mingling with a crowd of tech executives just after midnight at the Taipei bar in early June 2024 when she offered to ask Jensen Huang to join them.\n\n“I bet you guys I can get Jensen here,” she said, and shortly afterwards Jensen Huang arrived in his trademark black leather jacket and drank a whiskey shot with the group. \n\nJensen Huang and Alice Huang were photographed together again in May, exiting a restaurant in Taipei with an Nvidia aide after a business dinner with other AI suppliers.\n\nAlice Huang spent much of her career in China, including working as a TV reporter for 🇨🇳 state media and as a private banker. Huang left Megaspeed in recent months. It’s unclear when and why she left and what she’s doing now.\n\nBoth she and 🇨🇳 7Road, the Chinese company that Megaspeed split off from, have close ties to a web of wealthy investors and tech companies with data center projects in China.\n\nThe owners of 7Road include 🇨🇳 central government and several local governments. Before joining Megaspeed, Ms. Huang was executive director for a Shanghai-based fund that had invested in 7Road and had ties to state-backed firms.\n\nReporters looking into Megaspeed’s opaque operation have tracked business listings that led to a Malaysian data center and shopping mall, a near-empty office in Singapore and a dilapidated storefront outside Kuala Lumpur.\n\nIt’s not clear where Megaspeed’s billions of dollars came from. But a few weeks after the gathering in Taipei last year, Megaspeed began receiving a steady supply of multimillion dollar shipments of some of Nvidia’s most advanced chips.\n\nOver the next 3 months, Megaspeed bought a billion $ of Nvidia technology. Within the next 9 months, it secured roughly a billion $ more. The bulk of those advanced Nvidia chips were purchased from 🇨🇳 Inspur’s US subsidiary Aivres. The shipments went to Megaspeed’s Malaysian subsidiary Speedmatrix.\n\nThe registered address for Speedmatrix on the shipping records led to a dilapidated storefront outside Kuala Lumpur, where the sign out front advertised a construction company. No one was inside when a reporter visited the address in late Sep. Employees at the law firm next door said they rarely saw people in the office.\n\n1/2\n\nhttps://t.co/L7atmyy6xs\n2025-10-10T22:05:22.000Z [227 likes · 11 RTs · 68106 views]",
+  "timeline": "- **2025-10-10** | 39d before NVDA Q3 FY2026 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-11-19",
+      "days_relative": -39,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1976771063942926649"
+    ],
+    "conversation_id": "1976771063942926649",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 227,
+    "lead_views": 68106,
+    "lead_bookmarks": 87,
+    "published_at": "2025-10-10T22:05:22.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-11-19",
+        "days_relative": -39,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}

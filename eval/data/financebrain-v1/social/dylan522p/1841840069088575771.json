@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1841840069088575771",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-10-03",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1841840069088575771",
+  "published_at": "2024-10-03T13:57:46.000Z",
+  "compiled_truth": "AI Neocloud Playbook and Anatomy\nH100 Rental Price Cuts\nAI Neocloud Giants and Emerging Neoclouds\nH100 Cluster Bill of Materials and Cluster Deployment\nDay to Day Operations, Cost Optimizations\nCost of Ownership and Returns\nhttps://t.co/NzQSnRphVe\n2024-10-03T13:57:46.000Z [106 likes · 13 RTs · 27817 views]",
+  "timeline": "- **2024-10-03** | 37d after NVDA Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-08-28",
+      "days_relative": 37,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1841840069088575771"
+    ],
+    "conversation_id": "1841840069088575771",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 106,
+    "lead_views": 27817,
+    "lead_bookmarks": 46,
+    "published_at": "2024-10-03T13:57:46.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2024-08-28",
+        "days_relative": 37,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

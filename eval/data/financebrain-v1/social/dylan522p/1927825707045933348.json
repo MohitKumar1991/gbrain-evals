@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1927825707045933348",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-05-28",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1927825707045933348",
+  "published_at": "2025-05-28T20:34:00.000Z",
+  "compiled_truth": "Fun conversation with the CoreWeave CTO Peter Salanki\nTheir origin story + crazy YOLO bets\nHow they built their SW / HW stack\nBuilt for low reliability consumer GPUs\nWhen low reliability datacenter HW came (H100 + GB200) they were ready\nHyperscale CPU clouds weren't ready for it\n  > Quoting @CoreWeave: Our CTO Peter Salanki joined @SemiAnalysis_ founder @dylan522p on a podcast to discuss CoreWeave's #1 AI Cloud ranking, the company backstory, and much more. Check out the full pod here: https://t.co/TNFqnLtUhL\n#AICloud #CoreWeave #SemiAnalysis #AIinfrastructure https://t.co/PwPYPHXFnc\n2025-05-28T20:34:00.000Z [288 likes · 13 RTs · 50096 views]",
+  "timeline": "- **2025-05-28** | earnings day — NVDA Q1 FY2026",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-05-28",
+      "days_relative": 1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1927825707045933348"
+    ],
+    "conversation_id": "1927825707045933348",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 288,
+    "lead_views": 50096,
+    "lead_bookmarks": 189,
+    "published_at": "2025-05-28T20:34:00.000Z",
+    "companies_mentioned": [
+      "NVDA"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2026",
+        "earnings_date": "2025-05-28",
+        "days_relative": 1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1794934661619278204",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2024-05-27",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1794934661619278204",
+  "published_at": "2024-05-27T03:32:26.000Z",
+  "compiled_truth": "Apple’s AI Strategy\nApple Datacenters, On-device, Cloud, And More\nWhen to run on-device, in Apple datacenters, or in the cloud with OpenAI\nPersonal Assistant Deal economics\nhttps://t.co/93iNKXiBWF\n2024-05-27T03:32:26.000Z [132 likes · 20 RTs · 35102 views]",
+  "timeline": "- **2024-05-27** | 32d after MSFT Q3 FY2024 earnings\n- **2024-05-27** | 25d after AAPL Q2 FY2024 earnings",
+  "companies_mentioned": [
+    "MSFT",
+    "AAPL"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-04-25",
+      "days_relative": 32,
+      "phase": "post-earnings"
+    },
+    "AAPL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-05-02",
+      "days_relative": 25,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1794934661619278204"
+    ],
+    "conversation_id": "1794934661619278204",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 132,
+    "lead_views": 35102,
+    "lead_bookmarks": 47,
+    "published_at": "2024-05-27T03:32:26.000Z",
+    "companies_mentioned": [
+      "MSFT",
+      "AAPL"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-04-25",
+        "days_relative": 32,
+        "phase": "post-earnings"
+      },
+      "AAPL": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-05-02",
+        "days_relative": 25,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

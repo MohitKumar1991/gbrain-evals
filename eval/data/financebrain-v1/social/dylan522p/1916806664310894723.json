@@ -1,0 +1,65 @@
+{
+  "slug": "social/dylan522p/1916806664310894723",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-04-28",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1916806664310894723",
+  "published_at": "2025-04-28T10:48:15.000Z",
+  "compiled_truth": "Microsoft's initial plan was to leapfrog both Google and Amazon to become the largest tech infrastructure company in the world.\nThen they got scared.\nThey backed away from OpenAI, backed away from some leases, and even slowed down their construction pace for major datacenters.\n  > Quoting @SemiAnalysis_: Microsoft’s Datacenter Freeze\n1.5GW Self-Build Slowdown\nLease Cancellation Misconceptions\nOpenAI Shift\nOracle &amp; Stargate Acceleration\nHyperscale Capex Implications\nVertiv's Impact Misunderstood $VRT\nCopilot Weak Adoption\nhttps://t.co/WH26fgXr6g\n2025-04-28T10:48:15.000Z [995 likes · 63 RTs · 182497 views]",
+  "timeline": "- **2025-04-28** | 2d before MSFT Q3 FY2025 earnings\n- **2025-04-28** | earnings day — GOOGL Q1 FY2025",
+  "companies_mentioned": [
+    "MSFT",
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-30",
+      "days_relative": -2,
+      "phase": "pre-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-04-29",
+      "days_relative": -1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1916806664310894723"
+    ],
+    "conversation_id": "1916806664310894723",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 995,
+    "lead_views": 182497,
+    "lead_bookmarks": 221,
+    "published_at": "2025-04-28T10:48:15.000Z",
+    "companies_mentioned": [
+      "MSFT",
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-30",
+        "days_relative": -2,
+        "phase": "pre-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-04-29",
+        "days_relative": -1,
+        "phase": "earnings-day"
+      }
+    }
+  }
+}

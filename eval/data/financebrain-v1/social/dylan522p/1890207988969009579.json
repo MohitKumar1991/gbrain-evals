@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1890207988969009579",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-02-14",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1890207988969009579",
+  "published_at": "2025-02-14T01:14:37.000Z",
+  "compiled_truth": "The best part about Le Stargate is that German power prices are gonna spike and grid stability is gonna tank\nFrance exports 101.3TWh a year to her neighbors, or enough for 11 Gigawatts of datacenters. \nLe Stargate ambitions are not quite that large... yet, but one day they may be\n  > Quoting @dylan522p: You've heard of Le Chat, the French competitor to ChatGPT\nNow France is announcing Le Stargate\nMacron announced a 100B Euro investment in \"La Porte des Etoiles\"\nWill French luxury goods die when people slowly leave that France just copies America?\nhttps://t.co/6bJEsN4c3u\n2025-02-14T01:14:37.000Z [416 likes · 15 RTs · 90562 views]",
+  "timeline": "- **2025-02-14** | 16d after MSFT Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-29",
+      "days_relative": 16,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1890207988969009579"
+    ],
+    "conversation_id": "1890207988969009579",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 416,
+    "lead_views": 90562,
+    "lead_bookmarks": 79,
+    "published_at": "2025-02-14T01:14:37.000Z",
+    "companies_mentioned": [
+      "MSFT"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-01-29",
+        "days_relative": 16,
+        "phase": "post-earnings"
+      }
+    }
+  }
+}

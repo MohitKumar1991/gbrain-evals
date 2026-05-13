@@ -1,0 +1,49 @@
+{
+  "slug": "social/dylan522p/1943796348853043477",
+  "type": "article",
+  "source_type": "social",
+  "title": "@dylan522p — 2025-07-11",
+  "author": "@dylan522p (Dylan Patel)",
+  "url": "https://x.com/dylan522p/status/1943796348853043477",
+  "published_at": "2025-07-11T22:15:38.000Z",
+  "compiled_truth": "This is the best timeline\nWholda thought nerds changing companies is the most entertaining soap opera ever\n  > Quoting @OfficialLoganK: Big welcome to @_mohansolo and others from the Windsurf team joining Deepmind : )\n2025-07-11T22:15:38.000Z [317 likes · 1 RTs · 35828 views]",
+  "timeline": "- **2025-07-11** | 17d before GOOGL Q2 FY2025 earnings",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-29",
+      "days_relative": -17,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "handle": "dylan522p",
+    "tweet_ids": [
+      "1943796348853043477"
+    ],
+    "conversation_id": "1943796348853043477",
+    "is_thread": false,
+    "is_reply": false,
+    "in_reply_to": null,
+    "lead_likes": 317,
+    "lead_views": 35828,
+    "lead_bookmarks": 20,
+    "published_at": "2025-07-11T22:15:38.000Z",
+    "companies_mentioned": [
+      "GOOGL"
+    ],
+    "quarter_context": {
+      "GOOGL": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2025",
+        "earnings_date": "2025-07-29",
+        "days_relative": -17,
+        "phase": "pre-earnings"
+      }
+    }
+  }
+}
