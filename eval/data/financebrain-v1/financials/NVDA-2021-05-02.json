@@ -1,11 +1,11 @@
 {
   "slug": "financials/NVDA-2021-05-02",
   "type": "filing",
-  "source_type": "sec-10q",
+  "source_type": "financials",
   "title": "NVDA Q1 CY2022 (period ending 2021-05-02) Financial Results",
   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NVDA&type=10-Q",
   "published_at": "2021-05-26T00:00:00.000Z",
-  "compiled_truth": "NVDA — Q1 CY2022 (period ending 2021-05-02)\nFiled: 2021-05-26\n\nINCOME STATEMENT\nRevenue:          $5.66B   (YoY ↑ N/A, QoQ ↑ N/A)\nGross Profit:     $3.63B   Gross Margin: 64.1%\nOperating Income: $1.96B   Operating Margin: 34.6%   (YoY N/A)\nEBITDA:           $2.38B   EBITDA Margin: 42.0%\nNet Income:       $1.91B   Net Margin: 33.8%   (YoY N/A)\nEPS (Diluted):    $0.08\nDiluted Shares:   25.28B\n\nExpenses:\n  R&D:            $1.15B\n  SG&A:           $0.52B\n\nBALANCE SHEET (as of 2021-05-02)\nCash & ST Investments: $12.67B\nTotal Assets:          $30.80B\nTotal Debt:            $7.74B\nNet Debt: $6.76B\nGoodwill & Intangibles:$6.81B\nTotal Equity:          $18.77B\n\nCASH FLOW\nOperating Cash Flow:   $1.87B\nCapital Expenditures:  $-0.30B\nFree Cash Flow:        $1.58B\nStock Buybacks:        N/A\nDividends Paid:        $-0.10B\nStock-Based Comp:      $0.43B",
+  "compiled_truth": "NVIDIA Corporation (NVDA) — Q1 CY2022 (period ending 2021-05-02)\nFiled: 2021-05-26\n\nINCOME STATEMENT\nRevenue:          $5.66B   (YoY ↑ N/A, QoQ ↑ N/A)\nGross Profit:     $3.63B   Gross Margin: 64.1%\nOperating Income: $1.96B   Operating Margin: 34.6%   (YoY N/A)\nEBITDA:           $2.38B   EBITDA Margin: 42.0%\nNet Income:       $1.91B   Net Margin: 33.8%   (YoY N/A)\nEPS (Diluted):    $0.08\nDiluted Shares:   25.28B\n\nExpenses:\n  R&D:            $1.15B\n  SG&A:           $0.52B\n\nBALANCE SHEET (as of 2021-05-02)\nCash & ST Investments: $12.67B\nTotal Assets:          $30.80B\nTotal Debt:            $7.74B\nNet Debt: $6.76B\nGoodwill & Intangibles:$6.81B\nTotal Equity:          $18.77B\n\nCASH FLOW\nOperating Cash Flow:   $1.87B\nCapital Expenditures:  $-0.30B\nFree Cash Flow:        $1.58B\nStock Buybacks:        N/A\nDividends Paid:        $-0.10B\nStock-Based Comp:      $0.43B",
   "companies_mentioned": [
     "NVDA"
   ],

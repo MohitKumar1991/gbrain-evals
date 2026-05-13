@@ -1,0 +1,87 @@
+{
+  "description": "One smoke-test query per source_type category. answer_slugs are exact page slugs that must appear in top-K results for a hit. Queries are written to work across both keyword and vector adapters.",
+  "queries": [
+    {
+      "id": "substack-01",
+      "category": "substack",
+      "question": "NVIDIA GPU compute AI infrastructure dominance semiconductor",
+      "answer_slugs": [
+        "substack/ai-is-changing-the-future-of-semiconductor",
+        "substack/the-landowners-of-ai",
+        "substack/ai-in-cybersecurity-and-nvidias-ai"
+      ],
+      "notes": "Broad topic — any substack article about NVIDIA AI infrastructure is a hit. Answer slugs are best-guess candidates."
+    },
+    {
+      "id": "financials-01",
+      "category": "financials",
+      "question": "NVIDIA Corporation NVDA Q3 revenue gross margin operating income October 2024",
+      "answer_slugs": [
+        "financials/nvda-2024-10-27"
+      ],
+      "notes": "Q3 FY2025 financials (period ending 2024-10-27). compiled_truth now includes full company name."
+    },
+    {
+      "id": "transcript-01",
+      "category": "transcript",
+      "question": "Jensen Huang Blackwell GPU data center demand Q3 fiscal 2025 earnings call transcript",
+      "answer_slugs": [
+        "transcripts/nvda-2024-q3"
+      ],
+      "notes": "NVDA Q3 2024 calendar = Q3 FY2025. Jensen Huang discusses Blackwell ramp on this call."
+    },
+    {
+      "id": "price-01",
+      "category": "price",
+      "question": "NVDA CY2023 Q2 quarter return stock price April June 2023",
+      "answer_slugs": [
+        "price/nvda-cy2023-q2"
+      ],
+      "notes": "Q2 2023 = April-June 2023. Slug contains CY2023-Q2 which should FTS-match."
+    },
+    {
+      "id": "social-01",
+      "category": "social",
+      "question": "NVIDIA supply chain GPU shipments semiconductor chips AI infrastructure",
+      "answer_slugs": [],
+      "answer_slug_pattern": "social/dylan522p/",
+      "notes": "Any dylan522p tweet about NVIDIA supply chain is a hit. No fixed answer slug."
+    },
+    {
+      "id": "portfolio-01",
+      "category": "portfolio",
+      "question": "NVDA NVIDIA shares position unrealized P&L long equity portfolio holdings",
+      "answer_slugs": [
+        "portfolio/holdings-2026-05-12"
+      ],
+      "notes": "Single portfolio snapshot. compiled_truth contains NVDA, shares, P&L, position etc."
+    },
+    {
+      "id": "sec-8k-01",
+      "category": "sec-8k",
+      "question": "NVIDIA record quarterly revenue Data Center Q4 fiscal 2026 earnings press release",
+      "answer_slugs": [
+        "sec/nvda/8-k-2026-02-25"
+      ],
+      "notes": "Q4 FY2026 press release (EX-99.1). Contains 'record quarterly revenue' and 'Data Center'."
+    },
+    {
+      "id": "sec-10k-01",
+      "category": "sec-10k",
+      "question": "NVIDIA Corporation risk factors competitive threats annual report fiscal 2026 business",
+      "answer_slugs": [
+        "sec/nvda/10-k-2026-02-25"
+      ],
+      "notes": "10-K filed 2026-02-25. compiled_truth has Business + Risk Factors + MD&A sections."
+    },
+    {
+      "id": "sec-10q-01",
+      "category": "sec-10q",
+      "question": "Microsoft Azure cloud revenue growth intelligent cloud quarterly report 2026",
+      "answer_slugs": [
+        "sec/msft/10-q-2026-04-29"
+      ],
+      "notes": "MSFT Q3 FY2026 10-Q filed 2026-04-29. MD&A section covers Azure growth."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "sec/AAPL/8-k-2025-01-03",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "AAPL 8-K — 2025-01-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000320193/000114036125000228/",
+  "published_at": "2025-01-03T00:00:00.000Z",
+  "compiled_truth": "AAPL — 8-K Filing\nFiled: 2025-01-03  |  Period: 2024-12-30  |  Accession: 0001140361-25-000228\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nUNITED STATES \n\nSECURITIES AND EXCHANGE COMMISSION\n\nWashington, D.C. 20549\n\nFORM \n\nCURRENT REPORT\n\nPursuant to Section 13 OR 15(d) of The Securities Exchange Act of 1934\n\nDate of Report (Date of earliest event reported)\n\n(Exact name of Registrant as specified in its charter)\n\n(State or other jurisdiction\n\nof incorporation)\n\n(Commission\n\nFile Number)\n\n, \n\n(Address of principal executive offices) (Zip Code)\n\n() \n\n(Registrant s telephone number, including area code)\n\nNot applicable\n\n(Former name or former address, if changed since last report.)\n\n(I.R.S. Employer\n\nIdentification No.)\n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the Registrant under any of the following provisions:\n\nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) \n\nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \n\nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \n\nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \n\nSecurities registered pursuant to Section 12(b) of the Act:\n\nTitle of each class\n\nTrading symbol(s)\n\nName of each exchange on which registered\n\nThe Nasdaq Stock Market LLC \n\nIndicate by check mark whether the Registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule 12b-2 of the\nSecurities Exchange Act of 1934 ( 240.12b-2 of this chapter).\n\nEmerging growth company \n\nIf an emerging growth company, indicate by check mark if the Registrant has elected not to use the extended transition period for complying with\nany new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \n\nItem 5.02 Departure of Directors or Certain\nOfficers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. \n\nAs part of Apple Inc. s ( Apple s ) previously announced Chief Financial Officer transition plan, Apple s Board of Directors appointed\nKevan Parekh, 53, as Apple s Senior Vice President, Chief Financial Officer, effective January 1, 2025. Mr. Parekh succeeds Luca Maestri in the role of CFO.\n\nMr. Parekh joined Apple in June 2013 and assumed his current position in January 2025. Mr. Parekh s previous positions at Apple include Vice President, Financial Planning and Analysis and Vice President, Finance for Sales, Marketing, and Retail.\nPrior to joining Apple, Mr. Parekh held various senior leadership roles at Thomson Reuters and General Motors.\n\nMr. Parekh s annual salary was increased to $1 million, effective January 1, 2025, and he is eligible to participate in the Apple Inc. Executive Cash Incentive Plan for fiscal year 2025 on the same basis as Apple s other named executive officers,\nwith a target opportunity of 175% of base salary based on his time in his respective roles for fiscal year 2025.\n\nMr. Parekh was previously awarded 36,767 performance-based restricted stock units ( RSUs ), and 36,767 time-based RSUs for fiscal year 2025 under the Apple Inc. 2022 Employee Stock Plan.\nThe performance-based RSUs are scheduled to vest on October 1, 2027, subject to the terms of the award agreement. Between 0% and 200% of the target number of performance-based RSUs may vest, with the percentage determined based on Apple s total\nshareholder return relative to companies in the S&P 500 from September 29, 2024 through September 25, 2027. The time-based RSUs are scheduled to vest in equal installments on each of April 1, 2027, April 1, 2028, and April 1, 2029, subject to\nthe terms of the award agreement.\n\nApple and Mr. Parekh have entered into Apple s standard indemnification agreement for executive officers. There are no family relationships between Mr. Parekh and any director or executive officer of Apple that would be required to be disclosed\npursuant to Item 401(d) of Regulation S-K, and there are no transactions between Mr. Parekh and Apple that would be required to be disclosed pursuant to Item 404(a) of Regulation S-K. \n\nSIGNATURES\n\nPursuant to the requirements of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly\nauthorized.\n\nDate: January 3, 2025 \n\nApple Inc. \n\nBy:\n\n/s/ Katherine Adams\n\nKatherine Adams\n\nSenior Vice President,\n\nGeneral Counsel and Secretary",
+  "companies_mentioned": [
+    "AAPL"
+  ],
+  "quarter_context": {
+    "AAPL": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-01-30",
+      "days_relative": -27,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "AAPL",
+    "form": "8-K",
+    "filing_date": "2025-01-03",
+    "period_date": "2024-12-30",
+    "accession_no": "0001140361-25-000228",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

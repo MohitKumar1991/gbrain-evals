@@ -1,0 +1,31 @@
+{
+  "slug": "sec/GOOGL/8-k-2024-06-05",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "GOOGL 8-K — 2024-06-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001652044/000119312524154725/",
+  "published_at": "2024-06-05T00:00:00.000Z",
+  "compiled_truth": "GOOGL — 8-K Filing\nFiled: 2024-06-05  |  Period: 2024-06-05  |  Accession: 0001193125-24-154725\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-99.1\n2\nd837191dex991.htm\nEX-99.1\n\nEX-99.1 \n\nExhibit 99.1 \n\nAnat Ashkenazi to Join Google and Alphabet as Chief Financial Officer \n\nMOUNTAIN VIEW, Calif (June 5, 2024) Alphabet Inc. (NASDAQ: GOOG; GOOGL) today announced that Anat Ashkenazi, currently Executive Vice President and\nChief Financial Officer at Eli Lilly and Company, will join its management team as Chief Financial Officer and Senior Vice President of Google and Alphabet, effective July 31, 2024. \n\nThe company had previously announced in July 2023 that Ruth Porat was commencing a new role as President & Chief Investment Officer of Alphabet and\nGoogle. She will continue as CFO until Anat starts, including through the company s Q2 earnings. \nAnat Ashkenazi is the Executive Vice President and\nChief Financial Officer of Eli Lilly and Company, where she has worked for over twenty three years. Anat joined Eli Lilly in 2001 and has had a diverse career spanning financial, strategy and operations roles. Prior to her current position, Anat\nserved in the role of Senior Vice President, Controller and Chief Financial Officer of Lilly Research Laboratories. She also held roles as the chief financial officer for a number of global divisions within Eli Lilly, including Oncology, Diabetes,\nGlobal Manufacturing & Quality and Research & Development. Anat holds an MBA from Tel Aviv University and a BA in economics and business administration from the Hebrew University. \n\nAnat will be based in the Bay Area, reporting to Google and Alphabet CEO Sundar Pichai. \n\nWe re very pleased to have found such a strong CFO, with a track record of strategic focus on long-term investment to fuel innovation and\ngrowth, said Sundar Pichai. The AI era is giving us an incredible opportunity to innovate at scale across our core products, and to create entirely new products and experiences for our users and customers. I look forward to working with\nAnat as we invest responsibly to support our next wave of growth. \nGoogle s growth and evolution over the last 25 years has been an\nincredible story, helping billions of people and millions of businesses around the world. Today, the opportunity for impact is greater than ever, and I feel honored to be joining Sundar and his leadership team as they invest for the company s\nfuture at such an exciting moment, said Anat Ashkenazi. \nAbout Alphabet Inc. Alphabet is a collection of companies, the largest of which is\nGoogle. Larry Page and Sergey Brin founded Google in September 1998 and the company is headquartered in Mountain View, Calif. Billions of people use its wide range of popular products and platforms each day, like Search, Ads, Chrome, Cloud, YouTube\nand Android. \n\n1 \n\nContact \n\nInvestor Relations: \ninvestor-relations@abc.xyz \n\nMedia: \npress@abc.xyz \n\n2",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-04-25",
+      "days_relative": 41,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "GOOGL",
+    "form": "8-K",
+    "filing_date": "2024-06-05",
+    "period_date": "2024-06-05",
+    "accession_no": "0001193125-24-154725",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

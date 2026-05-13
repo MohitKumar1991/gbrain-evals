@@ -1,0 +1,31 @@
+{
+  "slug": "sec/META/8-k-2024-02-14",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "META 8-K — 2024-02-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000132680124000019/",
+  "published_at": "2024-02-14T00:00:00.000Z",
+  "compiled_truth": "META — 8-K Filing\nFiled: 2024-02-14  |  Period: 2024-02-13  |  Accession: 0001326801-24-000019\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-99.1\n2\nfeb142024exhibit991.htm\nEX-99.1\n\nDocument \n\nExhibit 99.1 \n\nHock E. Tan and John Arnold to Join Meta Board of Directors \n\nMENLO PARK, Calif., February 14, 2024 - Meta today announced that Hock E. Tan and John Arnold have been elected to the company s board of directors, effective immediately. \n\nMark Zuckerberg, Founder and CEO of Meta, said, I'm excited to share that Hock Tan and John Arnold are joining Meta's board of directors. As we focus on building AGI, having directors with deep expertise in silicon and energy infrastructure will help us execute our long term vision. \n\nI am pleased to join the Meta Board and contribute to achieving the company s vision, said Tan. Meta has an incredible role to play in the next-generation of computing as it evolves its platform and apps offerings for the future. I look forward to working with Mark, the broader team and the other Board members on Meta's technology and business journey. \n\nI look forward to being a part of Meta s board, and to contributing my insights as we work together in our collective responsibility to Meta s users and the wider community, said Arnold. \n\nHock Tan has served as Broadcom s President CEO and a member of the Board of Directors since March 2006. From September 2005 to January 2008, he served as chairman of the board of Integrated Device Technology. Prior to becoming chairman of IDT, Mr. Tan was the President and Chief Executive Officer of Integrated Circuit Systems from June 1999 to September 2005. Prior to ICS, Mr. Tan was Vice President of Finance with Commodore International from 1992 to 1994, and previously held senior management positions with PepsiCo and General Motors. Mr. Tan served as managing director of Pacven Investment, a venture capital fund in Singapore, from 1988 to 1992, and served as managing director for Hume Industries in Malaysia from 1983 to 1988. \n\nJohn Arnold is co-founder and co-chair of Arnold Ventures. Arnold Ventures seeks to tackle some of the most pressing problems in the United States by applying evidence-based solutions to improve outcomes in public systems, including health care, education, criminal justice, infrastructure, and public finance. Mr. Arnold is co-founder and chairman of Grid United, a developer of interregional, high-voltage transmission projects with a mission to make America s power grid more reliable, resilient, and efficient. Mr. Arnold is founder of Centaurus Capital, a family office investment fund focused on the energy industry. Previously, Mr. Arnold served as founder and CEO of Centaurus Energy, a multi-billion-dollar energy commodity hedge fund that he founded after overseeing trading of natural gas derivatives at Enron Corp. \n\nMeta s current board members are Mark Zuckerberg Peggy Alford, former Executive Vice President, Global Sales, PayPal Holdings, Inc. Marc L. Andreessen, Andreessen Horowitz John Arnold, Co-Founder, Arnold Ventures Drew Houston, Co-Founder and CEO, Dropbox, Inc. Nancy Killefer, Retired Senior Partner, McKinsey Company Robert M. Kimmitt, Meta s Lead Independent Director and Senior International Counsel at WilmerHale LLP Sheryl K. Sandberg, former Chief Operating Officer, Meta Hock E. Tan, President and CEO, Broadcom Inc. Tracey T. Travis, Executive Vice President and Chief Financial Officer, The Est e Lauder Companies, Inc. and Tony Xu, Co-Founder and CEO, DoorDash, Inc. \n\nAbout Meta \n\nMeta builds technologies that help people connect, find communities, and grow businesses. When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta is moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology. \n\nContacts \n\nInvestors \nKenneth Dorell \ninvestor meta.com investor.fb.com \n\nPress \nRyan Moore \npress meta.com about.fb.com news",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {
+    "META": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2024-02-01",
+      "days_relative": 13,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "META",
+    "form": "8-K",
+    "filing_date": "2024-02-14",
+    "period_date": "2024-02-13",
+    "accession_no": "0001326801-24-000019",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

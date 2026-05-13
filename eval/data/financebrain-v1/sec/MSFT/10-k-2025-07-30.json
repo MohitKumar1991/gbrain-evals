@@ -1,0 +1,31 @@
+{
+  "slug": "sec/MSFT/10-k-2025-07-30",
+  "type": "filing",
+  "source_type": "sec-10k",
+  "title": "MSFT 10-K — 2025-07-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000095017025100235/",
+  "published_at": "2025-07-30T00:00:00.000Z",
+  "compiled_truth": "MSFT — 10-K Filing\nFiled: 2025-07-30  |  Period: 2025-06-30  |  Accession: 0000950170-25-100235\n\n════════════════════════════════════════════════════════════\nMANAGEMENT'S DISCUSSION AND ANALYSIS\n════════════════════════════════════════════════════════════\n\nITEM 7. MANAGEMENT S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS \nThe following Management s Discussion and Analysis of Financial Condition and Results of Operations ( MD&A ) is intended to help the reader understand the results of operations and financial condition of Microsoft Corporation. MD&A is provided as a supplement to, and should be read in conjunction with, our consolidated financial statements and the accompanying Notes to Financial Statements (Part II, Item 8 of this Form 10-K). This section generally discusses the results of our operations for the year ended June 30, 2025 compared to the year ended June 30, 2024. For a discussion of the year ended June 30, 2024 compared to the year ended June 30, 2023, please refer to Part II, Item 7, Management s Discussion and Analysis of Financial Condition and Results of Operations in our Annual Report on Form 10-K for the year ended June 30, 2024 and our Form 8-K filed on December 3, 2024. \nOVERVIEW \nMicrosoft is a technology company committed to making digital technology and artificial intelligence ( AI ) available broadly and doing so responsibly, with a mission to empower every person and every organization on the planet to achieve more. We create platforms and tools, powered by AI, that deliver innovative solutions that meet the evolving needs of our customers. \nWe generate revenue by offering a wide range of cloud-based solutions, content, and other services to people and businesses; licensing and supporting an array of software products; delivering relevant online advertising to a global audience; and designing and selling devices. Our most significant expenses are related to compensating employees; supporting and investing in our cloud-based services, including datacenter operations; designing, manufacturing, marketing, and selling our other products and services; and income taxes. \nHighlights from fiscal year 2025 compared with fiscal year 2024 included: \nMicrosoft Cloud revenue increased 23% to $168.9 billion. \n\nMicrosoft 365 Commercial products and cloud services revenue increased 14% driven by Microsoft 365 Commercial cloud revenue growth of 15%. \n\nMicrosoft 365 Consumer products and cloud services revenue increased 11% driven by Microsoft 365 Consumer cloud revenue growth of 11%. \n\nLinkedIn revenue increased 9%. \n\nDynamics products and cloud services revenue increased 15% driven by Dynamics 365 revenue growth of 19%. \n\nServer products and cloud services revenue increased 23% driven by Azure and other cloud services revenue growth of 34%. \n\nWindows OEM and Devices revenue increased 3%. \n\nXbox content and services revenue increased 16%. \n\nSearch and news advertising revenue excluding traffic acquisition costs increased 20%. \n\nIndustry Trends and Opportunities \nOur industry is dynamic and highly competitive, with frequent changes in both technologies and business models. Each industry shift is an opportunity to conceive new products, new technologies, or new ideas that can further transform the industry and our business. At Microsoft, we push the boundaries of what is possible through a broad range of research and development activities that seek to identify and address the changing demands of customers and users, industry trends, and competitive forces. \nMicrosoft and OpenAI maintain a long-term strategic partnership originally established in 2019. Microsoft is a major investor in OpenAI, and the companies have reciprocal revenue-sharing arrangements. We hold rights to OpenAI s intellectual property, including models and infrastructure, for integration into our products. The OpenAI API is exclusive to Azure, runs on Azure, and is available through the Azure OpenAI Service. We also have a right of first refusal on OpenAI's new capacity needs. \n\n35 \n\nPART II",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2025-07-29",
+      "days_relative": 1,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "ticker": "MSFT",
+    "form": "10-K",
+    "filing_date": "2025-07-30",
+    "period_date": "2025-06-30",
+    "accession_no": "0000950170-25-100235",
+    "sections": [
+      "Management's Discussion and Analysis"
+    ]
+  }
+}

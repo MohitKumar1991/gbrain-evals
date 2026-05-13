@@ -1,0 +1,31 @@
+{
+  "slug": "sec/MSFT/8-k-2025-09-30",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "MSFT 8-K — 2025-09-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312525225125/",
+  "published_at": "2025-09-30T00:00:00.000Z",
+  "compiled_truth": "MSFT — 8-K Filing\nFiled: 2025-09-30  |  Period: 2025-09-24  |  Accession: 0001193125-25-225125\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\n8-K \n\nUNITED STATES\nSECURITIES AND EXCHANGE COMMISSION\nWASHINGTON, D.C. 20549\n\nFORM \n\nCURRENT REPORT\nPURSUANT TO SECTION 13 OR 15(D)\nOF THE SECURITIES EXCHANGE ACT OF 1934\nDate of Report (Date of earliest event reported) \n\n(State or Other Jurisdiction\nof Incorporation)\n\n(Commission\nFile Number)\n\n(IRS Employer\nIdentification No.)\n\n, , \n\n() \nwww.microsoft.com/investor\n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below):\n\nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)\n\nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \n\nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \n\nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \n\nSecurities registered pursuant to Section 12(b) of the Act:\n\nTitle of each class\n\nTrading\nSymbol\n\nName of exchange\non which registered\n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 ( 240.12b-2 of this chapter). Emerging growth company \nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \n\nItem 5.02. \nDeparture of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers.\n\n(b) On September 24, 2025, Carlos A. Rodriguez, a member of the Board of Directors of Microsoft Corporation (the Company ), informed the Company of his decision not to stand for re-election at the Company s 2025 annual shareholder meeting (the Annual Meeting ). Mr. Rodriguez will continue to serve as a director until the Annual Meeting. His decision not to stand for re-election is for personal reasons and not as a result of any disagreement with management on any matter relating to the Company s operations, policies, or practices. The Company thanks Mr. Rodriguez for his contributions during his tenure as a director, Chair of the Compensation Committee, and member of the Audit Committee.\n\nSIGNATURE\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.\n\nMICROSOFT CORPORATION \n\n(Registrant) \n\nDate: September 30, 2025 \n\n/s/ Keith R. Dolliver\n\nKeith R. Dolliver \n\nCorporate Secretary",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-10-29",
+      "days_relative": -29,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "MSFT",
+    "form": "8-K",
+    "filing_date": "2025-09-30",
+    "period_date": "2025-09-24",
+    "accession_no": "0001193125-25-225125",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

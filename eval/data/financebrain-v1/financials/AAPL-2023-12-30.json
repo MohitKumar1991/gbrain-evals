@@ -1,11 +1,11 @@
 {
   "slug": "financials/AAPL-2023-12-30",
   "type": "filing",
-  "source_type": "sec-10q",
+  "source_type": "financials",
   "title": "AAPL Q1 CY2024 (period ending 2023-12-30) Financial Results",
   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AAPL&type=10-Q",
   "published_at": "2024-02-02T00:00:00.000Z",
-  "compiled_truth": "AAPL — Q1 CY2024 (period ending 2023-12-30)\nFiled: 2024-02-02\n\nINCOME STATEMENT\nRevenue:          $119.58B   (YoY ↑ +2.1%, QoQ ↑ +33.6%)\nGross Profit:     $54.85B   Gross Margin: 45.9%\nOperating Income: $40.37B   Operating Margin: 33.8%   (YoY +12.1%)\nEBITDA:           $43.17B   EBITDA Margin: 36.1%\nNet Income:       $33.92B   Net Margin: 28.4%   (YoY +13.1%)\nEPS (Diluted):    $2.18\nDiluted Shares:   15.58B\n\nExpenses:\n  R&D:            $7.70B\n  SG&A:           $6.79B\n\nBALANCE SHEET (as of 2023-12-30)\nCash & ST Investments: $73.10B\nTotal Assets:          $353.51B\nTotal Debt:            $108.04B\nNet Debt: $67.28B\nGoodwill & Intangibles:N/A\nTotal Equity:          $74.10B\n\nCASH FLOW\nOperating Cash Flow:   $39.90B\nCapital Expenditures:  $-2.39B\nFree Cash Flow:        $37.50B\nStock Buybacks:        $-20.14B\nDividends Paid:        $-3.83B\nStock-Based Comp:      $3.00B",
+  "compiled_truth": "Apple Inc (AAPL) — Q1 CY2024 (period ending 2023-12-30)\nFiled: 2024-02-02\n\nINCOME STATEMENT\nRevenue:          $119.58B   (YoY ↑ +2.1%, QoQ ↑ +33.6%)\nGross Profit:     $54.85B   Gross Margin: 45.9%\nOperating Income: $40.37B   Operating Margin: 33.8%   (YoY +12.1%)\nEBITDA:           $43.17B   EBITDA Margin: 36.1%\nNet Income:       $33.92B   Net Margin: 28.4%   (YoY +13.1%)\nEPS (Diluted):    $2.18\nDiluted Shares:   15.58B\n\nExpenses:\n  R&D:            $7.70B\n  SG&A:           $6.79B\n\nBALANCE SHEET (as of 2023-12-30)\nCash & ST Investments: $73.10B\nTotal Assets:          $353.51B\nTotal Debt:            $108.04B\nNet Debt: $67.28B\nGoodwill & Intangibles:N/A\nTotal Equity:          $74.10B\n\nCASH FLOW\nOperating Cash Flow:   $39.90B\nCapital Expenditures:  $-2.39B\nFree Cash Flow:        $37.50B\nStock Buybacks:        $-20.14B\nDividends Paid:        $-3.83B\nStock-Based Comp:      $3.00B",
   "companies_mentioned": [
     "AAPL"
   ],

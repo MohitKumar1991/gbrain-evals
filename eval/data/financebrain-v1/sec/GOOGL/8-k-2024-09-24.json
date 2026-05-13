@@ -1,0 +1,31 @@
+{
+  "slug": "sec/GOOGL/8-k-2024-09-24",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "GOOGL 8-K — 2024-09-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001652044/000165204424000097/",
+  "published_at": "2024-09-24T00:00:00.000Z",
+  "compiled_truth": "GOOGL — 8-K Filing\nFiled: 2024-09-24  |  Period: 2024-09-24  |  Accession: 0001652044-24-000097\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-99.1\n2\ngoogexhibit99192424.htm\nEX-99.1\n\nDocument \nExhibit 99.1 \n\nAlphabet Urges Caution and Expresses No Opinion on Whether or Not Stockholders Should Tender Their Shares in Response to the Mini-Tender Offer by Tutanota LLC\n\nMOUNTAIN VIEW, Calif. (September 24, 2024) Alphabet Inc. (NASDAQ GOOG, GOOGL) today announced that it has received notice of an unsolicited mini-tender offer by Tutanota LLC to purchase up to 350,000 shares of Alphabet s Class C capital stock at a price of $180 per share in cash. This offer to purchase up to 350,000 shares by Tutanota LLC represents less than 0.01 percent of the shares of Alphabet s Class C capital stock outstanding as of the September 3, 2024 offer date, and is subject to numerous conditions.\n\nAlphabet does not endorse Tutanota LLC s unsolicited mini-tender offer, and expresses no opinion on whether or not stockholders should tender their shares in response to Tutanota LLC s offer. Alphabet is not affiliated or associated in any way with Tutanota LLC, its mini-tender offer or its offer documentation.\n\nTutanota LLC has previously made a similar mini-tender offer for Alphabet shares, and has made similar mini-tender offers for shares of other companies. Mini-tender offers seek to acquire less than 5 percent of a company s shares outstanding, thereby avoiding many disclosure and procedural requirements of the U.S. Securities and Exchange Commission (SEC) that apply to offers for more than 5 percent of a company s shares outstanding. As a result, mini-tender offers do not provide investors with the same level of protections as provided for larger tender offers under U.S. securities laws. \n\nAlphabet urges investors to obtain current market quotations for their shares, to consult with their broker or financial advisor and to exercise caution with respect to Tutanota LLC s offer. Alphabet makes no recommendation on Tutanota LLC s offer. Stockholders who have already tendered their shares may withdraw them at any time prior to the expiration of the offer, in accordance with Tutanota LLC s offer documentation. The offer is currently scheduled to expire at 5 00 p.m., New York City time, on October 7, 2024. Tutanota LLC may extend the offering period at its discretion.\n\nAlphabet encourages brokers and dealers, as well as other market participants, to review the SEC s letter regarding broker-dealer mini-tender offer dissemination and disclosure at www.sec.gov divisions marketreg minitenders sia072401.htm .\n\nAlphabet requests that a copy of this release be included with all distributions relating to Tutanota LLC s mini-tender offer related to shares of Alphabet stock.\n\nAbout Alphabet Inc.\n\nAlphabet is a collection of companies, the largest of which is Google. Larry Page and Sergey Brin founded Google in September 1998 and the company is headquartered in Mountain View, Calif. Billions of people use its wide range of popular products and platforms each day, like Search, Ads, Chrome, Cloud, YouTube and Android.\n\nContact\n\nInvestor Relations \ninvestor-relations abc.xyz\n\nMedia \npress abc.xyz",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-10-29",
+      "days_relative": -35,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "GOOGL",
+    "form": "8-K",
+    "filing_date": "2024-09-24",
+    "period_date": "2024-09-24",
+    "accession_no": "0001652044-24-000097",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

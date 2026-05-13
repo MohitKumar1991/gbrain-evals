@@ -1,11 +1,11 @@
 {
   "slug": "financials/GOOGL-2023-03-31",
   "type": "filing",
-  "source_type": "sec-10q",
+  "source_type": "financials",
   "title": "GOOGL Q1 CY2023 (period ending 2023-03-31) Financial Results",
   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GOOGL&type=10-Q",
   "published_at": "2023-04-26T00:00:00.000Z",
-  "compiled_truth": "GOOGL — Q1 CY2023 (period ending 2023-03-31)\nFiled: 2023-04-26\n\nINCOME STATEMENT\nRevenue:          $69.79B   (YoY ↑ +2.6%, QoQ ↓ -8.2%)\nGross Profit:     $39.17B   Gross Margin: 56.1%\nOperating Income: $17.41B   Operating Margin: 25.0%   (YoY -13.3%)\nEBITDA:           $20.92B   EBITDA Margin: 30.0%\nNet Income:       $15.05B   Net Margin: 21.6%   (YoY -8.4%)\nEPS (Diluted):    $1.17\nDiluted Shares:   12.82B\n\nExpenses:\n  R&D:            $11.47B\n  SG&A:           $10.29B\n\nBALANCE SHEET (as of 2023-03-31)\nCash & ST Investments: $115.10B\nTotal Assets:          $369.49B\nTotal Debt:            $29.12B\nNet Debt: $3.20B\nGoodwill & Intangibles:$30.96B\nTotal Equity:          $260.89B\n\nCASH FLOW\nOperating Cash Flow:   $23.51B\nCapital Expenditures:  $-6.29B\nFree Cash Flow:        $17.22B\nStock Buybacks:        $-14.56B\nDividends Paid:        N/A\nStock-Based Comp:      $5.28B\nAcquisitions (net):    $-0.04B",
+  "compiled_truth": "Alphabet Inc (Google) (GOOGL) — Q1 CY2023 (period ending 2023-03-31)\nFiled: 2023-04-26\n\nINCOME STATEMENT\nRevenue:          $69.79B   (YoY ↑ +2.6%, QoQ ↓ -8.2%)\nGross Profit:     $39.17B   Gross Margin: 56.1%\nOperating Income: $17.41B   Operating Margin: 25.0%   (YoY -13.3%)\nEBITDA:           $20.92B   EBITDA Margin: 30.0%\nNet Income:       $15.05B   Net Margin: 21.6%   (YoY -8.4%)\nEPS (Diluted):    $1.17\nDiluted Shares:   12.82B\n\nExpenses:\n  R&D:            $11.47B\n  SG&A:           $10.29B\n\nBALANCE SHEET (as of 2023-03-31)\nCash & ST Investments: $115.10B\nTotal Assets:          $369.49B\nTotal Debt:            $29.12B\nNet Debt: $3.20B\nGoodwill & Intangibles:$30.96B\nTotal Equity:          $260.89B\n\nCASH FLOW\nOperating Cash Flow:   $23.51B\nCapital Expenditures:  $-6.29B\nFree Cash Flow:        $17.22B\nStock Buybacks:        $-14.56B\nDividends Paid:        N/A\nStock-Based Comp:      $5.28B\nAcquisitions (net):    $-0.04B",
   "companies_mentioned": [
     "GOOGL"
   ],

@@ -1,0 +1,31 @@
+{
+  "slug": "sec/MSFT/8-k-2024-12-03",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "MSFT 8-K — 2024-12-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000095017024132722/",
+  "published_at": "2024-12-03T00:00:00.000Z",
+  "compiled_truth": "MSFT — 8-K Filing\nFiled: 2024-12-03  |  Period: 2024-12-03  |  Accession: 0000950170-24-132722\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-23.1\n2\nmsft-ex23_1.htm\nEX-23.1\n\nEX-23.1 \n\nExhibit 23.1 \n\nCONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM \n\nWe consent to the incorporation by reference in Registration Statement No. 333-261590 on Form S-3 and Registration Statement Nos. 333-109185, 333-118764, 333-52852, 333-132100, 333-161516, 333-75243, 333-185757, and 333-221833 on Form S-8 of our report dated July 30, 2024 (December 3, 2024 as to the effects of the retrospective adjustments in Notes 1, 8, 9, 13, and 19), relating to the financial statements of Microsoft Corporation appearing in this Current Report on Form 8-K dated December 3, 2024. \n\n/ s / D eloitte & T ouche LLP \n\nSeattle, Washington December 3, 2024",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-10-30",
+      "days_relative": 34,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "MSFT",
+    "form": "8-K",
+    "filing_date": "2024-12-03",
+    "period_date": "2024-12-03",
+    "accession_no": "0000950170-24-132722",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

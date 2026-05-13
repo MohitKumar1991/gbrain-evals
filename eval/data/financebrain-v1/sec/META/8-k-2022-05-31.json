@@ -1,0 +1,23 @@
+{
+  "slug": "sec/META/8-k-2022-05-31",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "META 8-K — 2022-05-31",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000132680122000070/",
+  "published_at": "2022-05-31T00:00:00.000Z",
+  "compiled_truth": "META — 8-K Filing\nFiled: 2022-05-31  |  Period: 2022-05-31  |  Accession: 0001326801-22-000070\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-99.1\n2\nmay312022-exhibit991.htm\nEX-99.1\n\nDocument \n\nMeta Platforms, Inc. to Change Ticker Symbol to 'META' on June 9 \n\nMENLO PARK, Calif., May 31, 2022 Meta Platforms, Inc. (Nasdaq FB) today announced that its Class A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9, 2022. This will replace the company's current ticker symbol 'FB', which has been used since its initial public offering in 2012. The new ticker symbol aligns with the company's rebranding from Facebook to Meta, announced on October 28, 2021. \n\nNo action by the company's shareholders is required with respect to the ticker symbol change. The company's Class A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged. \n\nAbout Meta \n\nMeta builds technologies that help people connect, find communities, and grow businesses. When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta is moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology. \n\nContacts \n\nInvestors \nDeborah Crawford \ninvestor fb.com investor.fb.com \n\nPress \nRyan Moore \npress fb.com about.fb.com news \n1",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "META",
+    "form": "8-K",
+    "filing_date": "2022-05-31",
+    "period_date": "2022-05-31",
+    "accession_no": "0001326801-22-000070",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

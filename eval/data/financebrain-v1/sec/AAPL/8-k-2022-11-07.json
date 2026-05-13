@@ -1,0 +1,23 @@
+{
+  "slug": "sec/AAPL/8-k-2022-11-07",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "AAPL 8-K — 2022-11-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000320193/000119312522278435/",
+  "published_at": "2022-11-07T00:00:00.000Z",
+  "compiled_truth": "AAPL — 8-K Filing\nFiled: 2022-11-07  |  Period: 2022-11-06  |  Accession: 0001193125-22-278435\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-99.1\n2\nd400465dex991.htm\nEX-99.1\n\nEX-99.1 \n\nExhibit 99.1 \n\nUpdate on Supply of iPhone 14 Pro and iPhone 14 Pro Max \n\nCUPERTINO, California November 6, 2022 COVID-19 restrictions have temporarily impacted the\nprimary iPhone &reg; 14 Pro and iPhone 14 Pro Max assembly facility located in Zhengzhou, China. The facility is currently operating at significantly reduced capacity. As we have done throughout\nthe COVID-19 pandemic, we are prioritizing the health and safety of the workers in our supply chain. \nWe\ncontinue to see strong demand for iPhone 14 Pro and iPhone 14 Pro Max models. However, we now expect lower iPhone 14 Pro and iPhone 14 Pro Max shipments than we previously anticipated and customers will experience longer wait times to receive their\nnew products. \nWe are working closely with our supplier to return to normal production levels while ensuring the health and safety of every worker.\n\nThis press release contains forward-looking statements, within the meaning of the Private Securities Litigation Reform Act of 1995. These\nforward-looking statements include without limitation those about expected product shipments and availability. These statements involve risks and uncertainties, and actual results may differ materially from any future results expressed or implied by\nthe forward-looking statements. Risks and uncertainties include without limitation: effects of global and regional economic conditions, including as a result of government policies, war, terrorism, natural disasters, and public health issues, such\nas the COVID-19 pandemic; risks relating to the design, manufacture, introduction, and transition of products and services in highly competitive and rapidly changing markets, including from reliance on third\nparties for components, technology, manufacturing, applications, and content; risks relating to information technology system failures, network disruptions, and failure to protect, loss of, or unauthorized access to, or release of, data; and effects\nof unfavorable legal proceedings, government investigations, and complex and changing laws and regulations. More information on these risks and other potential factors that could affect the Company s business, reputation, results of operations,\nfinancial condition, and stock price is included in the Company s filings with the SEC, including in the Risk Factors and Management s Discussion and Analysis of Financial Condition and Results of Operations \nsections of the Company s most recently filed periodic reports on Form 10-K and Form 10-Q and subsequent filings. The Company assumes no obligation to update any\nforward-looking statements or information, which speak as of their respective dates. \n\nApple revolutionized personal technology with the introduction of the Macintosh in 1984. Today, Apple\nleads the world in innovation with iPhone, iPad, Mac, Apple Watch, and Apple TV. Apple s five software platforms iOS, iPadOS, macOS, watchOS, and tvOS provide seamless experiences across all Apple devices and empower people with\nbreakthrough services including the App Store, Apple Music, Apple Pay, and iCloud. Apple s more than 100,000 employees are dedicated to making the best products on earth, and to leaving the world better than we found it. \n\nPress Contact: \nJosh Rosenstock \n\nApple \njrosenstock@apple.com \n\n(408) 862-1142 \nInvestor Relations\nContact: \nTejas Gala \nApple \n\ntgala@apple.com \n(669) 227-2402 \n\nNOTE TO EDITORS: For additional information visit Apple Newsroom (www.apple.com/newsroom), or call Apple s Media Helpline at (408) 974-2042. \n&copy; 2022 Apple Inc. All\nrights reserved. Apple, the Apple logo, and iPhone are trademarks of Apple. Other company and product names may be trademarks of their respective owners.",
+  "companies_mentioned": [
+    "AAPL"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "AAPL",
+    "form": "8-K",
+    "filing_date": "2022-11-07",
+    "period_date": "2022-11-06",
+    "accession_no": "0001193125-22-278435",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

@@ -1,11 +1,11 @@
 {
   "slug": "financials/MSFT-2025-06-30",
   "type": "filing",
-  "source_type": "sec-10q",
+  "source_type": "financials",
   "title": "MSFT Q4 CY2025 (period ending 2025-06-30) Financial Results",
   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MSFT&type=10-Q",
   "published_at": "2025-07-30T00:00:00.000Z",
-  "compiled_truth": "MSFT — Q4 CY2025 (period ending 2025-06-30)\nFiled: 2025-07-30\n\nINCOME STATEMENT\nRevenue:          $76.44B   (YoY ↑ +18.1%, QoQ ↑ +9.1%)\nGross Profit:     $52.43B   Gross Margin: 68.6%\nOperating Income: $34.32B   Operating Margin: 44.9%   (YoY +22.9%)\nEBITDA:           $44.43B   EBITDA Margin: 58.1%\nNet Income:       $27.23B   Net Margin: 35.6%   (YoY +23.6%)\nEPS (Diluted):    $3.65\nDiluted Shares:   7.46B\n\nExpenses:\n  R&D:            $8.83B\n  SG&A:           $9.28B\n\nBALANCE SHEET (as of 2025-06-30)\nCash & ST Investments: $94.56B\nTotal Assets:          $619.00B\nTotal Debt:            $112.18B\nNet Debt: $81.94B\nGoodwill & Intangibles:$142.11B\nTotal Equity:          $343.48B\n\nCASH FLOW\nOperating Cash Flow:   $42.65B\nCapital Expenditures:  $-17.08B\nFree Cash Flow:        $25.57B\nStock Buybacks:        $-4.55B\nDividends Paid:        $-6.17B\nStock-Based Comp:      $3.07B\nAcquisitions (net):    $-1.74B",
+  "compiled_truth": "Microsoft Corporation (MSFT) — Q4 CY2025 (period ending 2025-06-30)\nFiled: 2025-07-30\n\nINCOME STATEMENT\nRevenue:          $76.44B   (YoY ↑ +18.1%, QoQ ↑ +9.1%)\nGross Profit:     $52.43B   Gross Margin: 68.6%\nOperating Income: $34.32B   Operating Margin: 44.9%   (YoY +22.9%)\nEBITDA:           $44.43B   EBITDA Margin: 58.1%\nNet Income:       $27.23B   Net Margin: 35.6%   (YoY +23.6%)\nEPS (Diluted):    $3.65\nDiluted Shares:   7.46B\n\nExpenses:\n  R&D:            $8.83B\n  SG&A:           $9.28B\n\nBALANCE SHEET (as of 2025-06-30)\nCash & ST Investments: $94.56B\nTotal Assets:          $619.00B\nTotal Debt:            $112.18B\nNet Debt: $81.94B\nGoodwill & Intangibles:$142.11B\nTotal Equity:          $343.48B\n\nCASH FLOW\nOperating Cash Flow:   $42.65B\nCapital Expenditures:  $-17.08B\nFree Cash Flow:        $25.57B\nStock Buybacks:        $-4.55B\nDividends Paid:        $-6.17B\nStock-Based Comp:      $3.07B\nAcquisitions (net):    $-1.74B",
   "companies_mentioned": [
     "MSFT"
   ],

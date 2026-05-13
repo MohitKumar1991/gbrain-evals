@@ -1,0 +1,31 @@
+{
+  "slug": "sec/GOOGL/8-k-2024-10-17",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "GOOGL 8-K — 2024-10-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001652044/000119312524238769/",
+  "published_at": "2024-10-17T00:00:00.000Z",
+  "compiled_truth": "GOOGL — 8-K Filing\nFiled: 2024-10-17  |  Period: 2024-10-17  |  Accession: 0001193125-24-238769\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\n8-K \n\nUNITED STATES\nSECURITIES AND EXCHANGE COMMISSION\nWashington, D.C. 20549\n\nFORM \n\nCURRENT REPORT\nPursuant to Section 13 or 15(d)\nof The Securities Exchange Act of 1934\nDate of Report (Date of earliest event reported)\n\n(Exact name of registrant as specified in its charter)\n\n(State or other jurisdiction\nof incorporation)\n\n(Commission\nFile Number)\n\n(IRS Employer\nIdentification No.) \n\n, \n(Address of principal executive offices, including zip code)\n() \n(Registrant s telephone number, including area code)\nNot Applicable\n(Former name or former address, if changed since last report)\n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below):\n\nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)\n\nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \n\nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \n\nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \n\nSecurities registered pursuant to Section 12(b) of the Act:\n\nTitle of each class\n\nTrading\nSymbol(s)\n\nName of each exchange\non which registered\n\n(Nasdaq Global Select Market) \n\n(Nasdaq Global Select Market) \nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 ( 240.12b-2 of this chapter).\nEmerging growth company \nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \n\nItem 5.02. \nDeparture of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers.\n\nOn October 17, 2024, Alphabet Inc. announced that Prabhakar Raghavan, Senior Vice President, Knowledge and Information, will be transitioning to the newly created role of Chief Technologist of Google LLC, effective immediately.\n\n2\n\nSIGNATURE\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.\n\nALPHABET INC. \n\nOctober 17, 2024\n\n/s/ Kathryn W. Hall\n\nKathryn W. Hall \n\nAssistant Secretary \n\n3",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-10-29",
+      "days_relative": -12,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "GOOGL",
+    "form": "8-K",
+    "filing_date": "2024-10-17",
+    "period_date": "2024-10-17",
+    "accession_no": "0001193125-24-238769",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

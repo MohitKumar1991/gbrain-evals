@@ -1,11 +1,11 @@
 {
   "slug": "financials/NVDA-2025-10-26",
   "type": "filing",
-  "source_type": "sec-10q",
+  "source_type": "financials",
   "title": "NVDA Q3 CY2026 (period ending 2025-10-26) Financial Results",
   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NVDA&type=10-Q",
   "published_at": "2025-11-19T00:00:00.000Z",
-  "compiled_truth": "NVDA — Q3 CY2026 (period ending 2025-10-26)\nFiled: 2025-11-19\n\nINCOME STATEMENT\nRevenue:          $57.01B   (YoY ↑ +62.5%, QoQ ↑ +22.0%)\nGross Profit:     $41.85B   Gross Margin: 73.4%\nOperating Income: $36.01B   Operating Margin: 63.2%   (YoY +64.7%)\nEBITDA:           $38.75B   EBITDA Margin: 68.0%\nNet Income:       $31.91B   Net Margin: 56.0%   (YoY +65.3%)\nEPS (Diluted):    $1.30\nDiluted Shares:   24.48B\n\nExpenses:\n  R&D:            $4.71B\n  SG&A:           $1.13B\n\nBALANCE SHEET (as of 2025-10-26)\nCash & ST Investments: $60.61B\nTotal Assets:          $161.15B\nTotal Debt:            $10.82B\nNet Cash: $0.66B\nGoodwill & Intangibles:$7.20B\nTotal Equity:          $118.90B\n\nCASH FLOW\nOperating Cash Flow:   $23.75B\nCapital Expenditures:  $-1.64B\nFree Cash Flow:        $22.11B\nStock Buybacks:        $-12.46B\nDividends Paid:        $-0.24B\nStock-Based Comp:      $1.65B\nAcquisitions (net):    $-0.69B",
+  "compiled_truth": "NVIDIA Corporation (NVDA) — Q3 CY2026 (period ending 2025-10-26)\nFiled: 2025-11-19\n\nINCOME STATEMENT\nRevenue:          $57.01B   (YoY ↑ +62.5%, QoQ ↑ +22.0%)\nGross Profit:     $41.85B   Gross Margin: 73.4%\nOperating Income: $36.01B   Operating Margin: 63.2%   (YoY +64.7%)\nEBITDA:           $38.75B   EBITDA Margin: 68.0%\nNet Income:       $31.91B   Net Margin: 56.0%   (YoY +65.3%)\nEPS (Diluted):    $1.30\nDiluted Shares:   24.48B\n\nExpenses:\n  R&D:            $4.71B\n  SG&A:           $1.13B\n\nBALANCE SHEET (as of 2025-10-26)\nCash & ST Investments: $60.61B\nTotal Assets:          $161.15B\nTotal Debt:            $10.82B\nNet Cash: $0.66B\nGoodwill & Intangibles:$7.20B\nTotal Equity:          $118.90B\n\nCASH FLOW\nOperating Cash Flow:   $23.75B\nCapital Expenditures:  $-1.64B\nFree Cash Flow:        $22.11B\nStock Buybacks:        $-12.46B\nDividends Paid:        $-0.24B\nStock-Based Comp:      $1.65B\nAcquisitions (net):    $-0.69B",
   "companies_mentioned": [
     "NVDA"
   ],

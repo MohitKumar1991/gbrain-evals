@@ -1,0 +1,31 @@
+{
+  "slug": "sec/MSFT/10-k-2024-07-30",
+  "type": "filing",
+  "source_type": "sec-10k",
+  "title": "MSFT 10-K — 2024-07-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000095017024087843/",
+  "published_at": "2024-07-30T00:00:00.000Z",
+  "compiled_truth": "MSFT — 10-K Filing\nFiled: 2024-07-30  |  Period: 2024-06-30  |  Accession: 0000950170-24-087843\n\n════════════════════════════════════════════════════════════\nMANAGEMENT'S DISCUSSION AND ANALYSIS\n════════════════════════════════════════════════════════════\n\nITEM 7. MANAGEMENT S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS \n\nThe following Management s Discussion and Analysis of Financial Condition and Results of Operations ( MD&A ) is intended to help the reader understand the results of operations and financial condition of Microsoft Corporation. MD&A is provided as a supplement to, and should be read in conjunction with, our consolidated financial statements and the accompanying Notes to Financial Statements (Part II, Item 8 of this Form 10-K). This section generally discusses the results of our operations for the year ended June 30, 2024 compared to the year ended June 30, 2023. For a discussion of the year ended June 30, 2023 compared to the year ended June 30, 2022, please refer to Part II, Item 7, Management s Discussion and Analysis of Financial Condition and Results of Operations in our Annual Report on Form 10-K for the year ended June 30, 2023. \n\nOVERVIEW \n\nMicrosoft is a technology company committed to making digital technology and artificial intelligence ( AI ) available broadly and doing so responsibly, with a mission to empower every person and every organization on the planet to achieve more. We create platforms and tools, powered by AI, that deliver innovative solutions that meet the evolving needs of our customers. \n\nWe generate revenue by offering a wide range of cloud-based solutions, content, and other services to people and businesses; licensing and supporting an array of software products; delivering relevant online advertising to a global audience; and designing and selling devices. Our most significant expenses are related to compensating employees; supporting and investing in our cloud-based services, including datacenter operations; designing, manufacturing, marketing, and selling our other products and services; and income taxes. \n\nHighlights from fiscal year 2024 compared with fiscal year 2023 included: \n\nMicrosoft Cloud revenue increased 23% to $137.4 billion. \n\nOffice Commercial products and cloud services revenue increased 14% driven by Office 365 Commercial growth of 16%. \n\nOffice Consumer products and cloud services revenue increased 4% and Microsoft 365 Consumer subscribers grew to 82.5 million. \n\nLinkedIn revenue increased 9%. \n\nDynamics products and cloud services revenue increased 19% driven by Dynamics 365 growth of 24%. \n\nServer products and cloud services revenue increased 22% driven by Azure and other cloud services growth of 30%. \n\nWindows revenue increased 8% with Windows original equipment manufacturer licensing ( Windows OEM ) revenue growth of 7% and Windows Commercial products and cloud services revenue growth of 11%. \n\nDevices revenue decreased 15%. \n\nXbox content and services revenue increased 50% driven by 44 points of net impact from the Activision Blizzard Inc. ( Activision Blizzard ) acquisition. The net impact reflects the change of Activision Blizzard content from third-party to first-party. \n\nSearch and news advertising revenue excluding traffic acquisition costs increased 12%. \n\nOn October 13, 2023, we completed our acquisition of Activision Blizzard for a total purchase price of $75.4 billion, consisting primarily of cash. The financial results of Activision Blizzard have been included in our consolidated financial statements since the date of the acquisition. Activision Blizzard is reported as part of our More Personal Computing segment. Refer to Note 8 Business Combinations of the Notes to Financial Statements (Part II, Item 8 of this Form 10-K) for further discussion. \n\n39 \n\nPART II",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-07-30",
+      "days_relative": 0,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "ticker": "MSFT",
+    "form": "10-K",
+    "filing_date": "2024-07-30",
+    "period_date": "2024-06-30",
+    "accession_no": "0000950170-24-087843",
+    "sections": [
+      "Management's Discussion and Analysis"
+    ]
+  }
+}

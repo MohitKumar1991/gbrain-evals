@@ -1,0 +1,31 @@
+{
+  "slug": "sec/GOOGL/8-k-2024-06-07",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "GOOGL 8-K — 2024-06-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001652044/000119312524157498/",
+  "published_at": "2024-06-07T00:00:00.000Z",
+  "compiled_truth": "GOOGL — 8-K Filing\nFiled: 2024-06-07  |  Period: 2024-06-05  |  Accession: 0001193125-24-157498\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-10.1\n2\nd787017dex101.htm\nEX-10.1\n\nEX-10.1 \n\nExhibit 10.1 \n\nJune 2024 \nAnat Ashkenazi\n\nTHIS OFFER SUPERSEDES AND REPLACES ANY PRIOR VERSIONS \n\nAnat Ashkenazi, \nI am pleased to offer you the position of\nSenior Vice President, Chief Financial Officer ( CFO ), Alphabet Inc. ( Alphabet ) and Google LLC ( Google ). While you are being hired as the CFO of both Alphabet and Google, your legal employer will be Google. Your\nnew hire compensation package, contingent on a start date of July 31, 2024 includes: \n\nAnnual Salary \n\n$1,000,000 \n\nCash Sign-On Bonus \n\n$9,900,000 \n\nAnnual Bonus \n\n200% of Annual Salary (maximum), prorated for time worked with goals to be approved by the Leadership Development, Inclusion and Compensation Committee ( LDICC ) \n\nNew Hire Time-based Equity (GSUs) \n\nImplemented through 3 Time-based Equity grants, as approved by the LDICC, and subject to the attached Offer Terms:\n\nTime Based Equity Grant 1- $13,100,000 vesting quarterly in the remainder of 2024\n\nTime Based Equity Grant 2 - $17,000,000 vesting quarterly in 2025\n\nTime Based Equity Grant 3 -\n$6,000,000 vesting quarterly in 2026\n\nNew Hire Performance-based Equity (PSUs) \n\n$5,000,000, implemented through 1 PSU grant and vesting, if at all, within 45 days following the end of the performance period (December 31, 2026) based on Relative Total Shareholder Return (RTSR) compared to the S&P 100 and\nsubject to the attached Offer Terms \n\nCertain Offer Terms apply and are incorporated by reference (see Attachment A). This offer will remain open for 5 business\ndays following your receipt of this letter, contingent upon your start date of July 31, 2024, as well as the satisfactory results from your background and reference checks. \n\nAnat, we look forward to working with you. \nSincerely, \n\n/s/ Sundar Pichai \nSundar Pichai \n\nCEO, Alphabet and Google \n\n1 \n\nI accept this offer of employment, including the attached Offer Terms, and agree to the terms and conditions\nas outlined. \n\n/s/ Anat Ashkenazi\n\n6/3/2024 \n\nAnat Ashkenazi \n\nDate \n\n2",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-04-25",
+      "days_relative": 43,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "GOOGL",
+    "form": "8-K",
+    "filing_date": "2024-06-07",
+    "period_date": "2024-06-05",
+    "accession_no": "0001193125-24-157498",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

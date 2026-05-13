@@ -1,0 +1,31 @@
+{
+  "slug": "sec/AAPL/8-k-2026-04-20",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "AAPL 8-K — 2026-04-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000320193/000114036126015711/",
+  "published_at": "2026-04-20T00:00:00.000Z",
+  "compiled_truth": "AAPL — 8-K Filing\nFiled: 2026-04-20  |  Period: 2026-04-17  |  Accession: 0001140361-26-015711\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nUNITED STATES \n\nSECURITIES AND EXCHANGE COMMISSION\n\nWashington, D.C. 20549\n\nFORM \n\nCURRENT REPORT\n\nPursuant to Section 13 OR 15(d) \n\nof The Securities Exchange Act of 1934 \n\nDate of Report (Date of earliest event reported)\n\n(Exact name of Registrant as specified in its charter)\n\n(State or other jurisdiction\n\nof incorporation)\n\n(Commission\n\nFile Number)\n\n(I.R.S. Employer\n\nIdentification No.)\n\n, \n\n(Address of principal executive offices) (Zip Code)\n\n() \n\n(Registrant s telephone number, including area code)\n\nNot applicable\n\n(Former name or former address, if changed since last report.)\n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the Registrant under any of the following provisions:\n\nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)\n\nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \n\nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \n\nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \n\nSecurities registered pursuant to Section 12(b) of the Act:\n\nTitle of each class\n\nTrading symbol(s)\n\nName of each exchange on which registered\n\nThe Nasdaq Stock Market LLC \n\nThe Nasdaq Stock Market LLC \n\nThe Nasdaq Stock Market LLC \n\nThe Nasdaq Stock Market LLC \n\nThe Nasdaq Stock Market LLC \n\nThe Nasdaq Stock Market LLC \n\nThe Nasdaq Stock Market LLC \n\nIndicate by check mark whether the Registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule\n12b-2 of the Securities Exchange Act of 1934 ( 240.12b-2 of this chapter).\n\nEmerging growth company \n\nIf an emerging growth company, indicate by check mark if the Registrant has elected not to use the extended transition period for complying with any new or revised\nfinancial accounting standards provided pursuant to Section 13(a) of the Exchange Act . \n\nItem 5.02 \n\nDeparture of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain\nOfficers . \n\nOn April 20, 2026, Apple Inc. ( Apple ) announced that Tim Cook will transition from his role as Chief Executive Officer to Executive Chair of Apple s Board of Directors\n(the Board ), effective September 1, 2026 (the Transition Date ). On April 17, 2026, the Board appointed John Ternus, Apple s Senior Vice President of Hardware Engineering, as Chief Executive Officer and a member of the Board, in each case\neffective on the Transition Date. Art Levinson, current Chair of the Board, will become Lead Independent Director on the Transition Date.\n\nMr. Ternus, 50, joined Apple in 2001 and assumed his current position in 2021. Mr. Ternus s previous positions at Apple include Vice President, Hardware Engineering.\nApple believes Mr. Ternus will bring to the Board extensive executive leadership experience in the technology industry, including engineering, product design and innovation.\n\nThere are no family relationships between Mr. Ternus and any director or executive officer of Apple that would be required to be disclosed pursuant to Item 401(d) of\nRegulation S-K, and there are no transactions between Mr. Ternus and Apple that would be required to be disclosed pursuant to Item 404(a) of Regulation S-K.\n\nIn connection with his appointment, Apple and Mr. Ternus will enter into Apple's standard indemnification agreement for directors and executive officers . Apple intends to file an amendment to this filing containing the information called for by Item 5.02(c)(3) of Form 8-K within four business days after the information is determined or becomes available.\n\nSIGNATURES\n\nPursuant to the requirements of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly\nauthorized.\n\nDate: April 20, 2026\n\nApple Inc.\n\nBy:\n\n/s/ Jennifer Newstead\n\nJennifer Newstead \n\nSenior Vice President,\n\nGeneral Counsel and Secretary",
+  "companies_mentioned": [
+    "AAPL"
+  ],
+  "quarter_context": {
+    "AAPL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2026-05-01",
+      "days_relative": -11,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "AAPL",
+    "form": "8-K",
+    "filing_date": "2026-04-20",
+    "period_date": "2026-04-17",
+    "accession_no": "0001140361-26-015711",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

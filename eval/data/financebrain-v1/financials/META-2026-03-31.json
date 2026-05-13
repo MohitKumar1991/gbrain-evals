@@ -1,11 +1,11 @@
 {
   "slug": "financials/META-2026-03-31",
   "type": "filing",
-  "source_type": "sec-10q",
+  "source_type": "financials",
   "title": "META Q1 CY2026 (period ending 2026-03-31) Financial Results",
   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=META&type=10-Q",
   "published_at": "2026-04-30T00:00:00.000Z",
-  "compiled_truth": "META — Q1 CY2026 (period ending 2026-03-31)\nFiled: 2026-04-30\n\nINCOME STATEMENT\nRevenue:          $56.31B   (YoY ↑ +33.1%, QoQ ↓ -6.0%)\nGross Profit:     $46.09B   Gross Margin: 81.9%\nOperating Income: $22.87B   Operating Margin: 40.6%   (YoY +30.3%)\nEBITDA:           $29.99B   EBITDA Margin: 53.3%\nNet Income:       $26.77B   Net Margin: 47.5%   (YoY +60.9%)\nEPS (Diluted):    $10.44\nDiluted Shares:   2.56B\n\nExpenses:\n  R&D:            $17.70B\n  SG&A:           $5.52B\n\nBALANCE SHEET (as of 2026-03-31)\nCash & ST Investments: $81.18B\nTotal Assets:          $395.25B\nTotal Debt:            $86.77B\nNet Debt: $63.34B\nGoodwill & Intangibles:$24.75B\nTotal Equity:          $243.68B\n\nCASH FLOW\nOperating Cash Flow:   $32.23B\nCapital Expenditures:  $-19.00B\nFree Cash Flow:        $13.23B\nStock Buybacks:        $-4.42B\nDividends Paid:        $-1.35B\nStock-Based Comp:      $6.03B\nAcquisitions (net):    $-0.37B",
+  "compiled_truth": "Meta Platforms Inc (META) — Q1 CY2026 (period ending 2026-03-31)\nFiled: 2026-04-30\n\nINCOME STATEMENT\nRevenue:          $56.31B   (YoY ↑ +33.1%, QoQ ↓ -6.0%)\nGross Profit:     $46.09B   Gross Margin: 81.9%\nOperating Income: $22.87B   Operating Margin: 40.6%   (YoY +30.3%)\nEBITDA:           $29.99B   EBITDA Margin: 53.3%\nNet Income:       $26.77B   Net Margin: 47.5%   (YoY +60.9%)\nEPS (Diluted):    $10.44\nDiluted Shares:   2.56B\n\nExpenses:\n  R&D:            $17.70B\n  SG&A:           $5.52B\n\nBALANCE SHEET (as of 2026-03-31)\nCash & ST Investments: $81.18B\nTotal Assets:          $395.25B\nTotal Debt:            $86.77B\nNet Debt: $63.34B\nGoodwill & Intangibles:$24.75B\nTotal Equity:          $243.68B\n\nCASH FLOW\nOperating Cash Flow:   $32.23B\nCapital Expenditures:  $-19.00B\nFree Cash Flow:        $13.23B\nStock Buybacks:        $-4.42B\nDividends Paid:        $-1.35B\nStock-Based Comp:      $6.03B\nAcquisitions (net):    $-0.37B",
   "companies_mentioned": [
     "META"
   ],

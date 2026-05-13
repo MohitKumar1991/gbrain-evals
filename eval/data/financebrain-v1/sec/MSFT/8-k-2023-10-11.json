@@ -1,0 +1,31 @@
+{
+  "slug": "sec/MSFT/8-k-2023-10-11",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "MSFT 8-K — 2023-10-11",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312523254151/",
+  "published_at": "2023-10-11T00:00:00.000Z",
+  "compiled_truth": "MSFT — 8-K Filing\nFiled: 2023-10-11  |  Period: 2023-10-11  |  Accession: 0001193125-23-254151\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-99.1\n2\nd530324dex991.htm\nEX-99.1\n\nEX-99.1 \n\nExhibit 99.1 \n\n[BLOG POST] \n\nMicrosoft on the Issues Blog An update on our IRS tax audit \n\nBy Daniel Goff, Corporate Vice President, Worldwide Tax and Customs \n\nToday, we re sharing an update about our ongoing audit with the U.S. Internal Revenue Service (IRS), including background and context for this\nspecific case and what we generally expect next. \nBackground on the IRS audit \n\nFor nearly a decade, as we have previously disclosed in our financial statements, Microsoft has been working with the IRS to address questions\nabout how we allocated our income and expenses for tax years beginning as far back as 2004. We have changed our corporate structure and practices since the years covered by the audit, and as a result, the issues raised by the IRS are relevant to the\npast but not to our current practices. \nThe IRS recently sent us a series of Notices of Proposed Adjustment (NOPAs), sharing with us\nfor the first time detailed information and explanations of their views about the issues in question. This marks the end of the audit covering 2004 to 2013, and the beginning of a new process to resolve these\ndecades-old issues. \nThe IRS says Microsoft owes an additional $28.9 billion in tax for\n2004 to 2013, plus penalties and interest. The IRS s proposed adjustments do not represent a final determination. Not reflected in the proposed adjustments are taxes paid by Microsoft under the Tax Cuts and Jobs Act (TCJA), which could decrease\nthe final tax owed under the audit by up to $10 billion. \nMicrosoft disagrees with these proposed adjustments and will pursue an\nappeal within the IRS, a process expected to take several years. We believe we have always followed the IRS s rules and paid the taxes we owe in the U.S. and around the world. Microsoft historically has been one of the top U.S. corporate income\ntaxpayers. Since 2004, we have paid over $67 billion in taxes to the U.S. \nWhat the dispute is about \n\nThe main disagreement is the way Microsoft allocated profits during this time period among countries and jurisdictions. This is commonly referred\nto as transfer pricing and the IRS has established regulations that allow companies to use a specific arrangement for transfer pricing, called cost-sharing. \n\nMany large multinationals use cost-sharing because it reflects the global nature of their business. Because our subsidiaries shared in the costs\nof developing certain intellectual property, under those IRS cost-sharing regulations, the subsidiaries were also entitled to the related profits. \nNext steps: Proposed adjustments and IRS Appeals \nWe strongly believe we have acted in accordance with IRS\nrules and regulations and that our position is supported by case law. We welcome the IRS s conclusion of its audit phase which will provide us with the opportunity to work through these issues at IRS Appeals, a separate division of the IRS\ncharged with resolving tax disputes. \n\nIt is important to note that the IRS Appeals process will take several years to complete, and if\nwe are unable to come to a direct agreement with the IRS, Microsoft will then have an opportunity to contest any unresolved issues through the courts. \nWe will continue to work with the IRS and hope to reach a mutual resolution to this issue over the coming years. We will also continue to share updates on significant developments through our public quarterly and annual reports and\nfinancial statements, as we have through this entire process. As of September 30, 2023, we believe our allowances for income tax contingencies are adequate.",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2023-10-25",
+      "days_relative": -14,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "MSFT",
+    "form": "8-K",
+    "filing_date": "2023-10-11",
+    "period_date": "2023-10-11",
+    "accession_no": "0001193125-23-254151",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

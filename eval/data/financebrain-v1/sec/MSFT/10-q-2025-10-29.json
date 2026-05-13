@@ -1,0 +1,31 @@
+{
+  "slug": "sec/MSFT/10-q-2025-10-29",
+  "type": "filing",
+  "source_type": "sec-10q",
+  "title": "MSFT 10-Q — 2025-10-29",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312525256321/",
+  "published_at": "2025-10-29T00:00:00.000Z",
+  "compiled_truth": "MSFT — 10-Q Filing\nFiled: 2025-10-29  |  Period: 2025-09-30  |  Accession: 0001193125-25-256321\n\n════════════════════════════════════════════════════════════\nMANAGEMENT'S DISCUSSION AND ANALYSIS\n════════════════════════════════════════════════════════════\n\nITEM 2. MANAGEMENT S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS \nNote About Forward-Looking Statements \nThis report includes estimates, projections, statements relating to our business plans, objectives, and expected operating results that are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995, Section 27A of the Securities Act of 1933, and Section 21E of the Securities Exchange Act of 1934. Forward-looking statements may appear throughout this report, including the following sections: Management s Discussion and Analysis of Financial Condition and Results of Operations and Risk Factors (Part II, Item 1A of this Form 10-Q). These forward-looking statements generally are identified by the words believe, project, expect, anticipate, estimate, intend, strategy, future, opportunity, plan, may, should, will, would, will be, will continue, will likely result, and similar expressions. Forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties that may cause actual results to differ materially. We describe risks and uncertainties that could cause actual results and events to differ materially in Management s Discussion and Analysis of Financial Condition and Results of Operations, Quantitative and Qualitative Disclosures About Market Risk (Part I, Item 3 of this Form 10-Q), and Risk Factors . We undertake no obligation to update or revise publicly any forward-looking statements, whether because of new information, future events, or otherwise. \nThe following Management s Discussion and Analysis of Financial Condition and Results of Operations ( MD&A ) is intended to help the reader understand the results of operations and financial condition of Microsoft Corporation. MD&A is provided as a supplement to, and should be read in conjunction with, our Annual Report on Form 10-K for the year ended June 30, 2025, and our consolidated financial statements and the accompanying Notes to Financial Statements (Part I, Item 1 of this Form 10-Q). \nOVERVIEW \nMicrosoft is a technology company committed to making digital technology and artificial intelligence ( AI ) available broadly and doing so responsibly, with a mission to empower every person and every organization on the planet to achieve more. We create platforms and tools, powered by AI, that deliver innovative solutions that meet the evolving needs of our customers. \nWe generate revenue by offering a wide range of cloud-based solutions, content, and other services to people and businesses; licensing and supporting an array of software products; delivering relevant online advertising to a global audience; and designing and selling devices. Our most significant expenses are related to compensating employees; supporting and investing in our cloud-based services, including datacenter operations; designing, manufacturing, marketing, and selling our other products and services; and income taxes. \nHighlights from the first quarter of fiscal year 2026 compared with the first quarter of fiscal year 2025 included: \nMicrosoft Cloud revenue increased 26% to $49.1 billion. \n\nCommercial remaining performance obligation increased 51% to $392 billion. \n\nMicrosoft 365 Commercial cloud revenue increased 17%. \n\nMicrosoft 365 Consumer cloud revenue increased 26%. \n\nLinkedIn revenue increased 10%. \n\nDynamics 365 revenue increased 18%. \n\nAzure and other cloud services revenue increased 40%. \n\nWindows OEM and Devices revenue increased 6%. \n\nXbox content and services revenue increased 1%. \n\nSearch and news advertising revenue excluding traffic acquisition costs increased 16%. \n\n29 \n\nPART I",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-10-29",
+      "days_relative": 0,
+      "phase": "earnings-day"
+    }
+  },
+  "_facts": {
+    "ticker": "MSFT",
+    "form": "10-Q",
+    "filing_date": "2025-10-29",
+    "period_date": "2025-09-30",
+    "accession_no": "0001193125-25-256321",
+    "sections": [
+      "Management's Discussion and Analysis"
+    ]
+  }
+}

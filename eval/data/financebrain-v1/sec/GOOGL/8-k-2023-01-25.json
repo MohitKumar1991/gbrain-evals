@@ -1,0 +1,31 @@
+{
+  "slug": "sec/GOOGL/8-k-2023-01-25",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "GOOGL 8-K — 2023-01-25",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001652044/000165204423000005/",
+  "published_at": "2023-01-25T00:00:00.000Z",
+  "compiled_truth": "GOOGL — 8-K Filing\nFiled: 2023-01-25  |  Period: 2023-01-24  |  Accession: 0001652044-23-000005\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\ngoog-20230124 \n\nUNITED STATES \nSECURITIES AND EXCHANGE COMMISSION \nWashington, D.C. 20549 \n_________________________________________________ \nFORM \n_____________________________________________________________ \nCURRENT REPORT \nPursuant to Section 13 or 15(d) of \nThe Securities Exchange Act of 1934 \nDate of Report (Date of earliest event reported) \n\n____________________________________________________________ \n\n(Exact name of registrant as specified in its charter) \n_______________________________________________________________ \n\n(State or other jurisdiction of incorporation) (Commission File Number) (IRS Employer Identification No.) \n\n, \n(Address of principal executive offices, including zip code) \n() \n(Registrant s telephone number, including area code) \nNot Applicable \n(Former name or former address, if changed since last report) \n______________________________________________________________ \nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below): \n\nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) \nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \n\nSecurities registered pursuant to Section 12(b) of the Act: \nTitle of each class Trading Symbol(s) Name of each exchange on which registered \n\n(Nasdaq Global Select Market) \n\n(Nasdaq Global Select Market) \n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 ( 240.12b-2 of this chapter). \nEmerging growth company \nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \n\nItem 8.01. Other Events. \nOn January 24, 2023, the U.S. Department of Justice, along with a number of state Attorneys General filed an antitrust complaint against Alphabet Inc. ( Alphabet ) and Google LLC ( Google ), a wholly-owned subsidiary of Alphabet, alleging that Google s digital advertising technology products violate U.S. antitrust laws. Google believes the complaint is without merit and will defend itself vigorously. \n\nSIGNATURE \nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. \n\nALPHABET INC. \n\nDate: January 24, 2023 /s/ Kathryn W. Hall \nKathryn W. Hall \nAssistant Secretary",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {
+    "GOOGL": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-04-25",
+      "days_relative": -90,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "GOOGL",
+    "form": "8-K",
+    "filing_date": "2023-01-25",
+    "period_date": "2023-01-24",
+    "accession_no": "0001652044-23-000005",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

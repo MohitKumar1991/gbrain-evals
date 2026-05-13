@@ -1,11 +1,11 @@
 {
   "slug": "financials/GOOGL-2025-12-31",
   "type": "filing",
-  "source_type": "sec-10q",
+  "source_type": "financials",
   "title": "GOOGL Q4 CY2025 (period ending 2025-12-31) Financial Results",
   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GOOGL&type=10-Q",
   "published_at": "2026-02-05T00:00:00.000Z",
-  "compiled_truth": "GOOGL — Q4 CY2025 (period ending 2025-12-31)\nFiled: 2026-02-05\n\nINCOME STATEMENT\nRevenue:          $113.90B   (YoY ↑ +18.1%, QoQ ↑ +11.3%)\nGross Profit:     $68.13B   Gross Margin: 59.8%\nOperating Income: $36.00B   Operating Margin: 31.6%   (YoY +16.2%)\nEBITDA:           $45.45B   EBITDA Margin: 39.9%\nNet Income:       $34.45B   Net Margin: 30.3%   (YoY +29.8%)\nEPS (Diluted):    $2.82\nDiluted Shares:   12.23B\n\nExpenses:\n  R&D:            $18.57B\n  SG&A:           $13.56B\n\nBALANCE SHEET (as of 2025-12-31)\nCash & ST Investments: $126.84B\nTotal Assets:          $595.28B\nTotal Debt:            $59.29B\nNet Debt: $28.58B\nGoodwill & Intangibles:$33.38B\nTotal Equity:          $415.26B\n\nCASH FLOW\nOperating Cash Flow:   $52.40B\nCapital Expenditures:  $-27.85B\nFree Cash Flow:        $24.55B\nStock Buybacks:        $-5.50B\nDividends Paid:        $-2.54B\nStock-Based Comp:      $7.07B\nAcquisitions (net):    $-0.17B",
+  "compiled_truth": "Alphabet Inc (Google) (GOOGL) — Q4 CY2025 (period ending 2025-12-31)\nFiled: 2026-02-05\n\nINCOME STATEMENT\nRevenue:          $113.90B   (YoY ↑ +18.1%, QoQ ↑ +11.3%)\nGross Profit:     $68.13B   Gross Margin: 59.8%\nOperating Income: $36.00B   Operating Margin: 31.6%   (YoY +16.2%)\nEBITDA:           $45.45B   EBITDA Margin: 39.9%\nNet Income:       $34.45B   Net Margin: 30.3%   (YoY +29.8%)\nEPS (Diluted):    $2.82\nDiluted Shares:   12.23B\n\nExpenses:\n  R&D:            $18.57B\n  SG&A:           $13.56B\n\nBALANCE SHEET (as of 2025-12-31)\nCash & ST Investments: $126.84B\nTotal Assets:          $595.28B\nTotal Debt:            $59.29B\nNet Debt: $28.58B\nGoodwill & Intangibles:$33.38B\nTotal Equity:          $415.26B\n\nCASH FLOW\nOperating Cash Flow:   $52.40B\nCapital Expenditures:  $-27.85B\nFree Cash Flow:        $24.55B\nStock Buybacks:        $-5.50B\nDividends Paid:        $-2.54B\nStock-Based Comp:      $7.07B\nAcquisitions (net):    $-0.17B",
   "companies_mentioned": [
     "GOOGL"
   ],

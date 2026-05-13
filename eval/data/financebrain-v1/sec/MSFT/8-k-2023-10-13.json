@@ -1,0 +1,31 @@
+{
+  "slug": "sec/MSFT/8-k-2023-10-13",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "MSFT 8-K — 2023-10-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312523255762/",
+  "published_at": "2023-10-13T00:00:00.000Z",
+  "compiled_truth": "MSFT — 8-K Filing\nFiled: 2023-10-13  |  Period: 2023-10-13  |  Accession: 0001193125-23-255762\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\n8-K \n\nUNITED STATES\nSECURITIES AND EXCHANGE COMMISSION\nWASHINGTON, D.C. 20549\n\nFORM \n\nCURRENT REPORT\nPursuant to Section 13 OR 15(d)\nof The Securities Exchange Act of 1934\nDate of Report (Date of earliest event reported) \n\n(Exact name of registrant as specified in its charter)\n\n(State or other jurisdiction\nof incorporation)\n\n(Commission\nFile Number)\n\n(IRS Employer\nIdentification No.)\n\n, , \n\n(Address of Principal Executive Offices) \n\n(Zip Code) \nRegistrant s telephone number, including area code:\n() \nwww.microsoft.com/investor\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions ( see General Instruction A.2. below):\n\nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)\n\nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \n\nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \n\nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \n\nSecurities registered pursuant to Section 12(b) of the Act:\n\nTitle of each class\n\nTrading Symbol(s)\n\nName of each exchange on which registered\n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 ( 240.12b-2 of this chapter). Emerging growth company \nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \n\nItem 2.01 Completion of Acquisition or Disposition of Assets.\nOn October 13, 2023, Microsoft Corporation, a Washington corporation ( Microsoft ), completed its previously announced acquisition of Activision Blizzard, Inc., a Delaware corporation ( Activision Blizzard ). Pursuant to the terms of the Agreement and Plan of Merger (as amended, supplemented or otherwise modified from time to time, the Merger Agreement ), dated as of January 18, 2022, by and among Microsoft, Activision Blizzard and Anchorage Merger Sub Inc., a Delaware corporation and a wholly owned subsidiary of Microsoft ( Merger Sub ), at the effective time of the Merger (the Effective Time ), Merger Sub merged with and into Activision Blizzard (the Merger ), with Activision Blizzard surviving the Merger as a wholly owned subsidiary of Microsoft.\nAt the Effective Time, each share of Activision Blizzard common stock, par value $0.000001 per share (the Activision Blizzard Common Stock ), issued and outstanding immediately prior to the Effective Time (other than shares of Activision Blizzard Common Stock (i) held by Activision Blizzard as treasury stock (excluding certain shares of Activision Blizzard Common Stock held by a wholly owned subsidiary of Activision Blizzard, which shares remained outstanding and unaffected by the Merger), (ii) owned by Microsoft or Merger Sub, (iii) owned by any direct or indirect wholly owned subsidiary of Microsoft or Merger Sub or (iv) held by Activision Blizzard stockholders who neither voted in favor of adoption of the Merger Agreement nor consented thereto in writing and who had properly and validly exercised their statutory rights of appraisal in respect of such shares of Activision Blizzard Common Stock in accordance with Section 262 of the Delaware General Corporation Law, in each case, as of immediately prior to the Effective Time), was cancelled and automatically converted into the right to receive $95.00 in cash (the Per Share Amount ), without interest.\nIn addition, at the Effective Time, subject to certain exceptions, unvested Activision Blizzard options and stock-based awards were assumed by Microsoft and converted into corresponding awards that are subject to shares of Microsoft common stock. Vested Activision Blizzard options and stock-based awards were cancelled and converted into the right to receive the Per Share Amount for each share of Activision Blizzard Common Stock underlying such awards (or, in the case of such options, the difference (if any) between the Per Share Amount and the applicable exercise price), less any applicable tax withholdings.\n\nSIGNATURE\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.\n\nMICROSOFT CORPORATION \n\n(Registrant) \n\nDate: October 13, 2023 \n\n/ S / K EITH R. D OLLIVER \n\nKeith R. Dolliver \n\nCorporate Secretary",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2023-10-25",
+      "days_relative": -12,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "MSFT",
+    "form": "8-K",
+    "filing_date": "2023-10-13",
+    "period_date": "2023-10-13",
+    "accession_no": "0001193125-23-255762",
+    "sections": [
+      "Filing"
+    ]
+  }
+}
