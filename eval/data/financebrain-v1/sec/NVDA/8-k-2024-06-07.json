@@ -1,0 +1,31 @@
+{
+  "slug": "sec/NVDA/8-k-2024-06-07",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "NVDA 8-K — 2024-06-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581024000144/",
+  "published_at": "2024-06-07T00:00:00.000Z",
+  "compiled_truth": "NVDA — 8-K Filing\nFiled: 2024-06-07  |  Period: 2024-06-07  |  Accession: 0001045810-24-000144\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-3.1\n2\nbodapproved-projectsundaex.htm\nEX-3.1\n\nDocument \n\nCERTIFICATE OF AMENDMENT \nOF \nRESTATED \nCERTIFICATE OF INCORPORATION \nOF \nNVIDIA CORPORATION \n\n(a Delaware corporation) \n\nNVIDIA Corporation , a Delaware corporation (the Corporation ), does hereby certify \nFirst The name of the Corporation is NVIDIA Corporation . \nSecond The date on which the Corporation s original Certificate of Incorporation was filed with the Secretary of State of the State of Delaware is February 24, 1998 under the name of NVIDIA Delaware Corporation. \nThird The Board of Directors of the Corporation, acting in accordance with Sections 141(f) and 242 of the General Corporation Law of the State of Delaware, adopted resolutions to amend Paragraph A of Article IV of the Restated Certificate of Incorporation of the Corporation, filed with the Secretary of State of the State of Delaware on December 9, 2021, as amended on June 6, 2022 (the Restated Certificate of Incorporation ), to read in its entirety as follows \nA. This Corporation is authorized to issue two classes of stock to be designated, respectively, Common Stock and Preferred Stock. The total number of shares which the Corporation is authorized to issue is Eighty Billion Two Million (80,002,000,000) shares. Eighty Billion (80,000,000,000) shares shall be Common Stock, each having a par value of one-tenth of one cent ($.001). Two Million (2,000,000) shares shall be Preferred Stock, each having a par value of one-tenth of one cent ($.001). \nAt the Effective Time, each share of Common Stock issued as of immediately prior to the Effective Time shall be automatically subdivided and reclassified into ten (10) validly issued, fully paid and non-assessable shares of Common Stock, without any further action by the Corporation or the holder thereof (the Stock Split ). Each certificate that immediately prior to the Effective Time represented shares of Common Stock shall thereafter represent that number of shares of Common Stock into which the shares of Common Stock represented by such certificate shall have been subdivided and reclassified pursuant to the Stock Split. \nThe Preferred Stock may be issued from time to time in one or more series. The Board of Directors is hereby authorized, by filing a certificate (a \n\nPreferred Stock Designation ) pursuant to the Delaware General Corporation Law, to fix or alter from time to time the designation, powers, preferences and rights of the shares of each such series and the qualifications, limitations or restrictions of any wholly unissued series of Preferred Stock, and to establish from time to time the number of shares constituting any such series or any of them and to increase or decrease the number of shares of any series subsequent to the issuance of shares of that series, but not below the number of shares of such series then outstanding. In case the number of shares of any series shall be decreased in accordance with the foregoing sentence, the shares constituting such decrease shall resume the status that they had prior to the adoption of the resolution originally fixing the number of shares of such series. \nFourth The foregoing amendment was duly adopted in accordance with the provisions of Sections 141(f) and 242 of the Delaware General Corporation Law. \nFifth This Certificate of Amendment shall become effective at 4 01 p.m. Eastern Time on June 7, 2024 (the Effective Time ). \nSixth All other provisions of the Restated Certificate of Incorporation of the Corporation shall remain in full force and effect. \nIn Witness Whereof , NVIDIA Corporation has caused this Certificate of Amendment to be signed by its Executive Vice President and Chief Financial Officer on this 6th day of June, 2024. \nNVIDIA Corporation \nBy s Colette M. Kress \nColette M. Kress \nExecutive Vice President and \nChief Financial Officer \n\nAttest \nBy s Timothy S. Teter \nTimothy S. Teter \nSecretary",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-05-22",
+      "days_relative": 16,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "NVDA",
+    "form": "8-K",
+    "filing_date": "2024-06-07",
+    "period_date": "2024-06-07",
+    "accession_no": "0001045810-24-000144",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

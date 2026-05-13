@@ -1,0 +1,23 @@
+{
+  "slug": "sec/NVDA/8-k-2022-06-06",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "NVDA 8-K — 2022-06-06",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581022000088/",
+  "published_at": "2022-06-06T00:00:00.000Z",
+  "compiled_truth": "NVDA — 8-K Filing\nFiled: 2022-06-06  |  Period: 2022-06-02  |  Accession: 0001045810-22-000088\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nEX-3.1\n2\nexhibit31-amendmenttoresta.htm\nEX-3.1 AMENDMENT TO RESTATED CERTIFICATE OF INCORPORATION OF NVIDIA CORPORATION\n\nDocument \n\nCERTIFICATE OF AMENDMENT \nOF \nRESTATED \nCERTIFICATE OF INCORPORATION \nOF \nNVIDIA CORPORATION \n(a Delaware corporation) \nNVIDIA Corporation , a Delaware corporation (the Corporation ), does hereby certify \nFirst The name of the Corporation is NVIDIA Corporation . \nSecond The date on which the Corporation s original Certificate of Incorporation was filed with the Secretary of State of the State of Delaware is February 24, 1998 under the name of NVIDIA Delaware Corporation. \nThird The Board of Directors of the Corporation, acting in accordance with Sections 141(f) and 242 of the General Corporation Law of the State of Delaware, adopted resolutions to amend Paragraph A of Article IV of the Restated Certificate of Incorporation of the Corporation, filed with the Secretary of State of the State of Delaware on December 9, 2021 (the Restated Certificate of Incorporation ), to read in its entirety as follows \nA. This corporation is authorized to issue two classes of stock to be designated, respectively, Common Stock and Preferred Stock. The total number of shares which the corporation is authorized to issue is Eight Billion Two Million (8,002,000,000) shares. Eight Billion (8,000,000,000) shares shall be Common Stock, each having a par value of one-tenth of one cent ($.001). Two Million (2,000,000) shares shall be Preferred Stock, each having a par value of one-tenth of one cent ($.001). \nThe Preferred Stock may be issued from time to time in one or more series. The Board of Directors is hereby authorized, by filing a certificate (a Preferred Stock Designation ) pursuant to the Delaware General Corporation Law, to fix or alter from time to time the designation, powers, preferences and rights of the shares of each such series and the qualifications, limitations or restrictions of any wholly unissued series of Preferred Stock, and to establish from time to time the number of shares constituting any such series or any of them and to increase or decrease the number of shares of any series subsequent to the issuance of shares of that series, but not below the number of shares of such series then outstanding. In case the number of shares of any series shall be decreased in accordance with the foregoing sentence, the shares constituting such decrease shall resume the status that they had prior to the adoption of the resolution originally fixing the number of shares of such series. \nFourth Thereafter pursuant to a resolution of the Board of Directors this Certificate of Amendment was submitted to the stockholders of the Corporation for their approval, and was duly adopted in accordance with the provisions of Section 242 of the General Corporation Law of the State of Delaware. \nFifth This Certificate of Amendment shall become effective immediately upon filing with the Secretary of State of the State of Delaware. \nSixth All other provisions of the Restated Certificate of Incorporation shall remain in full force and effect. \n\nIn Witness Whereof, NVIDIA Corporation has caused this Certificate of Amendment to be signed by its Executive Vice President and Chief Financial Officer and attested to by its Secretary in Santa Clara, California on this 6 th day of June, 2022. \n\nNVIDIA Corporation \n\nBy s Colette M. Kress \nColette M. Kress \nExecutive Vice President and \nChief Financial Officer \n\nAttest \n\nBy s Timothy S. Teter \nTimothy S. Teter\nSecretary",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "NVDA",
+    "form": "8-K",
+    "filing_date": "2022-06-06",
+    "period_date": "2022-06-02",
+    "accession_no": "0001045810-22-000088",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

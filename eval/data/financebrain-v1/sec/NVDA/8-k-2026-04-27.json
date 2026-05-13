@@ -1,0 +1,31 @@
+{
+  "slug": "sec/NVDA/8-k-2026-04-27",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "NVDA 8-K — 2026-04-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000026/",
+  "published_at": "2026-04-27T00:00:00.000Z",
+  "compiled_truth": "NVDA — 8-K Filing\nFiled: 2026-04-27  |  Period: 2026-04-24  |  Accession: 0001045810-26-000026\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nnvda-20260424 \n\nUNITED STATES \nSECURITIES AND EXCHANGE COMMISSION \nWASHINGTON, DC 20549 \n______________ \nFORM \nCURRENT REPORT \nPURSUANT TO SECTION 13 OR 15(d) OF \nTHE SECURITIES EXCHANGE ACT OF 1934 \n\nDate of Report (Date of earliest event reported): \nORATION \n\n(Exact name of registrant as specified in its charter) \n\n(State or other jurisdiction (Commission (IRS Employer \nof incorporation) File Number) Identification No.) \n\n, , \n(Address of principal executive offices) (Zip Code) \nRegistrant s telephone number, including area code: () \nNot Applicable \n(Former name or former address, if changed since last report) \n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: \n\nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) \nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \nSecurities registered pursuant to Section 12(b) of the Act: \n\nTitle of each class Trading Symbol(s) Name of each exchange on which registered \n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 ( 240.12b-2 of this chapter). \n\nEmerging Growth Company \nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \n\nItem 5.02. Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. \n\n(b) \n\nOn April 24, 2026, Donald Robertson, Vice President, or VP, and Chief Accounting Officer, or CAO, of NVIDIA Corporation, or the Company, notified the Company of his intention to retire from his role as VP and CAO, effective May 4, 2026. Following such date, he will remain with the Company as VP, Finance to support various projects until July 1, 2026. \n\n(c) \n\nOn April 26, 2026, the Company appointed Scott Gawel, age 55, as VP and CAO of the Company, effective upon the commencement of his employment with the Company on May 4, 2026. In this role, he will serve as the Company's principal accounting officer. \n\nMr. Gawel will join the Company from Intel Corporation, a global designer and manufacturer of semiconductor products. From 2022 to 2026, he served as Corporate VP and CAO of Intel. From 2020 to 2022, he served as Senior VP and Corporate Controller of Oracle Corporation, a software and technology company. He served as Oracle s Senior VP and Assistant Controller from 2017 to 2020, VP, Corporate Accounting from 2009 to 2017, and Senior Director, Corporate Accounting from 2004 to 2009. \n\nThere is no arrangement or understanding between Mr. Gawel and any other person pursuant to which he was selected to this position. There are no transactions involving the Company and Mr. Gawel that are required to be reported pursuant to Item 404(a) of Regulation S-K. Mr. Gawel has no family relationships with any of the Company s board of directors or executive officers. \n\nIn connection with his appointment, Mr. Gawel s annual base salary will be $800,000 and he will receive two new hire equity grants of restricted stock units, or RSUs, with a combined target value of $12,875,000. The RSUs will vest approximately over a four-year period according to the Company s standard vesting schedules. The terms of the RSUs will be governed by the Company's Amended and Restated 2007 Equity Incentive Plan and applicable RSU agreement. Mr. Gawel will be eligible to participate in the Company's standard benefit programs available to similarly situated employees. \n\nMr. Gawel will enter into the Company s standard indemnity agreement, which would require the Company to indemnify Mr. Gawel, under the circumstances and to the extent provided for therein, against certain expenses and other amounts incurred by Mr. Gawel as a result of being made a party to certain actions, suits, proceedings and the like by reason of his position as an officer of the Company. \n\nSIGNATURE \n\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. \n\nNVIDIA Corporation \nDate: April 27, 2026 By: /s/ Colette M. Kress \nColette M. Kress \nExecutive Vice President and Chief Financial Officer",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2027",
+      "earnings_date": "2026-05-28",
+      "days_relative": -31,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "NVDA",
+    "form": "8-K",
+    "filing_date": "2026-04-27",
+    "period_date": "2026-04-24",
+    "accession_no": "0001045810-26-000026",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

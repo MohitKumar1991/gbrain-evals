@@ -1,0 +1,31 @@
+{
+  "slug": "sec/NVDA/8-k-2025-04-15",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "NVDA 8-K — 2025-04-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581025000082/",
+  "published_at": "2025-04-15T00:00:00.000Z",
+  "compiled_truth": "NVDA — 8-K Filing\nFiled: 2025-04-15  |  Period: 2025-04-09  |  Accession: 0001045810-25-000082\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nnvda-20250409 \n\nUNITED STATES \nSECURITIES AND EXCHANGE COMMISSION \nWASHINGTON, DC 20549 \n______________ \nFORM \n\nCURRENT REPORT \nPURSUANT TO SECTION 13 OR 15(d) OF \nTHE SECURITIES EXCHANGE ACT OF 1934 \n\nDate of Report (Date of earliest event reported): \nORATION \n(Exact name of registrant as specified in its charter) \n\n(State or other jurisdiction (Commission (IRS Employer \nof incorporation) File Number) Identification No.) \n\n, , \n(Address of principal executive offices) (Zip Code) \nRegistrant s telephone number, including area code: () \nNot Applicable \n(Former name or former address, if changed since last report) \n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: \nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) \nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \nSecurities registered pursuant to Section 12(b) of the Act: \nTitle of each class Trading Symbol(s) Name of each exchange on which registered \n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 ( 240.12b-2 of this chapter). \n\nEmerging Growth Company \n\nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \n\nItem 8.01 Other Events. \n\nOn April 9, 2025, the U.S. government, or USG, informed NVIDIA Corporation, or the Company, that the USG requires a license for export to China (including Hong Kong and Macau) and D:5 countries, or to companies headquartered or with an ultimate parent therein, of the Company s H20 integrated circuits and any other circuits achieving the H20 s memory bandwidth, interconnect bandwidth, or combination thereof. The USG indicated that the license requirement addresses the risk that the covered products may be used in, or diverted to, a supercomputer in China. On April 14, 2025, the USG informed the Company that the license requirement will be in effect for the indefinite future. \n\nThe Company s first quarter of fiscal year 2026 ends on April 27, 2025. First quarter results are expected to include up to approximately $5.5 billion of charges associated with H20 products for inventory, purchase commitments, and related reserves. \n\nCertain statements in this Current Report on Form 8-K including statements regarding the USG s intentions and the impact of the license requirement on the Company s first quarter financial results are forward-looking statements that are subject to risks and uncertainties that could cause results to be materially different than expectations. Important factors that could cause actual results to differ materially include: global economic conditions; our reliance on third parties to manufacture, assemble, package and test our products; the impact of technological development and competition; development of new products and technologies or enhancements to our existing product and technologies; market acceptance of our products or our partners products; design, manufacturing or software defects; changes in consumer preferences or demands; changes in industry standards and interfaces; unexpected loss of performance of our products or technologies when integrated into systems; as well as other factors detailed from time to time in the most recent reports NVIDIA files with the Securities and Exchange Commission, or SEC, including, but not limited to, its annual report on Form 10-K and quarterly reports on Form 10-Q. Copies of reports filed with the SEC are posted on the company s website and are available from NVIDIA without charge. These forward-looking statements are not guarantees of future performance and speak only as of the date hereof, and, except as required by law, NVIDIA disclaims any obligation to update these forward-looking statements to reflect future events or circumstances. \n\nSIGNATURE \nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. \n\nNVIDIA Corporation \nDate: April 15, 2025 By: /s/ Colette M. Kress \nColette M. Kress \nExecutive Vice President and Chief Financial Officer",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2026",
+      "earnings_date": "2025-05-28",
+      "days_relative": -43,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "NVDA",
+    "form": "8-K",
+    "filing_date": "2025-04-15",
+    "period_date": "2025-04-09",
+    "accession_no": "0001045810-25-000082",
+    "sections": [
+      "Filing"
+    ]
+  }
+}

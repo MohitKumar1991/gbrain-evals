@@ -1,0 +1,31 @@
+{
+  "slug": "sec/NVDA/8-k-2024-11-07",
+  "type": "filing",
+  "source_type": "sec-8k",
+  "title": "NVDA 8-K — 2024-11-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581024000300/",
+  "published_at": "2024-11-07T00:00:00.000Z",
+  "compiled_truth": "NVDA — 8-K Filing\nFiled: 2024-11-07  |  Period: 2024-11-07  |  Accession: 0001045810-24-000300\n\n════════════════════════════════════════════════════════════\nFILING\n════════════════════════════════════════════════════════════\n\nnvda-20241107 \n\nUNITED STATES \nSECURITIES AND EXCHANGE COMMISSION \nWASHINGTON, DC 20549 \n______________ \nFORM \nCURRENT REPORT \nPURSUANT TO SECTION 13 OR 15(d) OF \nTHE SECURITIES EXCHANGE ACT OF 1934 \n\nDate of Report (Date of earliest event reported): \nORATION \n\n(Exact name of registrant as specified in its charter) \n\n(State or other jurisdiction (Commission (IRS Employer \nof incorporation) File Number) Identification No.) \n\n, , \n(Address of principal executive offices) (Zip Code) \nRegistrant s telephone number, including area code: () \nNot Applicable \n(Former name or former address, if changed since last report) \n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: \n\nWritten communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) \nSoliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \nPre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \nPre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) \nSecurities registered pursuant to Section 12(b) of the Act: \n\nTitle of each class Trading Symbol(s) Name of each exchange on which registered \n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 ( 230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 ( 240.12b-2 of this chapter). \n\nEmerging Growth Company \nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \n\nItem 5.02. Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. \n\n(d) \n\nOn November 7, 2024, the Board of Directors, or the Board, of NVIDIA Corporation appointed Ellen Ochoa as a member of the Board and the number of directors constituting the full Board was increased from twelve to thirteen. Dr. Ochoa is expected to be appointed to serve as a member of the Nominating and Corporate Governance Committee of the Board. \n\nIn connection with her appointment to the Board, Dr. Ochoa will be granted pursuant to our Amended and Restated 2007 Equity Incentive Plan, or the 2007 Plan: (a) an initial equity grant of 1,848 restricted stock units, vesting approximately semi-annually over three years, and (b) a pro-rated annual equity grant of 1,321 restricted stock units, all of which will vest on May 21, 2025. Additionally, she was granted a pro-rated annual cash retainer of $53,800, payable starting on November 7, 2024. The 2007 Plan is filed as Exhibit 10.1 to our Quarterly Report on Form 10-Q filed with the Securities and Exchange Commission, or the SEC, on August 28, 2024. \n\nIn addition, we have entered into an indemnity agreement with Dr. Ochoa in connection with her service as a member of the Board. The form of indemnity agreement is filed as Exhibit 10.1 to our Current Report on Form 8-K filed with the SEC on March 7, 2006. \n\nSIGNATURE \n\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. \n\nNVIDIA Corporation \nDate: November 7, 2024 By: /s/ Rebecca Peters \nRebecca Peters \nVice President, Deputy General Counsel and Assistant Secretary",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2025",
+      "earnings_date": "2024-11-20",
+      "days_relative": -13,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "ticker": "NVDA",
+    "form": "8-K",
+    "filing_date": "2024-11-07",
+    "period_date": "2024-11-07",
+    "accession_no": "0001045810-24-000300",
+    "sections": [
+      "Filing"
+    ]
+  }
+}
