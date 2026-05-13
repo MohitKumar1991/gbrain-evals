@@ -1,0 +1,89 @@
+{
+  "slug": "substack/an-overview-of-googles-ai-product",
+  "type": "article",
+  "source_type": "substack",
+  "title": "An Overview of Google’s AI Product Strategy ",
+  "author": "Michael Spencer",
+  "url": "https://www.ai-supremacy.com/p/an-overview-of-googles-ai-product",
+  "published_at": "2023-08-22T09:58:18+00:00",
+  "compiled_truth": "Hello Everyone, \n\nI’m really anticipating Google Gemini that’s coming soon. Gemini is a new family of large language models that aims to rival OpenAI's ChatGPT. \n\nGemini is Google’s next-generation AI architecture that will eventually complement PaLM 2 that’s rumored to be coming in the Fall of 2023 as the combined work of the new Google DeepMind team and their accelerated focus in Generative A.I. \n\nMy price goes up from $8 a month to $10 in September, so get it now and grandmother the cheaper price. Start a free trial for my best content. \n\nSubscribe\n\nI really admire the work of Alex (AIS) and her Newsletter and consulting business, her ability to create valuable infographics and summarize complex topics is incredible. So before Gemini comes out, here is her professional review of Google’s ecosystem of A.I. as of the Summer of 2023. \n\nExplore this Author’s expertise: \n\nGen AI Companies with Foundational Models - \n\nThe Strategy DeckMarket Map: Gen AI Companies with Foundational ModelsJuly 2023 updates to include Reka and Meta’s LLaMA There is OpenAI’s GPT-4 and there is Google’s PaLM2, and there is also an emerging ecosystem of generative AI companies who are developing foundational models, each targeting a different part of the market with a unique set of products and value propositions. Each company is working on a specific vision …Read more3 years ago · 11 likes · 3 comments · Alex Irina SanduGen AI Search Companies: ​​\n\nThe Strategy DeckMarket Map and Analysis: Gen AI Search CompaniesAmong generative AI use cases, Search is a compelling one for consumers and businesses alike. A more than US$200B market, it hasn’t seen significant changes or disruptions in user experience or industry dynamics for over a decade. Which is why the emergence of new companies trying to…Read more3 years ago · 6 likes · Alex Irina SanduRead more of her work: \n\nThe Strategy Deck\n\nMaking AI more helpful for everyone\n\nWhat to know about Google’s A.I. infrastructure pre Gemini? The Generative A.I. revamp is in full motion. Google is going through a lot of talent changes in 2023, and it will be interesting to see how its A.I. leadership and product evolves. \n\nLet’s get into today’s topic. \n\nBy Alex Irina Sandu August, 2023.\n\nAI Features and Applications are Available or Announced across Google’s Product Portfolio, from the Google Cloud Platform, to the Chrome Browser and Android Photo Editor\n\nGoogle’s AI product strategy spans its enterprise and consumer tools and touches a variety of products, from the Google Cloud Platform to Google Workspaces and the Chrome browser. Powered by a selection of general purpose and specialized foundation models that include the PaLM family and BERT, Google is developing a wide range of AI-enabled features under the umbrella of Duet AI, as well as distinct applications, such as Bard.\n\nAI-enabled features and applications are an ideal fit for Google’s mission to “organize the world’s information and make it universally accessible and useful” and thus the broad build-out of tools through-out Google’s product portfolio is the best approach to increase access and deliver more personalized and relevant experiences, while retaining its user base and their engagement with the products. \n\nDo you know someone who would be interested to see Google’s A.I. ecosystem at a glance? Why not share it with them. \n\nShare\n\nFoundation Models \n\nAt the core of the strategy is the catalog of foundation models, proprietary and open source, that Google uses to power its AI applications and, in some cases, provides for 3rd-party use. \n\nThere are a few categories of models actively being developed:\n\nThe PaLM (Pathways Language Model) set, comprised of:\n\nPaLM v2, the Transformer - based, generalist model, built to cover a broad range of topics and languages\n\nMed - PaLM, fine-tuned with medical data for healthcare use cases\n\nPaLM - E, embodied multimodal language model for computer vision\n\nAudio PaLM for speech-to-speech translation\n\nSec-PaLM, a specialized security LLM which powers the Google Cloud Security AI Workbench \n\nCodey, built for software coding assistance, with support for 14 languages, including Python, Java, Javascript and Rust and accessible through Vertex AI\n\nThe Imagen models, for images:\n\nImagen, a text-to-image diffusion model with a high degree of photorealism and deep language representations\n\nParti, the Pathways Autoregressive Text-to-Image model built for high-fidelity photorealistic image generation and content-rich synthesis\n\nMuse, a model for Text-to-Image generation and editing via masked generative transformers\n\nChirp, the universal speech model with support for over 100 languages\n\nOpen source models, including:\n\nBERT, the Bidirectional Encoder Representations from Transformers model optimized for question answering and open sourced in November 2018\n\nFLAN-T5 - a Text-toText Transformer model  \n\nBesides the models above, Google contributes to the open source Machine Learning community through Kaggle, the model hub that is also an educational, development and research platform for data scientists. For more details on it, read “How Hugging Face and Kaggle Bolster the Open Source Machine Learning Community.\n\nAI-Enabled Features and Applications\n\nOn the application layer, Google is working on Duet AI, which is the name for the intelligent assistant that is being deployed through-out a number of enterprise and developer-focused tools, with corresponding capabilities for each set of use cases. \n\nDuet AI is available or coming to:\n\nGoogle Cloud Platform to be the always-on collaborator for a more personalized, human-centric and intent-driven experience. Features include:\n\nCode assistance through-out Google Cloud products and Workstations and the Google Cloud Console, Shell Editor and Code IDE Extensions\n\nChat assistance for answers to development or cloud-related questions\n\nWorkspaces, to make productivity use cases faster and more convenient. Currently only available through Workspace Labs, it is being developed for:\n\nAppSheet, Google’s NoCode data app development platform, where it will enable users to build workflow automation through natural language descriptions and conversation with the AI chatbot \n\nGmail, to assist with email drafting, including contextual assistance to fill in names and other relevant information\n\nDocs, to help with text writing, generate drafts and proofread\n\nSlides, to enable image generation through natural language\n\nSheets, to aid in data classification and analysis and the creation of task and project planning spreadsheets\n\nMeet, to provide the ability to generate unique backgrounds for video calls\n\nBesides deploying Duet AI in established products, Google is offering and developing AI-native and ML-dedicated tools. They include:\n\nMakerSuite, Google’s No Code, natural language-based, application prototyping tool, dedicated to building and testing generative AI products with the PaLM API\n\nVertex AI, the end-to-end Machine Learning platform to build, deploy and scale models, with fully managed tools, such as:\n\nThe Model Garden, which provides foundation and pretrained proprietary and open source models\n\nGenerative AI Studio to fine-tune models and build applications\n\nMLOps tools, such as data labeling, pipelines and metadata management, to efficiently scale, manage, monitor and govern ML workloads\n\nBard, the general purpose conversational assistant available in over 40 languages with text-to-speech capabilities, sharing and conversation management features. \n\nFor consumers, Google is experimenting with AI-enabled features in its search experience, Chrome browser and Android tools, such as the Photo Editor.\n\nAnnounced in May 2023, the Search Generative Experience is available through Search Labs on Chrome desktop and the Google App on Android and iOS in the US. Generative AI will be used to show the larger context of the question or topic being searched for and power a conversational interface for follow up questions. When online shopping, an AI chatbot will advise consumer on their purchase decisions. \n\nFor technical questions, Google is experimenting with Code Tips to provide pointers for writing code faster and smarter in a variety of languages, including C, C++, Go, Java, JavaScript, Kotlin, Python, TypeScript, and tools such as Docker and Git. \n\nOn the image side, Google is bringing its AI-powered Magic Eraser tool to Google Photos on Android and iOS for Google One members and Pixel users. And the Magic Editor is a new, experimental tool that uses generative AI to enable complex editing for photos, such as filling in gaps, multiplying objects and adding in content to the sides of an image. \n\nThis is just the beginning of the industry-wide development of powerful foundation models and the broad catalog of AI-enabled features and tools that facilitate smarter, faster, more convenient enterprise, productivity and entertainment use cases. Like the rest of the major technology providers, Google will likely continue to invest significantly in Machine Learning and Artificial Intelligence across its tech stack, from the Google Cloud Platform to Workspaces, the Chrome browser and Android apps and tools. Looking forward to seeing what else the future brings!\n\nDownload her slidedeck on Generative A.I. foundational model companies here. \n\nDownload her slidedeck on Data Automation and Orchestration tools here. \n\nCheck out AIS’s core Strategy Deck. \n\nTo keep seeing her incredible infographics on AI, business strategy and related themes: \n\nSubscribe to the Strategy Deck\n\nAbout Alex\n\nWith over 15 years of experience driving Product Strategy in tech, Alex Sandu works with start-ups to accelerate and strengthen their product growth and value proposition, develop their roadmap and competitive differentiation and prepare their pitch narrative for fundraising. A former Corporate Strategy Manager at Mozilla Firefox, Alex is based in San Francisco, CA and writes about product and business strategy in the AI space on The Strategy Deck newsletter. \n\nMore infographics by AIS \n\nGEN AI COMPANIES W/ FOUNDATIONAL MODELS (link) \n\nML DATA AUTOMATION & ORCHESTRATION TOOLS (link) \n\nBrowse her Archives\n\n<div",
+  "timeline": "- **2023-08-22** | 64d before MSFT Q1 FY2024 earnings (earnings date: 2023-10-25)\n- **2023-08-22** | 28d after GOOGL Q2 FY2023 earnings (earnings date: 2023-07-25)\n- **2023-08-22** | 27d after META Q2 FY2023 earnings (earnings date: 2023-07-26)\n- **2023-08-22** | 19d after AAPL Q3 FY2023 earnings (earnings date: 2023-08-03)",
+  "companies_mentioned": [
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AAPL"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2023-10-25",
+      "days_relative": -64,
+      "phase": "pre-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-07-25",
+      "days_relative": 28,
+      "phase": "post-earnings"
+    },
+    "META": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-07-26",
+      "days_relative": 27,
+      "phase": "post-earnings"
+    },
+    "AAPL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-08-03",
+      "days_relative": 19,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "published_at": "2023-08-22T09:58:18+00:00",
+    "companies_mentioned": [
+      "MSFT",
+      "GOOGL",
+      "META",
+      "AAPL"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2023-10-25",
+        "days_relative": -64,
+        "phase": "pre-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-07-25",
+        "days_relative": 28,
+        "phase": "post-earnings"
+      },
+      "META": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-07-26",
+        "days_relative": 27,
+        "phase": "post-earnings"
+      },
+      "AAPL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-08-03",
+        "days_relative": 19,
+        "phase": "post-earnings"
+      }
+    },
+    "paywall": true,
+    "source_url": "https://www.ai-supremacy.com/p/an-overview-of-googles-ai-product",
+    "author": "Michael Spencer"
+  }
+}

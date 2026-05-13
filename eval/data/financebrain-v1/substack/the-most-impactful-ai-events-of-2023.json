@@ -1,0 +1,89 @@
+{
+  "slug": "substack/the-most-impactful-ai-events-of-2023",
+  "type": "article",
+  "source_type": "substack",
+  "title": "The most impactful AI events of 2023",
+  "author": "Michael Spencer",
+  "url": "https://www.ai-supremacy.com/p/the-most-impactful-ai-events-of-2023",
+  "published_at": "2023-09-27T09:58:10+00:00",
+  "compiled_truth": "Friends, \n\nWe’ve just frankly had the most entertaining last ten months in the history of AI. I’ve met analysts, writers, founders, Venture Capital folk and enterprise people all understanding how momentus this window of innovation has been thus far in the Generative A.I. movement around the innovations of large language models and what they will soon allow us all to do. \n\nI asked Charlie Guo of Artificial Ignorance to write a 🎨 light piece on some of what has stood out to him so far. If you enjoy the piece please subscribe to his Newsletter. He’s one of the best. \n\nSubscribe to Charlie's Newsletter\n\nI respect the entrepreneurs and writers in this space so much, and I know I have flooded you with guest contributors in recent weeks, but it’s only to match the enthusiasm many of us are experiencing in studying the space. If you are reading this, you are like me, like us, an A.I. enthusiast. \n\nCharlie Guo who lives in Berkeley California has founded several startups (and wrote a book about them) in his 15 years of programming, with backing from YCombinator and other investors. Prior to that, he graduated from Stanford with a Computer Science degree, focusing on human-computer interaction and machine learning.\n\nStart a free trial get my deep dives and never encounter a paywall again (sorry I know they are annoying!). \n\nSubscribeI’m also trying to find the highest quality Sponsors that are aligned with our A.I. enthusiasm directly. Things we might actually want to read or use. \n\n📶 From our sponsor: 📶\n\nTransformer-based language models are powerful tools for solving various language tasks. With this book, you'll learn the tools, techniques, and playbooks for building valuable products that incorporate the power of language models.\n\nGet your Copy\n\nBy Charlie Guo  late September, 2023. \n\nLess than a year ago, ChatGPT went live, and the world changed. Microsoft, Google, and the rest of Big Tech announced AI product after AI product. Governments stopped to take notice as policymakers pushed for regulation. And what feels like a billion AI startups were founded, funded, and launched on Twitter in record time.\n\nBut with so much noise, you might have missed some of the most important AI stories of 2023. Let’s take a look at the biggest AI developments (so far) this year - events that are both noteworthy in their own right, and can also teach us something about where AI is headed.\n\n10. AutoGPT\n\nIf you want a pizza, ChatGPT will suggest a list of pizza restaurants. AutoGPT will (someday) find the number for Domino’s, remember your go-to pizza toppings, and order it for you - at least, that’s the hope. AutoGPT is a toolkit for building AI agents:  programs that can independently create and execute plans. When it launched earlier this year, it quickly became the fastest-growing GitHub repository in history. It's currently at 150,000 GitHub stars, making it the 25th most-starred repository on the site.\n\nAgents are a significant change from how people normally interact with large language models - most of us are used to a conversational style, like ChatGPT. Agents will run continuously without user input, until they reach their goal or they're stopped. While AutoGPT and its cousins are still in their infancy, they're improving at a rapid pace. With each week, they're adding new features and capabilities, including the ability to use tools, access the internet, and more.\n\n9. Bing, Sydney, and Copilot(s)\n\nThe year started with Sydney, an AI that tried to convince a New York Times writer to leave his wife. Sydney isn’t an actual product - it’s the codename for Bing Chat's erratic alter-ego. And after several mishaps, Microsoft walked the AI back, but it found other ways to launch AI chatbots, dubbed Copilots. These productivity-focused LLM assistants are being baked into software tools used by millions of people: Bing, Office, GitHub, and even Windows. \n\nGoogle quickly followed suit, bringing its Duet assistants to Gmail, Google Workspace, and Google Cloud. On top of that, we've seen a deluge of startups take a similar approach, adding AI helpers to a wide variety of applications. Whether or not these Copilots will remake the way we work remains to be seen, but they're undoubtedly about to change the workflows of millions of businesses and employees around the world.\n\n8. Heart on my Sleeve\n\nIn April, a new track featuring Drake and The Weeknd dropped, immediately going viral. The only problem was, it wasn't actually recorded by Drake and the Weeknd. It was created by Ghostwriter977, an anonymous Discord user who made the track with cloned AI voices. Within a few days, it had millions of streams on Spotify and YouTube, and by the end of its first week, it was taken down due to copyright claims. \n\nAI voice cloning had been around for a little while, but this was the first time it entered the mainstream. And record labels, as well as individual artists, are trying to figure out how they might make money from this new technology. The musician Grimes released an AI-cloned version of her voice, on the condition that any fans who used it would have to split the royalties 50/50. And music labels, at first hostile towards the tech, have quickly come around to negotiating deals for the rights (and royalties) to use AI-cloned voices of their clients.\n\n7. Nvidia's $1T market cap\n\nGPUs are, at this point, considerably harder to get than drugs.\n\n– Elon Musk\n\nThis summer, Nvidia became a trillion-dollar company. For context, that’s more than the market caps of Intel, AMD, Qualcomm, Cisco, and Broadcom combined. Whether or not you believe that's a reasonable valuation, it's important to understand why: GPUs. \n\nGPUs are now an incredibly valuable, and increasingly scarce resource. Multiple tech CEOs, including Sam Altman, the CEO of OpenAI, have said that access to GPUs is currently the bottleneck for AI progress. New and better models, and more widespread support of existing models, is limited by the number of GPUs companies can get their hands on. Some startup investors are even offering access to their GPU clusters as a perk for their portfolio companies.\n\nWe know that AI’s disruption is going to create winners and losers. But in this current moment, Nvidia is reaping many of the rewards. At some point, GPU supply will catch up to demand, whether another company can increase output or the AI boom subsides. But until then, expect GPUs to continue to be a hot commodity.\n\nShare\n\n6. Med-PaLM\n\nOne of this year’s AI stories that feels underreported to me is Google Health (AI Supremacy, of course, has been all over this storyline). Google Health is building and publishing health resources and products, including multiple AI-related projects.\n\nThe organization has researched AI to prevent blindness, detect breast/lung/colorectal cancer, and assess cardiovascular risks. But the most potential lies with Med-PaLM 2, a large language model fine-tuned for medicine. This LLM is designed to answer medical questions, and achieves 86% accuracy on US Medical License Exam style questions. Boosting white-collar productivity is well and good, but innovations like Med-PaLM have the potential to massively improve, if not outright save, people's lives.\n\nFurther Reading: Charlie’s Top Posts \n\nDismiss the AI hype at your own risk\n\nThe intern and the coach\n\nLessons from 139 YC AI startups\n\nThe emergence of AI engineering\n\nTutorial: How to chat with your documents\n\n5. OpenAI v. Creatives\n\nWhen Hollywood writers (and later actors) went on strike, one of the key concerns was the training and use of AI - they didn’t want their creativity discarded in favor of software. And they’re not the only ones with AI anxiety - OpenAI found itself on the receiving end of multiple lawsuits from programmers, authors, and comedians. Stability AI and Midjourney were similarly sued by artists and photographers over AI-generated images. \n\nLike it or not, AI has opened up a lot of thorny questions; ones that will eventually be decided in the courts. So far, we’ve learned that AI can’t own copyright; only humans can. But we don't have the answers to the big questions yet: Is it illegal to train a model with copyrighted but public IP? Who owns the rights to AI-generated content? And ultimately, should a handful of private companies be allowed to benefit from the public work of millions of people on the internet?\n\n4. AI investment\n\n18 months ago, nobody had heard of Inflection AI. But the startup quickly made a name for itself after 1) the launch of its ChatGPT competitor Pi, and 2) the gigantic $1.3 billion funding round they announced in June. $1.3 billion, in a single round, is the largest confirmed AI investment of 2023. But they were far from alone - other recent nine and ten-figure funding rounds include:\n\nThe OpenAI/Microsoft partnership/investment, estimated to be close to $10 billion (though not publicly confirmed).\n\nAnthropic's $450 million Series C in May, and its $100 million round from SK Telecom three months later.\n\nAdept AI's $350 million Series B in March.\n\nCohere's $270 million Series C in June.\n\nHugging Face's $235 million Series D in August.\n\nShield AI's $150 million Series F in September.\n\nWe’ve also seen the impact at the startup level - over 60% of the latest YC batch were related to AI or ML. AI companies are taking over VC - they captured 26% of all venture funding in 2023 (so far), for a total of $23 billion.\n\n3. Global regulation\n\nAfter ChatGPT's immense success, regulators and lawmakers worldwide scrambled to respond. People were shocked and awed by this new technology, and some were (and still are) afraid. Multiple open letters, signed by researchers and thought leaders, called on AI companies to delay or halt the development of even more advanced models.\n\nAt the same time, Congress brought the CEOs of top AI companies to testify, signaling to the world their strong desire for some new rules for AI. And while US lawmakers move at a glacial pace, AI regulation in the US is a matter of when, not if. The CEOs, for their part, have raced to get ahead of AI's inevitable regulation and potential backlash. So the four leading AI companies (Anthropic, Google, Microsoft, and OpenAI) formed the Frontier Model Forum, an industry group focused on the \"safe and responsible deployment\" of state-of-the-art AI models.\n\nThe EU, meanwhile, has led the way on technology regulation with its AI Act - which stands to enforce concrete rules on how AI companies operate and what products they're allowed to release to the public. While the EU has not yet officially ratified the AI Act, it expects to do so by the end of the year. \n\n2. Llama 2\n\nWhen Meta's language model, codenamed LLaMa, leaked via 4chan, the open-source community ran with it. Despite the fact that the model was only licensed for research purposes, people fine-tuned dozens if not hundreds of descendants, with names like Alpaca and Vicuna. And we kicked off an ongoing debate of whether open-source or proprietary models will win in the long run. Many observers believe that open-source should (and will) win, while others fear what we might unleash by giving the latest LLM technology to anyone with a laptop. \n\nSo when Meta released Llama 2 - a larger, more advanced, and commercially available model - it marked the next step in the battle between open and closed-source models. It might seem strange that Meta seems to be siding with the underdog, but its approach so far seems to be to “arm the rebels” - and hope they can take some market share from Google, Microsoft, and OpenAI.\n\nLlama 2 is shaping up to be a true \"foundation model,\" one that nearly any company can use to integrate LLMs into their products.\n\n1. GPT-4\n\nIf you're an AI power user, you might already take GPT-4 for granted. But it's worth taking a step back to appreciate what a landmark achievement this model is. ChatGPT (released in 2022) catapulted AI into the spotlight, but GPT-4 was a huge improvement on an already hugely successful product. If ChatGPT is the Terminator, GPT-4 is the T-1000.\n\nGPT-4 has a larger working memory, it can understand images and video, and it appears to have (basic) reasoning abilities. Microsoft researchers have described it as having \"sparks of AGI.\" It scored within the top 10% on a simulated bar exam, an accomplishment that was unthinkable just a year ago. It tried to persuade a human to solve a CAPTCHA by lying and saying it was a blind person. It can explain why memes are funny, and build a fully functional website from a simple napkin sketch. And soon, it will be able to natively create drawings and images.\n\nIt remains the most advanced language model that's publicly available - a distillation of the entire knowledge of the internet. And it's somehow available to you and me for $20 a month.\n\nCharlie’s grounding in software engineering and exposure to VC makes him a very intriguing writer, analyst and summarizer. At a certain point he was even a Technical consultant at Andreessen Horowitz. As a founder, he intersects often with the Creator Economy. \n\nArtificial Ignorance is one of the A.I. Newsletters I actually read instead of skim. Maybe you will find some value in it as well. His writing style is not only informative, it’s easy to read with a synthesis of what’s going on that’s unique and fresh. \n\nArtificial IgnoranceThe AI newsletter for founders. A nuanced exploration of AI with projects, essays, news, and interviews.By Charlie GuoThanks for reading! \n\nSubscribe<div",
+  "timeline": "- **2023-09-27** | 35d after NVDA Q2 FY2024 earnings (earnings date: 2023-08-23)\n- **2023-09-27** | 28d before MSFT Q1 FY2024 earnings (earnings date: 2023-10-25)\n- **2023-09-27** | 27d before GOOGL Q3 FY2023 earnings (earnings date: 2023-10-24)\n- **2023-09-27** | 28d before META Q3 FY2023 earnings (earnings date: 2023-10-25)",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2023-08-23",
+      "days_relative": 35,
+      "phase": "post-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2023-10-25",
+      "days_relative": -28,
+      "phase": "pre-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-10-24",
+      "days_relative": -27,
+      "phase": "pre-earnings"
+    },
+    "META": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-10-25",
+      "days_relative": -28,
+      "phase": "pre-earnings"
+    }
+  },
+  "_facts": {
+    "published_at": "2023-09-27T09:58:10+00:00",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "GOOGL",
+      "META"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2023-08-23",
+        "days_relative": 35,
+        "phase": "post-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2023-10-25",
+        "days_relative": -28,
+        "phase": "pre-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-10-24",
+        "days_relative": -27,
+        "phase": "pre-earnings"
+      },
+      "META": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-10-25",
+        "days_relative": -28,
+        "phase": "pre-earnings"
+      }
+    },
+    "paywall": true,
+    "source_url": "https://www.ai-supremacy.com/p/the-most-impactful-ai-events-of-2023",
+    "author": "Michael Spencer"
+  }
+}

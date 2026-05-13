@@ -1,0 +1,73 @@
+{
+  "slug": "substack/will-2024-be-the-year-of-small-language",
+  "type": "article",
+  "source_type": "substack",
+  "title": "Will 2024 be the Year of Small Language Models (SLMs) ?",
+  "author": "Michael Spencer",
+  "url": "https://www.ai-supremacy.com/p/will-2024-be-the-year-of-small-language",
+  "published_at": "2023-12-14T10:58:35+00:00",
+  "compiled_truth": "Will 2024 be the Year of Small Language Models (SLMs) ?\n            \n            \n            \n            \n        \n\n        \n\n        \n\n        \n        \n        \n        \n        \n        \n        \n        \n        \n\n        \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n        \n\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n\n        \n\n        \n            \n        \n\n        \n\n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n                \n            \n        \n            \n        \n            \n        \n            \n        \n\n        \n\n        \n            \n        \n\n        \n        \n          \n        \n        \n        \n\n        \n\n        \n            \n        \n            \n        \n\n        \n\n        \n\n        \n\n        \n\n        \n            \n        \n    \n\n    \n        \n\n        \n            \n        \n\n        \n\n        \n\n        \n            AI Supremacy \n\nSubscribeSign inWill 2024 be the Year of Small Language Models (SLMs) ?\n\nShould we be taking Microsoft's Phi-2 seriously? \n\nMichael SpencerDec 14, 2023∙ Paid234ShareHey Everyone, \n\nNearing the end of 2023 we are seeing a bevy of small language models (SLMs) with supposedly good benchmarks from Mistral, Together AI, Meta, Google and even Microsoft. \n\n📶 From our sponsor: 📶\n\nLaunch Your First RAG App in 10 Minutes or Less\n\nPowered by the Most Advanced Data Pipeline for Retrieval Augmented Generation\n\nStart for free\n\nMicrosoft Research should not be underestimated even if these benchmark comparisons cannot be taken too seriously. \n\nMicrosoft Research has announced the release of Phi-2, a small language model (SLM) demonstrating remarkable capabilities for its size. Small language models got a lot better in just a few months of 2023 which means in 2024 they could produce some interesting results. \n\nSubscribe\n\nPhi-2 model has not been tested to ensure that it performs adequately for any production-level application. It appears to be more like a lead magnet for Azure AI Studio (a playground for researchers). \n\nPhi-2 is a Transformer-based model with a next-word prediction objective, trained on 1.4T tokens from multiple passes on a mixture of Synthetic and Web datasets for NLP and coding. The training for Phi-2 took 14 days on 96 A100 GPUs. Phi-2 is a base model that has not undergone alignment through reinforcement learning from human feedback (RLHF), nor has it been instruct fine-tuned.\n\nThe lead for Phi-2 to the best of my knowledge is Mojan Javaheripi. She works on \"Physics of Large Language Models\" and is broadly interested in enhancing LLMs through new data sources, training regimens, and model architectures. \n\nMojan Javaheripi - Microsoft Research \n\nPhi-2 was released on December 12th, 2023. \n\nRead the Blog\n\nSmall language models will evolve at an unprecedented pace in 2024 where I see Apple becoming a potential winner as well. \n\nThe previous papers for reference: - Phi-1 (Textbooks Are All You Need, https://arxiv.org/abs/2306.11644) - Phi-1.5 (Textbooks Are All You Need II, https://arxiv.org/abs/2309.05463) papers. Courtesy of Sebastian Raschka, PhD Some of the Twitter X mentions around Phi-2 are worth reading this week. \n\nSubscribeContinue reading this post for free, courtesy of Michael Spencer.\n\nClaim my free postOr purchase a paid subscription.PreviousNext© 2026 Michael Spencer · Privacy ∙ Terms ∙ Collection notice Start your SubstackGet the appSubstack is the home for great culture\n        \n\n        \n            \n            \n        \n\n        \n        \n        \n        \n        \n        \n        \n\n        \n        \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n                \n            \n        \n        \n\n        \n            \n            \n            \n\n            \n            \n            \n        \n\n        \n        \n\n        \n\n        \n    \n\n    \n        This site requires JavaScript to run correctly. Please turn on JavaScript or unblock scripts",
+  "timeline": "- **2023-12-14** | 47d before MSFT Q2 FY2024 earnings (earnings date: 2024-01-30)\n- **2023-12-14** | 47d before GOOGL Q4 FY2023 earnings (earnings date: 2024-01-30)\n- **2023-12-14** | 42d after AAPL Q4 FY2023 earnings (earnings date: 2023-11-02)",
+  "companies_mentioned": [
+    "MSFT",
+    "GOOGL",
+    "AAPL"
+  ],
+  "quarter_context": {
+    "MSFT": {
+      "quarter": "Q2",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2024-01-30",
+      "days_relative": -47,
+      "phase": "pre-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2024-01-30",
+      "days_relative": -47,
+      "phase": "pre-earnings"
+    },
+    "AAPL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-11-02",
+      "days_relative": 42,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "published_at": "2023-12-14T10:58:35+00:00",
+    "companies_mentioned": [
+      "MSFT",
+      "GOOGL",
+      "AAPL"
+    ],
+    "quarter_context": {
+      "MSFT": {
+        "quarter": "Q2",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2024-01-30",
+        "days_relative": -47,
+        "phase": "pre-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2024-01-30",
+        "days_relative": -47,
+        "phase": "pre-earnings"
+      },
+      "AAPL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-11-02",
+        "days_relative": 42,
+        "phase": "post-earnings"
+      }
+    },
+    "paywall": true,
+    "source_url": "https://www.ai-supremacy.com/p/will-2024-be-the-year-of-small-language",
+    "author": "Michael Spencer"
+  }
+}

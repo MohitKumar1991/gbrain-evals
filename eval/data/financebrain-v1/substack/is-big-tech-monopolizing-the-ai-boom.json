@@ -1,0 +1,105 @@
+{
+  "slug": "substack/is-big-tech-monopolizing-the-ai-boom",
+  "type": "article",
+  "source_type": "substack",
+  "title": "Is Big Tech monopolizing the AI boom?",
+  "author": "Michael Spencer",
+  "url": "https://www.ai-supremacy.com/p/is-big-tech-monopolizing-the-ai-boom",
+  "published_at": "2023-11-14T10:58:39+00:00",
+  "compiled_truth": "Hey Everyone, \n\nWant to get access to my deep dives and more stories on breaking news in A.I.? Join 500+ others and upgrade to premium. This allows me to continue writing here. \n\nSubscribeWith rumors that OpenAI is seeking more funding, things are heating up in the Venture Capital scene of Generative A.I. Just as this year in the stock market has been taken over by funds putting money into the ‘magnificent seven’ (pictured above), so too have a few companies started to separate themselves in how they invest in the leading A.I. startups. With Amazon getting involved with Anthropic and Google rumored to be a huge backer of Character.AI in the near future, things are really now in motion. \n\nIn 2023, the “Magnificent Seven” have kept the S&P up in the markets, the other 493 stocks not so much. The “Magnificent Seven” are Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia and Tesla.\n\nI asked Charlie Guo who is very well qualified in this domain, to help us figure out what is going on. Charlie’s Artificial Ignorance is one of the most lucid Newsletters in this area with tutorials, round-ups and a lot of easy to read research and know-how. \n\nSubscribe to Artificial Ignorance\n\nArtificial IgnoranceThe AI newsletter for founders. A nuanced exploration of AI with projects, essays, news, and interviews.By Charlie GuoMeanwhile concern is growing that a too concentrated ownership of Generative A.I. by a few companies could actually be dangerous to civilization. Read this on your web browser for the best reading experience. \n\nBy Charlie Guo , November, 2023. \n\nLast month, Google agreed to pour up to $2 billion into the AI startup Anthropic. Normally, that would be a gargantuan amount of money for a startup to raise. But in Anthropic's case, it isn't even the biggest deal it's done this season - in September, Amazon agreed to invest a separate $4 billion into the company*.\n\nIf you're a casual observer of the AI boom, it might seem like there's a lot of fierce competition. Every other week brings new launches and new comparisons. Is DALL-E 3 better than Midjourney? Will Google Gemini finally dethrone GPT-4?\n\nBut behind the scenes, leading AI startups have something in common: a narrow set of investors. Existing tech giants are buying larger and larger stakes in AI companies, which are raising larger and larger amounts of capital. In fact, AI Supremacy has covered many of these well-funded startups in previous posts.\n\nSo let's look at why AI companies need so much cash - and whether we should worry that a handful of tech giants are behind their mega funding rounds.\n\n“If [AI doomer] fear-mongering campaigns succeed, they will *inevitably* result in what you and I would identify as a catastrophe: a small number of companies will control AI.”\n\n– Yann LeCun, one of the “Godfathers of AI”\n\nWhy do AI startups need so much cash?\n\nUnlike say, SaaS companies, AI startups have very different capital needs. The last wave of consumer apps and B2B software was marked by \"blitzscaling,\" where companies that achieved product-market fit (or sometimes, even if they hadn't) would incinerate cash in order to grow at unsustainably incredibly fast rates. Depending on the company, this meant paying for marketing, hiring salespeople, or subsidizing users. Personally, I’m going to miss the era of cheap Lyft rides and DoorDash deliveries.\n\nBut AI startups aren't (yet) spending tons of cash on growth. They're spending it on product. Foundation models like GPT-4 or Claude need hundreds of millions of dollars to train, and millions more to run at scale. These upfront costs go towards data collection, training runs, and fine tuning.\n\nA traditional SaaS app, once built, costs almost zero for extraional user that signs up. That's not quite true for AI apps - each text or image generation costs a measurable amount. Companies are working to improve the efficiency of their models, but we haven't solved the problem yet.\n\nOn paper, AI companies are in a bind. It takes serious capital to build and train new foundation models, but the ROI is far from certain. GitHub Copilot is the only product I'm aware of that's making over $100 million in revenue and isn't losing tons of money in the process. Though when you consider the training costs, it's unclear whether Copilot is net profitable over its entire history.\n\nWho then, can bankroll new AI development, without the certainty of financial returns? Big tech companies, and specifically cloud platforms.\n\nMeet the new boss, same as the old boss\n\nOpenAI kicked off the current wave of billion-dollar funding rounds when it closed a massive investment from Microsoft last year. The details have never been made public, but it has long been rumored to have been a $10 billion deal.\n\nAt first, many were confused why 1) OpenAI needed so much capital, and 2) Microsoft agreed to give it to them. But with the release of GPT-4, Bing Chat, and Microsoft's many Copilots, the stakes became much clearer.\n\nIn the months since, as the world has started realizing the potential of AI, investments have gotten red-hot. Companies can now raise hundreds of millions (and in Anthropic's case, billions) of dollars from investors. But if we look at some of the best-funded AI companies, there's a surprising trend. Many of them have taken money from the same five names: Amazon, Google, Microsoft, Nvidia, and Salesforce.\n\nBelow are ten of the best-funded AI companies (plus Hugging Face, because it's pretty important to the AI ecosystem). Of these eleven, only two (Cerebras and Scale AI) haven't taken investment from one of the five tech companies mentioned.\n\nAnd here's how the investments break down:\n\nThese infographics created by Charlie Guo, please credit him if you use them. \n\nShare\n\nIt’s worth noting that the biggest investors are infrastructure and cloud providers. When people ask \"who are the winners of the AI boom?\" - the clearest answer so far is Nvidia. The company has a fantastic position in both hardware and software, and is reaping the rewards in the form of a trillion dollar market cap. Startups are receiving millions from Nvidia and sending them right back to buy more GPUs.\n\nBeyond Nvidia, cloud platforms like GCP, AWS, and Azure will benefit from increased AI adoption and usage - and they seem to be going all-in on investing in that future. If you can’t afford Nvidia GPUs yourself, you’ll be paying for a cloud platform to run your models instead. Google is a fascinating player here, considering they own DeepMind, the most advanced competitor to OpenAI. Whether it’s an intentional strategy or not, Google is hedging its AI bets.\n\nWhen I think of big tech today, there's Google (aka Alphabet), Amazon, Microsoft, Meta, and Apple. Of those, the first three are all over these investments, while Apple and Meta are nowhere to be found. And while we don’t yet know Apple’s generative AI plans, Meta is playing a big role in the AI landscape.\n\nMeta's chaos monkey\n\nIt's ironic that the biggest obstacle to Microsoft, Google, and others controlling the next generation of AI technology is Meta. Rather than invest in AI startups, Meta's strategy seems to be to develop cutting edge models, and then openly release* them.\n\nDespite not having many flashy AI products until very recently, Meta is actually an AI research powerhouse. Yann LeCun, one of the \"godfathers of AI,\" has led research teams at Meta for over a decade. And he's one of the biggest AI researchers pushing back on the “AGI is going to kill us all” narrative. Altogether, Meta’s AI teams have put out over a thousand publications - a staggering number.\n\nAfter its original Llama model leaked, the company adopted a stance of publishing not only the model code (which many others have done) but also the model weights - the “secret sauce” that’s needed to replicate the models. Their flagship model is Llama 2, a ChatGPT competitor, but there’s a growing list of other open models. They cover transcription, translation, coding, computer vision, and more.\n\nBy making it so (almost) anyone can run Llama 2, or any other foundation model, Meta is chipping away at the moats of OpenAI, Anthropic, and DeepMind. And in turn, it is decreasing the value of its competitors’ investments.\n\nYet despite Meta’s efforts to democratize AI, it still controls the training dataset and RLHF process. Its licenses are very permissive, but aren't 100% open-source. And to be honest, I'm not in love with the idea that Mark Zuckerberg may be all that stands between us and the AI dominance of Amazon, Google and Microsoft.\n\nTop Recent Articles by Charlie Guo \n\nTutorial: How to make and share custom GPTs \n\nOpenAI’s DevDay: The biggest announcements\n\nWhat President Biden's AI executive order actually means\n\nTutorial: How to fine-tune ChatGPT\n\nThe clarity, flow and insight of Charlie’s writing really stands out. Share your opinion on his work or on this piece. Restack this post to show support. \n\nLeave a comment\n\nHow worried should we be?\n\nRight now, we’re all trying to figure out how big this AI thing is going to be. Depending on who you listen to, it might be a bubble, it might be the dawn of a new revolution, or it might be the Pandora’s box that leads to humanity’s undoing. But let's put aside the AI apocalypse for a moment.\n\nThere’s a big reason why we ought to push back against a few companies controlling the latest and greatest foundation models. In the pursuit of progress, you want new blood, new talent, and new ideas. It’s one of the reasons why industry moves so much faster than academia - companies don’t wait for their elders to die before embracing new ideas.\n\nIf AI proves to be an important (but not earth-shattering) invention,  we'll for sure see the incumbents benefit. They'll adopt and distribute AI faster than the upstarts, and we'll see the continuation of recent trends. Big tech companies will offer AI products for cheap (or free), will collect our data for ads and training runs, and will mostly focus on B2B/B2C use cases for generative AI. That's not ideal, but it's a solvable problem.\n\nBut if the techno-optimists are right, and AI reshapes the entire world... In that case, concentrating AI into the hands of a few means putting a cap on the potential of humanity as a species.\n\nI don’t know which scenario will come to pass. I’m not sure anyone does. Clearly governments are concerned enough about AI that they’re ensuring we do something to regulate them. But with all the ongoing rules, laws, and executive orders, it seems worthwhile trying to make AI (safely) available to more than a few gatekeepers.\n\n*Whether or not Meta is truly “open-sourcing” its models has been a somewhat contentious topic. The company has publicly released its models and their weights, but has placed restrictions on who can use them - specifically prohibiting companies with over 700 million DAUs.\n\nArtificial IgnoranceThe AI newsletter for founders. A nuanced exploration of AI with projects, essays, news, and interviews.By Charlie GuoEditor’s Postscript \n\nNovember, 14th, 2023. by AI Supremacy  \n\nTo give you an idea of the dominance of the ‘magnificent seven’ in 2023 today, the NASDAQ 100 in 2023 is up 42.5% on the A.I. narrative. YTD - year to date. \n\nShare\n\nNvidia’s stock is up 240% YTD as of November 14th, 2023. \n\nMeta is up 164% YTD. \n\nMicrosoft is up 53% YTD. \n\nPalantir, PLTR 0.00%↑ is up 208% YTD. \n\nGoogle is up 48% YTD. \n\nC3.AI is up 149% YTD. \n\nThis is not normal, even after the stock market disaster of 2022 (33% decline of NASDAQ 100 in 2022). This is an A.I. boom of valuations on the narrative that Generative A.I. as an all transforming GPT (Generative Pre-trained Transformers) wave that will impact every industry and all of society. \n\nThe exaggerated capital flows into Generative A.I. that we have witnessed in 2023 and will likely continue to witness in 2024 (especially from BigTech) could lead to a brave new world, the collapse of the A.I. bubble, or something different and more authoritarian altogether. \n\nOpenAI \n\nBetween 2021 and 2023, OpenAI’s valuation has more than doubled from $14 billion to a whopping $30 billion.\n\nBy late 2023, it went up to $86 Billion. This means in terms of Private Unicorns, it went from 10th to 3rd place for the most valuable startups in the world, and this is before its next epic funding round likely in the first half of 2024. \n\nOpenAI CEO Sam Altman has revealed he is seeking further financial support from top investor Microsoft as his company seeks to invent commercial AGI. They are currently working on GPT-5. \n\nThe company is on track to generate $1 billion of annual revenue as businesses adopt the technology, Bloomberg reported in August. \n\nWith more funding from Microsoft likely to take place in their push for AGI, what will OpenAI valuated at by 2025?\n\nLoading...\n\nLeave a comment\n\nPeer Recommendations\n\nOne of my favorite people to follow on breaking news around A.I. on LinkedIn is Sahar Mor you can follow his posts here. He’s also referred this Newsletter lot of new readers and we appreciate it. \n\n<div",
+  "timeline": "- **2023-11-14** | 7d before NVDA Q3 FY2024 earnings (earnings date: 2023-11-21)\n- **2023-11-14** | 20d after MSFT Q1 FY2024 earnings (earnings date: 2023-10-25)\n- **2023-11-14** | 21d after GOOGL Q3 FY2023 earnings (earnings date: 2023-10-24)\n- **2023-11-14** | 20d after META Q3 FY2023 earnings (earnings date: 2023-10-25)\n- **2023-11-14** | 12d after AAPL Q4 FY2023 earnings (earnings date: 2023-11-02)",
+  "companies_mentioned": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AAPL"
+  ],
+  "quarter_context": {
+    "NVDA": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2023-11-21",
+      "days_relative": -7,
+      "phase": "pre-earnings"
+    },
+    "MSFT": {
+      "quarter": "Q1",
+      "fiscal_year": "FY2024",
+      "earnings_date": "2023-10-25",
+      "days_relative": 20,
+      "phase": "post-earnings"
+    },
+    "GOOGL": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-10-24",
+      "days_relative": 21,
+      "phase": "post-earnings"
+    },
+    "META": {
+      "quarter": "Q3",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-10-25",
+      "days_relative": 20,
+      "phase": "post-earnings"
+    },
+    "AAPL": {
+      "quarter": "Q4",
+      "fiscal_year": "FY2023",
+      "earnings_date": "2023-11-02",
+      "days_relative": 12,
+      "phase": "post-earnings"
+    }
+  },
+  "_facts": {
+    "published_at": "2023-11-14T10:58:39+00:00",
+    "companies_mentioned": [
+      "NVDA",
+      "MSFT",
+      "GOOGL",
+      "META",
+      "AAPL"
+    ],
+    "quarter_context": {
+      "NVDA": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2023-11-21",
+        "days_relative": -7,
+        "phase": "pre-earnings"
+      },
+      "MSFT": {
+        "quarter": "Q1",
+        "fiscal_year": "FY2024",
+        "earnings_date": "2023-10-25",
+        "days_relative": 20,
+        "phase": "post-earnings"
+      },
+      "GOOGL": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-10-24",
+        "days_relative": 21,
+        "phase": "post-earnings"
+      },
+      "META": {
+        "quarter": "Q3",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-10-25",
+        "days_relative": 20,
+        "phase": "post-earnings"
+      },
+      "AAPL": {
+        "quarter": "Q4",
+        "fiscal_year": "FY2023",
+        "earnings_date": "2023-11-02",
+        "days_relative": 12,
+        "phase": "post-earnings"
+      }
+    },
+    "paywall": true,
+    "source_url": "https://www.ai-supremacy.com/p/is-big-tech-monopolizing-the-ai-boom",
+    "author": "Michael Spencer"
+  }
+}
