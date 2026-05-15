@@ -366,45 +366,62 @@ is a hit.
 
 ---
 
+## Question Bank — 138 Supervised Questions (as of 2026-05-15)
+
+`eval/data/financebrain-v1/questions.json` contains 138 human-reviewed questions
+across 9 categories. Every question has verified `answer_slugs` pointing to
+real corpus pages, and an exact answer drawn from source data.
+
+| Category | Count | What it tests |
+|----------|-------|---------------|
+| `financials` | 20 | Income stmt, balance sheet, cash flow, segments, YoY/QoQ deltas |
+| `transcript` | 20 | Earnings guidance, capex commitments, product milestones, custom chips |
+| `sec` | 15 | 8-K press releases, 10-K risk factors, 10-Q MD&A — unique to SEC filings |
+| `news` | 15 | Timing of announcements, KPIs from @dylan522p tweets and substack articles |
+| `product` | 15 | Product specs, adoption metrics, launch details (3 questions per company) |
+| `supply-chain` | 15 | Foundry dependency, HBM, CoWoS, export controls, Blackwell ramp |
+| `portfolio` | 5 | Holdings composition, short book, analyst consensus vs mark prices |
+| `time-series` | 20 | Multi-quarter data series + 3 product launch trajectories |
+| `market-reactions` | 13 | Event-driven price moves with significance methodology |
+
+### Market Reactions Methodology
+
+Each market-reactions answer includes:
+- Price before event (prior day close) and price on event day (or next trading day)
+- Actual move %
+- 30-day rolling baseline: average |daily close-to-close %| over 30 days prior
+- Significance threshold: 2× the baseline average
+- A move is **significant** only if it exceeds the threshold
+
+This avoids calling normal volatility a "reaction." A 2% move on a stock that
+moves ±2% every day is noise; a 17% move on the same stock is signal.
+
+### Analyst Estimates
+
+`eval/data/financebrain-v1/analyst-estimates/` contains FMP consensus price
+targets for 14 portfolio tickers (NVDA, MSFT, AAPL, GOOGL, META, AMZN, RDDT,
+WOLF, ASTS, RKLB, NOK, WYFI, PURR, KRKNF). Each file includes last-month avg
+target, number of estimates, and comparison to the 2026-05-12 portfolio mark.
+
+### Tooling Added
+
+- **`eval/runner/questions-ui.ts`** — upgraded question builder UI at
+  `http://localhost:3456`. Features: edit existing questions, validated badge,
+  per-question "▶ Score" button (keyword eval), cross-source slug picker,
+  progress meter (X/100 target), bulk delete.
+- **`eval/runner/financebrain.ts`** — added `--question-id <id>` flag to run
+  a single question for targeted scoring.
+- **`eval/scrapers/price-targets.ts`** — FMP analyst price target scraper.
+  Run: `FMP_API_KEY=... bun eval/scrapers/price-targets.ts`
+
+---
+
 ## Pending Tasks
 
 ### High Priority
 
-**1. Run full 9-query vector + hybrid smoke test**
-The warm cache makes this cheap. Start the proxy, then:
-```bash
-LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
-  bun eval/runner/financebrain.ts --queries test \
-  --adapters vector,hybrid,hybrid+expansion --top-k 5
-```
-This will confirm hybrid+expansion recall vs keyword (22%) and vector (33% on 3Q).
-
-**2. Build the full question bank**
-File to create: `eval/data/financebrain-v1/questions.json`
-Use the question builder UI:
-```bash
-bun eval/runner/questions-ui.ts   # opens at http://localhost:3456
-```
-Write 10–20 questions per source_type (9 categories × ~15 = ~135 total):
-- `financials`: revenue, margins, EPS, YoY/QoQ deltas by quarter
-- `transcript`: CEO quotes, guidance, specific discussion topics (AI, capex, layoffs)
-- `price`: quarterly return, high/low, post-earnings price move window
-- `social`: sentiment before/after earnings, specific event opinions
-- `substack`: AI trend analysis, company deep-dives
-- `portfolio`: position size, P&L, % NAV, cost basis
-- `sec-8k`: acquisition announcements, leadership changes, earnings press releases
-- `sec-10k`: risk factors, business segment descriptions, competitive landscape
-- `sec-10q`: Azure cloud (MSFT), Data Center (NVDA), quarterly MD&A narrative
-
-Rules:
-- Every `answer_slug` must be verified to exist on disk
-- Include temporal questions (e.g. "what was analyst sentiment 10 days before
-  NVDA Q2 FY2025 earnings?") — these test the `quarter_context` field
-- Mix single-answer and multi-answer questions
-- Include at least 5 cross-source questions (e.g. "what did the 8-K say about
-  the acquisition that was discussed on the earnings call?")
-
-**3. Run full eval with all adapters + full question bank**
+**1. Run full vector + hybrid eval on 138 questions**
+Start the LiteLLM proxy, then:
 ```bash
 LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
   bun eval/runner/financebrain.ts \
@@ -412,41 +429,36 @@ LITELLM_BASE_URL=http://localhost:4000 ANTHROPIC_API_KEY=... \
   --adapters keyword,vector,hybrid,hybrid+expansion \
   --top-k 5
 ```
+Keyword smoke tests so far: financials 5%, transcript 0% (expected — natural
+language vs structured/verbatim content). Vector/hybrid results pending.
 
-**4. Build chart generator**
+**2. Build chart generator**
 File to create: `eval/runner/financebrain-chart.ts`
 Mirror `eval/runner/longmemeval-chart.ts`. Produce two SVGs:
 - Headline bar chart: Recall@5 per adapter (horizontal bars)
-- Per-source-type grouped bar: one bar per adapter per source_type
+- Per-category grouped bar: one bar per adapter per category
 
 Store in `docs/benchmarks/2026-05-13-financebrain-bigtech-v1/`.
 
-**5. Write the published benchmark report**
+**3. Write the published benchmark report**
 File: `docs/benchmarks/2026-05-13-financebrain-bigtech-v1.md`
 Follow the 12-section template in `CLAUDE.md`. Fill after the full eval run.
 
-**6. Add more Twitter handles**
-Current: only `@dylan522p`. Add company executives, AI analysts, sector
-commentators:
-```bash
-TWITTERAPI_IO_KEY=... bun eval/scrapers/twitter.ts --handle <handle> --years 2
-```
-Output lands in `social/<handle>/` and is picked up automatically by the runner.
-
-**7. Commit warm embedding cache**
+**4. Commit warm embedding cache**
 `eval/data/financebrain-v1/embed-cache/embed-cache-litellm_gemini-embedding-001@1536.sqlite`
-is 61MB and gitignored. Commit it (add explicit exception to `.gitignore`) so
-parallel agents get the warm cache on clone. Or host it separately and document
-the download URL.
+is 61MB and gitignored. Commit it so parallel agents get the warm cache on
+clone.
 
 ### Lower Priority
 
-**8. Company website crawl**
-Would add `company-overview` source_type pages (IR pages, product pages).
-Scraper to create: `eval/scrapers/company-crawl.ts`
+**5. Add more market-reactions questions**
+Currently 13. Good candidates still to compute:
+- NVDA Q1 FY2025 earnings + 10:1 split (May 23, 2024): +9.32% significant
+- META Q3 2022 earnings crash (Oct 27, 2022): -24.56% significant
+- AAPL Vision Pro no-reaction (Feb 2, 2024): -0.54% not significant
 
-**9. Refresh data on cadence**
-- Portfolio: run `ibkr.ts` weekly for fresh snapshots
+**6. Refresh data on cadence**
+- Portfolio: run `ibkr.ts` for fresh snapshots
 - Substack/Twitter: run with `--since <last-date>` for new posts
 - SEC EDGAR: run with `--since <last-date>` after each earnings cycle
 - FMP: run `fmp.ts --ticker <X>` after each earnings report

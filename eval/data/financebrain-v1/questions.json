@@ -1651,34 +1651,34 @@
       "id": "market-reactions-11",
       "category": "market-reactions",
       "question": "When NVIDIA reported its first AI supercycle earnings on May 25, 2023, how did Microsoft's stock react?",
-      "answer": "MSFT pre-event close (May 24): $313.85 \u2192 Post-event close (May 25): $325.92. Move: +3.85%. Baseline avg: \u00b11.12%. Threshold: \u00b12.24%. Significant \u2014 3.4\u00d7 the baseline. NVIDIA's +24% single-day jump on AI GPU demand drove a halo effect across the AI ecosystem \u2014 MSFT rallied as a primary AI beneficiary via Azure and the OpenAI partnership. By contrast, GOOGL (+2.13%) and META (+1.40%) were not significant on the same day.",
+      "answer": "MSFT close May 24: $313.85 \u2192 May 25: $325.92. Move: +3.85%. Baseline avg: \u00b11.12%. Threshold: \u00b12.24%. Significant \u2014 3.4\u00d7 the baseline. On the same day, GOOGL moved +2.13% (not significant, baseline \u00b11.43%) and META moved +1.40% (not significant, baseline \u00b11.40%).",
       "answer_slugs": [
         "price/MSFT-CY2023-Q2",
         "sec/NVDA/8-k-2023-05-24"
       ],
-      "notes": "Cross-company: NVDA earnings caused a significant move in MSFT. GOOGL and META moved but below their respective significance thresholds."
+      "notes": "Cross-company: NVDA earnings caused a significant move in MSFT. GOOGL and META moved but below their respective thresholds."
     },
     {
       "id": "market-reactions-12",
       "category": "market-reactions",
       "question": "When Alphabet announced ~$75B in 2025 capex on February 4, 2025, how did NVIDIA's stock react the next day?",
-      "answer": "NVDA pre-event close (Feb 4): $118.65 \u2192 Next trading day close (Feb 5): $124.83. Move: +5.21%. Baseline avg: \u00b13.14%. Threshold: \u00b16.27%. No significant move found on this date. Despite GOOGL's $75B capex commitment being a direct positive signal for GPU demand, NVDA's move was below the significance threshold \u2014 the announcement may have been priced in given prior hyperscaler capex disclosures that week.",
+      "answer": "NVDA close Feb 4: $118.65 \u2192 Feb 5: $124.83. Move: +5.21%. Baseline avg: \u00b13.14%. Threshold: \u00b16.27%. No significant move found on this date.",
       "answer_slugs": [
         "price/NVDA-CY2025-Q1",
         "sec/GOOGL/8-k-2025-02-04"
       ],
-      "notes": "Cross-company: major positive capex news produced no significant NVDA reaction \u2014 likely already priced in from META and MSFT capex disclosures in the same earnings week."
+      "notes": "Cross-company: GOOGL $75B capex announcement produced no significant NVDA reaction."
     },
     {
       "id": "market-reactions-13",
       "category": "market-reactions",
       "question": "When Meta raised its 2024 capex guidance to $37-40B on July 31, 2024, how did NVIDIA's stock react?",
-      "answer": "NVDA pre-event close (Jul 31): $117.02 \u2192 Next trading day close (Aug 1): $109.21. Move: -6.67%. Baseline avg: \u00b13.29%. Threshold: \u00b16.58%. Significant \u2014 but confounded. While META's capex raise was positive for NVDA (more GPUs to buy), the same day a global macro selloff began driven by the Japanese yen carry trade unwind and weak US jobs data, which hit tech broadly. No significant move found attributable to the META announcement specifically.",
+      "answer": "NVDA close Jul 31: $117.02 \u2192 Aug 1: $109.21. Move: -6.67%. Baseline avg: \u00b13.29%. Threshold: \u00b16.58%. Significant. META capex guidance raised from $35-40B to $37-40B on the Jul 31 earnings call.",
       "answer_slugs": [
         "price/NVDA-CY2024-Q3",
         "sec/META/8-k-2024-07-31"
       ],
-      "notes": "Cross-company: fundamentally positive news (META buying more GPUs) produced a significant negative move \u2014 but the macro environment (yen carry unwind) was the dominant driver on Aug 1, 2024."
+      "notes": "Cross-company: META capex raise on Jul 31 2024; NVDA significant move the next day."
     }
   ]
 }
