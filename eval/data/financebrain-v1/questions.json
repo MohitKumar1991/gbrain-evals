@@ -1533,6 +1533,152 @@
         "sec/GOOGL/8-k-2024-07-23"
       ],
       "notes": "10 quarters from GOOGL 8-K press release tables (prior-year / current-quarter format). Tabular data ends after Q2 2024 \u2014 later 8-Ks switched to narrative format. Q3-Q4 2022 showed YoY declines during ad market downturn."
+    },
+    {
+      "id": "market-reactions-01",
+      "category": "market-reactions",
+      "question": "What was the market reaction to NVIDIA's Q1 FY2024 earnings announced May 24, 2023?",
+      "answer": "Pre-earnings close (May 24): $30.54 \u2192 Post-earnings close (May 25): $37.98. Move: +24.36%. Baseline 30-day avg daily move: \u00b11.74%. Threshold for significance: \u00b13.48%. Significant \u2014 14\u00d7 the baseline. NVIDIA guided Q2 FY2024 revenue to $11.0B \u00b12%, a 53% raise above consensus in a single quarter on the back of AI GPU demand.",
+      "answer_slugs": [
+        "price/NVDA-CY2023-Q2",
+        "sec/NVDA/8-k-2023-05-24",
+        "transcripts/NVDA-2024-Q1"
+      ],
+      "notes": "First AI supercycle earnings. One of the largest single-day post-earnings moves in NVDA history."
+    },
+    {
+      "id": "market-reactions-02",
+      "category": "market-reactions",
+      "question": "What was the market reaction to Meta's Q3 2022 earnings announced October 26, 2022?",
+      "answer": "Pre-earnings close (Oct 26): $129.82 \u2192 Post-earnings close (Oct 27): $97.94. Move: -24.56%. Baseline avg: \u00b12.14%. Threshold: \u00b14.28%. Significant \u2014 11\u00d7 the baseline. Reality Labs operating loss of -$3.67B in the quarter; full-year 2022 RL losses projected at -$9.4B; Q4 revenue guidance cut below consensus.",
+      "answer_slugs": [
+        "price/META-CY2022-Q4",
+        "sec/META/8-k-2022-10-26"
+      ],
+      "notes": "Peak bearish sentiment for META \u2014 stock had fallen ~70% YTD before this further -24.56% drop."
+    },
+    {
+      "id": "market-reactions-03",
+      "category": "market-reactions",
+      "question": "What was the market reaction to Meta's Year of Efficiency announcement on February 1, 2023?",
+      "answer": "Pre-earnings close (Feb 1): $153.12 \u2192 Post-earnings close (Feb 2): $188.77. Move: +23.28%. Baseline avg: \u00b11.95%. Threshold: \u00b13.91%. Significant \u2014 12\u00d7 the baseline. Zuckerberg announced the Year of Efficiency: headcount reductions, cost discipline, and a pivot from metaverse spending to profitability. Revenue modestly beat expectations.",
+      "answer_slugs": [
+        "price/META-CY2023-Q1",
+        "sec/META/8-k-2023-02-01"
+      ],
+      "notes": "Single-day reversal from the 2022 bear case \u2014 market rewarded the efficiency pivot immediately."
+    },
+    {
+      "id": "market-reactions-04",
+      "category": "market-reactions",
+      "question": "What was NVIDIA's stock market reaction to the DeepSeek R1 announcement in January 2025?",
+      "answer": "Pre-event close (Jan 24): $142.62 \u2192 Next trading day close (Jan 27): $118.42. Move: -16.97%. Baseline avg: \u00b12.29%. Threshold: \u00b14.57%. Significant \u2014 7.4\u00d7 the baseline. DeepSeek R1 (released Jan 20) raised questions about AI GPU demand if frontier models could be trained cheaply. NVIDIA lost ~$593B in market cap \u2014 the largest single-day market cap loss in history at that time.",
+      "answer_slugs": [
+        "price/NVDA-CY2025-Q1",
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "notes": "Jan 20 was a holiday (MLK Day); first trading day to absorb the news was Jan 27."
+    },
+    {
+      "id": "market-reactions-05",
+      "category": "market-reactions",
+      "question": "What was the market reaction to Microsoft's Q2 FY2023 earnings and the OpenAI investment announcement on January 24\u201325, 2023?",
+      "answer": "Pre-earnings close (Jan 24): $242.04 \u2192 Post-earnings close (Jan 25): $240.61. Move: -0.59%. Baseline avg: \u00b11.51%. Threshold: \u00b13.02%. No significant move found on this date. The announcement may have been priced in earlier or the market reaction may not be captured in our data \u2014 Azure deceleration guidance for Q3 likely offset any OpenAI sentiment.",
+      "answer_slugs": [
+        "price/MSFT-CY2023-Q1",
+        "sec/MSFT/8-k-2023-01-24"
+      ],
+      "notes": "Useful benchmark case \u2014 shows that even major partnership announcements may produce no measurable reaction."
+    },
+    {
+      "id": "market-reactions-06",
+      "category": "market-reactions",
+      "question": "What was the market reaction to NVIDIA's H100 export control restriction announced August 31, 2022?",
+      "answer": "Pre-event close (Aug 31): $15.09 \u2192 Next trading day close (Sep 1): $13.94. Move: -7.62%. Baseline avg: \u00b12.90%. Threshold: \u00b15.79%. Significant \u2014 2.6\u00d7 the baseline. The US government added H100 to the export control list for China, directly threatening NVIDIA's next-generation product pipeline in its largest growth market.",
+      "answer_slugs": [
+        "price/NVDA-CY2022-Q3",
+        "sec/NVDA/8-k-2022-08-31",
+        "sec/NVDA/8-k-2022-09-01"
+      ],
+      "notes": "First export control hit on NVDA's AI GPU line. Separate 8-K filed Sep 1 disclosed impact on H100 development revenue."
+    },
+    {
+      "id": "market-reactions-07",
+      "category": "market-reactions",
+      "question": "What was the market reaction to Meta's Q3 2023 earnings reported October 25, 2023, despite strong 40% operating margins?",
+      "answer": "Pre-earnings close (Oct 25): $299.53 \u2192 Post-earnings close (Oct 26): $288.35. Move: -3.73%. Baseline avg: \u00b11.60%. Threshold: \u00b13.20%. Significant \u2014 2.3\u00d7 the baseline. Despite 40% operating margin, the stock declined \u2014 the 2024 expense outlook in the filing indicated capex would increase meaningfully, raising concerns that the Year of Efficiency was ending. No significant reaction may have been expected given the stock had run +160% YTD.",
+      "answer_slugs": [
+        "price/META-CY2023-Q4",
+        "sec/META/8-k-2023-10-25"
+      ],
+      "notes": "Counter-intuitive reaction \u2014 strong results produced a down day. 2024 capex guidance was the likely driver."
+    },
+    {
+      "id": "market-reactions-08",
+      "category": "market-reactions",
+      "question": "What was the market reaction to NVIDIA's Q4 FY2024 earnings reported February 21, 2024?",
+      "answer": "Pre-earnings close (Feb 21): $67.47 \u2192 Post-earnings close (Feb 22): $78.54. Move: +16.41%. Baseline avg: \u00b11.89%. Threshold: \u00b13.77%. Significant \u2014 8.7\u00d7 the baseline. Data Center revenue of $18.4B (+27% QoQ, +409% YoY); full-year FY2024 revenue of $60.9B. Q1 FY2025 guidance of $24.0B \u00b12% was ~20% above consensus.",
+      "answer_slugs": [
+        "price/NVDA-CY2024-Q1",
+        "sec/NVDA/8-k-2024-02-21"
+      ],
+      "notes": "Second consecutive massive post-earnings gap up for NVDA during the AI supercycle."
+    },
+    {
+      "id": "market-reactions-09",
+      "category": "market-reactions",
+      "question": "What was the market reaction to NVIDIA's Q1 FY2025 earnings and 10-for-1 stock split announcement on May 22, 2024?",
+      "answer": "Pre-earnings close (May 22): $94.95 \u2192 Post-earnings close (May 23): $103.80. Move: +9.32%. Baseline avg: \u00b12.63%. Threshold: \u00b15.26%. Significant \u2014 3.5\u00d7 the baseline. Revenue of $26.0B (+18% QoQ, +262% YoY); Data Center $22.6B (+427% YoY). The 10-for-1 stock split also announced, effective June 10, 2024.",
+      "answer_slugs": [
+        "price/NVDA-CY2024-Q2",
+        "sec/NVDA/8-k-2024-05-22"
+      ],
+      "notes": "Pre-split prices shown. Post-split equivalent: $9.50 \u2192 $10.38. The split announcement amplified retail buying interest."
+    },
+    {
+      "id": "market-reactions-10",
+      "category": "market-reactions",
+      "question": "What was the market reaction to the H20 export ban on April 9, 2025?",
+      "answer": "Pre-event close (Apr 8): $96.30 \u2192 Next trading day close (Apr 9): $114.33. Move: +18.72%. Baseline avg: \u00b13.29%. Threshold: \u00b16.58%. Significant \u2014 but confounded: the same day, the Trump administration announced a 90-day tariff pause on most countries, triggering a broad market rally. The H20 ban was a negative for NVDA ($4.5B inventory write-down disclosed later) but was overwhelmed by the macro tailwind. No significant move found attributable solely to the H20 ban on this date.",
+      "answer_slugs": [
+        "price/NVDA-CY2025-Q2",
+        "sec/NVDA/8-k-2025-05-28",
+        "transcripts/NVDA-2026-Q1"
+      ],
+      "notes": "Classic confounded event \u2014 negative company-specific news (H20 ban) on a day of a massive positive macro catalyst (tariff pause). Real H20 impact was disclosed in Q1 FY2026 earnings."
+    },
+    {
+      "id": "market-reactions-11",
+      "category": "market-reactions",
+      "question": "When NVIDIA reported its first AI supercycle earnings on May 25, 2023, how did Microsoft's stock react?",
+      "answer": "MSFT pre-event close (May 24): $313.85 \u2192 Post-event close (May 25): $325.92. Move: +3.85%. Baseline avg: \u00b11.12%. Threshold: \u00b12.24%. Significant \u2014 3.4\u00d7 the baseline. NVIDIA's +24% single-day jump on AI GPU demand drove a halo effect across the AI ecosystem \u2014 MSFT rallied as a primary AI beneficiary via Azure and the OpenAI partnership. By contrast, GOOGL (+2.13%) and META (+1.40%) were not significant on the same day.",
+      "answer_slugs": [
+        "price/MSFT-CY2023-Q2",
+        "sec/NVDA/8-k-2023-05-24"
+      ],
+      "notes": "Cross-company: NVDA earnings caused a significant move in MSFT. GOOGL and META moved but below their respective significance thresholds."
+    },
+    {
+      "id": "market-reactions-12",
+      "category": "market-reactions",
+      "question": "When Alphabet announced ~$75B in 2025 capex on February 4, 2025, how did NVIDIA's stock react the next day?",
+      "answer": "NVDA pre-event close (Feb 4): $118.65 \u2192 Next trading day close (Feb 5): $124.83. Move: +5.21%. Baseline avg: \u00b13.14%. Threshold: \u00b16.27%. No significant move found on this date. Despite GOOGL's $75B capex commitment being a direct positive signal for GPU demand, NVDA's move was below the significance threshold \u2014 the announcement may have been priced in given prior hyperscaler capex disclosures that week.",
+      "answer_slugs": [
+        "price/NVDA-CY2025-Q1",
+        "sec/GOOGL/8-k-2025-02-04"
+      ],
+      "notes": "Cross-company: major positive capex news produced no significant NVDA reaction \u2014 likely already priced in from META and MSFT capex disclosures in the same earnings week."
+    },
+    {
+      "id": "market-reactions-13",
+      "category": "market-reactions",
+      "question": "When Meta raised its 2024 capex guidance to $37-40B on July 31, 2024, how did NVIDIA's stock react?",
+      "answer": "NVDA pre-event close (Jul 31): $117.02 \u2192 Next trading day close (Aug 1): $109.21. Move: -6.67%. Baseline avg: \u00b13.29%. Threshold: \u00b16.58%. Significant \u2014 but confounded. While META's capex raise was positive for NVDA (more GPUs to buy), the same day a global macro selloff began driven by the Japanese yen carry trade unwind and weak US jobs data, which hit tech broadly. No significant move found attributable to the META announcement specifically.",
+      "answer_slugs": [
+        "price/NVDA-CY2024-Q3",
+        "sec/META/8-k-2024-07-31"
+      ],
+      "notes": "Cross-company: fundamentally positive news (META buying more GPUs) produced a significant negative move \u2014 but the macro environment (yen carry unwind) was the dominant driver on Aug 1, 2024."
     }
   ]
 }
