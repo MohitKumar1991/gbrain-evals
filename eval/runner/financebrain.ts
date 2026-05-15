@@ -13,6 +13,7 @@
  *   bun eval/runner/financebrain.ts --queries test              # smoke test
  *   bun eval/runner/financebrain.ts --queries test --keyword-only
  *   bun eval/runner/financebrain.ts --queries eval/data/financebrain-v1/questions.json
+ *   bun eval/runner/financebrain.ts --queries eval/data/financebrain-v1/questions.json --question-id financials-01
  *   bun eval/runner/financebrain.ts --adapters keyword,hybrid
  *   bun eval/runner/financebrain.ts --top-k 5 --limit 20
  *
@@ -91,6 +92,7 @@ const args = process.argv.slice(2);
 const QUERIES_ARG = args.includes('--queries') ? args[args.indexOf('--queries') + 1] : 'test';
 const TOP_K = args.includes('--top-k') ? parseInt(args[args.indexOf('--top-k') + 1]) : 5;
 const LIMIT = args.includes('--limit') ? parseInt(args[args.indexOf('--limit') + 1]) : Infinity;
+const QUESTION_ID = args.includes('--question-id') ? args[args.indexOf('--question-id') + 1] : null;
 const KEYWORD_ONLY = args.includes('--keyword-only');
 const ADAPTERS_ARG = args.includes('--adapters') ? args[args.indexOf('--adapters') + 1] : null;
 const NO_CACHE = args.includes('--no-cache');
@@ -159,7 +161,15 @@ async function main() {
   mkdirSync(CACHE_DIR, { recursive: true });
 
   const corpus = loadCorpus();
-  const queries = loadQueries().slice(0, LIMIT === Infinity ? undefined : LIMIT);
+  let queries = loadQueries().slice(0, LIMIT === Infinity ? undefined : LIMIT);
+
+  if (QUESTION_ID) {
+    queries = queries.filter(q => q.id === QUESTION_ID);
+    if (queries.length === 0) {
+      console.error(`No question found with id: ${QUESTION_ID}`);
+      process.exit(1);
+    }
+  }
 
   console.log(`Corpus: ${corpus.length} pages`);
   console.log(`Queries: ${queries.length}`);

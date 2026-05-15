@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/NVDA",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "NVDA Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/NVDA",
+  "published_at": "2026-05-14T16:29:34.065Z",
+  "compiled_truth": "NVDA — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 4 estimates)\n  Avg Price Target:    $303.75\n  Last Year Avg:       $255.75  (68 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-05-14  UBS:  $275.00  [stock at $231.27 when posted, +18.9% vs post price]\n  2026-05-14  Cantor Fitzgerald:  $350.00  [stock at $225.83 when posted, +55.0% vs post price]\n  2026-05-12  Susquehanna (Christopher Rolland):  $275.00  [stock at $219.44 when posted, +25.3% vs post price]\n  2026-05-12  Wells Fargo:  $315.00  [stock at $219.44 when posted, +43.5% vs post price]\n  2026-03-12  William Blair:  $300.00  [stock at $184.43 when posted, +62.7% vs post price]\n  2026-03-05  Tigress Financial (Ivan Feinseth):  $360.00  [stock at $180.10 when posted, +99.9% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $220.78\n  Consensus target:   $303.75\n  Status:             ↑ BELOW consensus — +37.6% upside remaining\n",
+  "companies_mentioned": [
+    "NVDA"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "NVDA",
+    "summary": {
+      "symbol": "NVDA",
+      "lastMonth": 4,
+      "lastMonthAvgPriceTarget": 303.75,
+      "lastQuarter": 14,
+      "lastQuarterAvgPriceTarget": 297.36,
+      "lastYear": 68,
+      "lastYearAvgPriceTarget": 255.75,
+      "allTime": 295,
+      "allTimeAvgPriceTarget": 124.64,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\",\"Pulse 2.0\",\"TipRanks Contributor\",\"MarketWatch\",\"Barrons\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "NVDA",
+        "publishedDate": "2026-05-14T12:13:57.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4355126",
+        "newsTitle": "Nvidia price target raised to $275 from $245 at UBS",
+        "analystName": "",
+        "priceTarget": 275,
+        "adjPriceTarget": 275,
+        "priceWhenPosted": 231.27,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "UBS"
+      },
+      {
+        "symbol": "NVDA",
+        "publishedDate": "2026-05-14T11:52:45.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4355056",
+        "newsTitle": "Nvidia price target raised to $350 from $300 at Cantor Fitzgerald",
+        "analystName": "",
+        "priceTarget": 350,
+        "adjPriceTarget": 350,
+        "priceWhenPosted": 225.83,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Cantor Fitzgerald"
+      },
+      {
+        "symbol": "NVDA",
+        "publishedDate": "2026-05-12T11:42:26.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4352835",
+        "newsTitle": "Nvidia price target raised to $275 from $250 at Susquehanna",
+        "analystName": "Christopher Rolland",
+        "priceTarget": 275,
+        "adjPriceTarget": 275,
+        "priceWhenPosted": 219.44,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Susquehanna"
+      },
+      {
+        "symbol": "NVDA",
+        "publishedDate": "2026-05-12T10:22:10.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4352607",
+        "newsTitle": "Nvidia price target raised to $315 from $265 at Wells Fargo",
+        "analystName": "",
+        "priceTarget": 315,
+        "adjPriceTarget": 315,
+        "priceWhenPosted": 219.44,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Wells Fargo"
+      },
+      {
+        "symbol": "NVDA",
+        "publishedDate": "2026-03-12T13:28:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Cantor+Fitzgerald+Reiterates+Overweight+Rating+on+NVIDIA+%28NVDA%29+Ahead+of+GTC+Event/26150641.html",
+        "newsTitle": "Cantor Fitzgerald Reiterates Overweight Rating on NVIDIA (NVDA) Ahead of GTC Event",
+        "analystName": "",
+        "priceTarget": 300,
+        "adjPriceTarget": 300,
+        "priceWhenPosted": 184.43,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "William Blair"
+      },
+      {
+        "symbol": "NVDA",
+        "publishedDate": "2026-03-05T15:31:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/NVIDIA+%28NVDA%29+PT+Raised+to+%24360+at+Tigress+Financial+Partners/26116812.html",
+        "newsTitle": "NVIDIA (NVDA) PT Raised to $360 at Tigress Financial Partners",
+        "analystName": "Ivan Feinseth",
+        "priceTarget": 360,
+        "adjPriceTarget": 360,
+        "priceWhenPosted": 180.1,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Tigress Financial"
+      },
+      {
+        "symbol": "NVDA",
+        "publishedDate": "2026-03-03T14:05:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/NVIDIA+%28NVDA%29+PT+Raised+to+%24300+at+Wedbush/26097816.html",
+        "newsTitle": "NVIDIA (NVDA) PT Raised to $300 at Wedbush",
+        "analystName": "Matt Bryson",
+        "priceTarget": 300,
+        "adjPriceTarget": 300,
+        "priceWhenPosted": 179.72,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Wedbush"
+      },
+      {
+        "symbol": "NVDA",
+        "publishedDate": "2026-03-02T15:49:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Baird+Reiterates+Outperform+Rating+on+NVIDIA+%28NVDA%29+following+Coherent+investment/26089077.html",
+        "newsTitle": "Baird Reiterates Outperform Rating on NVIDIA (NVDA) following Coherent investment",
+        "analystName": "Tristan Gerra",
+        "priceTarget": 300,
+        "adjPriceTarget": 300,
+        "priceWhenPosted": 182.015,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Robert W. Baird"
+      }
+    ]
+  }
+}

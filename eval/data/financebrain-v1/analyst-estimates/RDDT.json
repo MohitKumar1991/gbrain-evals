@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/RDDT",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "RDDT Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/RDDT",
+  "published_at": "2026-05-14T16:29:38.681Z",
+  "compiled_truth": "RDDT — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 8 estimates)\n  Avg Price Target:    $197.63\n  Last Year Avg:       $227.56  (45 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-05-01  Goldman Sachs (Eric Sheridan):  $200.00  [stock at $162.18 when posted, +23.3% vs post price]\n  2026-05-01  Truist Financial (Youssef Squali):  $265.00  [stock at $162.59 when posted, +63.0% vs post price]\n  2026-05-01  Raymond James:  $180.00  [stock at $161.13 when posted, +11.7% vs post price]\n  2026-05-01  Oppenheimer (Jason Helfstein):  $225.00  [stock at $158.27 when posted, +42.2% vs post price]\n  2026-05-01  Raymond James (Josh Beck):  $225.00  [stock at $147.40 when posted, +52.6% vs post price]\n  2026-05-01  Wells Fargo:  $176.00  [stock at $147.40 when posted, +19.4% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $152.35\n  Consensus target:   $197.63\n  Status:             ↑ BELOW consensus — +29.7% upside remaining\n",
+  "companies_mentioned": [
+    "RDDT"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "RDDT",
+    "summary": {
+      "symbol": "RDDT",
+      "lastMonth": 8,
+      "lastMonthAvgPriceTarget": 197.63,
+      "lastQuarter": 8,
+      "lastQuarterAvgPriceTarget": 197.63,
+      "lastYear": 45,
+      "lastYearAvgPriceTarget": 227.56,
+      "allTime": 93,
+      "allTimeAvgPriceTarget": 158.98,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "RDDT",
+        "publishedDate": "2026-05-01T13:42:16.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4343117",
+        "newsTitle": "Reddit price target raised to $200 from $180 at Goldman Sachs",
+        "analystName": "Eric Sheridan",
+        "priceTarget": 200,
+        "adjPriceTarget": 200,
+        "priceWhenPosted": 162.1829,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Goldman Sachs"
+      },
+      {
+        "symbol": "RDDT",
+        "publishedDate": "2026-05-01T13:29:46.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4343080",
+        "newsTitle": "Reddit price target raised to $265 from $260 at Truist",
+        "analystName": "Youssef Squali",
+        "priceTarget": 265,
+        "adjPriceTarget": 265,
+        "priceWhenPosted": 162.59,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Truist Financial"
+      },
+      {
+        "symbol": "RDDT",
+        "publishedDate": "2026-05-01T12:26:03.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342828",
+        "newsTitle": "Reddit price target raised to $180 from $170 at Raymond James",
+        "analystName": "",
+        "priceTarget": 180,
+        "adjPriceTarget": 180,
+        "priceWhenPosted": 161.125,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Raymond James"
+      },
+      {
+        "symbol": "RDDT",
+        "publishedDate": "2026-05-01T12:00:36.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342727",
+        "newsTitle": "Reddit price target lowered to $225 from $250 at Oppenheimer",
+        "analystName": "Jason Helfstein",
+        "priceTarget": 225,
+        "adjPriceTarget": 225,
+        "priceWhenPosted": 158.27,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Oppenheimer"
+      },
+      {
+        "symbol": "RDDT",
+        "publishedDate": "2026-05-01T11:26:33.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342644",
+        "newsTitle": "Reddit price target lowered to $225 from $250 at Raymond James",
+        "analystName": "Josh Beck",
+        "priceTarget": 225,
+        "adjPriceTarget": 225,
+        "priceWhenPosted": 147.4,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Raymond James"
+      },
+      {
+        "symbol": "RDDT",
+        "publishedDate": "2026-05-01T10:32:17.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342414",
+        "newsTitle": "Reddit price target raised to $176 from $149 at Wells Fargo",
+        "analystName": "",
+        "priceTarget": 176,
+        "adjPriceTarget": 176,
+        "priceWhenPosted": 147.4,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Wells Fargo"
+      },
+      {
+        "symbol": "RDDT",
+        "publishedDate": "2026-04-27T09:11:27.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4336971",
+        "newsTitle": "Reddit price target lowered to $110 from $125 at Rothschild & Co Redburn",
+        "analystName": "",
+        "priceTarget": 110,
+        "adjPriceTarget": 110,
+        "priceWhenPosted": 154.84,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Redburn Partners"
+      },
+      {
+        "symbol": "RDDT",
+        "publishedDate": "2026-04-21T10:14:49.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4333007",
+        "newsTitle": "Reddit initiated with a Buy at DA Davidson",
+        "analystName": "",
+        "priceTarget": 200,
+        "adjPriceTarget": 200,
+        "priceWhenPosted": 166.3,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "D.A. Davidson"
+      }
+    ]
+  }
+}

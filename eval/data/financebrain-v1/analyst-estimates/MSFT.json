@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/MSFT",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "MSFT Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/MSFT",
+  "published_at": "2026-05-14T16:29:34.726Z",
+  "compiled_truth": "MSFT — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 13 estimates)\n  Avg Price Target:    $550.46\n  Last Year Avg:       $591.29  (72 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-05-06  Tigress Financial (Ivan Feinseth):  $680.00  [stock at $413.96 when posted, +64.3% vs post price]\n  2026-04-30  Scotiabank (Patrick Colville):  $550.00  [stock at $403.31 when posted, +36.4% vs post price]\n  2026-04-30  Deutsche Bank:  $550.00  [stock at $405.65 when posted, +35.6% vs post price]\n  2026-04-30  Stifel Nicolaus (Brad Reback):  $415.00  [stock at $405.28 when posted, +2.4% vs post price]\n  2026-04-30  Evercore ISI (Kirk Materne):  $510.00  [stock at $401.73 when posted, +27.0% vs post price]\n  2026-04-30  Bernstein (Mark Moerdler):  $646.00  [stock at $424.46 when posted, +52.2% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $407.77\n  Consensus target:   $550.46\n  Status:             ↑ BELOW consensus — +35.0% upside remaining\n",
+  "companies_mentioned": [
+    "MSFT"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "MSFT",
+    "summary": {
+      "symbol": "MSFT",
+      "lastMonth": 13,
+      "lastMonthAvgPriceTarget": 550.46,
+      "lastQuarter": 16,
+      "lastQuarterAvgPriceTarget": 545.44,
+      "lastYear": 72,
+      "lastYearAvgPriceTarget": 591.29,
+      "allTime": 250,
+      "allTimeAvgPriceTarget": 441.96,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\",\"TipRanks Contributor\",\"Pulse 2.0\",\"MarketWatch\",\"Barrons\",\"TheStreet\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "MSFT",
+        "publishedDate": "2026-05-06T20:13:27.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4347292",
+        "newsTitle": "Microsoft price target raised to $680 from $595 at Tigress Financial",
+        "analystName": "Ivan Feinseth",
+        "priceTarget": 680,
+        "adjPriceTarget": 680,
+        "priceWhenPosted": 413.96,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Tigress Financial"
+      },
+      {
+        "symbol": "MSFT",
+        "publishedDate": "2026-04-30T14:02:46.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341644",
+        "newsTitle": "Microsoft price target lowered to $550 from $600 at Scotiabank",
+        "analystName": "Patrick Colville",
+        "priceTarget": 550,
+        "adjPriceTarget": 550,
+        "priceWhenPosted": 403.31,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Scotiabank"
+      },
+      {
+        "symbol": "MSFT",
+        "publishedDate": "2026-04-30T13:11:03.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341526",
+        "newsTitle": "Microsoft price target lowered to $550 from $575 at Deutsche Bank",
+        "analystName": "",
+        "priceTarget": 550,
+        "adjPriceTarget": 550,
+        "priceWhenPosted": 405.653,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Deutsche Bank"
+      },
+      {
+        "symbol": "MSFT",
+        "publishedDate": "2026-04-30T12:32:42.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341328",
+        "newsTitle": "Microsoft price target raised to $415 from $392 at Stifel",
+        "analystName": "Brad Reback",
+        "priceTarget": 415,
+        "adjPriceTarget": 415,
+        "priceWhenPosted": 405.28,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Stifel Nicolaus"
+      },
+      {
+        "symbol": "MSFT",
+        "publishedDate": "2026-04-30T12:20:56.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341240",
+        "newsTitle": "Microsoft price target lowered to $510 from $580 at Evercore ISI",
+        "analystName": "Kirk Materne",
+        "priceTarget": 510,
+        "adjPriceTarget": 510,
+        "priceWhenPosted": 401.73,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Evercore ISI"
+      },
+      {
+        "symbol": "MSFT",
+        "publishedDate": "2026-04-30T11:56:51.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341123",
+        "newsTitle": "Microsoft price target raised to $646 from $641 at Bernstein",
+        "analystName": "Mark Moerdler",
+        "priceTarget": 646,
+        "adjPriceTarget": 646,
+        "priceWhenPosted": 424.46,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Bernstein"
+      },
+      {
+        "symbol": "MSFT",
+        "publishedDate": "2026-04-30T11:56:50.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341122",
+        "newsTitle": "Microsoft price target lowered to $575 from $675 at Truist",
+        "analystName": "",
+        "priceTarget": 575,
+        "adjPriceTarget": 575,
+        "priceWhenPosted": 424.46,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Truist Financial"
+      },
+      {
+        "symbol": "MSFT",
+        "publishedDate": "2026-04-30T11:00:46.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4340861",
+        "newsTitle": "Microsoft price target raised to $540 from $500 at Piper Sandler",
+        "analystName": "",
+        "priceTarget": 540,
+        "adjPriceTarget": 540,
+        "priceWhenPosted": 424.46,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Piper Sandler"
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/AMZN",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "AMZN Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/AMZN",
+  "published_at": "2026-05-14T16:29:37.980Z",
+  "compiled_truth": "AMZN — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 27 estimates)\n  Avg Price Target:    $314.63\n  Last Year Avg:       $296.06  (90 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-05-01  Robert W. Baird:  $300.00  [stock at $268.57 when posted, +11.7% vs post price]\n  2026-05-01  Raymond James:  $280.00  [stock at $265.06 when posted, +5.6% vs post price]\n  2026-04-30  Morgan Stanley:  $330.00  [stock at $261.56 when posted, +26.2% vs post price]\n  2026-04-30  Scotiabank:  $325.00  [stock at $258.23 when posted, +25.9% vs post price]\n  2026-04-30  Telsey Advisory:  $315.00  [stock at $260.17 when posted, +21.1% vs post price]\n  2026-04-30  Needham:  $300.00  [stock at $259.92 when posted, +15.4% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $265.82\n  Consensus target:   $314.63\n  Status:             ↑ BELOW consensus — +18.4% upside remaining\n",
+  "companies_mentioned": [
+    "AMZN"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "AMZN",
+    "summary": {
+      "symbol": "AMZN",
+      "lastMonth": 27,
+      "lastMonthAvgPriceTarget": 314.63,
+      "lastQuarter": 28,
+      "lastQuarterAvgPriceTarget": 314.25,
+      "lastYear": 90,
+      "lastYearAvgPriceTarget": 296.06,
+      "allTime": 335,
+      "allTimeAvgPriceTarget": 217.33,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\",\"TipRanks Contributor\",\"MarketWatch\",\"Pulse 2.0\",\"Investing\",\"Barrons\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "AMZN",
+        "publishedDate": "2026-05-01T13:12:23.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4343029",
+        "newsTitle": "Amazon.com price target raised to $300 from $285 at Baird",
+        "analystName": "",
+        "priceTarget": 300,
+        "adjPriceTarget": 300,
+        "priceWhenPosted": 268.57,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Robert W. Baird"
+      },
+      {
+        "symbol": "AMZN",
+        "publishedDate": "2026-05-01T11:29:20.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342651",
+        "newsTitle": "Amazon.com price target raised to $280 from $225 at Raymond James",
+        "analystName": "",
+        "priceTarget": 280,
+        "adjPriceTarget": 280,
+        "priceWhenPosted": 265.06,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Raymond James"
+      },
+      {
+        "symbol": "AMZN",
+        "publishedDate": "2026-04-30T16:14:58.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341762",
+        "newsTitle": "Amazon.com price target raised to $330 from $300 at Morgan Stanley",
+        "analystName": "",
+        "priceTarget": 330,
+        "adjPriceTarget": 330,
+        "priceWhenPosted": 261.56,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Morgan Stanley"
+      },
+      {
+        "symbol": "AMZN",
+        "publishedDate": "2026-04-30T14:10:08.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341651",
+        "newsTitle": "Amazon.com price target raised to $325 from $275 at Scotiabank",
+        "analystName": "",
+        "priceTarget": 325,
+        "adjPriceTarget": 325,
+        "priceWhenPosted": 258.2323,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Scotiabank"
+      },
+      {
+        "symbol": "AMZN",
+        "publishedDate": "2026-04-30T13:45:02.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341609",
+        "newsTitle": "Amazon.com price target raised to $315 from $300 at Telsey Advisory",
+        "analystName": "",
+        "priceTarget": 315,
+        "adjPriceTarget": 315,
+        "priceWhenPosted": 260.17,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Telsey Advisory"
+      },
+      {
+        "symbol": "AMZN",
+        "publishedDate": "2026-04-30T13:38:58.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341601",
+        "newsTitle": "Amazon.com price target raised to $300 from $265 at Needham",
+        "analystName": "",
+        "priceTarget": 300,
+        "adjPriceTarget": 300,
+        "priceWhenPosted": 259.92,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Needham"
+      },
+      {
+        "symbol": "AMZN",
+        "publishedDate": "2026-04-30T13:30:09.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341581",
+        "newsTitle": "Amazon.com price target raised to $300 from $285 at Roth Capital",
+        "analystName": "Rohit Kulkarni",
+        "priceTarget": 300,
+        "adjPriceTarget": 300,
+        "priceWhenPosted": 259.855,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Roth Capital"
+      },
+      {
+        "symbol": "AMZN",
+        "publishedDate": "2026-04-30T13:21:15.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341555",
+        "newsTitle": "Amazon.com price target raised to $320 from $300 at RBC Capital",
+        "analystName": "",
+        "priceTarget": 320,
+        "adjPriceTarget": 320,
+        "priceWhenPosted": 259.76,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "RBC Capital"
+      }
+    ]
+  }
+}

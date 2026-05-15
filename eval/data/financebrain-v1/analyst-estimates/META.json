@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/META",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "META Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/META",
+  "published_at": "2026-05-14T16:29:37.305Z",
+  "compiled_truth": "META — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 1 estimate)\n  Avg Price Target:    $800.00\n  Last Year Avg:       $850.26  (19 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-04-30  Guggenheim (Michael Morris):  $800.00  [stock at $669.12 when posted, +19.6% vs post price]\n  2026-01-29  Cantor Fitzgerald (Deepak Mathivanan):  $860.00  [stock at $737.99 when posted, +16.5% vs post price]\n  2026-01-29  Piper Sandler (Thomas Champion):  $880.00  [stock at $721.33 when posted, +22.0% vs post price]\n  2026-01-29  Scotiabank (Nat Schindler):  $700.00  [stock at $719.64 when posted, -2.7% vs post price]\n  2026-01-26  KeyBanc:  $835.00  [stock at $658.76 when posted, +26.8% vs post price]\n  2026-01-26  Redburn Partners (James Cordwell):  $900.00  [stock at $658.76 when posted, +36.6% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $546.35\n  Consensus target:   $800.00\n  Status:             ↑ BELOW consensus — +46.4% upside remaining\n",
+  "companies_mentioned": [
+    "META"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "META",
+    "summary": {
+      "symbol": "META",
+      "lastMonth": 1,
+      "lastMonthAvgPriceTarget": 800,
+      "lastQuarter": 1,
+      "lastQuarterAvgPriceTarget": 800,
+      "lastYear": 19,
+      "lastYearAvgPriceTarget": 850.26,
+      "allTime": 253,
+      "allTimeAvgPriceTarget": 392.88,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\",\"TipRanks Contributor\",\"MarketWatch\",\"Pulse 2.0\",\"Investing\",\"Barrons\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "META",
+        "publishedDate": "2026-04-30T10:45:08.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4340796",
+        "newsTitle": "Meta Platforms price target lowered to $800 from $850 at Guggenheim",
+        "analystName": "Michael Morris",
+        "priceTarget": 800,
+        "adjPriceTarget": 800,
+        "priceWhenPosted": 669.12,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Guggenheim"
+      },
+      {
+        "symbol": "META",
+        "publishedDate": "2026-01-29T14:46:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Meta+Platforms+Inc.+%28META%29+PT+Raised+to+%24860+at+Cantor+Fitzgerald+on+Robust+Pipeline%2C+Engineering+Roadmap/25913546.html",
+        "newsTitle": "Meta Platforms Inc. (META) PT Raised to $860 at Cantor Fitzgerald on Robust Pipeline, Engineering Roadmap",
+        "analystName": "Deepak Mathivanan",
+        "priceTarget": 860,
+        "adjPriceTarget": 860,
+        "priceWhenPosted": 737.99,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Cantor Fitzgerald"
+      },
+      {
+        "symbol": "META",
+        "publishedDate": "2026-01-29T12:50:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Meta+Platforms+Inc.+%28META%29+PT+Raised+to+%24880+at+Piper+Sandler/25912298.html",
+        "newsTitle": "Meta Platforms Inc. (META) PT Raised to $880 at Piper Sandler",
+        "analystName": "Thomas Champion",
+        "priceTarget": 880,
+        "adjPriceTarget": 880,
+        "priceWhenPosted": 721.33,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Piper Sandler"
+      },
+      {
+        "symbol": "META",
+        "publishedDate": "2026-01-29T11:53:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Meta+Platforms+Inc.+%28META%29+PT+Raised+to+%24700+at+Scotiabank/25911784.html",
+        "newsTitle": "Meta Platforms Inc. (META) PT Raised to $700 at Scotiabank",
+        "analystName": "Nat Schindler",
+        "priceTarget": 700,
+        "adjPriceTarget": 700,
+        "priceWhenPosted": 719.64362,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Scotiabank"
+      },
+      {
+        "symbol": "META",
+        "publishedDate": "2026-01-26T12:04:06.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4277264/9209286394/META;GOOGL;GOOG-Meta-Platforms-price-target-lowered-by--at-KeyBanc-heres-why",
+        "newsTitle": "Meta Platforms price target lowered to $835 from $875 at KeyBanc",
+        "analystName": "",
+        "priceTarget": 835,
+        "adjPriceTarget": 835,
+        "priceWhenPosted": 658.76,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "KeyBanc"
+      },
+      {
+        "symbol": "META",
+        "publishedDate": "2026-01-26T10:03:49.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4277083/2605286394/META-Meta-Platforms-just-upgraded-at-Rothschild-amp-Co-Redburn-heres-why",
+        "newsTitle": "Meta Platforms upgraded to Buy from Neutral at Rothschild & Co Redburn",
+        "analystName": "James Cordwell",
+        "priceTarget": 900,
+        "adjPriceTarget": 900,
+        "priceWhenPosted": 658.76,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Redburn Partners"
+      },
+      {
+        "symbol": "META",
+        "publishedDate": "2026-01-22T13:42:22.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4275822/0206286394/META;GOOG;GOOGL-Jefferies-lays-out-five-reasons-to-buy-Meta-Platforms-amid-pullback",
+        "newsTitle": "Jefferies lays out five reasons to buy Meta Platforms amid pullback",
+        "analystName": "",
+        "priceTarget": 910,
+        "adjPriceTarget": 910,
+        "priceWhenPosted": 630.79,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Jefferies"
+      },
+      {
+        "symbol": "META",
+        "publishedDate": "2025-12-23T11:53:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Meta+Platforms+Inc.+%28META%29+PT+Lowered+to+%24815+at+Baird/25772977.html",
+        "newsTitle": "Meta Platforms Inc. (META) PT Lowered to $815 at Baird",
+        "analystName": "Colin Sebastian",
+        "priceTarget": 815,
+        "adjPriceTarget": 815,
+        "priceWhenPosted": 661.5,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Robert W. Baird"
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/WOLF",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "WOLF Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/WOLF",
+  "published_at": "2026-05-14T16:29:39.381Z",
+  "compiled_truth": "WOLF — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Year — 2 estimates)\n  Avg Price Target:    $25.00\n\nRECENT INDIVIDUAL TARGETS\n  2026-01-22  Susquehanna:  $20.00  [stock at $19.48 when posted, +2.7% vs post price]\n  2025-10-22  Susquehanna:  $30.00  [stock at $30.08 when posted, -0.3% vs post price]\n  2024-11-07  Piper Sandler (Harsh Kumar):  $18.00  [stock at $6.40 when posted, +181.2% vs post price]\n  2024-10-21  Mizuho Securities (Vijay Rakesh):  $11.00  [stock at $15.11 when posted, -27.2% vs post price]\n  2024-10-16  Mizuho Securities (Vijay Rakesh):  $9.50  [stock at $13.80 when posted, -31.2% vs post price]\n  2024-10-15  Citigroup (Atif Malik):  $16.00  [stock at $13.80 when posted, +15.9% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $53.72\n  Consensus target:   $25.00\n  Status:             ↓ ABOVE consensus — target already exceeded by +114.9%\n",
+  "companies_mentioned": [
+    "WOLF"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "WOLF",
+    "summary": {
+      "symbol": "WOLF",
+      "lastMonth": 0,
+      "lastMonthAvgPriceTarget": 0,
+      "lastQuarter": 0,
+      "lastQuarterAvgPriceTarget": 0,
+      "lastYear": 2,
+      "lastYearAvgPriceTarget": 25,
+      "allTime": 27,
+      "allTimeAvgPriceTarget": 52.8,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\",\"Pulse 2.0\",\"TipRanks\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "WOLF",
+        "publishedDate": "2026-01-22T12:11:04.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4275623/4504286394/WOLF-Wolfspeed-price-target-lowered-by--at-Susquehanna-heres-why",
+        "newsTitle": "Wolfspeed price target lowered to $20 from $30 at Susquehanna",
+        "analystName": "",
+        "priceTarget": 20,
+        "adjPriceTarget": 20,
+        "priceWhenPosted": 19.48,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Susquehanna"
+      },
+      {
+        "symbol": "WOLF",
+        "publishedDate": "2025-10-22T11:01:24.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4218276/9272286394/WOLF-Wolfspeed-price-target-adjusted-to--from--at-Susquehanna",
+        "newsTitle": "Wolfspeed price target adjusted to $30 from $1.50 at Susquehanna",
+        "analystName": "",
+        "priceTarget": 30,
+        "adjPriceTarget": 30,
+        "priceWhenPosted": 30.08,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Susquehanna"
+      },
+      {
+        "symbol": "WOLF",
+        "publishedDate": "2024-11-07T13:12:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Wolfspeed+%28WOLF%29+PT+Lowered+to+%2418+at+Piper+Sandler/23940150.html",
+        "newsTitle": "Wolfspeed (WOLF) PT Lowered to $18 at Piper Sandler",
+        "analystName": "Harsh Kumar",
+        "priceTarget": 18,
+        "adjPriceTarget": 9,
+        "priceWhenPosted": 6.4,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Piper Sandler"
+      },
+      {
+        "symbol": "WOLF",
+        "publishedDate": "2024-10-21T07:42:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Wolfspeed+%28WOLF%29+PT+Raised+to+%2411+at+Mizuho/23856418.html",
+        "newsTitle": "Wolfspeed (WOLF) PT Raised to $11 at Mizuho",
+        "analystName": "Vijay Rakesh",
+        "priceTarget": 11,
+        "adjPriceTarget": 11,
+        "priceWhenPosted": 15.11,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Mizuho Securities"
+      },
+      {
+        "symbol": "WOLF",
+        "publishedDate": "2024-10-16T06:42:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Wolfspeed+%28WOLF%29+PT+Raised+to+%249.50+at+Mizuho/23840705.html",
+        "newsTitle": "Wolfspeed (WOLF) PT Raised to $9.50 at Mizuho",
+        "analystName": "Vijay Rakesh",
+        "priceTarget": 9.5,
+        "adjPriceTarget": 9.5,
+        "priceWhenPosted": 13.8,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Mizuho Securities"
+      },
+      {
+        "symbol": "WOLF",
+        "publishedDate": "2024-10-15T16:00:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Citi+Reiterates+Neutral+Rating+on+Wolfspeed+%28WOLF%29/23838253.html",
+        "newsTitle": "Citi Reiterates Neutral Rating on Wolfspeed (WOLF)",
+        "analystName": "Atif Malik",
+        "priceTarget": 16,
+        "adjPriceTarget": 16,
+        "priceWhenPosted": 13.8,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Citigroup"
+      },
+      {
+        "symbol": "WOLF",
+        "publishedDate": "2024-08-22T07:44:00.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id3972958/WOLF-Wolfspeed-price-target-lowered-by--at-Susquehanna-heres-why",
+        "newsTitle": "Wolfspeed price target lowered to $16 from $23 at Susquehanna",
+        "analystName": "Christopher Rolland",
+        "priceTarget": 16,
+        "adjPriceTarget": 16,
+        "priceWhenPosted": 13.51,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Susquehanna"
+      },
+      {
+        "symbol": "WOLF",
+        "publishedDate": "2024-08-22T06:33:00.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id3972855/WOLF-Wolfspeed-price-target-lowered-by--at-Piper-Sandler-heres-why",
+        "newsTitle": "Wolfspeed price target lowered to $20 from $35 at Piper Sandler",
+        "analystName": "Harsh Kumar",
+        "priceTarget": 20,
+        "adjPriceTarget": 20,
+        "priceWhenPosted": 13.51,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Piper Sandler"
+      }
+    ]
+  }
+}

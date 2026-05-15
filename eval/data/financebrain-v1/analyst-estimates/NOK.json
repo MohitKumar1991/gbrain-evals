@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/NOK",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "NOK Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/NOK",
+  "published_at": "2026-05-14T16:29:42.337Z",
+  "compiled_truth": "NOK — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 2 estimates)\n  Avg Price Target:    $14.00\n  Last Year Avg:       $9.26  (6 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-04-27  Argus Research (Jim Kelleher):  $15.00  [stock at $10.46 when posted, +43.5% vs post price]\n  2026-04-20  Northland Securities:  $13.00  [stock at $10.53 when posted, +23.5% vs post price]\n  2025-11-20  New Street:  $6.57  [stock at $5.96 when posted, +10.3% vs post price]\n  2025-10-29  Northland Securities:  $8.50  [stock at $7.77 when posted, +9.4% vs post price]\n  2025-10-24  Northland Securities:  $7.50  [stock at $6.21 when posted, +20.8% vs post price]\n  2025-09-03  BNP Paribas (Jakob Bluestone):  $5.00  [stock at $4.38 when posted, +14.2% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $13.17\n  Consensus target:   $14.00\n  Status:             ↑ BELOW consensus — +6.3% upside remaining\n",
+  "companies_mentioned": [
+    "NOK"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "NOK",
+    "summary": {
+      "symbol": "NOK",
+      "lastMonth": 2,
+      "lastMonthAvgPriceTarget": 14,
+      "lastQuarter": 2,
+      "lastQuarterAvgPriceTarget": 14,
+      "lastYear": 6,
+      "lastYearAvgPriceTarget": 9.26,
+      "allTime": 15,
+      "allTimeAvgPriceTarget": 7.55,
+      "publishers": "[\"TheFly\",\"Benzinga\",\"Pulse 2.0\",\"StreetInsider\",\"Barrons\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "NOK",
+        "publishedDate": "2026-04-27T10:07:58.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4337052",
+        "newsTitle": "Nokia upgraded to Buy from Hold at Argus",
+        "analystName": "Jim Kelleher",
+        "priceTarget": 15,
+        "adjPriceTarget": 15,
+        "priceWhenPosted": 10.455,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Argus Research"
+      },
+      {
+        "symbol": "NOK",
+        "publishedDate": "2026-04-20T13:26:05.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4332551",
+        "newsTitle": "Nokia price target raised to $13 from $10 at Northland",
+        "analystName": "",
+        "priceTarget": 13,
+        "adjPriceTarget": 13,
+        "priceWhenPosted": 10.5299,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Northland Securities"
+      },
+      {
+        "symbol": "NOK",
+        "publishedDate": "2025-11-20T15:42:50.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4243775/5822286394/NOK-Nokia-price-target-lowered-by--at-BofA-heres-why",
+        "newsTitle": "Nokia price target lowered to $6.57 from $8.07 at BofA",
+        "analystName": "",
+        "priceTarget": 6.57,
+        "adjPriceTarget": 6.57,
+        "priceWhenPosted": 5.9576,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "New Street"
+      },
+      {
+        "symbol": "NOK",
+        "publishedDate": "2025-10-29T13:09:39.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4224036/4177286394/NOK;NVDA-Nokia-price-target-raised-by--at-Northland-heres-why",
+        "newsTitle": "Nokia price target raised to $8.50 from $7.50 at Northland",
+        "analystName": "",
+        "priceTarget": 8.5,
+        "adjPriceTarget": 8.5,
+        "priceWhenPosted": 7.77,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Northland Securities"
+      },
+      {
+        "symbol": "NOK",
+        "publishedDate": "2025-10-24T13:12:37.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4220660/3012286394/NOK;CIEN-Nokia-price-target-raised-by--at-Northland-heres-why",
+        "newsTitle": "Nokia price target raised to $7.50 from $6.50 at Northland",
+        "analystName": "",
+        "priceTarget": 7.5,
+        "adjPriceTarget": 7.5,
+        "priceWhenPosted": 6.21,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Northland Securities"
+      },
+      {
+        "symbol": "NOK",
+        "publishedDate": "2025-09-03T09:19:17.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4191894/1832286394/NOK-BNP-Paribas-Exane-gets-more-bullish-on-Nokia-upgrades-shares",
+        "newsTitle": "Nokia upgraded to Outperform from Neutral at BNP Paribas Exane",
+        "analystName": "Jakob Bluestone",
+        "priceTarget": 5,
+        "adjPriceTarget": 5,
+        "priceWhenPosted": 4.38,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "BNP Paribas"
+      },
+      {
+        "symbol": "NOK",
+        "publishedDate": "2022-07-22T04:29:00.000Z",
+        "newsURL": "https://www.benzinga.com/news/22/07/28164855/raymond-james-maintains-outperform-on-nokia-raises-price-target-to-7",
+        "newsTitle": "Raymond James Maintains Outperform on Nokia, Raises Price Target to $7",
+        "analystName": null,
+        "priceTarget": 7,
+        "adjPriceTarget": 7,
+        "priceWhenPosted": 5.12,
+        "newsPublisher": "Benzinga",
+        "newsBaseURL": "benzinga.com",
+        "analystCompany": "Raymond James"
+      },
+      {
+        "symbol": "NOK",
+        "publishedDate": "2022-04-29T05:54:00.000Z",
+        "newsURL": "https://www.benzinga.com/news/22/04/26891235/raymond-james-maintains-outperform-on-nokia-raises-price-target-to-6-75",
+        "newsTitle": "Raymond James Maintains Outperform on Nokia, Raises Price Target to $6.75",
+        "analystName": null,
+        "priceTarget": 6.75,
+        "adjPriceTarget": 6.75,
+        "priceWhenPosted": 4.9,
+        "newsPublisher": "Benzinga",
+        "newsBaseURL": "benzinga.com",
+        "analystCompany": "Raymond James"
+      }
+    ]
+  }
+}

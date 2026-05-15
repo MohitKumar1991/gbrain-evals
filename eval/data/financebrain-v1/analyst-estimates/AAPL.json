@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/AAPL",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "AAPL Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/AAPL",
+  "published_at": "2026-05-14T16:29:35.427Z",
+  "compiled_truth": "AAPL — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 9 estimates)\n  Avg Price Target:    $316.78\n  Last Year Avg:       $292.00  (57 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-05-14  Evercore ISI:  $365.00  [stock at $298.87 when posted, +22.1% vs post price]\n  2026-05-08  Wedbush (Daniel Ives):  $400.00  [stock at $287.44 when posted, +39.2% vs post price]\n  2026-05-01  Robert W. Baird (William Power):  $310.00  [stock at $282.02 when posted, +9.9% vs post price]\n  2026-05-01  UBS:  $296.00  [stock at $283.42 when posted, +4.4% vs post price]\n  2026-05-01  Wells Fargo (Aaron Rakers):  $310.00  [stock at $271.35 when posted, +14.2% vs post price]\n  2026-05-01  Morgan Stanley:  $330.00  [stock at $271.35 when posted, +21.6% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $201.57\n  Consensus target:   $316.78\n  Status:             ↑ BELOW consensus — +57.2% upside remaining\n",
+  "companies_mentioned": [
+    "AAPL"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "AAPL",
+    "summary": {
+      "symbol": "AAPL",
+      "lastMonth": 9,
+      "lastMonthAvgPriceTarget": 316.78,
+      "lastQuarter": 12,
+      "lastQuarterAvgPriceTarget": 320.08,
+      "lastYear": 57,
+      "lastYearAvgPriceTarget": 292,
+      "allTime": 241,
+      "allTimeAvgPriceTarget": 224.71,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\",\"Pulse 2.0\",\"TipRanks Contributor\",\"MarketWatch\",\"Investing\",\"Barrons\",\"Investor's Business Daily\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "AAPL",
+        "publishedDate": "2026-05-14T10:16:57.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4354813",
+        "newsTitle": "Apple price target raised to $365 from $330 at Evercore ISI",
+        "analystName": "",
+        "priceTarget": 365,
+        "adjPriceTarget": 365,
+        "priceWhenPosted": 298.87,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Evercore ISI"
+      },
+      {
+        "symbol": "AAPL",
+        "publishedDate": "2026-05-08T10:39:46.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4350000",
+        "newsTitle": "Apple price target raised to $400 from $350 at Wedbush",
+        "analystName": "Daniel Ives",
+        "priceTarget": 400,
+        "adjPriceTarget": 400,
+        "priceWhenPosted": 287.44,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Wedbush"
+      },
+      {
+        "symbol": "AAPL",
+        "publishedDate": "2026-05-01T13:11:38.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4343024",
+        "newsTitle": "Apple price target raised to $310 from $300 at Baird",
+        "analystName": "William Power",
+        "priceTarget": 310,
+        "adjPriceTarget": 310,
+        "priceWhenPosted": 282.025,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Robert W. Baird"
+      },
+      {
+        "symbol": "AAPL",
+        "publishedDate": "2026-05-01T13:01:39.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342974",
+        "newsTitle": "Apple price target raised to $296 from $287 at UBS",
+        "analystName": "",
+        "priceTarget": 296,
+        "adjPriceTarget": 296,
+        "priceWhenPosted": 283.42499,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "UBS"
+      },
+      {
+        "symbol": "AAPL",
+        "publishedDate": "2026-05-01T10:42:26.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342471",
+        "newsTitle": "Apple price target raised to $310 from $300 at Wells Fargo",
+        "analystName": "Aaron Rakers",
+        "priceTarget": 310,
+        "adjPriceTarget": 310,
+        "priceWhenPosted": 271.35,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Wells Fargo"
+      },
+      {
+        "symbol": "AAPL",
+        "publishedDate": "2026-05-01T09:55:11.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342331",
+        "newsTitle": "Apple price target raised to $330 from $315 at Morgan Stanley",
+        "analystName": "",
+        "priceTarget": 330,
+        "adjPriceTarget": 330,
+        "priceWhenPosted": 271.35,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Morgan Stanley"
+      },
+      {
+        "symbol": "AAPL",
+        "publishedDate": "2026-05-01T09:05:10.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4342271",
+        "newsTitle": "Apple price target raised to $253 from $248 at Barclays",
+        "analystName": "",
+        "priceTarget": 253,
+        "adjPriceTarget": 253,
+        "priceWhenPosted": 271.35,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Barclays"
+      },
+      {
+        "symbol": "AAPL",
+        "publishedDate": "2026-04-28T11:56:12.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4338327",
+        "newsTitle": "Apple price target raised to $287 from $280 at UBS",
+        "analystName": "",
+        "priceTarget": 287,
+        "adjPriceTarget": 287,
+        "priceWhenPosted": 267.61,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "UBS"
+      }
+    ]
+  }
+}

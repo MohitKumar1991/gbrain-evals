@@ -1,0 +1,43 @@
+{
+  "slug": "analyst-estimates/KRKNF",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "KRKNF Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/KRKNF",
+  "published_at": "2026-05-14T16:29:41.666Z",
+  "compiled_truth": "KRKNF — Analyst Price Targets (as of 2026-05-14)\n\n\nRECENT INDIVIDUAL TARGETS\n  2025-01-23  Raymond James (Steven Li):  $3.50  [stock at $1.99 when posted, +75.9% vs post price]\n",
+  "companies_mentioned": [
+    "KRKNF"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "KRKNF",
+    "summary": {
+      "symbol": "KRKNF",
+      "lastMonth": 0,
+      "lastMonthAvgPriceTarget": 0,
+      "lastQuarter": 0,
+      "lastQuarterAvgPriceTarget": 0,
+      "lastYear": 0,
+      "lastYearAvgPriceTarget": 0,
+      "allTime": 1,
+      "allTimeAvgPriceTarget": 3.5,
+      "publishers": "[\"TheFly\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "KRKNF",
+        "publishedDate": "2025-01-23T21:42:51.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4056898/KRKNF-Raymond-James-starts-Kraken-Robotics-at-Outperform-into-growth-cycle",
+        "newsTitle": "Raymond James starts Kraken Robotics at Outperform into growth cycle",
+        "analystName": "Steven Li",
+        "priceTarget": 3.5,
+        "adjPriceTarget": 3.5,
+        "priceWhenPosted": 1.99,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Raymond James"
+      }
+    ]
+  }
+}

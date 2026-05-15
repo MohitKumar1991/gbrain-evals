@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FinanceBrain Question Builder</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f2f5;color:#1a1a1a;height:100vh;display:flex;flex-direction:column;font-size:14px}
+  header{background:#0f172a;color:#fff;padding:10px 20px;display:flex;align-items:center;gap:14px;flex-shrink:0;border-bottom:2px solid #1e293b}
+  header h1{font-size:15px;font-weight:600}
+  header .sub{font-size:11.5px;color:#64748b;display:flex;align-items:center;gap:8px}
+  header .save-path{font-size:11px;color:#475569;font-family:monospace;margin-left:auto}
+  .progress-bar-wrap{display:inline-flex;align-items:center;gap:6px}
+  .progress-bar{height:6px;width:80px;background:#334155;border-radius:3px;overflow:hidden}
+  .progress-bar-fill{height:100%;border-radius:3px;transition:width .3s}
+  .main{display:flex;flex:1;overflow:hidden}
+
+  /* Sidebar */
+  .sidebar{width:210px;background:#fff;border-right:1px solid #e2e8f0;overflow-y:auto;flex-shrink:0;display:flex;flex-direction:column}
+  .sidebar-hdr{padding:10px 14px 6px;font-size:10px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid #f1f5f9}
+  .sidebar-item{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;cursor:pointer;border-bottom:1px solid #f8fafc;transition:background .1s}
+  .sidebar-item:hover{background:#f8fafc}
+  .sidebar-item.active{background:#eff6ff;border-left:3px solid #3b82f6;padding-left:11px}
+  .sidebar-item .label{font-size:12.5px;font-weight:500;color:#374151}
+  .sidebar-item.active .label{color:#1d4ed8;font-weight:600}
+  .sidebar-item .sublabel{font-size:10.5px;color:#94a3b8;margin-top:1px}
+  .badge{font-size:10.5px;padding:1px 7px;border-radius:10px;min-width:24px;text-align:center;background:#f1f5f9;color:#64748b}
+  .badge.hasq{background:#dcfce7;color:#15803d}
+  .sidebar-footer{margin-top:auto;padding:10px 14px;border-top:1px solid #f1f5f9;font-size:11px;color:#94a3b8}
+
+  /* Content area */
+  .content{flex:1;overflow-y:auto;padding:20px;display:flex;flex-direction:column;gap:16px;max-width:900px}
+  .card{background:#fff;border-radius:10px;border:1px solid #e2e8f0;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .card-title{font-size:11px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.6px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+  .card-title .count{font-size:11px;font-weight:600;background:#f1f5f9;color:#475569;padding:1px 8px;border-radius:8px;text-transform:none;letter-spacing:0}
+
+  /* Form elements */
+  label{display:block;font-size:12.5px;font-weight:600;color:#374151;margin-bottom:5px}
+  label .hint{font-weight:400;color:#9ca3af;margin-left:5px;font-size:11.5px}
+  textarea,input[type=text]{width:100%;padding:8px 11px;border:1.5px solid #e5e7eb;border-radius:7px;font-size:13px;font-family:inherit;transition:border-color .15s,box-shadow .15s}
+  textarea{resize:vertical;min-height:70px;line-height:1.5}
+  textarea:focus,input:focus{outline:none;border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,.1)}
+  .form-row{margin-bottom:13px}
+
+  /* Answer search */
+  .search-row{display:flex;gap:8px;margin-top:5px}
+  .search-row input{flex:1}
+  .btn-search{background:#f0f9ff;color:#0369a1;border:1.5px solid #bae6fd;padding:7px 14px;border-radius:7px;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background .1s}
+  .btn-search:hover{background:#e0f2fe}
+  .btn-search:disabled{opacity:.5;cursor:not-allowed}
+  .search-results{margin-top:8px;border:1.5px solid #e0f2fe;border-radius:7px;overflow:hidden;display:none}
+  .search-results.visible{display:block}
+  .search-results-hdr{padding:6px 11px;background:#f0f9ff;font-size:11px;font-weight:600;color:#0369a1;border-bottom:1px solid #bae6fd}
+
+  /* Source docs chips */
+  .docs-area{margin-top:6px}
+  .docs-chips{display:flex;flex-wrap:wrap;gap:6px;min-height:34px;padding:4px 0;align-items:flex-start}
+  .doc-chip{display:inline-flex;align-items:center;gap:4px;background:#eff6ff;color:#1d4ed8;padding:4px 10px;border-radius:6px;font-size:11.5px}
+  .doc-chip .doc-cat{font-size:10px;color:#60a5fa;margin-right:2px}
+  .doc-chip button{border:none;background:none;cursor:pointer;color:#93c5fd;font-size:15px;line-height:1;padding:0 1px}
+  .doc-chip button:hover{color:#dc2626}
+  .no-docs{font-size:12px;color:#9ca3af;padding:4px 0;font-style:italic}
+
+  /* Browse pages list */
+  .browse-area{margin-top:10px}
+  .browse-hdr{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .browse-hdr input{flex:1}
+  .browse-hdr .pg-count{font-size:11px;color:#94a3b8;white-space:nowrap}
+  .page-list{max-height:240px;overflow-y:auto;border:1.5px solid #e5e7eb;border-radius:7px}
+  .page-row{display:flex;align-items:flex-start;padding:7px 11px;cursor:pointer;border-bottom:1px solid #f8fafc;gap:8px;transition:background .1s;user-select:none}
+  .page-row:last-child{border-bottom:none}
+  .page-row:hover{background:#f8fafc}
+  .page-row.sel{background:#eff6ff;border-left:3px solid #3b82f6;padding-left:8px}
+  .page-row.match{background:#fefce8}
+  .page-row.sel.match{background:#eff6ff}
+  .page-info{flex:1;min-width:0}
+  .page-slug{font-family:monospace;font-size:11px;color:#6b7280}
+  .page-title{font-size:12.5px;color:#1f2937;margin-top:1px;font-weight:500}
+  .page-meta{font-size:10.5px;color:#94a3b8;margin-top:1px}
+  .page-match-ctx{font-size:11px;color:#92400e;background:#fef9c3;padding:2px 6px;border-radius:4px;margin-top:3px;display:none}
+  .page-row.match .page-match-ctx{display:block}
+  .page-preview{font-size:11px;color:#6b7280;margin-top:4px;white-space:pre-wrap;display:none;max-height:100px;overflow:hidden;border-top:1px solid #f0f4ff;padding-top:4px}
+  .page-row.exp .page-preview{display:block}
+  .check-icon{font-size:16px;color:#3b82f6;flex-shrink:0;margin-top:2px;display:none}
+  .page-row.sel .check-icon{display:block}
+
+  /* Buttons */
+  .btn-primary{background:#3b82f6;color:#fff;border:none;padding:8px 20px;border-radius:7px;font-size:13.5px;font-weight:600;cursor:pointer;transition:background .15s}
+  .btn-primary:hover{background:#2563eb}
+  .btn-danger{background:#fef2f2;color:#dc2626;border:1.5px solid #fecaca;padding:3px 8px;border-radius:5px;font-size:11px;cursor:pointer}
+  .btn-danger:hover{background:#fee2e2}
+
+  /* Existing questions */
+  .q-item{padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:8px;margin-bottom:8px;background:#fff;transition:border-color .1s}
+  .q-item:hover{border-color:#bfdbfe}
+  .q-item:last-child{margin-bottom:0}
+  .q-header{display:flex;align-items:flex-start;gap:8px}
+  .q-num{font-size:10.5px;font-family:monospace;background:#f1f5f9;color:#475569;padding:2px 6px;border-radius:4px;flex-shrink:0;margin-top:2px}
+  .q-question{flex:1;font-size:13px;font-weight:500;line-height:1.4;color:#111827}
+  .q-answer{font-size:12.5px;color:#374151;margin-top:6px;padding:6px 10px;background:#f8fafc;border-radius:5px;border-left:3px solid #93c5fd;line-height:1.4}
+  .q-answer-lbl{font-size:10px;font-weight:700;color:#60a5fa;text-transform:uppercase;letter-spacing:.4px;margin-bottom:2px}
+  .q-docs{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+  .q-docs-lbl{font-size:10.5px;color:#9ca3af;margin-right:2px}
+  .q-doc{font-size:10.5px;font-family:monospace;background:#eff6ff;color:#1d4ed8;padding:2px 7px;border-radius:4px}
+  .q-doc.pat{background:#fefce8;color:#92400e}
+  .q-notes{font-size:11px;color:#9ca3af;margin-top:4px;font-style:italic}
+  .empty-state{text-align:center;color:#94a3b8;font-size:13px;padding:24px 20px}
+  .empty-state .empty-icon{font-size:28px;margin-bottom:8px;opacity:.5}
+
+  /* Toast */
+  .toast{position:fixed;bottom:18px;right:18px;background:#15803d;color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+  .toast.show{opacity:1}
+
+  /* Validated badge */
+  .badge-validated{font-size:10px;padding:1px 6px;border-radius:8px;background:#dcfce7;color:#15803d;font-weight:600}
+  .badge-unvalidated{font-size:10px;padding:1px 6px;border-radius:8px;background:#f1f5f9;color:#64748b;font-weight:600}
+
+  /* Edit form */
+  .q-edit-form{margin-top:10px;padding:10px;background:#f8fafc;border-radius:6px;border:1px solid #e2e8f0}
+  .q-edit-form .form-row{margin-bottom:10px}
+  .q-edit-form label{font-size:11.5px}
+  .q-edit-form textarea,.q-edit-form input[type=text]{font-size:12.5px;padding:6px 9px}
+  .q-edit-form .edit-btns{display:flex;gap:8px;margin-top:8px}
+  .btn-save{background:#3b82f6;color:#fff;border:none;padding:5px 14px;border-radius:6px;font-size:12.5px;font-weight:600;cursor:pointer}
+  .btn-save:hover{background:#2563eb}
+  .btn-cancel{background:#f1f5f9;color:#374151;border:1.5px solid #e5e7eb;padding:5px 12px;border-radius:6px;font-size:12.5px;cursor:pointer}
+  .btn-cancel:hover{background:#e2e8f0}
+  .btn-edit{background:#f0f9ff;color:#0369a1;border:1.5px solid #bae6fd;padding:3px 8px;border-radius:5px;font-size:11px;cursor:pointer}
+  .btn-edit:hover{background:#e0f2fe}
+  .btn-eval{background:#f0fdf4;color:#15803d;border:1.5px solid #86efac;padding:3px 8px;border-radius:5px;font-size:11px;cursor:pointer;transition:background .1s}
+  .btn-eval:hover{background:#dcfce7}
+  .btn-eval:disabled{opacity:.5;cursor:not-allowed}
+  .eval-result{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:2px 7px;border-radius:4px;margin-left:6px}
+  .eval-hit{background:#dcfce7;color:#15803d;font-weight:600}
+  .eval-miss{background:#fef2f2;color:#dc2626;font-weight:600}
+  .eval-pending{background:#fefce8;color:#92400e}
+  .btn-bulk-delete{background:#fef2f2;color:#dc2626;border:1.5px solid #fecaca;padding:6px 14px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;margin-top:12px}
+  .btn-bulk-delete:hover{background:#fee2e2}
+
+  /* Badge color variants */
+  .badge.green{background:#dcfce7;color:#15803d}
+  .badge.yellow{background:#fef9c3;color:#92400e}
+  .badge.gray{background:#f1f5f9;color:#64748b}
+
+  /* Helpers */
+  .divider{font-size:11px;color:#94a3b8;padding:4px 0;display:flex;align-items:center;gap:8px}
+  .divider::before,.divider::after{content:'';flex:1;height:1px;background:#e5e7eb}
+  .info-banner{background:#f0f9ff;border:1px solid #bae6fd;border-radius:7px;padding:8px 12px;font-size:12px;color:#0369a1;margin-bottom:4px}
+</style>
+</head>
+<body>
+<header>
+  <h1>FinanceBrain Question Builder</h1>
+  <span class="sub" id="hdr-count">loading…</span>
+  <span class="save-path" id="save-path"></span>
+</header>
+
+<div class="main">
+  <div class="sidebar">
+    <div class="sidebar-hdr">Categories</div>
+    <div id="sidebar"></div>
+    <div class="sidebar-footer" id="sidebar-footer"></div>
+  </div>
+  <div class="content" id="content">
+    <div class="empty-state"><div class="empty-icon">📋</div>Select a category from the left to start adding questions.</div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+var CAT_INFO = [
+  {id:'financials',   label:'Financials',          sub:'Income, balance sheet, cash flow'},
+  {id:'transcript',   label:'Earnings Call Transcripts', sub:'Full Q&A transcripts'},
+  {id:'price',        label:'Price Data',           sub:'Quarterly & daily OHLCV'},
+  {id:'social',       label:'Twitter / Social',     sub:'@dylan522p tweets'},
+  {id:'substack',     label:'Substack Articles',    sub:'ai-supremacy.com'},
+  {id:'portfolio',    label:'Portfolio Holdings',   sub:'IBKR live snapshot'},
+  {id:'sec-8k',       label:'SEC 8-K Filings',      sub:'Current reports & press releases'},
+  {id:'sec-10k',      label:'SEC 10-K Annual',      sub:'Annual reports (Business, Risk, MD&A)'},
+  {id:'sec-10q',      label:'SEC 10-Q Quarterly',   sub:'Quarterly MD&A'},
+  {id:'cross',        label:'Cross-Source',         sub:'Multi-doc questions (GPU capex, etc.)'}
+];
+
+var S = {cat:null, cats:[], pages:[], questions:[], allQ:[], sel:[], searchMatches:{}};
+
+function $(id){return document.getElementById(id)}
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function jfetch(url,opts){return fetch(url,opts).then(function(r){return r.json()})}
+
+function toast(msg,ok){
+  ok=ok===undefined?true:ok;
+  var el=$('toast');el.textContent=msg;el.style.background=ok?'#15803d':'#dc2626';
+  el.classList.add('show');setTimeout(function(){el.classList.remove('show')},2800);
+}
+
+var TARGET_TOTAL=100;
+
+function renderHdrCount(){
+  var n=S.allQ.length;
+  var pct=Math.min(100,Math.round(n/TARGET_TOTAL*100));
+  var color=n>=TARGET_TOTAL?'#22c55e':n>=80?'#eab308':'#94a3b8';
+  $('hdr-count').innerHTML=
+    n+' questions &middot; '+pct+'% toward '+TARGET_TOTAL+' target'+
+    '&nbsp;<span class="progress-bar-wrap">'+
+      '<span class="progress-bar">'+
+        '<span class="progress-bar-fill" style="width:'+pct+'%;background:'+color+'"></span>'+
+      '</span>'+
+    '</span>';
+}
+
+function init(){
+  jfetch('/api/state').then(function(d){
+    S.cats=d.categories;S.allQ=d.questions;
+    if(d.savePath)$('save-path').textContent='Saving to: '+d.savePath;
+    renderSidebar();
+    renderHdrCount();
+  });
+}
+
+function renderSidebar(){
+  var html='';
+  for(var i=0;i<CAT_INFO.length;i++){
+    var ci=CAT_INFO[i];
+    var info=S.cats.find(function(c){return c.name===ci.id})||{total_slugs:0,question_count:0};
+    var active=S.cat===ci.id?' active':'';
+    var qc=info.question_count;
+    var badgeColor=qc>=10?' green':qc>=5?' yellow':' gray';
+    html+='<div class="sidebar-item'+active+'" onclick="selectCat(\''+ci.id+'\')">'+
+      '<div><div class="label">'+esc(ci.label)+'</div><div class="sublabel">'+esc(ci.sub)+'</div></div>'+
+      '<span class="badge'+badgeColor+'">'+qc+'/10</span>'+
+    '</div>';
+  }
+  $('sidebar').innerHTML=html;
+  var total=S.cats.reduce(function(s,c){return s+c.total_slugs},0);
+  $('sidebar-footer').textContent=total+' total documents';
+}
+
+function selectCat(cat){
+  S.cat=cat;S.sel=[];S.searchMatches={};
+  renderSidebar();
+  $('content').innerHTML='<div class="empty-state"><div class="empty-icon">⏳</div>Loading documents…</div>';
+  Promise.all([
+    jfetch('/api/pages?category='+cat),
+    jfetch('/api/questions?category='+cat)
+  ]).then(function(res){
+    S.pages=res[0];S.questions=res[1];
+    renderContent();
+  });
+}
+
+function catLabel(id){
+  var ci=CAT_INFO.find(function(c){return c.id===id});
+  return ci?ci.label:id;
+}
+
+function renderContent(){
+  var ci=CAT_INFO.find(function(c){return c.id===S.cat})||{label:S.cat,sub:''};
+  var info=S.cats.find(function(c){return c.name===S.cat})||{total_slugs:0};
+  var isCross=(S.cat==='cross');
+  // Browse card: cross uses corpus-wide search panel; others use page browser
+  var browseCard=isCross?
+    '<div class="card">'+
+      '<div class="card-title">Corpus-Wide Document Search</div>'+
+      '<div class="info-banner" style="margin-bottom:8px">Cross-source questions span multiple source types. Search all 1,910 documents to find the relevant pages, then click to add them as source docs.</div>'+
+      '<div class="search-row">'+
+        '<input type="text" id="cross-search-input" placeholder="Search all documents… (min 3 chars)">'+
+        '<button class="btn-search" onclick="crossSearchDocs()">🔍 Search Corpus</button>'+
+      '</div>'+
+      '<div id="cross-search-results" style="margin-top:8px"></div>'+
+    '</div>':
+    '<div class="card">'+
+      '<div class="card-title">Browse Documents — '+esc(ci.label)+'</div>'+
+      '<div class="browse-hdr">'+
+        '<input type="text" id="pg-search" placeholder="Filter by title, ticker, date…" oninput="filterPages(this.value)">'+
+        '<span class="pg-count" id="pg-count">'+S.pages.length+' documents</span>'+
+      '</div>'+
+      '<div class="page-list" id="page-list">'+renderPageList('',{})+'</div>'+
+    '</div>';
+  $('content').innerHTML=
+    '<div class="card">'+
+      '<div class="card-title">Add Question'+
+        '<span class="count">'+info.total_slugs+' documents · '+S.questions.length+' questions so far</span>'+
+      '</div>'+
+      '<div class="info-banner">'+
+        'Source Documents = the document(s) gbrain must retrieve to answer this question. '+
+        'The benchmark scores a <b>hit</b> if any selected document appears in the top-5 results. '+
+        'You can select multiple documents (e.g. both the transcript and the press release mention the same fact).'+
+      '</div>'+
+      '<div class="form-row" style="margin-top:12px">'+
+        '<label>Question</label>'+
+        '<textarea id="q-text" placeholder="e.g. What was NVIDIA\'s Data Center revenue in Q3 FY2025?"></textarea>'+
+      '</div>'+
+      '<div class="form-row">'+
+        '<label>Answer <span class="hint">— the actual correct answer to this question</span></label>'+
+        '<div class="search-row">'+
+          '<input type="text" id="q-answer" placeholder="e.g. $30.8 billion in Q3 FY2025 (period ending Oct 27 2024)">'+
+          '<button class="btn-search" id="find-btn" onclick="findDocs()" title="Search all documents for pages containing your answer text">'+
+            '🔍 Find Source Docs'+
+          '</button>'+
+        '</div>'+
+        '<div id="search-results" class="search-results"></div>'+
+      '</div>'+
+      '<div class="form-row">'+
+        '<label>Source Documents <span class="hint">— select ALL documents that contain the answer (click to add, double-click to preview)</span></label>'+
+        '<div class="docs-area">'+
+          '<div id="sel-docs" class="docs-chips">'+renderDocChips()+'</div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="form-row">'+
+        '<label>Notes <span class="hint">— optional extra context</span></label>'+
+        '<input type="text" id="q-notes" placeholder="e.g. Q3 FY2025 = period ending Oct 2024 for NVDA">'+
+      '</div>'+
+      '<button class="btn-primary" onclick="addQ()">Save Question</button>'+
+    '</div>'+
+    browseCard+
+    '<div class="card">'+
+      '<div class="card-title">Questions for '+esc(ci.label)+
+        '<span class="count">'+S.questions.length+'</span>'+
+      '</div>'+
+      '<div id="q-list">'+renderQList()+'</div>'+
+      (S.questions.length>0?'<button class="btn-bulk-delete" onclick="bulkDeleteCat()">Delete All '+S.questions.length+' Questions in '+esc(ci.label)+'</button>':'')+
+    '</div>';
+}
+
+function renderDocChips(){
+  if(!S.sel.length)return'<span class="no-docs">No source documents selected yet — use "Find Source Docs" or browse below</span>';
+  return S.sel.map(function(s){
+    var parts=s.split('/');
+    var cat=parts.length>1?parts[0]:'';
+    var name=parts.slice(1).join('/');
+    return '<span class="doc-chip"><span class="doc-cat">'+esc(cat)+'</span>'+esc(name)+'<button onclick="removeDoc(\''+esc(s)+'\')" title="Remove">×</button></span>';
+  }).join('');
+}
+
+function removeDoc(slug){
+  S.sel=S.sel.filter(function(x){return x!==slug});
+  refreshDocChips();
+  refreshPageSel();
+}
+
+function refreshDocChips(){
+  var el=$('sel-docs');
+  if(el)el.innerHTML=renderDocChips();
+}
+
+function togglePage(slug){
+  var idx=S.sel.indexOf(slug);
+  if(idx>=0)S.sel.splice(idx,1);
+  else S.sel.push(slug);
+  refreshDocChips();
+  refreshPageSel();
+}
+
+function refreshPageSel(){
+  var rows=document.querySelectorAll('.page-row');
+  for(var i=0;i<rows.length;i++){
+    var r=rows[i];
+    r.classList.toggle('sel',S.sel.indexOf(r.dataset.slug)>=0);
+  }
+}
+
+function expandPage(el,ev){
+  ev.stopPropagation();
+  el.classList.toggle('exp');
+}
+
+function renderPageList(search, matchMap){
+  var lc=(search||'').toLowerCase();
+  var items=S.pages;
+  if(lc)items=items.filter(function(p){
+    return p.slug.toLowerCase().indexOf(lc)>=0||
+           p.title.toLowerCase().indexOf(lc)>=0||
+           p.published_at.indexOf(lc)>=0;
+  });
+  if(!items.length)return'<div class="empty-state">No documents match.</div>';
+  var shown=items.slice(0,200);
+  var more=items.length>200?'<div class="empty-state" style="padding:8px">…'+(items.length-200)+' more — refine filter</div>':'';
+  var html='';
+  for(var i=0;i<shown.length;i++){
+    var p=shown[i];
+    var sel=S.sel.indexOf(p.slug)>=0;
+    var ctx=matchMap[p.slug]||'';
+    var matchCls=ctx?' match':'';
+    var selCls=sel?' sel':'';
+    html+='<div class="page-row'+selCls+matchCls+'" data-slug="'+esc(p.slug)+'" onclick="togglePage(\''+esc(p.slug)+'\')" ondblclick="expandPage(this,event)">'+
+      '<div class="page-info">'+
+        '<div class="page-title">'+esc(p.title||p.slug)+'</div>'+
+        '<div class="page-slug">'+esc(p.slug)+'</div>'+
+        '<div class="page-meta">'+(p.published_at?p.published_at.slice(0,10):'')+'</div>'+
+        (ctx?'<div class="page-match-ctx">'+esc(ctx)+'</div>':'')+
+        '<div class="page-preview">'+esc(p.preview)+'</div>'+
+      '</div>'+
+      '<span class="check-icon">✓</span>'+
+    '</div>';
+  }
+  return html+more;
+}
+
+function filterPages(val){
+  var el=$('page-list');
+  if(el)el.innerHTML=renderPageList(val,S.searchMatches);
+  var cnt=$('pg-count');
+  if(cnt){
+    var lc=val.toLowerCase();
+    var n=val?S.pages.filter(function(p){
+      return p.slug.toLowerCase().indexOf(lc)>=0||p.title.toLowerCase().indexOf(lc)>=0;
+    }).length:S.pages.length;
+    cnt.textContent=n+' documents';
+  }
+}
+
+function findDocs(){
+  var answer=($('q-answer')?$('q-answer').value:'').trim();
+  if(!answer){toast('Type your answer first, then click Find Source Docs',false);return}
+  var btn=$('find-btn');
+  if(btn)btn.disabled=true;
+  if(btn)btn.textContent='⏳ Searching…';
+  jfetch('/api/search?q='+encodeURIComponent(answer))
+    .then(function(res){
+      if(btn){btn.disabled=false;btn.textContent='🔍 Find Source Docs'}
+      var matches=res;
+      var matchMap={};
+      for(var i=0;i<matches.length;i++){matchMap[matches[i].slug]=matches[i].ctx}
+      S.searchMatches=matchMap;
+      var sr=$('search-results');
+      if(sr){
+        sr.classList.add('visible');
+        if(!matches.length){
+          sr.innerHTML='<div class="search-results-hdr">No exact text match found — try different phrasing or browse manually below</div>';
+        } else {
+          var tops=matches.slice(0,5);
+          var html='<div class="search-results-hdr">'+matches.length+' document'+(matches.length>1?'s':'')+' contain your answer text — click to add as source</div>';
+          for(var i=0;i<tops.length;i++){
+            var m=tops[i];
+            var sel=S.sel.indexOf(m.slug)>=0;
+            html+='<div class="page-row'+(sel?' sel':'')+'" data-slug="'+esc(m.slug)+'" onclick="togglePage(\''+esc(m.slug)+'\');renderSearchResults('+JSON.stringify(matches)+')"'+' ondblclick="expandPage(this,event)">'+
+              '<div class="page-info">'+
+                '<div class="page-title">'+esc(m.title)+'</div>'+
+                '<div class="page-slug">'+esc(m.slug)+'</div>'+
+                '<div class="page-match-ctx">'+esc(m.ctx)+'</div>'+
+                '<div class="page-preview">'+esc(m.preview)+'</div>'+
+              '</div>'+
+              '<span class="check-icon">✓</span>'+
+            '</div>';
+          }
+          if(matches.length>5)html+='<div class="search-results-hdr" style="background:#fff">…+'+(matches.length-5)+' more below (highlighted in yellow)</div>';
+          sr.innerHTML=html;
+        }
+      }
+      // highlight in main page list too
+      var pgSearch=$('pg-search');
+      var el=$('page-list');
+      if(el)el.innerHTML=renderPageList(pgSearch?pgSearch.value:'',matchMap);
+    });
+}
+
+function renderSearchResults(matches){
+  // re-render search results to update sel state
+  var tops=matches.slice(0,5);
+  var html='<div class="search-results-hdr">'+matches.length+' document'+(matches.length>1?'s':'')+' contain your answer text — click to add as source</div>';
+  for(var i=0;i<tops.length;i++){
+    var m=tops[i];
+    var sel=S.sel.indexOf(m.slug)>=0;
+    html+='<div class="page-row'+(sel?' sel':'')+' match" data-slug="'+esc(m.slug)+'" onclick="togglePage(\''+esc(m.slug)+'\');renderSearchResults('+JSON.stringify(matches)+')" ondblclick="expandPage(this,event)">'+
+      '<div class="page-info">'+
+        '<div class="page-title">'+esc(m.title)+'</div>'+
+        '<div class="page-slug">'+esc(m.slug)+'</div>'+
+        '<div class="page-match-ctx">'+esc(m.ctx)+'</div>'+
+        '<div class="page-preview">'+esc(m.preview)+'</div>'+
+      '</div>'+
+      '<span class="check-icon">✓</span>'+
+    '</div>';
+  }
+  if(matches.length>5)html+='<div class="search-results-hdr" style="background:#fff">…+'+(matches.length-5)+' more below (highlighted in yellow)</div>';
+  var sr=$('search-results');
+  if(sr)sr.innerHTML=html;
+}
+
+function renderQList(){
+  if(!S.questions.length)return'<div class="empty-state"><div class="empty-icon">✏️</div>No questions yet for this category.</div>';
+  var html='';
+  for(var i=0;i<S.questions.length;i++){
+    var q=S.questions[i];
+    var docs=(q.answer_slugs||[]).map(function(s){return'<span class="q-doc">'+esc(s)+'</span>'}).join('');
+    var pat=q.answer_slug_pattern?'<span class="q-doc pat">pattern: '+esc(q.answer_slug_pattern)+'</span>':'';
+    var answerHtml=q.answer?'<div class="q-answer"><div class="q-answer-lbl">Answer</div>'+esc(q.answer)+'</div>':'';
+    var notesHtml=q.notes?'<div class="q-notes">'+esc(q.notes)+'</div>':'';
+    var validBadge=q.validated
+      ?'<span class="badge-validated">&#10003; validated</span>'
+      :'<span class="badge-unvalidated">unvalidated</span>';
+    html+='<div class="q-item" id="qi-'+esc(q.id)+'">'+
+      '<div class="q-header">'+
+        '<span class="q-num">'+esc(q.id)+'</span>'+
+        validBadge+
+        '<span class="q-question">'+esc(q.question)+'</span>'+
+        '<button class="btn-edit" onclick="startEdit(\''+esc(q.id)+'\')">Edit</button>'+
+        '<button class="btn-eval" id="eval-btn-'+esc(q.id)+'" onclick="runEval(\''+esc(q.id)+'\')">&#9654; Score</button>'+
+        '<button class="btn-danger" onclick="delQ(\''+esc(q.id)+'\')">Delete</button>'+
+      '</div>'+
+      answerHtml+
+      '<div class="q-docs"><span class="q-docs-lbl">Source docs:</span>'+docs+pat+'</div>'+
+      notesHtml+
+    '</div>';
+  }
+  return html;
+}
+
+function addQ(){
+  var text=($('q-text')?$('q-text').value:'').trim();
+  if(!text){toast('Question text is required',false);return}
+  var answer=($('q-answer')?$('q-answer').value:'').trim();
+  if(!answer){toast('Answer text is required',false);return}
+  if(!S.sel.length){toast('Select at least one source document',false);return}
+  var notes=($('q-notes')?$('q-notes').value:'').trim();
+  var payload={category:S.cat,question:text,answer:answer,answer_slugs:S.sel.slice()};
+  if(notes)payload.notes=notes;
+  jfetch('/api/questions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+    .then(function(res){
+      if(res.error){toast(res.error,false);return}
+      S.questions=res.questions;S.allQ=res.allQuestions;S.sel=[];S.searchMatches={};
+      var info=S.cats.find(function(c){return c.name===S.cat});
+      if(info)info.question_count=S.questions.length;
+      renderHdrCount();
+      renderSidebar();
+      renderContent();
+      toast('Question '+res.id+' saved');
+    });
+}
+
+function delQ(id){
+  if(!confirm('Delete question '+id+'?'))return;
+  jfetch('/api/questions/'+encodeURIComponent(id),{method:'DELETE'})
+    .then(function(res){
+      if(res.error){toast(res.error,false);return}
+      S.questions=res.questions;S.allQ=res.allQuestions;
+      var info=S.cats.find(function(c){return c.name===S.cat});
+      if(info)info.question_count=S.questions.length;
+      renderHdrCount();
+      renderSidebar();
+      $('q-list').innerHTML=renderQList();
+      var bulkBtn=document.querySelector('.btn-bulk-delete');
+      if(bulkBtn){
+        if(S.questions.length>0)bulkBtn.textContent='Delete All '+S.questions.length+' Questions in '+(CAT_INFO.find(function(c){return c.id===S.cat})||{label:S.cat}).label;
+        else bulkBtn.style.display='none';
+      }
+      toast('Deleted');
+    });
+}
+
+// ── Score a single question (keyword eval) ─────────────────────────────────
+
+function runEval(id){
+  var btn=document.getElementById('eval-btn-'+id);
+  if(btn){btn.disabled=true;btn.textContent='⏳ Scoring…';}
+  // Remove any previous result badge
+  var prev=document.getElementById('eval-result-'+id);
+  if(prev)prev.remove();
+  jfetch('/api/eval/'+encodeURIComponent(id))
+    .then(function(res){
+      if(btn){btn.disabled=false;btn.textContent='▶ Score';}
+      if(res.error){toast(res.error,false);return;}
+      var cls=res.hit===true?'eval-hit':res.hit===false?'eval-miss':'eval-pending';
+      var label=res.hit===true?'✓ HIT':res.hit===false?'✗ MISS':'–';
+      var tip=res.hit===false&&res.retrieved&&res.retrieved.length
+        ?'Got: '+res.retrieved.slice(0,3).join(', ')
+        :(res.message||'');
+      var badge='<span id="eval-result-'+esc(id)+'" class="eval-result '+cls+'" title="'+esc(tip)+'">'+label+'</span>';
+      var header=document.querySelector('#qi-'+id+' .q-header');
+      if(header)header.insertAdjacentHTML('beforeend',badge);
+    });
+}
+
+// ── Edit question ──────────────────────────────────────────────────────────
+
+function startEdit(id){
+  var q=S.questions.find(function(x){return x.id===id});
+  if(!q)return;
+  var el=$('qi-'+id);
+  if(!el)return;
+  var slugChips=(q.answer_slugs||[]).map(function(s){
+    return '<span class="doc-chip">'+esc(s)+
+      '<button type="button" onclick="editRemoveSlug(\''+esc(id)+'\',\''+esc(s)+'\')">×</button></span>';
+  }).join('');
+  el.innerHTML=
+    '<div class="q-header">'+
+      '<span class="q-num">'+esc(q.id)+'</span>'+
+      '<span style="flex:1;font-size:12px;color:#374151;font-weight:500">Editing…</span>'+
+    '</div>'+
+    '<div class="q-edit-form" id="edit-form-'+esc(id)+'">'+
+      '<div class="form-row">'+
+        '<label>Question</label>'+
+        '<textarea id="ef-q-'+esc(id)+'" style="min-height:60px">'+esc(q.question)+'</textarea>'+
+      '</div>'+
+      '<div class="form-row">'+
+        '<label>Answer</label>'+
+        '<input type="text" id="ef-a-'+esc(id)+'" value="'+esc(q.answer)+'">'+
+      '</div>'+
+      '<div class="form-row">'+
+        '<label>Notes</label>'+
+        '<input type="text" id="ef-n-'+esc(id)+'" value="'+esc(q.notes||'')+'">'+
+      '</div>'+
+      '<div class="form-row">'+
+        '<label>Source Slugs</label>'+
+        '<div id="ef-slugs-'+esc(id)+'" class="docs-chips" style="min-height:28px">'+
+          (slugChips||'<span class="no-docs">No slugs</span>')+
+        '</div>'+
+      '</div>'+
+      '<div class="form-row">'+
+        '<label style="display:flex;align-items:center;gap:8px;cursor:pointer">'+
+          '<input type="checkbox" id="ef-v-'+esc(id)+'"'+(q.validated?' checked':'')+'>'+
+          'Mark as validated (answer confirmed correct)'+
+        '</label>'+
+      '</div>'+
+      '<div class="edit-btns">'+
+        '<button class="btn-save" onclick="saveEdit(\''+esc(id)+'\')">Save</button>'+
+        '<button class="btn-cancel" onclick="cancelEdit(\''+esc(id)+'\')">Cancel</button>'+
+      '</div>'+
+    '</div>';
+}
+
+function editRemoveSlug(qid,slug){
+  var q=S.questions.find(function(x){return x.id===qid});
+  if(!q)return;
+  q.answer_slugs=(q.answer_slugs||[]).filter(function(s){return s!==slug});
+  var container=$('ef-slugs-'+qid);
+  if(!container)return;
+  var slugChips=q.answer_slugs.map(function(s){
+    return '<span class="doc-chip">'+esc(s)+
+      '<button type="button" onclick="editRemoveSlug(\''+esc(qid)+'\',\''+esc(s)+'\')">×</button></span>';
+  }).join('');
+  container.innerHTML=slugChips||'<span class="no-docs">No slugs</span>';
+}
+
+function saveEdit(id){
+  var q=S.questions.find(function(x){return x.id===id});
+  if(!q)return;
+  var qEl=$('ef-q-'+id);
+  var aEl=$('ef-a-'+id);
+  var nEl=$('ef-n-'+id);
+  var vEl=$('ef-v-'+id);
+  var payload={
+    question:qEl?qEl.value.trim():q.question,
+    answer:aEl?aEl.value.trim():q.answer,
+    notes:nEl?nEl.value.trim():q.notes,
+    answer_slugs:q.answer_slugs||[],
+    validated:vEl?vEl.checked:q.validated
+  };
+  jfetch('/api/questions/'+encodeURIComponent(id),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+    .then(function(res){
+      if(res.error){toast(res.error,false);return}
+      S.questions=res.questions;S.allQ=res.allQuestions;
+      var info=S.cats.find(function(c){return c.name===S.cat});
+      if(info)info.question_count=S.questions.length;
+      renderHdrCount();
+      renderSidebar();
+      $('q-list').innerHTML=renderQList();
+      toast('Saved '+id);
+    });
+}
+
+function cancelEdit(id){
+  $('q-list').innerHTML=renderQList();
+}
+
+// ── Cross-source corpus search ─────────────────────────────────────────────
+
+function crossSearchDocs(){
+  var inp=$('cross-search-input');
+  var q=inp?inp.value.trim():'';
+  if(q.length<3){toast('Enter at least 3 characters',false);return}
+  var res=$('cross-search-results');
+  if(res)res.innerHTML='<div class="empty-state">Searching…</div>';
+  jfetch('/api/search?q='+encodeURIComponent(q)).then(function(matches){
+    if(!res)return;
+    if(!matches.length){res.innerHTML='<div class="empty-state">No matches found.</div>';return}
+    var html='<div class="search-results-hdr" style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:7px 7px 0 0;padding:6px 11px;font-size:11px;font-weight:600;color:#0369a1">'+
+      matches.length+' document'+(matches.length>1?'s':'')+' match — click to add as source</div>'+
+      '<div class="page-list">';
+    var shown=matches.slice(0,30);
+    for(var i=0;i<shown.length;i++){
+      var m=shown[i];
+      var sel=S.sel.indexOf(m.slug)>=0;
+      html+='<div class="page-row'+(sel?' sel':'')+' match" data-slug="'+esc(m.slug)+'" onclick="togglePage(\''+esc(m.slug)+'\');refreshCrossResults('+JSON.stringify(matches)+')">'+
+        '<div class="page-info">'+
+          '<div class="page-title">'+esc(m.title)+'</div>'+
+          '<div class="page-slug">'+esc(m.slug)+'</div>'+
+          '<div class="page-match-ctx">'+esc(m.ctx)+'</div>'+
+        '</div>'+
+        '<span class="check-icon">&#10003;</span>'+
+      '</div>';
+    }
+    html+='</div>';
+    if(matches.length>30)html+='<div class="empty-state" style="padding:6px">…+'+(matches.length-30)+' more — refine your search</div>';
+    res.innerHTML=html;
+  });
+}
+
+function refreshCrossResults(matches){
+  var res=$('cross-search-results');
+  if(!res)return;
+  var pl=res.querySelector('.page-list');
+  if(!pl)return;
+  var rows=pl.querySelectorAll('.page-row');
+  for(var i=0;i<rows.length;i++){
+    var r=rows[i];
+    r.classList.toggle('sel',S.sel.indexOf(r.dataset.slug)>=0);
+  }
+  refreshDocChips();
+}
+
+// ── Bulk delete ────────────────────────────────────────────────────────────
+
+function bulkDeleteCat(){
+  var ci=CAT_INFO.find(function(c){return c.id===S.cat})||{label:S.cat};
+  var n=S.questions.length;
+  if(!n)return;
+  if(!confirm('Delete all '+n+' questions in '+ci.label+'? This cannot be undone.'))return;
+  var ids=S.questions.map(function(q){return q.id});
+  // Sequential deletes to avoid races on the JSON file
+  function deleteNext(idx){
+    if(idx>=ids.length){
+      jfetch('/api/state').then(function(d){
+        S.cats=d.categories;S.allQ=d.questions;
+        S.questions=d.questions.filter(function(q){return q.category===S.cat});
+        renderHdrCount();
+        renderSidebar();
+        $('q-list').innerHTML=renderQList();
+        var bulkBtn=document.querySelector('.btn-bulk-delete');
+        if(bulkBtn)bulkBtn.style.display='none';
+        toast('Deleted all '+n+' questions');
+      });
+      return;
+    }
+    jfetch('/api/questions/'+encodeURIComponent(ids[idx]),{method:'DELETE'}).then(function(){deleteNext(idx+1)});
+  }
+  deleteNext(0);
+}
+
+init();
+</script>
+</body>
+</html>

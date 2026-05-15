@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/ASTS",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "ASTS Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/ASTS",
+  "published_at": "2026-05-14T16:29:40.131Z",
+  "compiled_truth": "ASTS — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 5 estimates)\n  Avg Price Target:    $100.00\n  Last Year Avg:       $92.25  (10 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-05-13  New Street:  $80.00  [stock at $74.81 when posted, +6.9% vs post price]\n  2026-05-12  Roth Capital:  $108.00  [stock at $71.61 when posted, +50.8% vs post price]\n  2026-05-12  UBS:  $80.00  [stock at $71.59 when posted, +11.7% vs post price]\n  2026-04-20  New Street:  $115.00  [stock at $85.53 when posted, +34.5% vs post price]\n  2026-04-15  Deutsche Bank:  $117.00  [stock at $87.58 when posted, +33.6% vs post price]\n  2026-01-20  Deutsche Bank:  $137.00  [stock at $115.77 when posted, +18.3% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $72.96\n  Consensus target:   $100.00\n  Status:             ↑ BELOW consensus — +37.1% upside remaining\n",
+  "companies_mentioned": [
+    "ASTS"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "ASTS",
+    "summary": {
+      "symbol": "ASTS",
+      "lastMonth": 5,
+      "lastMonthAvgPriceTarget": 100,
+      "lastQuarter": 5,
+      "lastQuarterAvgPriceTarget": 100,
+      "lastYear": 10,
+      "lastYearAvgPriceTarget": 92.25,
+      "allTime": 19,
+      "allTimeAvgPriceTarget": 62.98,
+      "publishers": "[\"TheFly\",\"StreetInsider\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "ASTS",
+        "publishedDate": "2026-05-13T21:21:37.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4354650",
+        "newsTitle": "AST SpaceMobile initiated with a Neutral at New Street",
+        "analystName": "",
+        "priceTarget": 80,
+        "adjPriceTarget": 80,
+        "priceWhenPosted": 74.81,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "New Street"
+      },
+      {
+        "symbol": "ASTS",
+        "publishedDate": "2026-05-12T13:22:22.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4353140",
+        "newsTitle": "AST SpaceMobile price target raised to $108 from $82.50 at Roth Capital",
+        "analystName": "",
+        "priceTarget": 108,
+        "adjPriceTarget": 108,
+        "priceWhenPosted": 71.61,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Roth Capital"
+      },
+      {
+        "symbol": "ASTS",
+        "publishedDate": "2026-05-12T12:56:06.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4353056",
+        "newsTitle": "AST SpaceMobile price target lowered to $80 from $85 at UBS",
+        "analystName": "",
+        "priceTarget": 80,
+        "adjPriceTarget": 80,
+        "priceWhenPosted": 71.59,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "UBS"
+      },
+      {
+        "symbol": "ASTS",
+        "publishedDate": "2026-04-20T10:13:55.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4332066",
+        "newsTitle": "AST SpaceMobile price target lowered to $115 from $137 at Clear Street",
+        "analystName": "",
+        "priceTarget": 115,
+        "adjPriceTarget": 115,
+        "priceWhenPosted": 85.53,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "New Street"
+      },
+      {
+        "symbol": "ASTS",
+        "publishedDate": "2026-04-15T12:38:44.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4330034",
+        "newsTitle": "AST SpaceMobile price target lowered to $117 from $139 at Deutsche Bank",
+        "analystName": "",
+        "priceTarget": 117,
+        "adjPriceTarget": 117,
+        "priceWhenPosted": 87.58,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Deutsche Bank"
+      },
+      {
+        "symbol": "ASTS",
+        "publishedDate": "2026-01-20T12:08:12.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4273800/1361286394/ASTS-AST-SpaceMobile-price-target-raised-by--at-Deutsche-Bank",
+        "newsTitle": "AST SpaceMobile price target raised to $137 from $81 at Deutsche Bank",
+        "analystName": "",
+        "priceTarget": 137,
+        "adjPriceTarget": 137,
+        "priceWhenPosted": 115.77,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Deutsche Bank"
+      },
+      {
+        "symbol": "ASTS",
+        "publishedDate": "2026-01-20T10:41:37.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4273563/6561286394/ASTS-AST-SpaceMobile-price-target-raised-by--at-Clear-Street-heres-why",
+        "newsTitle": "AST SpaceMobile price target raised to $137 from $87 at Clear Street",
+        "analystName": "",
+        "priceTarget": 137,
+        "adjPriceTarget": 137,
+        "priceWhenPosted": 115.77,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "UBS"
+      },
+      {
+        "symbol": "ASTS",
+        "publishedDate": "2025-11-24T12:55:34.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4245021/8961286394/ASTS-AST-SpaceMobile-upgraded-to-Sector-Perform-at-Scotiabank-after-pullback",
+        "newsTitle": "AST SpaceMobile upgraded to Sector Perform at Scotiabank after pullback",
+        "analystName": "",
+        "priceTarget": 45.6,
+        "adjPriceTarget": 45.6,
+        "priceWhenPosted": 51.37,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Scotiabank"
+      }
+    ]
+  }
+}

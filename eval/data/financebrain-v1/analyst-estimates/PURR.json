@@ -1,0 +1,108 @@
+{
+  "slug": "analyst-estimates/PURR",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "PURR Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/PURR",
+  "published_at": "2026-05-14T16:29:48.750Z",
+  "compiled_truth": "PURR — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 2 estimates)\n  Avg Price Target:    $9.00\n  Last Year Avg:       $7.55  (6 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-05-11  Cantor Fitzgerald:  $8.00  [stock at $6.71 when posted, +19.2% vs post price]\n  2026-04-24  Maxim Group:  $10.00  [stock at $6.11 when posted, +63.8% vs post price]\n  2026-02-12  Cantor Fitzgerald:  $6.00  [stock at $4.38 when posted, +37.0% vs post price]\n  2025-12-24  Loop Capital Markets:  $8.15  [stock at $3.32 when posted, +145.5% vs post price]\n  2025-12-24  Chardan Capital:  $8.15  [stock at $3.32 when posted, +145.5% vs post price]\n  2025-12-16  Cantor Fitzgerald:  $5.00  [stock at $3.22 when posted, +55.3% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $6.25\n  Consensus target:   $9.00\n  Status:             ↑ BELOW consensus — +44.0% upside remaining\n",
+  "companies_mentioned": [
+    "PURR"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "PURR",
+    "summary": {
+      "symbol": "PURR",
+      "lastMonth": 2,
+      "lastMonthAvgPriceTarget": 9,
+      "lastQuarter": 2,
+      "lastQuarterAvgPriceTarget": 9,
+      "lastYear": 6,
+      "lastYearAvgPriceTarget": 7.55,
+      "allTime": 6,
+      "allTimeAvgPriceTarget": 7.55,
+      "publishers": "[\"TheFly\",\"StreetInsider\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "PURR",
+        "publishedDate": "2026-05-11T11:00:24.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4351523",
+        "newsTitle": "Hyperliquid Strategies price target raised to $8 from $6 at Cantor Fitzgerald",
+        "analystName": "",
+        "priceTarget": 8,
+        "adjPriceTarget": 8,
+        "priceWhenPosted": 6.71,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Cantor Fitzgerald"
+      },
+      {
+        "symbol": "PURR",
+        "publishedDate": "2026-04-24T12:02:11.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4336407",
+        "newsTitle": "Hyperliquid Strategies initiated with a Buy at Maxim",
+        "analystName": "",
+        "priceTarget": 10,
+        "adjPriceTarget": 10,
+        "priceWhenPosted": 6.105,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Maxim Group"
+      },
+      {
+        "symbol": "PURR",
+        "publishedDate": "2026-02-12T13:47:55.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4291678/5162286394/PURR-Hyperliquid-Strategies-price-target-raised-by--at-Cantor-Fitzgerald-heres-why",
+        "newsTitle": "Hyperliquid Strategies price target raised to $6 from $5 at Cantor Fitzgerald",
+        "analystName": "",
+        "priceTarget": 6,
+        "adjPriceTarget": 6,
+        "priceWhenPosted": 4.379,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Cantor Fitzgerald"
+      },
+      {
+        "symbol": "PURR",
+        "publishedDate": "2025-12-24T10:58:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Chardan+Capital+Markets+Starts+Hyperliquid+Strategies%2C+Inc.+%28PURR%29+at+Buy/25778807.html",
+        "newsTitle": "Chardan Capital Markets Starts Hyperliquid Strategies, Inc. (PURR) at Buy",
+        "analystName": "",
+        "priceTarget": 8.15,
+        "adjPriceTarget": 8.15,
+        "priceWhenPosted": 3.32,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Loop Capital Markets"
+      },
+      {
+        "symbol": "PURR",
+        "publishedDate": "2025-12-24T09:30:17.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4261632/9609286394/PURR-Hyperliquid-Strategies-initiated-with-bullish-view-at-Chardan",
+        "newsTitle": "Hyperliquid Strategies initiated with a Buy at Chardan",
+        "analystName": "",
+        "priceTarget": 8.15,
+        "adjPriceTarget": 8.15,
+        "priceWhenPosted": 3.32,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Chardan Capital"
+      },
+      {
+        "symbol": "PURR",
+        "publishedDate": "2025-12-16T11:42:42.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4257333/5561286394/PURR-Hyperliquid-Strategies-initiated-with-bullish-view-at-Cantor-Fitzgerald",
+        "newsTitle": "Hyperliquid Strategies initiated with an Overweight at Cantor Fitzgerald",
+        "analystName": "",
+        "priceTarget": 5,
+        "adjPriceTarget": 5,
+        "priceWhenPosted": 3.22,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Cantor Fitzgerald"
+      }
+    ]
+  }
+}

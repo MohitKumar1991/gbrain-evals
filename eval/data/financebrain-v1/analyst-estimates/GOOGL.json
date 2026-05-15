@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/GOOGL",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "GOOGL Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/GOOGL",
+  "published_at": "2026-05-14T16:29:36.544Z",
+  "compiled_truth": "GOOGL — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 17 estimates)\n  Avg Price Target:    $420.00\n  Last Year Avg:       $348.07  (91 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-04-30  Morgan Stanley:  $375.00  [stock at $384.54 when posted, -2.5% vs post price]\n  2026-04-30  UBS:  $435.00  [stock at $372.50 when posted, +16.8% vs post price]\n  2026-04-30  Needham (Laura Martin):  $450.00  [stock at $373.30 when posted, +20.5% vs post price]\n  2026-04-30  RBC Capital:  $425.00  [stock at $376.65 when posted, +12.8% vs post price]\n  2026-04-30  Goldman Sachs:  $450.00  [stock at $371.06 when posted, +21.3% vs post price]\n  2026-04-30  Bernstein:  $390.00  [stock at $349.94 when posted, +11.4% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $157.29\n  Consensus target:   $420.00\n  Status:             ↑ BELOW consensus — +167.0% upside remaining\n",
+  "companies_mentioned": [
+    "GOOGL"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "GOOGL",
+    "summary": {
+      "symbol": "GOOGL",
+      "lastMonth": 17,
+      "lastMonthAvgPriceTarget": 420,
+      "lastQuarter": 20,
+      "lastQuarterAvgPriceTarget": 416.95,
+      "lastYear": 91,
+      "lastYearAvgPriceTarget": 348.07,
+      "allTime": 252,
+      "allTimeAvgPriceTarget": 232.82,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\",\"TipRanks Contributor\",\"MarketWatch\",\"Pulse 2.0\",\"Investing\",\"TheStreet\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "GOOGL",
+        "publishedDate": "2026-04-30T16:15:50.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341763",
+        "newsTitle": "Alphabet price target raised to $375 from $330 at Morgan Stanley",
+        "analystName": "",
+        "priceTarget": 375,
+        "adjPriceTarget": 375,
+        "priceWhenPosted": 384.54,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Morgan Stanley"
+      },
+      {
+        "symbol": "GOOGL",
+        "publishedDate": "2026-04-30T13:55:31.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341629",
+        "newsTitle": "Alphabet price target raised to $435 from $395 at Roth Capital",
+        "analystName": "",
+        "priceTarget": 435,
+        "adjPriceTarget": 435,
+        "priceWhenPosted": 372.4999,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "UBS"
+      },
+      {
+        "symbol": "GOOGL",
+        "publishedDate": "2026-04-30T13:41:41.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341605",
+        "newsTitle": "Alphabet price target raised to $450 from $400 at Needham",
+        "analystName": "Laura Martin",
+        "priceTarget": 450,
+        "adjPriceTarget": 450,
+        "priceWhenPosted": 373.3,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Needham"
+      },
+      {
+        "symbol": "GOOGL",
+        "publishedDate": "2026-04-30T13:22:49.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341559",
+        "newsTitle": "Alphabet price target raised to $425 from $400 at RBC Capital",
+        "analystName": "",
+        "priceTarget": 425,
+        "adjPriceTarget": 425,
+        "priceWhenPosted": 376.655,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "RBC Capital"
+      },
+      {
+        "symbol": "GOOGL",
+        "publishedDate": "2026-04-30T12:01:04.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341138",
+        "newsTitle": "Alphabet price target raised to $450 from $400 at Goldman Sachs",
+        "analystName": "",
+        "priceTarget": 450,
+        "adjPriceTarget": 450,
+        "priceWhenPosted": 371.0623,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Goldman Sachs"
+      },
+      {
+        "symbol": "GOOGL",
+        "publishedDate": "2026-04-30T11:54:16.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341115",
+        "newsTitle": "Alphabet price target raised to $390 from $345 at Bernstein",
+        "analystName": "",
+        "priceTarget": 390,
+        "adjPriceTarget": 390,
+        "priceWhenPosted": 349.94,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Bernstein"
+      },
+      {
+        "symbol": "GOOGL",
+        "publishedDate": "2026-04-30T11:39:34.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341053",
+        "newsTitle": "Alphabet price target raised to $460 from $400 at Susquehanna",
+        "analystName": "",
+        "priceTarget": 460,
+        "adjPriceTarget": 460,
+        "priceWhenPosted": 349.94,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Susquehanna"
+      },
+      {
+        "symbol": "GOOGL",
+        "publishedDate": "2026-04-30T11:37:31.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4341040",
+        "newsTitle": "Alphabet price target raised to $415 from $385 at Truist",
+        "analystName": "",
+        "priceTarget": 415,
+        "adjPriceTarget": 415,
+        "priceWhenPosted": 349.94,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Truist Financial"
+      }
+    ]
+  }
+}

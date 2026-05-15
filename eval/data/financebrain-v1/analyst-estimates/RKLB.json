@@ -1,0 +1,134 @@
+{
+  "slug": "analyst-estimates/RKLB",
+  "type": "market-data",
+  "source_type": "market-data",
+  "title": "RKLB Analyst Price Targets — 2026-05-14",
+  "url": "https://financialmodelingprep.com/financial-summary/RKLB",
+  "published_at": "2026-05-14T16:29:40.935Z",
+  "compiled_truth": "RKLB — Analyst Price Targets (as of 2026-05-14)\n\nCONSENSUS (Last Month — 4 estimates)\n  Avg Price Target:    $105.75\n  Last Year Avg:       $84.20  (15 estimates)\n\nRECENT INDIVIDUAL TARGETS\n  2026-05-12  Deutsche Bank:  $120.00  [stock at $116.17 when posted, +3.3% vs post price]\n  2026-05-08  Craig-Hallum:  $98.00  [stock at $78.58 when posted, +24.7% vs post price]\n  2026-04-20  Stifel Nicolaus:  $105.00  [stock at $87.75 when posted, +19.7% vs post price]\n  2026-04-17  Roth Capital:  $100.00  [stock at $82.93 when posted, +20.6% vs post price]\n  2026-03-13  Cantor Fitzgerald (Andres Sheppard):  $85.00  [stock at $68.37 when posted, +24.3% vs post price]\n  2026-01-20  Goldman Sachs (Anthony Valentini):  $69.00  [stock at $96.30 when posted, -28.3% vs post price]\n\nPORTFOLIO CONTEXT (snapshot 2026-05-12)\n  Portfolio mark:     $117.56\n  Consensus target:   $105.75\n  Status:             ↓ ABOVE consensus — target already exceeded by +11.2%\n",
+  "companies_mentioned": [
+    "RKLB"
+  ],
+  "quarter_context": {},
+  "_facts": {
+    "ticker": "RKLB",
+    "summary": {
+      "symbol": "RKLB",
+      "lastMonth": 4,
+      "lastMonthAvgPriceTarget": 105.75,
+      "lastQuarter": 5,
+      "lastQuarterAvgPriceTarget": 101.6,
+      "lastYear": 15,
+      "lastYearAvgPriceTarget": 84.2,
+      "allTime": 31,
+      "allTimeAvgPriceTarget": 46.44,
+      "publishers": "[\"TheFly\",\"StreetInsider\",\"Benzinga\",\"Investing\"]"
+    },
+    "recentTargets": [
+      {
+        "symbol": "RKLB",
+        "publishedDate": "2026-05-12T12:36:55.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4353017",
+        "newsTitle": "Rocket Lab price target raised to $120 from $73 at Deutsche Bank",
+        "analystName": "",
+        "priceTarget": 120,
+        "adjPriceTarget": 120,
+        "priceWhenPosted": 116.165,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Deutsche Bank"
+      },
+      {
+        "symbol": "RKLB",
+        "publishedDate": "2026-05-08T11:23:18.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4350192",
+        "newsTitle": "Rocket Lab upgraded to Buy from Hold at Craig-Hallum",
+        "analystName": "",
+        "priceTarget": 98,
+        "adjPriceTarget": 98,
+        "priceWhenPosted": 78.58,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Craig-Hallum"
+      },
+      {
+        "symbol": "RKLB",
+        "publishedDate": "2026-04-20T14:54:12.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4332639",
+        "newsTitle": "Rocket Lab price target raised to $105 from $90 at Stifel",
+        "analystName": "",
+        "priceTarget": 105,
+        "adjPriceTarget": 105,
+        "priceWhenPosted": 87.75,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Stifel Nicolaus"
+      },
+      {
+        "symbol": "RKLB",
+        "publishedDate": "2026-04-17T10:16:51.000Z",
+        "newsURL": "https://thefly.com/ajax/news_get.php?id=4331385",
+        "newsTitle": "Rocket Lab price target raised to $100 from $90 at Roth Capital",
+        "analystName": "",
+        "priceTarget": 100,
+        "adjPriceTarget": 100,
+        "priceWhenPosted": 82.93,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Roth Capital"
+      },
+      {
+        "symbol": "RKLB",
+        "publishedDate": "2026-03-13T11:36:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Rocket+Lab+USA+%28RKLB%29+Reiterated+at+Overweight+by+Cantor+Fitzgerald+After+CEO+Meet/26156451.html",
+        "newsTitle": "Rocket Lab USA (RKLB) Reiterated at Overweight by Cantor Fitzgerald After CEO Meet",
+        "analystName": "Andres Sheppard",
+        "priceTarget": 85,
+        "adjPriceTarget": 85,
+        "priceWhenPosted": 68.37,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Cantor Fitzgerald"
+      },
+      {
+        "symbol": "RKLB",
+        "publishedDate": "2026-01-20T12:34:27.000Z",
+        "newsURL": "https://thefly.com/permalinks/entry.php/id4273877/3161286394/RKLB-Rocket-Lab-price-target-raised-by--at-Goldman-Sachs-heres-why",
+        "newsTitle": "Rocket Lab price target raised to $69 from $47 at Goldman Sachs",
+        "analystName": "Anthony Valentini",
+        "priceTarget": 69,
+        "adjPriceTarget": 69,
+        "priceWhenPosted": 96.3,
+        "newsPublisher": "TheFly",
+        "newsBaseURL": "thefly.com",
+        "analystCompany": "Goldman Sachs"
+      },
+      {
+        "symbol": "RKLB",
+        "publishedDate": "2026-01-16T07:16:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Upgrades/Morgan+Stanley+Upgrades+Rocket+Lab+USA+%28RKLB%29+to+Overweight/25856961.html",
+        "newsTitle": "Morgan Stanley Upgrades Rocket Lab USA (RKLB) to Overweight",
+        "analystName": "Kristine Liwag",
+        "priceTarget": 105,
+        "adjPriceTarget": 105,
+        "priceWhenPosted": 90.76,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Morgan Stanley"
+      },
+      {
+        "symbol": "RKLB",
+        "publishedDate": "2025-12-23T11:38:00.000Z",
+        "newsURL": "https://www.streetinsider.com/Analyst+Comments/Rocket+Lab+USA+%28RKLB%29+PT+Raised+to+%2490+at+Needham/25772915.html",
+        "newsTitle": "Rocket Lab USA (RKLB) PT Raised to $90 at Needham",
+        "analystName": "Ryan Koontz",
+        "priceTarget": 90,
+        "adjPriceTarget": 90,
+        "priceWhenPosted": 77.55,
+        "newsPublisher": "StreetInsider",
+        "newsBaseURL": "streetinsider.com",
+        "analystCompany": "Needham"
+      }
+    ]
+  }
+}
