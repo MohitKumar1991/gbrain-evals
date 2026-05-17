@@ -22,12 +22,14 @@
 import { writeFileSync, existsSync, readdirSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { EARNINGS_CALENDAR, getQuarterContext } from './earnings-calendar.ts';
+import { loadTradingDays } from './trading-days.ts';
 import type { FinancePage } from './types.ts';
 
 // ── Config ────────────────────────────────────────────────────────────────────
 
 const BASE_URL = 'https://www.ai-supremacy.com';
 const OUTPUT_DIR = 'eval/data/financebrain-v1/substack';
+const TRADING_DAYS = loadTradingDays('eval/data/financebrain-v1/price');
 const RATE_LIMIT_MS = 600;
 
 // Tickers we care about and the text patterns that indicate a mention.
@@ -137,7 +139,7 @@ function buildQuarterContext(
 ): Partial<Record<string, ReturnType<typeof getQuarterContext>>> {
   const ctx: Partial<Record<string, ReturnType<typeof getQuarterContext>>> = {};
   for (const ticker of tickers) {
-    const qc = getQuarterContext(ticker, publishedAt);
+    const qc = getQuarterContext(ticker, publishedAt, TRADING_DAYS);
     if (qc) ctx[ticker] = qc;
   }
   return ctx;

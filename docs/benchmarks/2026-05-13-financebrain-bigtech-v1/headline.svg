@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 156" width="900" height="156">
+  <rect width="900" height="156" fill="#0a0a0a" />
+  <text x="200" y="30" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="700" fill="#e5e7eb">FinanceBrain Recall@5 -- BigTech Corpus</text>
+  <text x="200" y="50" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" fill="#9ca3af">1,910 pages · NVDA MSFT GOOGL META AAPL · 9 source types</text>
+  <line x1="320" y1="72" x2="320" y2="116" stroke="#262626" stroke-width="1" />
+  <text x="320" y="134" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="10" fill="#9ca3af">20%</text>
+  <line x1="440" y1="72" x2="440" y2="116" stroke="#262626" stroke-width="1" />
+  <text x="440" y="134" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="10" fill="#9ca3af">40%</text>
+  <line x1="560" y1="72" x2="560" y2="116" stroke="#262626" stroke-width="1" />
+  <text x="560" y="134" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="10" fill="#9ca3af">60%</text>
+  <line x1="680" y1="72" x2="680" y2="116" stroke="#262626" stroke-width="1" />
+  <text x="680" y="134" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="10" fill="#9ca3af">80%</text>
+  <line x1="800" y1="72" x2="800" y2="116" stroke="#262626" stroke-width="1" />
+  <text x="800" y="134" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="10" fill="#9ca3af">100%</text>
+  
+      <text x="188" y="94" text-anchor="end" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" font-weight="600" fill="#e5e7eb">keyword</text>
+      <text x="188" y="108" text-anchor="end" font-family="ui-monospace,SFMono-Regular,monospace" font-size="10" fill="#9ca3af">n=9 · k=5</text>
+      <rect x="200" y="82" width="133.33333333333331" height="24" rx="3" fill="#6b7280" />
+      <text x="341.3333333333333" y="98" text-anchor="start" font-family="ui-monospace,SFMono-Regular,monospace" font-size="13" font-weight="700" fill="#6b7280">22.2%</text>
+    
+</svg>

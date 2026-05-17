@@ -395,7 +395,51 @@ const server = Bun.serve({
       });
     }
 
-    // GET /api/eval/:id — single-question keyword eval
+    // GET /api/scores — latest report, processed into per-question score grid
+    if (method === "GET" && path === "/api/scores") {
+      const projectRoot = join(import.meta.dirname, "../..");
+      const reportsDir = join(projectRoot, "eval/reports/financebrain");
+      let latestFile: string | null = null;
+      try {
+        const files = readdirSync(reportsDir).filter(f => f.endsWith(".json")).sort();
+        if (files.length > 0) latestFile = files[files.length - 1];
+      } catch { /* dir doesn't exist */ }
+
+      if (!latestFile) return json({ error: "no report found", questions: [], adapters: [], summary: [] });
+
+      type ReportRow = {
+        query_id: string; category: string; question: string; adapter: string;
+        retrieved_slugs: string[]; answer_slugs: string[];
+        hit: boolean; recall: number; mrr: number; precision: number; ap: number;
+        first_hit_rank: number | null; matched_count: number; total_gold: number; latency_ms: number;
+      };
+      const report = JSON.parse(readFileSync(join(reportsDir, latestFile), "utf8")) as {
+        run_at: string; adapters: string[]; top_k: number; results: ReportRow[]; summary: unknown[];
+      };
+
+      const qMap = new Map<string, { id: string; category: string; question: string; answer_slugs: string[]; scores: Record<string, unknown> }>();
+      for (const r of report.results) {
+        if (!qMap.has(r.query_id)) {
+          qMap.set(r.query_id, { id: r.query_id, category: r.category, question: r.question, answer_slugs: r.answer_slugs, scores: {} });
+        }
+        qMap.get(r.query_id)!.scores[r.adapter] = {
+          hit: r.hit, recall: r.recall ?? 0, mrr: r.mrr ?? 0,
+          precision: r.precision ?? 0, ap: r.ap ?? 0,
+          first_hit_rank: r.first_hit_rank ?? null,
+          matched_count: r.matched_count ?? 0, total_gold: r.total_gold ?? r.answer_slugs?.length ?? 0,
+          retrieved: r.retrieved_slugs ?? [], latency_ms: r.latency_ms,
+        };
+      }
+
+      return json({
+        report_path: latestFile, run_at: report.run_at, top_k: report.top_k,
+        adapters: report.adapters ?? [],
+        questions: Array.from(qMap.values()),
+        summary: report.summary ?? [],
+      });
+    }
+
+    // GET /api/eval/:id — single-question eval (all adapters if proxy running, else keyword only)
     const evalMatch = path.match(/^\/api\/eval\/(.+)$/);
     if (method === "GET" && evalMatch) {
       const id = decodeURIComponent(evalMatch[1]);
@@ -406,36 +450,52 @@ const server = Bun.serve({
       const projectRoot = join(import.meta.dirname, "../..");
       const reportsDir = join(projectRoot, "eval/reports/financebrain");
 
-      // Snapshot existing report files before run
       let beforeFiles = new Set<string>();
       try { beforeFiles = new Set(readdirSync(reportsDir)); } catch { /* dir may not exist yet */ }
+
+      // Run all adapters if LITELLM_BASE_URL is set, keyword-only otherwise.
+      const hasProxy = !!process.env.LITELLM_BASE_URL;
+      const adaptersArg = hasProxy ? "keyword,vector,hybrid,hybrid+expansion" : "keyword";
 
       const proc = Bun.spawn(
         ["bun", "eval/runner/financebrain.ts",
           "--queries", QUESTIONS_FILE,
-          "--keyword-only",
+          "--adapters", adaptersArg,
           "--question-id", id,
           "--top-k", "5"],
         { cwd: projectRoot, stdout: "pipe", stderr: "pipe" },
       );
       await proc.exited;
 
-      // Find the new report file
-      let hit: boolean | null = null;
-      let retrieved: string[] = [];
+      type ReportRow = {
+        query_id: string; adapter: string; hit: boolean; recall: number; mrr: number;
+        precision: number; ap: number; first_hit_rank: number | null;
+        matched_count: number; total_gold: number; retrieved_slugs: string[]; latency_ms: number;
+      };
+      const byAdapter: Record<string, unknown> = {};
       try {
         const newFiles = readdirSync(reportsDir).filter(f => !beforeFiles.has(f) && f.endsWith(".json"));
         if (newFiles.length > 0) {
-          const reportPath = join(reportsDir, newFiles[newFiles.length - 1]);
-          const report = JSON.parse(readFileSync(reportPath, "utf8")) as {
-            results: Array<{ query_id: string; hit: boolean; retrieved_slugs: string[] }>
+          const report = JSON.parse(readFileSync(join(reportsDir, newFiles[newFiles.length - 1]), "utf8")) as {
+            results: ReportRow[];
           };
-          const row = report.results.find(r => r.query_id === id);
-          if (row) { hit = row.hit; retrieved = row.retrieved_slugs ?? []; }
+          for (const row of report.results.filter(r => r.query_id === id)) {
+            byAdapter[row.adapter] = {
+              hit: row.hit, recall: row.recall ?? 0, mrr: row.mrr ?? 0,
+              precision: row.precision ?? 0, ap: row.ap ?? 0,
+              first_hit_rank: row.first_hit_rank ?? null,
+              matched_count: row.matched_count ?? 0, total_gold: row.total_gold ?? 0,
+              retrieved: row.retrieved_slugs ?? [], latency_ms: row.latency_ms,
+            };
+          }
         }
-      } catch { /* return null hit */ }
+      } catch { /* return empty */ }
 
-      return json({ id, hit, retrieved, adapter: "keyword", top_k: 5 });
+      const kw = byAdapter["keyword"] as { hit: boolean; retrieved: string[] } | undefined;
+      return json({
+        id, hit: kw?.hit ?? null, retrieved: kw?.retrieved ?? [],
+        adapters_run: adaptersArg.split(","), by_adapter: byAdapter, top_k: 5,
+      });
     }
 
     return json({ error: "not found" }, 404);

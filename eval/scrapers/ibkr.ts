@@ -17,6 +17,7 @@
 import { writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { getQuarterContext } from './earnings-calendar.ts';
+import { loadTradingDays } from './trading-days.ts';
 import type { FinancePage } from './types.ts';
 
 const TOKEN = process.env.IBKR_FLEX_TOKEN;
@@ -27,6 +28,7 @@ if (!TOKEN || !QUERY_ID) {
 }
 
 const OUT_DIR = 'eval/data/financebrain-v1/portfolio';
+const TRADING_DAYS = loadTradingDays('eval/data/financebrain-v1/price');
 const SEND_URL = 'https://ndcdyn.interactivebrokers.com/AccountManagement/FlexWebService/SendRequest';
 const GET_URL  = 'https://gdcdyn.interactivebrokers.com/AccountManagement/FlexWebService/GetStatement';
 
@@ -207,7 +209,7 @@ Total unrealized P&L (USD):   ${totalUnrealizedPnl >= 0 ? '+' : ''}$${totalUnrea
   const uniqueTargets = [...new Set(heldTargets)];
   const qctx: Record<string, ReturnType<typeof getQuarterContext>> = {};
   for (const ticker of uniqueTargets) {
-    const qc = getQuarterContext(ticker, publishedAt);
+    const qc = getQuarterContext(ticker, publishedAt, TRADING_DAYS);
     if (qc) qctx[ticker] = qc;
   }
 

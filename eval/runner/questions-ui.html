@@ -146,6 +146,35 @@
   .divider{font-size:11px;color:#94a3b8;padding:4px 0;display:flex;align-items:center;gap:8px}
   .divider::before,.divider::after{content:'';flex:1;height:1px;background:#e5e7eb}
   .info-banner{background:#f0f9ff;border:1px solid #bae6fd;border-radius:7px;padding:8px 12px;font-size:12px;color:#0369a1;margin-bottom:4px}
+
+  /* Scores view */
+  .sidebar-scores{border-bottom:2px solid #e2e8f0;margin-bottom:4px}
+  .tab-bar{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}
+  .tab-btn{background:#f1f5f9;color:#64748b;border:1.5px solid #e5e7eb;padding:5px 14px;border-radius:6px;font-size:12px;font-weight:500;cursor:pointer;transition:background .1s}
+  .tab-btn.active{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe;font-weight:600}
+  .tab-btn:hover:not(.active){background:#e2e8f0}
+  .score-summary{display:flex;flex-wrap:wrap;gap:14px;padding:8px 0 4px;border-top:1px solid #f1f5f9;align-items:center}
+  .score-sum-item{font-size:12.5px;color:#374151;white-space:nowrap}
+  .score-sum-item b{color:#1d4ed8}
+  .scores-table-wrap{overflow-x:auto}
+  .score-row{display:grid;grid-template-columns:110px 1fr 34px 52px 52px 42px 42px 48px 1fr;align-items:start;padding:5px 12px;border-bottom:1px solid #f8fafc;gap:6px;cursor:pointer}
+  .score-row:last-child{border-bottom:none}
+  .score-row:hover:not(.score-hdr){background:#f8fafc}
+  .score-hdr{background:#f8fafc;font-size:10px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;cursor:default;border-bottom:2px solid #e5e7eb!important;padding:6px 12px}
+  .sc-id{font-family:monospace;font-size:10.5px;color:#6b7280;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sc-q{font-size:12px;color:#1f2937;line-height:1.35;word-break:break-word}
+  .sc-m{text-align:center;font-size:11.5px;font-weight:600;color:#374151}
+  .sc-hit{color:#15803d!important}
+  .sc-miss{color:#dc2626!important}
+  .sc-na{color:#9ca3af!important;font-style:italic;font-size:10.5px;text-align:center}
+  .sc-rank{text-align:center;font-size:11px;color:#6b7280}
+  .sc-ret{font-family:monospace;font-size:10px;color:#6b7280;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sc-detail{grid-column:1/-1;display:none;padding:5px 0 3px;font-size:11.5px;color:#374151;border-top:1px solid #f1f5f9;line-height:1.7}
+  .score-row.exp .sc-detail{display:block}
+  .score-row.exp .sc-ret{white-space:normal;overflow:visible}
+  .sc-gold{font-family:monospace;font-size:10.5px;background:#fffbeb;color:#92400e;padding:1px 5px;border-radius:3px;margin-right:3px}
+  .sc-retrieved-chip{font-family:monospace;font-size:10px;background:#eff6ff;color:#1d4ed8;padding:1px 5px;border-radius:3px;margin-right:3px}
+  code{font-family:monospace;background:#f1f5f9;padding:1px 4px;border-radius:3px;font-size:11px}
 </style>
 </head>
 <body>
@@ -180,7 +209,7 @@ var CAT_INFO = [
   {id:'cross',        label:'Cross-Source',         sub:'Multi-doc questions (GPU capex, etc.)'}
 ];
 
-var S = {cat:null, cats:[], pages:[], questions:[], allQ:[], sel:[], searchMatches:{}};
+var S = {cat:null, cats:[], pages:[], questions:[], allQ:[], sel:[], searchMatches:{}, scores:null, scoresAdapter:'keyword', scoresCat:'all'};
 
 function $(id){return document.getElementById(id)}
 function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
@@ -217,7 +246,15 @@ function init(){
 }
 
 function renderSidebar(){
-  var html='';
+  var scoresActive=S.cat==='_scores'?' active':'';
+  var scoresBadgeColor=S.scores?' green':' gray';
+  var scoresBadgeLbl=S.scores?'loaded':'—';
+  var html='<div class="sidebar-scores">'+
+    '<div class="sidebar-item'+scoresActive+'" onclick="selectScores()">'+
+      '<div><div class="label">&#128200; Scores</div><div class="sublabel">Latest eval report</div></div>'+
+      '<span class="badge'+scoresBadgeColor+'">'+scoresBadgeLbl+'</span>'+
+    '</div>'+
+  '</div>';
   for(var i=0;i<CAT_INFO.length;i++){
     var ci=CAT_INFO[i];
     var info=S.cats.find(function(c){return c.name===ci.id})||{total_slugs:0,question_count:0};
@@ -546,27 +583,189 @@ function delQ(id){
     });
 }
 
-// ── Score a single question (keyword eval) ─────────────────────────────────
+// ── Score a single question (all adapters if proxy running, else keyword) ──
 
 function runEval(id){
   var btn=document.getElementById('eval-btn-'+id);
-  if(btn){btn.disabled=true;btn.textContent='⏳ Scoring…';}
-  // Remove any previous result badge
+  var hasProxy=!!(window._hasProxy);  // set after first successful multi-adapter run
+  var slowWarn=hasProxy?' (~2 min)':'';
+  if(btn){btn.disabled=true;btn.innerHTML='&#9203; Scoring'+slowWarn+'…';}
   var prev=document.getElementById('eval-result-'+id);
   if(prev)prev.remove();
   jfetch('/api/eval/'+encodeURIComponent(id))
     .then(function(res){
-      if(btn){btn.disabled=false;btn.textContent='▶ Score';}
+      if(btn){btn.disabled=false;btn.innerHTML='&#9654; Score';}
       if(res.error){toast(res.error,false);return;}
-      var cls=res.hit===true?'eval-hit':res.hit===false?'eval-miss':'eval-pending';
-      var label=res.hit===true?'✓ HIT':res.hit===false?'✗ MISS':'–';
-      var tip=res.hit===false&&res.retrieved&&res.retrieved.length
-        ?'Got: '+res.retrieved.slice(0,3).join(', ')
-        :(res.message||'');
-      var badge='<span id="eval-result-'+esc(id)+'" class="eval-result '+cls+'" title="'+esc(tip)+'">'+label+'</span>';
+      // Detect whether multi-adapter ran and remember for next button label
+      if(res.adapters_run&&res.adapters_run.length>1)window._hasProxy=true;
+      var byAdapter=res.by_adapter||{};
+      if(!Object.keys(byAdapter).length){
+        // Fallback: old server or no results
+        var cls=res.hit===true?'eval-hit':res.hit===false?'eval-miss':'eval-pending';
+        var lbl=res.hit===true?'✓ HIT':res.hit===false?'✗ MISS':'–';
+        var tip=res.hit===false&&res.retrieved&&res.retrieved.length?'Got: '+res.retrieved.slice(0,3).join(', '):'';
+        var badge='<span id="eval-result-'+esc(id)+'" class="eval-result '+cls+'" title="'+esc(tip)+'">'+lbl+'</span>';
+        var header=document.querySelector('#qi-'+id+' .q-header');
+        if(header)header.insertAdjacentHTML('beforeend',badge);
+        return;
+      }
+      // Per-adapter metrics table
+      var rows=Object.entries(byAdapter).map(function(pair){
+        var adp=pair[0],sc=pair[1];
+        var hitCls=sc.hit?'eval-hit':'eval-miss';
+        var hitLbl=sc.hit?'&#10003;':'&#10007;';
+        var ret=(sc.retrieved||[]).slice(0,3).join(', ');
+        return '<tr>'+
+          '<td style="padding:2px 8px 2px 2px;font-size:11px;color:#64748b;white-space:nowrap">'+esc(adp)+'</td>'+
+          '<td style="padding:2px 3px"><span class="eval-result '+hitCls+'" style="margin:0;padding:1px 5px;font-size:10.5px">'+hitLbl+'</span></td>'+
+          '<td style="padding:2px 4px;font-size:11px">R:'+((sc.recall||0)*100).toFixed(0)+'%</td>'+
+          '<td style="padding:2px 4px;font-size:11px">MRR:'+(sc.mrr||0).toFixed(2)+'</td>'+
+          '<td style="padding:2px 4px;font-size:11px">P@K:'+((sc.precision||0)*100).toFixed(0)+'%</td>'+
+          '<td style="padding:2px 4px;font-size:11px">MAP:'+(sc.ap||0).toFixed(2)+'</td>'+
+          '<td style="padding:2px 4px;font-size:10px;font-family:monospace;color:#6b7280;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="'+esc((sc.retrieved||[]).join(', '))+'">'+esc(ret)+'</td>'+
+        '</tr>';
+      }).join('');
+      var table='<div id="eval-result-'+esc(id)+'" style="margin-top:8px;overflow-x:auto">'+
+        '<table style="border-collapse:collapse;width:100%;background:#f8fafc;border-radius:6px;border:1px solid #e5e7eb">'+rows+'</table>'+
+      '</div>';
       var header=document.querySelector('#qi-'+id+' .q-header');
-      if(header)header.insertAdjacentHTML('beforeend',badge);
+      if(header)header.insertAdjacentHTML('afterend',table);
     });
+}
+
+// ── Scores dashboard ───────────────────────────────────────────────────────
+
+function selectScores(){
+  S.cat='_scores';
+  renderSidebar();
+  if(S.scores){renderScoresView();return;}
+  $('content').innerHTML='<div class="empty-state"><div class="empty-icon">&#9200;</div>Loading scores report…</div>';
+  loadScores();
+}
+
+function loadScores(){
+  jfetch('/api/scores').then(function(data){
+    if(data.error){
+      $('content').innerHTML=
+        '<div class="card">'+
+          '<div class="card-title">&#128202; Scores</div>'+
+          '<div class="empty-state" style="text-align:left;padding:20px">'+
+            '<b>No eval report found.</b> Run the full eval first:<br><br>'+
+            '<code style="display:block;background:#f1f5f9;padding:10px;border-radius:6px;font-size:12px;line-height:1.6;margin-top:8px">'+
+              'bun eval/runner/financebrain.ts \\<br>'+
+              '&nbsp;&nbsp;--queries eval/data/financebrain-v1/questions.json \\<br>'+
+              '&nbsp;&nbsp;--adapters keyword,vector,hybrid,hybrid+expansion \\<br>'+
+              '&nbsp;&nbsp;--top-k 5'+
+            '</code>'+
+          '</div>'+
+        '</div>';
+      return;
+    }
+    S.scores=data;
+    renderSidebar();
+    renderScoresView();
+  });
+}
+
+function renderScoresView(){
+  if(!S.scores){loadScores();return;}
+  var d=S.scores;
+  var adapters=d.adapters&&d.adapters.length?d.adapters:['keyword'];
+
+  var adp=S.scoresAdapter;
+  if(adapters.indexOf(adp)<0)adp=adapters[0];
+
+  var adpSumm=(d.summary||[]).find(function(s){return s.adapter===adp})||{};
+  var fmt1=function(v){return v!=null?(v*100).toFixed(1)+'%':'—';};
+  var fmt3=function(v){return v!=null?Number(v).toFixed(3):'—';};
+
+  var tabs=adapters.map(function(a){
+    return '<button class="tab-btn'+(a===adp?' active':'')+'" onclick="S.scoresAdapter=\''+a+'\';renderScoresView()">'+esc(a)+'</button>';
+  }).join('');
+
+  var allCats=['all'].concat([...new Set((d.questions||[]).map(function(q){return q.category}))]);
+  var catOpts=allCats.map(function(c){
+    return '<option value="'+esc(c)+'"'+(c===S.scoresCat?' selected':'')+'>'+esc(c)+'</option>';
+  }).join('');
+
+  var qs=S.scoresCat==='all'?d.questions:d.questions.filter(function(q){return q.category===S.scoresCat;});
+
+  $('content').innerHTML=
+    '<div class="card">'+
+      '<div class="card-title">&#128202; Scores'+
+        '<span class="count" style="font-family:monospace;font-weight:400">'+esc(d.report_path||'no report')+'</span>'+
+        '<button class="btn-search" onclick="S.scores=null;loadScores()" style="margin-left:auto;padding:3px 10px;font-size:11px">Refresh</button>'+
+      '</div>'+
+      '<div class="tab-bar">'+tabs+'</div>'+
+      '<div class="score-summary">'+
+        '<span class="score-sum-item"><b>Hit Rate@K</b> '+fmt1(adpSumm.hit_rate)+'</span>'+
+        '<span class="score-sum-item"><b>Recall@K</b> '+fmt1(adpSumm.recall_mean)+'</span>'+
+        '<span class="score-sum-item"><b>MRR</b> '+fmt3(adpSumm.mrr)+'</span>'+
+        '<span class="score-sum-item"><b>P@K</b> '+fmt1(adpSumm.precision_mean)+'</span>'+
+        '<span class="score-sum-item"><b>MAP</b> '+fmt3(adpSumm.map)+'</span>'+
+        '<span class="score-sum-item" style="color:#94a3b8">'+qs.length+' questions</span>'+
+        '<select onchange="S.scoresCat=this.value;renderScoresView()" style="margin-left:auto;font-size:12px;padding:3px 8px;border-radius:5px;border:1.5px solid #e5e7eb">'+catOpts+'</select>'+
+      '</div>'+
+    '</div>'+
+    '<div class="card" style="padding:0;overflow:hidden">'+renderScoresTable(qs,adp)+'</div>';
+}
+
+function renderScoresTable(qs,adapter){
+  if(!qs||!qs.length)return'<div class="empty-state">No questions.</div>';
+  var hdr='<div class="score-row score-hdr">'+
+    '<span class="sc-id">ID</span>'+
+    '<span class="sc-q">Question</span>'+
+    '<span class="sc-m">Hit</span>'+
+    '<span class="sc-m">Recall</span>'+
+    '<span class="sc-m">MRR</span>'+
+    '<span class="sc-m">P@K</span>'+
+    '<span class="sc-m">MAP</span>'+
+    '<span class="sc-rank">Rank</span>'+
+    '<span class="sc-ret">Retrieved (top 3)</span>'+
+  '</div>';
+  var rows='';
+  for(var i=0;i<qs.length;i++){
+    var q=qs[i];
+    var sc=(q.scores||{})[adapter];
+    if(!sc){
+      rows+='<div class="score-row"><span class="sc-id">'+esc(q.id)+'</span>'+
+        '<span class="sc-q" style="color:#94a3b8">'+esc(q.question.length>80?q.question.slice(0,80)+'…':q.question)+'</span>'+
+        '<span class="sc-na" style="grid-column:3/10">no data for this adapter</span></div>';
+      continue;
+    }
+    var hitCls=sc.hit?'sc-hit':'sc-miss';
+    var hitLbl=sc.hit?'&#10003;':'&#10007;';
+    var recall=((sc.recall||0)*100).toFixed(0)+'%';
+    var mrr=(sc.mrr||0).toFixed(2);
+    var prec=((sc.precision||0)*100).toFixed(0)+'%';
+    var ap=(sc.ap||0).toFixed(2);
+    var rank=sc.first_hit_rank!=null?'#'+sc.first_hit_rank:'—';
+    var ret3=(sc.retrieved||[]).slice(0,3);
+    var retText=ret3.join(', ');
+    var retChips=(sc.retrieved||[]).map(function(r){return'<span class="sc-retrieved-chip">'+esc(r)+'</span>';}).join('');
+    var goldChips=(q.answer_slugs||[]).map(function(s){return'<span class="sc-gold">'+esc(s)+'</span>';}).join('');
+    rows+=
+      '<div class="score-row" onclick="this.classList.toggle(\'exp\')">'+
+        '<span class="sc-id">'+esc(q.id)+'</span>'+
+        '<span class="sc-q">'+esc(q.question.length>90?q.question.slice(0,90)+'…':q.question)+'</span>'+
+        '<span class="sc-m '+hitCls+'">'+hitLbl+'</span>'+
+        '<span class="sc-m">'+recall+'</span>'+
+        '<span class="sc-m">'+mrr+'</span>'+
+        '<span class="sc-m">'+prec+'</span>'+
+        '<span class="sc-m">'+ap+'</span>'+
+        '<span class="sc-rank">'+rank+'</span>'+
+        '<span class="sc-ret">'+esc(retText.length>60?retText.slice(0,60)+'…':retText)+'</span>'+
+        '<div class="sc-detail">'+
+          '<div><b>Retrieved ('+((sc.retrieved||[]).length)+'):</b> '+retChips+'</div>'+
+          '<div style="margin-top:3px"><b>Gold ('+q.answer_slugs.length+'):</b> '+goldChips+'</div>'+
+          '<div style="margin-top:3px"><b>Matched:</b> '+(sc.matched_count||0)+'/'+q.answer_slugs.length+
+            ' &nbsp;·&nbsp; <b>First hit rank:</b> '+(sc.first_hit_rank!=null?'#'+sc.first_hit_rank:'—')+
+            ' &nbsp;·&nbsp; <b>Latency:</b> '+(sc.latency_ms||0)+'ms'+
+          '</div>'+
+        '</div>'+
+      '</div>';
+  }
+  return'<div class="scores-table-wrap">'+hdr+rows+'</div>';
 }
 
 // ── Edit question ──────────────────────────────────────────────────────────

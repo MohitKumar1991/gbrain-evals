@@ -82,9 +82,71 @@ type QueryResult = {
   top_k: number;
   retrieved_slugs: string[];
   answer_slugs: string[];
-  hit: boolean;
+  hit: boolean;         // Hit Rate@K — any gold slug in top-K (0/1)
+  recall: number;       // matched_gold / total_gold
+  mrr: number;          // 1 / rank_of_first_hit (0 if none)
+  precision: number;    // matched / K
+  ap: number;           // AP = mean(P@i at each relevant hit) / matched_count
+  first_hit_rank: number | null;
+  matched_count: number;
+  total_gold: number;
   latency_ms: number;
 };
+
+// Scores a single query result against the gold answer set.
+// Fixes double-counting: a retrieved slug can match at most one gold slug
+// (claimed via goldRemaining Set), and a gold slug is claimed by the first
+// retrieved slug that matches it. Exact slug equality post-lowercase; pattern
+// questions use substring match against a single virtual gold entry.
+// MAP denominator is matched_count (not total_gold) per user spec:
+//   AP = mean(precision@i at each relevant hit)
+function scoreQuery(
+  retrieved: string[],            // already lowercase, up to K items
+  answerSlugs: string[],          // gold slugs (raw, will be lowercased)
+  patternSlug: string | undefined,
+  K: number,
+): Pick<QueryResult, 'hit' | 'recall' | 'mrr' | 'precision' | 'ap' | 'first_hit_rank' | 'matched_count' | 'total_gold'> {
+  const isPattern = answerSlugs.length === 0 && !!patternSlug;
+  const gold = answerSlugs.length > 0
+    ? answerSlugs.map(s => s.toLowerCase())
+    : patternSlug ? [patternSlug.toLowerCase()] : [];
+  const R = gold.length;
+
+  if (R === 0) {
+    return { hit: false, recall: 0, mrr: 0, precision: 0, ap: 0, first_hit_rank: null, matched_count: 0, total_gold: 0 };
+  }
+
+  const goldRemaining = new Set(gold);
+  let runningHits = 0;
+  let apSum = 0;
+  let firstHitRank: number | null = null;
+
+  for (let i = 0; i < Math.min(retrieved.length, K); i++) {
+    const r = retrieved[i];
+    let matchedGold: string | null = null;
+    for (const g of goldRemaining) {
+      if (isPattern ? r.includes(g) : r === g) { matchedGold = g; break; }
+    }
+    if (matchedGold !== null) {
+      goldRemaining.delete(matchedGold);
+      runningHits++;
+      if (firstHitRank === null) firstHitRank = i + 1;
+      apSum += runningHits / (i + 1);
+    }
+  }
+
+  const matchedCount = gold.length - goldRemaining.size;
+  return {
+    hit: matchedCount > 0,
+    recall: matchedCount / R,
+    mrr: firstHitRank !== null ? 1 / firstHitRank : 0,
+    precision: runningHits / K,
+    ap: matchedCount > 0 ? apSum / matchedCount : 0,
+    first_hit_rank: firstHitRank,
+    matched_count: matchedCount,
+    total_gold: R,
+  };
+}
 
 // ── CLI ────────────────────────────────────────────────────────────────────────
 
@@ -301,15 +363,8 @@ async function main() {
       const retrieved = searchResults.map(r => r.slug?.toLowerCase() ?? '');
 
       // Scoring: hit if any answer_slug appears in retrieved
-      const answerSlugs = q.answer_slugs.map(s => s.toLowerCase());
-      let hit = answerSlugs.length > 0 && answerSlugs.some(s => retrieved.some(r => r.includes(s)));
-
-      // For social queries with no specific slugs, check if a social/dylan page about the company was retrieved
-      if (!hit && q.answer_slug_pattern) {
-        hit = retrieved.some(r => r.includes(q.answer_slug_pattern!.toLowerCase()));
-      }
-
-      if (hit) hits++;
+      const score = scoreQuery(retrieved, q.answer_slugs, q.answer_slug_pattern, TOP_K);
+      if (score.hit) hits++;
 
       const result: QueryResult = {
         query_id: q.id,
@@ -319,33 +374,47 @@ async function main() {
         top_k: TOP_K,
         retrieved_slugs: retrieved,
         answer_slugs: q.answer_slugs,
-        hit,
-      latency_ms: latencyMs,
+        ...score,
+        latency_ms: latencyMs,
       };
       allResults.push(result);
 
-      const icon = hit ? '✓' : '✗';
-      console.log(`  [${icon}] ${q.id.padEnd(16)} ${q.category.padEnd(14)} ${latencyMs}ms`);
-      if (!hit) {
-        console.log(`       Expected: ${answerSlugs[0] ?? q.answer_slug_pattern ?? '(any)'}`);
+      const icon = score.hit ? '✓' : '✗';
+      console.log(`  [${icon}] ${q.id.padEnd(16)} ${q.category.padEnd(14)} R:${(score.recall * 100).toFixed(0).padStart(3)}% MRR:${score.mrr.toFixed(2)} P@K:${(score.precision * 100).toFixed(0).padStart(3)}% MAP:${score.ap.toFixed(2)} ${latencyMs}ms`);
+      if (!score.hit) {
+        const gold0 = q.answer_slugs[0] ?? q.answer_slug_pattern ?? '(any)';
+        console.log(`       Expected: ${gold0} (${score.total_gold} gold)`);
         console.log(`       Got:      ${retrieved.slice(0, 3).join(', ')}`);
       }
     }
 
-    const recall = queries.length > 0 ? (hits / queries.length * 100).toFixed(1) : '0';
-    console.log(`\nRecall@${TOP_K}: ${hits}/${queries.length} = ${recall}%`);
+    const hitRate = queries.length > 0 ? (hits / queries.length * 100).toFixed(1) : '0';
+    const adapterRows = allResults.filter(r => r.adapter === adapter);
+    const meanOf = (fn: (r: QueryResult) => number) =>
+      adapterRows.length ? adapterRows.reduce((s, r) => s + fn(r), 0) / adapterRows.length : 0;
+    console.log(`\nHit Rate@${TOP_K}: ${hits}/${queries.length} = ${hitRate}%  Recall:${(meanOf(r => r.recall) * 100).toFixed(1)}%  MRR:${meanOf(r => r.mrr).toFixed(3)}  P@K:${(meanOf(r => r.precision) * 100).toFixed(1)}%  MAP:${meanOf(r => r.ap).toFixed(3)}`);
 
     await engine.disconnect();
   }
 
   // Summary table
-  console.log(`\n${'═'.repeat(60)}`);
-  console.log('SUMMARY — Recall@' + TOP_K + ' by adapter');
-  console.log('═'.repeat(60));
+  console.log(`\n${'═'.repeat(70)}`);
+  console.log('SUMMARY — all metrics @ K=' + TOP_K);
+  console.log('═'.repeat(70));
+  console.log(`  ${'Adapter'.padEnd(22)} ${'HitRate'.padStart(8)} ${'Recall'.padStart(8)} ${'MRR'.padStart(8)} ${'P@K'.padStart(8)} ${'MAP'.padStart(8)}`);
   for (const adapter of ALL_ADAPTERS) {
     const rows = allResults.filter(r => r.adapter === adapter);
-    const hits = rows.filter(r => r.hit).length;
-    console.log(`  ${adapter.padEnd(20)} ${hits}/${rows.length} = ${rows.length ? (hits/rows.length*100).toFixed(1) : 0}%`);
+    const n = rows.length;
+    if (!n) continue;
+    const mean = (fn: (r: QueryResult) => number) => rows.reduce((s, r) => s + fn(r), 0) / n;
+    console.log(
+      `  ${adapter.padEnd(22)}` +
+      `  ${(mean(r => r.hit ? 1 : 0) * 100).toFixed(1).padStart(6)}%` +
+      `  ${(mean(r => r.recall) * 100).toFixed(1).padStart(6)}%` +
+      `  ${mean(r => r.mrr).toFixed(3).padStart(7)}` +
+      `  ${(mean(r => r.precision) * 100).toFixed(1).padStart(6)}%` +
+      `  ${mean(r => r.ap).toFixed(3).padStart(7)}`,
+    );
   }
 
   console.log('\nPer-category breakdown:');
@@ -371,16 +440,31 @@ async function main() {
     results: allResults,
     summary: ALL_ADAPTERS.map(adapter => {
       const rows = allResults.filter(r => r.adapter === adapter);
+      const n = rows.length;
+      const mean = (fn: (r: QueryResult) => number) => n ? rows.reduce((s, r) => s + fn(r), 0) / n : 0;
       return {
         adapter,
         hits: rows.filter(r => r.hit).length,
-        total: rows.length,
-        recall_at_k: rows.length ? rows.filter(r => r.hit).length / rows.length : 0,
+        total: n,
+        hit_rate: mean(r => r.hit ? 1 : 0),
+        recall_mean: mean(r => r.recall),
+        mrr: mean(r => r.mrr),
+        precision_mean: mean(r => r.precision),
+        map: mean(r => r.ap),
         by_category: categories.reduce((acc, cat) => {
           const catRows = rows.filter(r => r.category === cat);
-          acc[cat] = { hits: catRows.filter(r => r.hit).length, total: catRows.length };
+          const cn = catRows.length;
+          const cmean = (fn: (r: QueryResult) => number) => cn ? catRows.reduce((s, r) => s + fn(r), 0) / cn : 0;
+          acc[cat] = {
+            hits: catRows.filter(r => r.hit).length,
+            total: cn,
+            hit_rate: cmean(r => r.hit ? 1 : 0),
+            recall_mean: cmean(r => r.recall),
+            mrr: cmean(r => r.mrr),
+            map: cmean(r => r.ap),
+          };
           return acc;
-        }, {} as Record<string, { hits: number; total: number }>),
+        }, {} as Record<string, unknown>),
       };
     }),
   };

@@ -24,6 +24,7 @@
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { getQuarterContext } from './earnings-calendar.ts';
+import { loadTradingDays } from './trading-days.ts';
 import type { FinancePage } from './types.ts';
 
 // ── Config ─────────────────────────────────────────────────────────────────────
@@ -42,6 +43,7 @@ const TICKERS: Record<string, string> = {
 };
 
 const TARGET_FORMS = ['10-K', '10-Q', '8-K'];
+const TRADING_DAYS = loadTradingDays('eval/data/financebrain-v1/price');
 const MAX_SECTION_CHARS = 40_000;
 const MAX_8K_CHARS = 30_000;
 
@@ -173,7 +175,7 @@ function buildFilingPage(
   sections: Record<string, string>,
 ): FinancePage {
   const published = new Date(filingDate);
-  const qc = getQuarterContext(ticker, published);
+  const qc = getQuarterContext(ticker, published, TRADING_DAYS);
 
   const sectionText = Object.entries(sections)
     .map(([name, content]) => `\n${'═'.repeat(60)}\n${name.toUpperCase()}\n${'═'.repeat(60)}\n\n${content}`)

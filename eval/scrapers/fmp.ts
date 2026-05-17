@@ -25,6 +25,7 @@
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { getQuarterContext } from './earnings-calendar.ts';
+import { loadTradingDays } from './trading-days.ts';
 import type { FinancePage } from './types.ts';
 
 // ── Config ─────────────────────────────────────────────────────────────────────
@@ -44,6 +45,8 @@ const DIRS = {
   transcripts: 'eval/data/financebrain-v1/transcripts',
   price: 'eval/data/financebrain-v1/price',
 };
+
+const TRADING_DAYS = loadTradingDays(DIRS.price);
 
 // ── CLI ────────────────────────────────────────────────────────────────────────
 
@@ -200,7 +203,7 @@ Stock-Based Comp:      ${fmt(cf.stockBasedCompensation)}
 ${cf.acquisitionsNet ? `Acquisitions (net):    ${fmt(cf.acquisitionsNet)}` : ''}`.trim();
 
   const publishedDate = publishedAt;
-  const qc = getQuarterContext(ticker, publishedDate);
+  const qc = getQuarterContext(ticker, publishedDate, TRADING_DAYS);
 
   return {
     slug: `financials/${ticker}-${inc.date}`,
@@ -232,7 +235,7 @@ ${cf.acquisitionsNet ? `Acquisitions (net):    ${fmt(cf.acquisitionsNet)}` : ''}
 function buildTranscriptPage(t: Transcript): FinancePage {
   const ticker = t.symbol;
   const calDate = new Date(t.date);
-  const qc = getQuarterContext(ticker, calDate);
+  const qc = getQuarterContext(ticker, calDate, TRADING_DAYS);
 
   // Add a header so retrieval context is clear
   const header = `${ticker} Earnings Call Transcript — Q${t.quarter} ${t.year}
@@ -286,7 +289,7 @@ Daily closes (${first.date} → ${last.date}):
 ${sorted.map(d => `  ${d.date}: $${d.close.toFixed(2)} (${d.changePercent >= 0 ? '+' : ''}${d.changePercent.toFixed(2)}%)`).join('\n')}`;
 
   const publishedAt = new Date(last.date);
-  const qc = getQuarterContext(ticker, publishedAt);
+  const qc = getQuarterContext(ticker, publishedAt, TRADING_DAYS);
 
   return {
     slug: `price/${ticker}-${quarterLabel.replace(/\s+/g, '-')}`,

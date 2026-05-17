@@ -19,6 +19,7 @@
 import { writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { getQuarterContext } from './earnings-calendar.ts';
+import { loadTradingDays } from './trading-days.ts';
 import type { FinancePage } from './types.ts';
 
 // ── Config ─────────────────────────────────────────────────────────────────────
@@ -74,6 +75,7 @@ const SINCE = new Date();
 SINCE.setFullYear(SINCE.getFullYear() - YEARS_BACK);
 
 const OUT_DIR = `eval/data/financebrain-v1/social/${HANDLE}`;
+const TRADING_DAYS = loadTradingDays('eval/data/financebrain-v1/price');
 
 // ── API ───────────────────────────────────────────────────────────────────────
 
@@ -162,7 +164,7 @@ function buildTweetPage(tweets: Tweet[], handle: string): FinancePage {
   const companies = detectCompanies(allText);
   const qctx: Record<string, ReturnType<typeof getQuarterContext>> = {};
   for (const ticker of companies) {
-    const qc = getQuarterContext(ticker, publishedAt);
+    const qc = getQuarterContext(ticker, publishedAt, TRADING_DAYS);
     if (qc) qctx[ticker] = qc;
   }
 
