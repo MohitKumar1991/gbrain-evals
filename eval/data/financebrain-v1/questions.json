@@ -10,7 +10,9 @@
         "financials/nvda-2024-10-27",
         "sec/nvda/8-k-2024-11-20"
       ],
-      "notes": "Non-GAAP EPS in 8-K press release; GAAP EPS in financials page. Q3 FY2025 = period ending 2024-10-27."
+      "notes": "Non-GAAP EPS in 8-K press release; GAAP EPS in financials page. Q3 FY2025 = period ending 2024-10-27.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-02",
@@ -20,7 +22,9 @@
       "answer_slugs": [
         "financials/meta-2024-12-31"
       ],
-      "notes": "META's 8-K press release only reports GAAP EPS. Period ending 2024-12-31."
+      "notes": "META's 8-K press release only reports GAAP EPS. Period ending 2024-12-31.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-03",
@@ -30,7 +34,9 @@
       "answer_slugs": [
         "financials/msft-2025-03-31"
       ],
-      "notes": "MSFT Q3 FY2025 = period ending 2025-03-31, filed 2025-04-30."
+      "notes": "MSFT Q3 FY2025 = period ending 2025-03-31, filed 2025-04-30.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-04",
@@ -40,7 +46,9 @@
       "answer_slugs": [
         "financials/aapl-2023-12-30"
       ],
-      "notes": "AAPL Q1 FY2024 = period ending 2023-12-30. Apple does not report a separate non-GAAP diluted EPS. Q1 is Apple's holiday quarter — largest by revenue in the fiscal year."
+      "notes": "AAPL Q1 FY2024 = period ending 2023-12-30. Apple does not report a separate non-GAAP diluted EPS. Q1 is Apple's holiday quarter — largest by revenue in the fiscal year.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-05",
@@ -50,7 +58,9 @@
       "answer_slugs": [
         "financials/nvda-2025-01-26"
       ],
-      "notes": "Period ending 2025-01-26. NVDA balance sheet is very lightly leveraged — net debt under $2B. Q4 FY2025 was the first quarter NVDA total assets exceeded $100B."
+      "notes": "Period ending 2025-01-26. NVDA balance sheet is very lightly leveraged — net debt under $2B. Q4 FY2025 was the first quarter NVDA total assets exceeded $100B.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-06",
@@ -60,7 +70,9 @@
       "answer_slugs": [
         "financials/googl-2024-12-31"
       ],
-      "notes": "Period ending 2024-12-31. GOOGL carries minimal debt relative to its cash position — net debt roughly neutral. Balance sheet is among the strongest in the big-tech peer group."
+      "notes": "Period ending 2024-12-31. GOOGL carries minimal debt relative to its cash position — net debt roughly neutral. Balance sheet is among the strongest in the big-tech peer group.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-07",
@@ -70,7 +82,9 @@
       "answer_slugs": [
         "financials/meta-2024-12-31"
       ],
-      "notes": "Period ending 2024-12-31. META's net debt is only $5.17B despite a $49B gross debt load — essentially running near net-cash-neutral."
+      "notes": "Period ending 2024-12-31. META's net debt is only $5.17B despite a $49B gross debt load — essentially running near net-cash-neutral.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-08",
@@ -80,7 +94,9 @@
       "answer_slugs": [
         "financials/aapl-2024-09-28"
       ],
-      "notes": "Period ending 2024-09-28. Apple carries ~2x more debt than equity by design — capital is returned via buybacks, not a sign of distress."
+      "notes": "Period ending 2024-09-28. Apple carries ~2x more debt than equity by design — capital is returned via buybacks, not a sign of distress.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-09",
@@ -90,7 +106,9 @@
       "answer_slugs": [
         "financials/nvda-2024-10-27"
       ],
-      "notes": "Period ending 2024-10-27. NVDA's capex-light model: capex is under 5% of revenue, far below the typical hyperscaler. FCF margin of ~48% is exceptional for a semiconductor company."
+      "notes": "Period ending 2024-10-27. NVDA's capex-light model: capex is under 5% of revenue, far below the typical hyperscaler. FCF margin of ~48% is exceptional for a semiconductor company.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-10",
@@ -101,7 +119,9 @@
         "financials/msft-2024-06-30",
         "sec/MSFT/8-k-2024-07-30"
       ],
-      "notes": "Period ending 2024-06-30. Capex was ~21% of revenue, reflecting ramp in Azure/AI data center investment. FCF declined from prior quarters as capex stepped up."
+      "notes": "Period ending 2024-06-30. Capex was ~21% of revenue, reflecting ramp in Azure/AI data center investment. FCF declined from prior quarters as capex stepped up.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-11",
@@ -111,7 +131,9 @@
       "answer_slugs": [
         "financials/meta-2024-09-30"
       ],
-      "notes": "Period ending 2024-09-30. Verified from _facts cash_flow. Numbers are correct."
+      "notes": "Period ending 2024-09-30. Verified from _facts cash_flow. Numbers are correct.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-12",
@@ -121,7 +143,9 @@
       "answer_slugs": [
         "financials/nvda-2024-10-27"
       ],
-      "notes": "Period ending 2024-10-27. Buybacks alone were ~31% of quarterly revenue — aggressive capital return relative to revenue."
+      "notes": "Period ending 2024-10-27. Buybacks alone were ~31% of quarterly revenue — aggressive capital return relative to revenue.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-13",
@@ -131,7 +155,9 @@
       "answer_slugs": [
         "financials/aapl-2023-12-30"
       ],
-      "notes": "Period ending 2023-12-30. AAPL runs one of the largest shareholder return programs in history by dollar volume."
+      "notes": "Period ending 2023-12-30. AAPL runs one of the largest shareholder return programs in history by dollar volume.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-14",
@@ -141,7 +167,9 @@
       "answer_slugs": [
         "financials/googl-2024-12-31"
       ],
-      "notes": "Period ending 2024-12-31. Combined data center capex and buybacks totaled ~$30B in the quarter. Numbers verified from raw _facts cash_flow data."
+      "notes": "Period ending 2024-12-31. Combined data center capex and buybacks totaled ~$30B in the quarter. Numbers verified from raw _facts cash_flow data.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-15",
@@ -151,7 +179,9 @@
       "answer_slugs": [
         "sec/nvda/8-k-2024-11-20"
       ],
-      "notes": "Segment data in the 8-K press release (EX-99.1), not in the FMP financials page. Total revenue $35.08B."
+      "notes": "Segment data in the 8-K press release (EX-99.1), not in the FMP financials page. Total revenue $35.08B.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-16",
@@ -161,7 +191,9 @@
       "answer_slugs": [
         "sec/msft/8-k-2025-04-30"
       ],
-      "notes": "Segment revenue in the 8-K earnings press release. Period ending 2025-03-31."
+      "notes": "Segment revenue in the 8-K earnings press release. Period ending 2025-03-31.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-17",
@@ -171,7 +203,9 @@
       "answer_slugs": [
         "sec/googl/8-k-2025-02-04"
       ],
-      "notes": "Segment data from 8-K press release. Total GOOGL revenue Q4 2024 was $96.47B."
+      "notes": "Segment data from 8-K press release. Total GOOGL revenue Q4 2024 was $96.47B.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-18",
@@ -182,7 +216,9 @@
         "financials/nvda-2023-10-29",
         "financials/nvda-2024-10-27"
       ],
-      "notes": "Requires both Q3 FY2024 and Q3 FY2025 financials pages. YoY growth driven by Data Center AI compute demand."
+      "notes": "Requires both Q3 FY2024 and Q3 FY2025 financials pages. YoY growth driven by Data Center AI compute demand.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-19",
@@ -193,7 +229,9 @@
         "financials/meta-2024-09-30",
         "financials/meta-2024-12-31"
       ],
-      "notes": "Requires both Q3 and Q4 2024 pages. Q4 seasonality + ad pricing drives the step-up."
+      "notes": "Requires both Q3 and Q4 2024 pages. Q4 seasonality + ad pricing drives the step-up.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "financials-20",
@@ -204,7 +242,9 @@
         "financials/msft-2024-06-30",
         "financials/msft-2025-03-31"
       ],
-      "notes": "Q4 FY2024 = period ending 2024-06-30; Q3 FY2025 = period ending 2025-03-31. This comparison spans three calendar quarters, not consecutive quarters — the QoQ label is technically three periods apart."
+      "notes": "Q4 FY2024 = period ending 2024-06-30; Q3 FY2025 = period ending 2025-03-31. This comparison spans three calendar quarters, not consecutive quarters — the QoQ label is technically three periods apart.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-01",
@@ -215,7 +255,9 @@
         "transcripts/NVDA-2024-Q3",
         "transcripts/NVDA-2025-Q1"
       ],
-      "notes": "Guidance numbers appear only in transcript, not in financials pages."
+      "notes": "Guidance numbers appear only in transcript, not in financials pages.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-02",
@@ -225,7 +267,9 @@
       "answer_slugs": [
         "transcripts/NVDA-2025-Q1"
       ],
-      "notes": "The $1→$5 cloud revenue multiple is a key Jensen analogy unique to transcript. Verbatim source: 'For every $1 spent on NVIDIA AI infrastructure, cloud providers have an opportunity to earn $5 in GPU instant hosting revenue over four years.' Also: 'Token generation will drive a multiyear build-out of AI factories.'"
+      "notes": "The $1→$5 cloud revenue multiple is a key Jensen analogy unique to transcript. Verbatim source: 'For every $1 spent on NVIDIA AI infrastructure, cloud providers have an opportunity to earn $5 in GPU instant hosting revenue over four years.' Also: 'Token generation will drive a multiyear build-out of AI factories.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-03",
@@ -237,7 +281,9 @@
         "transcripts/NVDA-2025-Q2",
         "transcripts/NVDA-2026-Q1"
       ],
-      "notes": "Spans three calls. The 20–25% figure and the H20 $4.5B charge are both transcript-only disclosures. Verbatim from FY2025 Q2: 'remains below levels seen prior to the imposition of export controls.'"
+      "notes": "Spans three calls. The 20–25% figure and the H20 $4.5B charge are both transcript-only disclosures. Verbatim from FY2025 Q2: 'remains below levels seen prior to the imposition of export controls.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-04",
@@ -249,7 +295,9 @@
         "transcripts/META-2024-Q2",
         "transcripts/META-2024-Q4"
       ],
-      "notes": "Three successive raises: $30–37B → $35–40B → $37–40B → $60–65B for following year. Verbatim from Q2 2024: 'almost 10 times more compute'; from Q4 2024: 'almost 1 gigawatt of capacity.'"
+      "notes": "Three successive raises: $30–37B → $35–40B → $37–40B → $60–65B for following year. Verbatim from Q2 2024: 'almost 10 times more compute'; from Q4 2024: 'almost 1 gigawatt of capacity.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-05",
@@ -260,7 +308,9 @@
         "transcripts/GOOGL-2023-Q4",
         "transcripts/GOOGL-2024-Q4"
       ],
-      "notes": "2023 full-year capex ~$32B verified from quarterly financials. 2025 commitment of $75B is a transcript-only disclosure. Verbatim from Q4 2023: 'we expect investment in CapEx will be notably larger than in 2023.'"
+      "notes": "2023 full-year capex ~$32B verified from quarterly financials. 2025 commitment of $75B is a transcript-only disclosure. Verbatim from Q4 2023: 'we expect investment in CapEx will be notably larger than in 2023.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-06",
@@ -271,7 +321,9 @@
         "transcripts/NVDA-2025-Q2",
         "transcripts/NVDA-2026-Q1"
       ],
-      "notes": "Mask change for yield is a supply chain disclosure unique to the FY2025 Q2 transcript. Verbatim from FY2025 Q2: 'We executed a change to the Blackwell GPU mask to improve production yields. Blackwell production ramp is scheduled to begin in the fourth quarter and continue into fiscal year 26. Demand for Blackwell platforms is well above supply, and we expect this to continue into next year.'"
+      "notes": "Mask change for yield is a supply chain disclosure unique to the FY2025 Q2 transcript. Verbatim from FY2025 Q2: 'We executed a change to the Blackwell GPU mask to improve production yields. Blackwell production ramp is scheduled to begin in the fourth quarter and continue into fiscal year 26. Demand for Blackwell platforms is well above supply, and we expect this to continue into next year.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-07",
@@ -283,7 +335,9 @@
         "transcripts/NVDA-2025-Q1",
         "transcripts/NVDA-2026-Q1"
       ],
-      "notes": "Cluster sizes grow across calls: 7K A100s → 35K H100s → tens/hundreds of thousands Blackwell. Verbatim from FY2026 Q1: 'Microsoft, for example, has already deployed tens of thousands of Blackwell GPUs and is expected to ramp to hundreds of thousands of GB200s with OpenAI as one of its key customers.'"
+      "notes": "Cluster sizes grow across calls: 7K A100s → 35K H100s → tens/hundreds of thousands Blackwell. Verbatim from FY2026 Q1: 'Microsoft, for example, has already deployed tens of thousands of Blackwell GPUs and is expected to ramp to hundreds of thousands of GB200s with OpenAI as one of its key customers.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-08",
@@ -293,7 +347,9 @@
       "answer_slugs": [
         "transcripts/META-2024-Q4"
       ],
-      "notes": "MTIA details first disclosed substantively on the Q4 2024 call. Verbatim source: 'In 2024 we started deploying MTIA to our ranking and recommendation inference workloads for ads and organic content. We expect to further ramp adoption of MTIA for these use cases throughout 2025 before extending our custom silicon efforts to training workloads for ranking and recommendations next year.' Also: 'pursuing cost efficiencies by deploying our custom MTIA silicon in areas where we can achieve a lower cost of compute by optimizing the chip to our unique workloads… off-the-shelf silicon isn't necessarily optimal.'"
+      "notes": "MTIA details first disclosed substantively on the Q4 2024 call. Verbatim source: 'In 2024 we started deploying MTIA to our ranking and recommendation inference workloads for ads and organic content. We expect to further ramp adoption of MTIA for these use cases throughout 2025 before extending our custom silicon efforts to training workloads for ranking and recommendations next year.' Also: 'pursuing cost efficiencies by deploying our custom MTIA silicon in areas where we can achieve a lower cost of compute by optimizing the chip to our unique workloads… off-the-shelf silicon isn't necessarily optimal.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-09",
@@ -304,7 +360,9 @@
         "transcripts/MSFT-2024-Q3",
         "transcripts/MSFT-2025-Q2"
       ],
-      "notes": "Maia and Cobalt are the headline names; Boost and HSM are less widely reported but appear in the FY2025 Q2 transcript. Verbatim from Q3 FY2024: 'We offer the most diverse selection of AI accelerators, including the latest from NVIDIA, AMD, as well as our own first-party silicon.' Verbatim from Q2 FY2025: 'We have more than doubled our overall data center capacity in the last three years and we have added more capacity last year than any other year in our history.'"
+      "notes": "Maia and Cobalt are the headline names; Boost and HSM are less widely reported but appear in the FY2025 Q2 transcript. Verbatim from Q3 FY2024: 'We offer the most diverse selection of AI accelerators, including the latest from NVIDIA, AMD, as well as our own first-party silicon.' Verbatim from Q2 FY2025: 'We have more than doubled our overall data center capacity in the last three years and we have added more capacity last year than any other year in our history.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-10",
@@ -315,7 +373,9 @@
         "transcripts/GOOGL-2023-Q4",
         "transcripts/GOOGL-2024-Q4"
       ],
-      "notes": "Anthropic, Character AI, Mistral as named TPU customers is a key supplier/customer detail unique to transcript. Verbatim from Q4 2024: 'delivers 4x better training performance and 3x greater inference throughput' vs prior generation."
+      "notes": "Anthropic, Character AI, Mistral as named TPU customers is a key supplier/customer detail unique to transcript. Verbatim from Q4 2024: 'delivers 4x better training performance and 3x greater inference throughput' vs prior generation.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-11",
@@ -326,7 +386,9 @@
         "transcripts/AAPL-2023-Q4",
         "transcripts/AAPL-2024-Q1"
       ],
-      "notes": "2.2B active devices and 1B paid subscriptions are transcript-only milestone disclosures. Verbatim from Q4 FY2024: 'nearly double the number we had only three years ago.' Verbatim from Q1 FY2024: 'more than double the number that we had only four years ago.'"
+      "notes": "2.2B active devices and 1B paid subscriptions are transcript-only milestone disclosures. Verbatim from Q4 FY2024: 'nearly double the number we had only three years ago.' Verbatim from Q1 FY2024: 'more than double the number that we had only four years ago.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-12",
@@ -337,7 +399,9 @@
         "transcripts/NVDA-2024-Q3",
         "transcripts/NVDA-2025-Q1"
       ],
-      "notes": "35K parts / 70 lbs for H100 and 24K tokens/sec for H200 are vivid spec disclosures unique to transcripts. Verbatim from FY2025 Q1: 'a single NVIDIA HGX H200 server can deliver 24,000 tokens per second, supporting more than 2,400 users at the same time' running Llama 3."
+      "notes": "35K parts / 70 lbs for H100 and 24K tokens/sec for H200 are vivid spec disclosures unique to transcripts. Verbatim from FY2025 Q1: 'a single NVIDIA HGX H200 server can deliver 24,000 tokens per second, supporting more than 2,400 users at the same time' running Llama 3.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-13",
@@ -347,7 +411,9 @@
       "answer_slugs": [
         "transcripts/MSFT-2024-Q3"
       ],
-      "notes": "Subscriber count and Fortune 500 adoption are transcript-only KPIs. Verbatim source: 'growth accelerating to over 35% quarter-over-quarter'; 'nearly 60% of the Fortune 500 now use Copilot.' Previous question scope said 'across earnings calls' (plural) but gold set is single transcript — narrowed to Q3 FY2024 specifically."
+      "notes": "Subscriber count and Fortune 500 adoption are transcript-only KPIs. Verbatim source: 'growth accelerating to over 35% quarter-over-quarter'; 'nearly 60% of the Fortune 500 now use Copilot.' Previous question scope said 'across earnings calls' (plural) but gold set is single transcript — narrowed to Q3 FY2024 specifically.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-14",
@@ -358,7 +424,9 @@
         "transcripts/META-2024-Q1",
         "transcripts/META-2024-Q4"
       ],
-      "notes": "The Instagram 50% AI-recommended stat and the Andromeda 10,000x model complexity claim are transcript-only disclosures. The Instagram stat appears on the Q1 2024 call, not Q2. Verbatim from Q4 2024: '10,000 times increase in the complexity of models we use for ads retrieval.'"
+      "notes": "The Instagram 50% AI-recommended stat and the Andromeda 10,000x model complexity claim are transcript-only disclosures. The Instagram stat appears on the Q1 2024 call, not Q2. Verbatim from Q4 2024: '10,000 times increase in the complexity of models we use for ads retrieval.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-15",
@@ -370,7 +438,9 @@
         "transcripts/META-2024-Q4",
         "transcripts/NVDA-2025-Q1"
       ],
-      "notes": "Cross-company question — multiple transcripts required for a complete answer. Verbatim from META-2024-Q2: 'almost 10 times more compute'; from META-2024-Q4: 'almost 1 gigawatt of capacity.'"
+      "notes": "Cross-company question — multiple transcripts required for a complete answer. Verbatim from META-2024-Q2: 'almost 10 times more compute'; from META-2024-Q4: 'almost 1 gigawatt of capacity.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-16",
@@ -381,7 +451,9 @@
         "transcripts/GOOGL-2023-Q4",
         "transcripts/GOOGL-2024-Q4"
       ],
-      "notes": "7 subsea cables and 11 cloud region groundbreakings are Q4 2024 transcript-only disclosures. Verbatim from Q4 2024: 'in 2024, we broke ground on 11 new cloud regions and data center campuses'; 'Google data centers deliver nearly 4x more computing power per unit of electricity compared to just 5 years ago.' Verbatim from Q4 2023: 'we expect investment in CapEx will be notably larger than in 2023.'"
+      "notes": "7 subsea cables and 11 cloud region groundbreakings are Q4 2024 transcript-only disclosures. Verbatim from Q4 2024: 'in 2024, we broke ground on 11 new cloud regions and data center campuses'; 'Google data centers deliver nearly 4x more computing power per unit of electricity compared to just 5 years ago.' Verbatim from Q4 2023: 'we expect investment in CapEx will be notably larger than in 2023.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-17",
@@ -392,7 +464,9 @@
         "transcripts/META-2024-Q2",
         "transcripts/META-2024-Q4"
       ],
-      "notes": "The Manhattan-scale datacenter analogy is a Zuckerberg quote unique to the Q4 2024 call. Verbatim from Q2 2024: 'We are planning for the compute clusters and data we'll need for the next several years.' Verbatim from Q4 2024: 'we expect to bring online almost 1 gigawatt of capacity this year, and we're building a 2 gigawatt and potentially bigger AI datacenter, that is so big that it will cover a significant part of Manhattan if it were placed there.'"
+      "notes": "The Manhattan-scale datacenter analogy is a Zuckerberg quote unique to the Q4 2024 call. Verbatim from Q2 2024: 'We are planning for the compute clusters and data we'll need for the next several years.' Verbatim from Q4 2024: 'we expect to bring online almost 1 gigawatt of capacity this year, and we're building a 2 gigawatt and potentially bigger AI datacenter, that is so big that it will cover a significant part of Manhattan if it were placed there.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-18",
@@ -403,7 +477,9 @@
         "transcripts/GOOGL-2023-Q4",
         "transcripts/GOOGL-2024-Q4"
       ],
-      "notes": "8x compute consumption and 4.4M Gemini developers are transcript-only adoption signals. Verbatim from Q4 2024: 'double the number from just 6 months ago'; 'cloud customers consume more than 8x the compute capacity for training and inferencing compared to 18 months ago.'"
+      "notes": "8x compute consumption and 4.4M Gemini developers are transcript-only adoption signals. Verbatim from Q4 2024: 'double the number from just 6 months ago'; 'cloud customers consume more than 8x the compute capacity for training and inferencing compared to 18 months ago.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-19",
@@ -414,7 +490,9 @@
         "transcripts/MSFT-2024-Q3",
         "transcripts/MSFT-2025-Q2"
       ],
-      "notes": "The 7-point AI contribution to Azure growth is a CFO disclosure unique to transcript. Verbatim from Q2 FY2025: 'We have more than doubled our overall data center capacity in the last three years and we have added more capacity last year than any other year in our history.'"
+      "notes": "The 7-point AI contribution to Azure growth is a CFO disclosure unique to transcript. Verbatim from Q2 FY2025: 'We have more than doubled our overall data center capacity in the last three years and we have added more capacity last year than any other year in our history.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "transcript-20",
@@ -428,7 +506,9 @@
         "transcripts/GOOGL-2024-Q4",
         "transcripts/NVDA-2026-Q1"
       ],
-      "notes": "Cross-company aggregation question. Alphabet 2023 full-year capex ~$32B verified from quarterly financials data. Verbatim from Q4 2023 GOOGL: 'we expect investment in CapEx will be notably larger than in 2023.'"
+      "notes": "Cross-company aggregation question. Alphabet 2023 full-year capex ~$32B verified from quarterly financials data. Verbatim from Q4 2023 GOOGL: 'we expect investment in CapEx will be notably larger than in 2023.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-01",
@@ -438,7 +518,9 @@
       "answer_slugs": [
         "sec/NVDA/8-k-2025-02-26"
       ],
-      "notes": "Q1 FY2026 guidance and FY2025 full-year totals only in the 8-K press release."
+      "notes": "Q1 FY2026 guidance and FY2025 full-year totals only in the 8-K press release.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-02",
@@ -449,7 +531,9 @@
         "sec/NVDA/8-k-2025-02-26",
         "sec/NVDA/8-k-2024-11-20"
       ],
-      "notes": "Named cloud and sovereign AI partners are 8-K-only disclosures, not in earnings transcripts."
+      "notes": "Named cloud and sovereign AI partners are 8-K-only disclosures, not in earnings transcripts.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-03",
@@ -459,7 +543,9 @@
       "answer_slugs": [
         "sec/NVDA/8-k-2024-11-20"
       ],
-      "notes": "Source verbatim for Denmark: 'Launched Denmark s largest sovereign AI supercomputer, an NVIDIA DGX SuperPOD driven by 1,528 NVIDIA H100 Tensor Core GPUs and interconnected using NVIDIA Quantum-2 InfiniBand networking.' Source verbatim for Japan: 'SoftBank Corp. is building Japan s most powerful AI supercomputer with the NVIDIA Blackwell platform.' Source verbatim for Taiwan: 'Unveiled a partnership with Foxconn to build Taiwan s fastest AI supercomputer with NVIDIA Blackwell.'"
+      "notes": "Source verbatim for Denmark: 'Launched Denmark s largest sovereign AI supercomputer, an NVIDIA DGX SuperPOD driven by 1,528 NVIDIA H100 Tensor Core GPUs and interconnected using NVIDIA Quantum-2 InfiniBand networking.' Source verbatim for Japan: 'SoftBank Corp. is building Japan s most powerful AI supercomputer with the NVIDIA Blackwell platform.' Source verbatim for Taiwan: 'Unveiled a partnership with Foxconn to build Taiwan s fastest AI supercomputer with NVIDIA Blackwell.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-04",
@@ -469,7 +555,9 @@
       "answer_slugs": [
         "sec/MSFT/8-k-2025-04-30"
       ],
-      "notes": "Sub-segment growth rates at this granularity appear only in the 8-K press release."
+      "notes": "Sub-segment growth rates at this granularity appear only in the 8-K press release.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-05",
@@ -479,7 +567,9 @@
       "answer_slugs": [
         "sec/META/8-k-2025-01-29"
       ],
-      "notes": "Full-year FCF and capex totals are 8-K-only; transcript gives quarterly run-rate."
+      "notes": "Full-year FCF and capex totals are 8-K-only; transcript gives quarterly run-rate.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-06",
@@ -489,7 +579,9 @@
       "answer_slugs": [
         "sec/GOOGL/10-k-2025-02-05"
       ],
-      "notes": "Source verbatim: 'We generated more than 75% of total revenues from online advertising in 2024.' Original question also asked about AI risk factors — that sub-question was split out because advertising concentration and AI competitive risk require different sections of the 10-K to answer (R2). AI risk factors belong in a separate question."
+      "notes": "Source verbatim: 'We generated more than 75% of total revenues from online advertising in 2024.' Original question also asked about AI risk factors — that sub-question was split out because advertising concentration and AI competitive risk require different sections of the 10-K to answer (R2). AI risk factors belong in a separate question.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-07",
@@ -499,7 +591,9 @@
       "answer_slugs": [
         "sec/GOOGL/10-k-2025-02-05"
       ],
-      "notes": "Segment operating margins at this precision are 10-K only — not in transcript or 8-K."
+      "notes": "Segment operating margins at this precision are 10-K only — not in transcript or 8-K.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-08",
@@ -509,7 +603,9 @@
       "answer_slugs": [
         "sec/MSFT/10-k-2024-07-30"
       ],
-      "notes": "Acquisition price and completion date are 10-K disclosures. Revenue attribution to the acquisition is only in the annual MD&A."
+      "notes": "Acquisition price and completion date are 10-K disclosures. Revenue attribution to the acquisition is only in the annual MD&A.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-09",
@@ -520,7 +616,9 @@
         "sec/NVDA/8-k-2025-02-26",
         "sec/NVDA/8-k-2024-11-20"
       ],
-      "notes": "Named vertical partners at this specificity only appear in 8-K press releases."
+      "notes": "Named vertical partners at this specificity only appear in 8-K press releases.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-10",
@@ -530,7 +628,9 @@
       "answer_slugs": [
         "sec/AAPL/8-k-2025-01-30"
       ],
-      "notes": "Geographic breakdown is 8-K only for Apple. Apple described Q1 FY2025 as an all-time revenue record and Services as a record quarter. Greater China decline linked to weaker iPhone demand and currency headwinds."
+      "notes": "Geographic breakdown is 8-K only for Apple. Apple described Q1 FY2025 as an all-time revenue record and Services as a record quarter. Greater China decline linked to weaker iPhone demand and currency headwinds.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-11",
@@ -541,7 +641,9 @@
         "sec/META/10-k-2025-01-30",
         "sec/META/8-k-2025-01-29"
       ],
-      "notes": "Source verbatim from 10-K: 'In 2024, our RL segment reduced our overall operating profit by approximately $17.73 billion, and we continue to expect our RL operating losses to increase in 2025.' Full-year RL loss is in both the 10-K narrative and the 8-K segment table (Reality Labs (17,729) line)."
+      "notes": "Source verbatim from 10-K: 'In 2024, our RL segment reduced our overall operating profit by approximately $17.73 billion, and we continue to expect our RL operating losses to increase in 2025.' Full-year RL loss is in both the 10-K narrative and the 8-K segment table (Reality Labs (17,729) line).",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-12",
@@ -551,7 +653,9 @@
       "answer_slugs": [
         "sec/META/10-q-2024-10-31"
       ],
-      "notes": "Geographic growth rate breakdown at this granularity is 10-Q only."
+      "notes": "Geographic growth rate breakdown at this granularity is 10-Q only.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-13",
@@ -562,7 +666,9 @@
         "sec/META/10-k-2025-01-30",
         "sec/META/10-q-2024-10-31"
       ],
-      "notes": "Risk factor language is 10-K/10-Q only. The ordering (1)–(4) is the benchmark author's grouping, not a source-stated ranking. The 10-K does not designate a single 'biggest' risk."
+      "notes": "Risk factor language is 10-K/10-Q only. The ordering (1)–(4) is the benchmark author's grouping, not a source-stated ranking. The 10-K does not designate a single 'biggest' risk.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-14",
@@ -573,7 +679,9 @@
         "sec/GOOGL/10-k-2025-02-05",
         "sec/GOOGL/10-k-2026-02-05"
       ],
-      "notes": "Headcount as of year-end is a 10-K disclosure. Requires two annual filings for the comparison."
+      "notes": "Headcount as of year-end is a 10-K disclosure. Requires two annual filings for the comparison.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "sec-15",
@@ -583,7 +691,9 @@
       "answer_slugs": [
         "sec/MSFT/8-k-2025-04-30"
       ],
-      "notes": "Revenue and capital-return figures from 8-K earnings press release (EX-99.1). Constant-currency figures are press-release only — the 10-Q does not include them. Original question also asked about a risk factor ('focus on cloud-based and AI services presenting execution and competitive risks') — that phrase is boilerplate forward-looking-statements language from the 8-K, not the 10-Q. The risk clause was split out (R2) and the verbatim risk phrase removed (R1)."
+      "notes": "Revenue and capital-return figures from 8-K earnings press release (EX-99.1). Constant-currency figures are press-release only — the 10-Q does not include them. Original question also asked about a risk factor ('focus on cloud-based and AI services presenting execution and competitive risks') — that phrase is boilerplate forward-looking-statements language from the 8-K, not the 10-Q. The risk clause was split out (R2) and the verbatim risk phrase removed (R1).",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "portfolio-01",
@@ -593,7 +703,9 @@
       "answer_slugs": [
         "portfolio/holdings-2026-05-12"
       ],
-      "notes": "As of 2026-05-12. TLT (20yr Treasury ETF) as 3rd largest is the notable diversifier alongside AI mega-cap."
+      "notes": "As of 2026-05-12. TLT (20yr Treasury ETF) as 3rd largest is the notable diversifier alongside AI mega-cap.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "portfolio-02",
@@ -603,7 +715,9 @@
       "answer_slugs": [
         "portfolio/holdings-2026-05-12"
       ],
-      "notes": "Short book bleeds while longs gain — net portfolio P&L is -$5,125 due to short drag. Prior version asked 'what does the mix suggest about the portfolio's hedge strategy?' — that language asked for interpretation not present in the source data (the word 'hedge', 'strategy', or 'crypto exposure' does not appear in the holdings file). Rewritten to ask only for facts directly in the source."
+      "notes": "Short book bleeds while longs gain — net portfolio P&L is -$5,125 due to short drag. Prior version asked 'what does the mix suggest about the portfolio's hedge strategy?' — that language asked for interpretation not present in the source data (the word 'hedge', 'strategy', or 'crypto exposure' does not appear in the holdings file). Rewritten to ask only for facts directly in the source.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "portfolio-03",
@@ -613,17 +727,21 @@
       "answer_slugs": [
         "portfolio/holdings-2026-05-12"
       ],
-      "notes": "The -$5,125 total is stated in the holdings summary. The long-book net gain ($3,194) and short-book net loss (-$7,734) together with options P&L (-$1,261) reconcile to approximately -$5,125 — but neither a long-book total nor a short-book label appear explicitly in the source. The prior answer's parenthetical '(short-book losses of ~$7,734 exceed long-book net gains)' is editorial derivation, not sourced text — moved to notes."
+      "notes": "The -$5,125 total is stated in the holdings summary. The long-book net gain ($3,194) and short-book net loss (-$7,734) together with options P&L (-$1,261) reconcile to approximately -$5,125 — but neither a long-book total nor a short-book label appear explicitly in the source. The prior answer's parenthetical '(short-book losses of ~$7,734 exceed long-book net gains)' is editorial derivation, not sourced text — moved to notes.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "portfolio-04",
       "category": "portfolio",
-      "question": "What are the top 5 holdings in the long book by NAV percentage, and what is their combined weight?",
-      "answer": "Top 5 by NAV: AMZN 15.93%, NVDA 13.23%, TLT 10.19%, MSFT 9.77%, WOLF 9.66%. Combined top 5 weight: ~58.8% of NAV.",
+      "question": "How is the long book distributed across thematic clusters, and which cluster has the largest combined NAV exposure?",
+      "answer": "Thematic breakdown: (1) AI/US tech mega-cap — AMZN 15.93%, NVDA 13.23%, MSFT 9.77%, RDDT 9.13% = ~48% of NAV. (2) Energy transition & power infrastructure — WOLF 9.66%, URNM 7.85%, LIT 2.68%, COPX 3.26% = ~23%. (3) Duration/fixed income hedge — TLT 10.19%. (4) Fiber/telecom infrastructure — WYFI 4.69%, NOK 2.37% = ~7%. (5) Space & defense tech — ASTS 2.19%, RKLB 1.41%, KRKNF 1.64% = ~5%. (6) Asian semiconductor supply chain — TOWA/6315.T 2.03%, MediaTek/2454 1.41%, Delta Electronics/2308 1.25%, Win Semi/3105 0.97%, IQE 0.31% = ~6%. AI/tech mega-cap dominates at ~48% of the long book.",
       "answer_slugs": [
         "portfolio/holdings-2026-05-12"
       ],
-      "notes": "Holdings as of 2026-05-12. Prior version of this question asked about 'thematic clusters' — a taxonomy derived post-hoc by the benchmark author, not present in the source. That formulation violated R7. Also corrected an internal inconsistency: MSFT (9.77%) was simultaneously listed in the top 5 and mentioned as a 'significant position outside the top 5' in the prior answer — contradiction removed. Correct ordering by NAV: AMZN > NVDA > TLT > MSFT > WOLF."
+      "notes": "Taxonomy derived from ticker descriptions; not labeled in source data. Intentional: this question tests a planned gbrain feature for thematic cluster retrieval/reasoning over portfolio holdings. Not a standard retrieval question — the clustering is a feature output, not a source fact.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "portfolio-05",
@@ -639,7 +757,9 @@
         "analyst-estimates/MSFT",
         "analyst-estimates/GOOGL"
       ],
-      "notes": "Analyst targets from FMP price-target-summary (last month avg). Portfolio prices as of 2026-05-12 snapshot."
+      "notes": "Analyst targets from FMP price-target-summary (last month avg). Portfolio prices as of 2026-05-12 snapshot.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-01",
@@ -649,7 +769,9 @@
       "answer_slugs": [
         "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
       ],
-      "notes": "Timing and charge are news-layer disclosures — the recap published Dec 31, 2025 consolidates the sequence. Verbatim from source: 'The Trump administration banned H20 chip exports to China. NVIDIA took a $5.5 billion charge.'"
+      "notes": "Timing and charge are news-layer disclosures — the recap published Dec 31, 2025 consolidates the sequence. Verbatim from source: 'The Trump administration banned H20 chip exports to China. NVIDIA took a $5.5 billion charge.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-02",
@@ -659,7 +781,9 @@
       "answer_slugs": [
         "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
       ],
-      "notes": "Two distinct policy events in 2025 — both in the year-end recap. Verbatim from source: 'regulatory whiplash that left companies uncertain which rules applied.'"
+      "notes": "Two distinct policy events in 2025 — both in the year-end recap. Verbatim from source: 'regulatory whiplash that left companies uncertain which rules applied.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-03",
@@ -669,7 +793,9 @@
       "answer_slugs": [
         "social/dylan522p/1976771063942926649"
       ],
-      "notes": "Patel's reaction frames this as already-known vs. breaking news — a key nuance for market reaction context. The answer retains the short direct quote because it characterizes Patel's stance; the longer sourced thread describing Megaspeed's structure is background context."
+      "notes": "Patel's reaction frames this as already-known vs. breaking news — a key nuance for market reaction context. The answer retains the short direct quote because it characterizes Patel's stance; the longer sourced thread describing Megaspeed's structure is background context.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-04",
@@ -679,7 +805,9 @@
       "answer_slugs": [
         "social/dylan522p/2051109332750835754"
       ],
-      "notes": "Patel's quip puts the $231M in context of EUV machine costs (~$380M each). Verbatim from source: 'Down payment on a EUV machine!'"
+      "notes": "Patel's quip puts the $231M in context of EUV machine costs (~$380M each). Verbatim from source: 'Down payment on a EUV machine!'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-05",
@@ -689,7 +817,9 @@
       "answer_slugs": [
         "social/dylan522p/2046373494380794338"
       ],
-      "notes": "Leadership change at Apple — reported via social on April 20, 2026. Verbatim from source: 'Johny Sroji, the GOAT who made Apple silicon program what it is, is now in charge of all hardware at Apple as Chief Hardware Officer.' Also: 'Johny Srouji taking over as Apple's Chief Hardware Officer as John Ternus transitions to CEO.'"
+      "notes": "Leadership change at Apple — reported via social on April 20, 2026. Verbatim from source: 'Johny Sroji, the GOAT who made Apple silicon program what it is, is now in charge of all hardware at Apple as Chief Hardware Officer.' Also: 'Johny Srouji taking over as Apple's Chief Hardware Officer as John Ternus transitions to CEO.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-06",
@@ -699,7 +829,9 @@
       "answer_slugs": [
         "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
       ],
-      "notes": "Numbers from ai-supremacy.com 2025 year-end recap. Source framing: 'the scale surprised even the true believers.' Verbatim from source: 'Replit grew from $2.8M to $150M ARR in under a year. Y Combinator reported that 25% of their Winter 2025 batch had codebases that were 95% AI-generated.'"
+      "notes": "Numbers from ai-supremacy.com 2025 year-end recap. Source framing: 'the scale surprised even the true believers.' Verbatim from source: 'Replit grew from $2.8M to $150M ARR in under a year. Y Combinator reported that 25% of their Winter 2025 batch had codebases that were 95% AI-generated.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-07",
@@ -709,7 +841,9 @@
       "answer_slugs": [
         "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
       ],
-      "notes": "Scientific milestone benchmarks are news-layer disclosures, not in SEC filings or transcripts. Verbatim from source: 'both OpenAI and Google DeepMind achieved gold medal-level scores (35/42 points, 5 of 6 problems). DeepSeek later matched them. For context: in 2022, researchers gave only 8-16% probability that AI would achieve IMO gold by 2025.'"
+      "notes": "Scientific milestone benchmarks are news-layer disclosures, not in SEC filings or transcripts. Verbatim from source: 'both OpenAI and Google DeepMind achieved gold medal-level scores (35/42 points, 5 of 6 problems). DeepSeek later matched them. For context: in 2022, researchers gave only 8-16% probability that AI would achieve IMO gold by 2025.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-08",
@@ -719,7 +853,9 @@
       "answer_slugs": [
         "social/dylan522p/2042416273599185254"
       ],
-      "notes": "Token consumption as a KPI — only surfaces in news/social, not in SEC filings. Verbatim from source: 'The Information wrote that Meta consumes 60.2T tokens per month, or ~750M per employee.'"
+      "notes": "Token consumption as a KPI — only surfaces in news/social, not in SEC filings. Verbatim from source: 'The Information wrote that Meta consumes 60.2T tokens per month, or ~750M per employee.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-09",
@@ -729,7 +865,9 @@
       "answer_slugs": [
         "social/dylan522p/2040213520411709565"
       ],
-      "notes": "Open source kernel release — news-layer event not in financial filings. Verbatim from source: 'fastest prefill and decode kernels for our target workloads. We wrote these to win InferenceX, MLPerf, other benchmarks.'"
+      "notes": "Open source kernel release — news-layer event not in financial filings. Verbatim from source: 'fastest prefill and decode kernels for our target workloads. We wrote these to win InferenceX, MLPerf, other benchmarks.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-10",
@@ -739,7 +877,9 @@
       "answer_slugs": [
         "social/dylan522p/2047104466512400639"
       ],
-      "notes": "Real-world AI tool cost data from a power user — unique to social/news layer. Verbatim from source: 'Claude Code spend had gotten to $10.95M runrate peak at SemiAnalysis.' Also: 'more token efficient for tasks, smarter, and no fast mode.'"
+      "notes": "Real-world AI tool cost data from a power user — unique to social/news layer. Verbatim from source: 'Claude Code spend had gotten to $10.95M runrate peak at SemiAnalysis.' Also: 'more token efficient for tasks, smarter, and no fast mode.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-11",
@@ -749,7 +889,9 @@
       "answer_slugs": [
         "social/dylan522p/2002135815233970295"
       ],
-      "notes": "Benchmark improvement reported via social on Dec 19, 2025 — predates any official filing. Verbatim from source: 'we've worked with NVIDIA to increase @nvidia Blackwell maximum throughput per GPU by up to 33%.'"
+      "notes": "Benchmark improvement reported via social on Dec 19, 2025 — predates any official filing. Verbatim from source: 'we've worked with NVIDIA to increase @nvidia Blackwell maximum throughput per GPU by up to 33%.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-12",
@@ -759,7 +901,9 @@
       "answer_slugs": [
         "social/dylan522p/2017344503196103130"
       ],
-      "notes": "Analyst model revision triggered by earnings — social context for the MSFT DC capex question. Verbatim from source: 'We had Fairwater + other DC delays in datacenter model vs the 40% YoY growth we previously posted before said delays.'"
+      "notes": "Analyst model revision triggered by earnings — social context for the MSFT DC capex question. Verbatim from source: 'We had Fairwater + other DC delays in datacenter model vs the 40% YoY growth we previously posted before said delays.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-13",
@@ -769,17 +913,21 @@
       "answer_slugs": [
         "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
       ],
-      "notes": "Ownership percentages and valuation only in news layer — not in any SEC filing for OpenAI. Verbatim from source: 'the nonprofit OpenAI Foundation now has legal control over a public benefit corporation called OpenAI Group PBC'; 'The foundation holds 26% equity and appoints the board; Microsoft holds 27% (~$135B); the remaining 47% goes to employees and investors.'"
+      "notes": "Ownership percentages and valuation only in news layer — not in any SEC filing for OpenAI. Verbatim from source: 'the nonprofit OpenAI Foundation now has legal control over a public benefit corporation called OpenAI Group PBC'; 'The foundation holds 26% equity and appoints the board; Microsoft holds 27% (~$135B); the remaining 47% goes to employees and investors.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-14",
       "category": "news",
-      "question": "What did the 2025 AI recap report about DeepSeek R1's training cost and its market impact on launch?",
-      "answer": "DeepSeek R1 launched January 2025, reportedly trained for under $6M (SemiAnalysis estimated higher but still roughly 15–20x cheaper than GPT-4). Market impact: about $1 trillion was wiped from US tech market cap in a single day; NVIDIA alone lost $593 billion — the largest single-day market cap loss in history. Key innovation: Multi-head Latent Attention, 671B parameters with only 37B active per token.",
+      "question": "According to the 2025 AI year-end recap, what thesis did the DeepSeek R1 launch break, and how did NVIDIA stock perform by September 2025 compared to its pre-DeepSeek level?",
+      "answer": "DeepSeek R1 broke the AI scaling thesis — the assumption that larger training budgets automatically produce better models. SemiAnalysis estimated the true fully-baked training cost far higher than the headline $6M figure, but still roughly 15–20x cheaper than GPT-4's ~$100M+. By September 2025 NVIDIA's stock had recovered to 22% above its pre-DeepSeek level, indicating the market reassessed the initial panic.",
       "answer_slugs": [
         "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
       ],
-      "notes": "DeepSeek's market impact is a news-layer event — the $593B NVDA loss is a specific verifiable data point. Verbatim from source: 'NVIDIA lost $593 billion – the largest single-day market cap loss in history.'"
+      "notes": "Year-end synthesis framing (\"scaling thesis broken\", September 2025 recovery) is unique to the year-end recap article — primary DeepSeek articles cover the launch event but not the year-long retrospective.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "news-15",
@@ -789,7 +937,9 @@
       "answer_slugs": [
         "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
       ],
-      "notes": "Qualitative assessment of open source ROI — only surfaces in analyst/news layer, not earnings filings. Verbatim from source: 'The $70-72B capex in 2025 needs returns. Meta's open source strategy wasn't delivering.'"
+      "notes": "Qualitative assessment of open source ROI — only surfaces in analyst/news layer, not earnings filings. Verbatim from source: 'The $70-72B capex in 2025 needs returns. Meta's open source strategy wasn't delivering.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-01",
@@ -800,7 +950,9 @@
         "transcripts/NVDA-2025-Q2",
         "sec/NVDA/8-k-2025-02-26"
       ],
-      "notes": "GB200 NVL72 specs: Q2 FY2025 transcript + Q4 FY2025 8-K. Verbatim transcript: 'enables all 72 GPUs to act as a single GPU and deliver up to 30 times faster inference for LLMs.'"
+      "notes": "GB200 NVL72 specs: Q2 FY2025 transcript + Q4 FY2025 8-K. Verbatim transcript: 'enables all 72 GPUs to act as a single GPU and deliver up to 30 times faster inference for LLMs.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-02",
@@ -810,7 +962,9 @@
       "answer_slugs": [
         "transcripts/NVDA-2025-Q2"
       ],
-      "notes": "Spectrum-X: 1.6x vs traditional Ethernet, doubled sequentially in Q2 FY2025. Verbatim (moved to notes): 'Spectrum-X is well on-track to begin a multi-billion dollar product line within a year.'"
+      "notes": "Spectrum-X: 1.6x vs traditional Ethernet, doubled sequentially in Q2 FY2025. Verbatim (moved to notes): 'Spectrum-X is well on-track to begin a multi-billion dollar product line within a year.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-03",
@@ -820,7 +974,9 @@
       "answer_slugs": [
         "transcripts/NVDA-2025-Q2"
       ],
-      "notes": "Isaac customer list: Q2 FY2025 transcript (verbatim: 'Austin Dynamics, BYD Electronics, Figure, Intrinsic, Siemens, Skilled ADI, and Teradyne Robotics are using the NVIDIA Isaac Robotics platform'). Previous answer had 'Boston Dynamics' — the transcript says 'Austin Dynamics.' Corrected. The 'full-stack simulation environment' description is benchmark-author framing; removed."
+      "notes": "Isaac customer list: Q2 FY2025 transcript (verbatim: 'Austin Dynamics, BYD Electronics, Figure, Intrinsic, Siemens, Skilled ADI, and Teradyne Robotics are using the NVIDIA Isaac Robotics platform'). Previous answer had 'Boston Dynamics' — the transcript says 'Austin Dynamics.' Corrected. The 'full-stack simulation environment' description is benchmark-author framing; removed.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-04",
@@ -830,7 +986,9 @@
       "answer_slugs": [
         "transcripts/MSFT-2025-Q2"
       ],
-      "notes": "Q2 FY2025 transcript. Verbatim (moved to notes): 'expanded their seats collectively by more than 10x over the past 18 months'; 'Usage intensity increased more than 60% quarter-over-quarter'; 'annual revenue run rate of $13 billion up 175% year-over-year.'"
+      "notes": "Q2 FY2025 transcript. Verbatim (moved to notes): 'expanded their seats collectively by more than 10x over the past 18 months'; 'Usage intensity increased more than 60% quarter-over-quarter'; 'annual revenue run rate of $13 billion up 175% year-over-year.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-05",
@@ -840,7 +998,9 @@
       "answer_slugs": [
         "transcripts/MSFT-2025-Q2"
       ],
-      "notes": "19K paid customers and fastest-growing claim: Q2 FY2025 transcript. Verbatim (moved to notes): 'Fabric is now the fastest growing analytics product in our history.'"
+      "notes": "19K paid customers and fastest-growing claim: Q2 FY2025 transcript. Verbatim (moved to notes): 'Fabric is now the fastest growing analytics product in our history.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-06",
@@ -850,17 +1010,21 @@
       "answer_slugs": [
         "transcripts/MSFT-2025-Q2"
       ],
-      "notes": "Phi SLM downloads and partner count: Q2 FY2025 transcript (verbatim: 'Our Phi family of SLMs has now been downloaded over 20 million times'). Copilot+ PC share: same source (verbatim: '15% of premium priced laptops in the US this holiday were Copilot+ PCs'). Paraphrase used to break verbatim spans."
+      "notes": "Phi SLM downloads and partner count: Q2 FY2025 transcript (verbatim: 'Our Phi family of SLMs has now been downloaded over 20 million times'). Copilot+ PC share: same source (verbatim: '15% of premium priced laptops in the US this holiday were Copilot+ PCs'). Paraphrase used to break verbatim spans.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-07",
       "category": "product",
-      "question": "What is Google Gemini 2.0 and across which products is it deployed?",
-      "answer": "Gemini 2.0 is Google's most capable AI model family at the time of its December 2024 launch — natively multimodal across text, code, audio, image, and video. It is integrated across all seven Google products with 2B+ users. Gemini 2.0 Flash is the high-throughput, low-latency variant for developers. As of Q4 2024: 4.4 million developers used Gemini models, double the count from six months earlier.",
+      "question": "How many developers were actively using Google Gemini models as of Alphabet's Q4 2024 earnings call, and how had that count changed from six months prior?",
+      "answer": "4.4 million developers were using Google's Gemini models as of Q4 2024, double the count from six months earlier. Gemini 2.0 was unveiled in December 2024 as Google's most capable model built for the agentic era, featuring native multimodality across text, code, audio, image, and video. Gemini 2.0 Flash is the high-throughput, low-latency variant.",
       "answer_slugs": [
         "transcripts/GOOGL-2024-Q4"
       ],
-      "notes": "7 products with 2B+ users each: Q4 2024 transcript. 4.4M developer count and doubling in 6 months: Q4 2024 transcript (verbatim: 'more than 4.4 million developers are using our Gemini models today, double the number from just 6 months ago'). Gemini 2.0 launch Dec 2024: same source."
+      "notes": "The 4.4M developer count and \"double in 6 months\" growth rate are Q4 2024 earnings call disclosures — not in substack articles about Gemini 2.0. This makes the question uniquely answerable by the transcript.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-08",
@@ -870,7 +1034,9 @@
       "answer_slugs": [
         "transcripts/GOOGL-2024-Q4"
       ],
-      "notes": "200M devices: Q4 2024 transcript (Sundar Pichai prepared remarks). 10%+ search-start rate: Q4 2024 transcript (Philipp Schindler prepared remarks; verbatim: 'Those who have tried Circle to Search before now use it to start more than 10% of their searches.'). The 'audio-to-search / describe what they hear' claim is not present in either answer_slug (Q4 transcript or 10-K); removed per R7."
+      "notes": "200M devices: Q4 2024 transcript (Sundar Pichai prepared remarks). 10%+ search-start rate: Q4 2024 transcript (Philipp Schindler prepared remarks; verbatim: 'Those who have tried Circle to Search before now use it to start more than 10% of their searches.'). The 'audio-to-search / describe what they hear' claim is not present in either answer_slug (Q4 transcript or 10-K); removed per R7.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-09",
@@ -881,7 +1047,9 @@
         "transcripts/GOOGL-2024-Q4",
         "sec/GOOGL/10-k-2025-02-05"
       ],
-      "notes": "Trip counts: Q4 2024 transcript (verbatim: 'safely serving more than 4 million passenger trips... now averaging over 150,000 trips each week'). 4-city expansion and Tokyo: same source + 10-K."
+      "notes": "Trip counts: Q4 2024 transcript (verbatim: 'safely serving more than 4 million passenger trips... now averaging over 150,000 trips each week'). 4-city expansion and Tokyo: same source + 10-K.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-10",
@@ -891,7 +1059,9 @@
       "answer_slugs": [
         "transcripts/META-2024-Q4"
       ],
-      "notes": "700M MAU: Q4 2024 transcript. 1B user target: Zuckerberg forward-looking statement from same call. Verbatim (moved to notes): 'a highly intelligent and personalized AI assistant reaches more than 1 billion people.'"
+      "notes": "700M MAU: Q4 2024 transcript. 1B user target: Zuckerberg forward-looking statement from same call. Verbatim (moved to notes): 'a highly intelligent and personalized AI assistant reaches more than 1 billion people.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-11",
@@ -901,7 +1071,9 @@
       "answer_slugs": [
         "transcripts/META-2024-Q4"
       ],
-      "notes": "320M MAU and 1M daily sign-ups: Q4 2024 transcript (verbatim: 'Threads now has more than 320 million monthly actives and has been adding more than 1 million sign-ups per day'). 'Leading open discussion platform online' is not in the source; transcript says 'leading discussion platform' — corrected and paraphrased."
+      "notes": "320M MAU and 1M daily sign-ups: Q4 2024 transcript (verbatim: 'Threads now has more than 320 million monthly actives and has been adding more than 1 million sign-ups per day'). 'Leading open discussion platform online' is not in the source; transcript says 'leading discussion platform' — corrected and paraphrased.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-12",
@@ -911,7 +1083,9 @@
       "answer_slugs": [
         "transcripts/META-2024-Q4"
       ],
-      "notes": "The 5–10M third-gen adoption thesis: Q4 2024 transcript (verbatim: 'Many breakout products in the history of consumer electronics have sold 5 million to 10 million units in their third generation.')."
+      "notes": "The 5–10M third-gen adoption thesis: Q4 2024 transcript (verbatim: 'Many breakout products in the history of consumer electronics have sold 5 million to 10 million units in their third generation.').",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-13",
@@ -922,7 +1096,9 @@
         "sec/AAPL/10-k-2025-10-31",
         "transcripts/AAPL-2024-Q1"
       ],
-      "notes": "'Spatial computer' and visionOS: AAPL 10-K language. Enterprise customers: Q1 FY2024 earnings call. Verbatim from earnings call (moved to notes): 'Apple Vision Pro, the most advanced personal electronics device ever.' That phrase appears in the transcript, not the 10-K."
+      "notes": "'Spatial computer' and visionOS: AAPL 10-K language. Enterprise customers: Q1 FY2024 earnings call. Verbatim from earnings call (moved to notes): 'Apple Vision Pro, the most advanced personal electronics device ever.' That phrase appears in the transcript, not the 10-K.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-14",
@@ -932,7 +1108,9 @@
       "answer_slugs": [
         "sec/AAPL/10-k-2025-10-31"
       ],
-      "notes": "Services breakdown: FY2025 10-K business description. Apple One is not explicitly listed in the FY2025 10-K business section (the filing lists Arcade, Fitness+, Music, TV+ individually); flag for verification. Services revenue $109,158M and 14% growth: FY2025 10-K revenue table."
+      "notes": "Services breakdown: FY2025 10-K business description. Apple One is not explicitly listed in the FY2025 10-K business section (the filing lists Arcade, Fitness+, Music, TV+ individually); flag for verification. Services revenue $109,158M and 14% growth: FY2025 10-K revenue table.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "product-15",
@@ -942,7 +1120,9 @@
       "answer_slugs": [
         "sec/AAPL/10-k-2025-10-31"
       ],
-      "notes": "iPhone and Mac product lineup: FY2025 10-K business description (filed Oct 31, 2025). Mac 12% growth: FY2025 10-K revenue table ($33,708M vs $29,984M). 'MacBook Air and MacBook Pro' are verbatim product names from the 10-K — these are proper nouns unavoidable in a product-listing question, not a quote-leakage issue."
+      "notes": "iPhone and Mac product lineup: FY2025 10-K business description (filed Oct 31, 2025). Mac 12% growth: FY2025 10-K revenue table ($33,708M vs $29,984M). 'MacBook Air and MacBook Pro' are verbatim product names from the 10-K — these are proper nouns unavoidable in a product-listing question, not a quote-leakage issue.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-01",
@@ -952,7 +1132,9 @@
       "answer_slugs": [
         "sec/NVDA/10-k-2025-02-26"
       ],
-      "notes": "TSMC, Samsung foundry + SK Hynix, Micron, Samsung memory: FY2025 10-K risk factors. Verbatim risk factor text: 'limited number and geographic concentration of global suppliers, foundries, contract manufacturers, assembly and test providers and memory manufacturers.'"
+      "notes": "TSMC, Samsung foundry + SK Hynix, Micron, Samsung memory: FY2025 10-K risk factors. Verbatim risk factor text: 'limited number and geographic concentration of global suppliers, foundries, contract manufacturers, assembly and test providers and memory manufacturers.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-02",
@@ -963,7 +1145,9 @@
         "sec/NVDA/10-k-2025-02-26",
         "social/dylan522p/1820200553512841239"
       ],
-      "notes": "CoWoS packaging dependency: FY2025 10-K + Dylan Patel Aug 2024 Blackwell delay analysis. Verbatim 10-K risk factor text: 'low manufacturing yields resulting from issues in our product design or a foundry's proprietary process technology.'"
+      "notes": "CoWoS packaging dependency: FY2025 10-K + Dylan Patel Aug 2024 Blackwell delay analysis. Verbatim 10-K risk factor text: 'low manufacturing yields resulting from issues in our product design or a foundry's proprietary process technology.'",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-03",
@@ -974,7 +1158,9 @@
         "sec/NVDA/10-k-2025-02-26",
         "sec/NVDA/10-k-2026-02-25"
       ],
-      "notes": "12+ month lead times and APAC concentration: FY2025 10-K (verbatim: 'We have previously experienced and may continue to experience extended lead times of more than 12 months'). US/LatAm expansion: FY2026 10-K (verbatim: 'While currently our supply chain is mainly concentrated in Asia, we are expanding into the U.S. and Latin America.')."
+      "notes": "12+ month lead times and APAC concentration: FY2025 10-K (verbatim: 'We have previously experienced and may continue to experience extended lead times of more than 12 months'). US/LatAm expansion: FY2026 10-K (verbatim: 'While currently our supply chain is mainly concentrated in Asia, we are expanding into the U.S. and Latin America.').",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-04",
@@ -985,7 +1171,9 @@
         "social/dylan522p/1839034283589075239",
         "transcripts/NVDA-2026-Q1"
       ],
-      "notes": "HBM direct sourcing: Dylan Patel tweet Sep 2024 (verbatim: 'All AI Accelerators (HBM)... have on-package DRAM purchased direct from manufacturer.'). B300 HBM +50% and FP4 performance: Q1 FY2026 transcript (verbatim: 'B300 GPUs, with 50% more HBM, will deliver another 50% increase in dense FP4 inference compute performance compared to the B200.')."
+      "notes": "HBM direct sourcing: Dylan Patel tweet Sep 2024 (verbatim: 'All AI Accelerators (HBM)... have on-package DRAM purchased direct from manufacturer.'). B300 HBM +50% and FP4 performance: Q1 FY2026 transcript (verbatim: 'B300 GPUs, with 50% more HBM, will deliver another 50% increase in dense FP4 inference compute performance compared to the B200.').",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-05",
@@ -995,7 +1183,9 @@
       "answer_slugs": [
         "social/dylan522p/1871878908272128182"
       ],
-      "notes": "GB300 BOM breakdown from Dylan Patel's Dec 25, 2024 post (tweet date: 2024-12-25). Named suppliers: Micron, Samsung, SK Hynix, Wistron, FII Foxconn, Aspeed, Axiado. Note: previous version said 'December 2025' — the post is December 2024."
+      "notes": "GB300 BOM breakdown from Dylan Patel's Dec 25, 2024 post (tweet date: 2024-12-25). Named suppliers: Micron, Samsung, SK Hynix, Wistron, FII Foxconn, Aspeed, Axiado. Note: previous version said 'December 2025' — the post is December 2024.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-06",
@@ -1005,7 +1195,9 @@
       "answer_slugs": [
         "sec/NVDA/10-k-2025-02-26"
       ],
-      "notes": "Product list: FY2025 10-K export control section (verbatim list: 'A100, A800, H100, H200, H800, B100, B200, GB200, L4, L40S, and RTX 6000 Ada'). Verbatim no-license disclosure: 'To date, we have not received licenses to ship these restricted products to China.' Product names regrouped by generation in answer to avoid verbatim CSV sequence."
+      "notes": "Product list: FY2025 10-K export control section (verbatim list: 'A100, A800, H100, H200, H800, B100, B200, GB200, L4, L40S, and RTX 6000 Ada'). Verbatim no-license disclosure: 'To date, we have not received licenses to ship these restricted products to China.' Product names regrouped by generation in answer to avoid verbatim CSV sequence.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-07",
@@ -1016,7 +1208,9 @@
         "transcripts/NVDA-2026-Q1",
         "sec/NVDA/10-k-2026-02-25"
       ],
-      "notes": "H20 ban details: Q1 FY2026 transcript. Verbatim phrases (moved to notes): 'the new export controls on H20 did not provide a grace period to allow us to sell through our inventory'; 'In Q1, we recognized $4.6 billion in H20 revenue'; 'We were unable to ship $2.5 billion in H20 revenue in the first quarter.' $7.2B FY2026 provisions: FY2026 10-K."
+      "notes": "H20 ban details: Q1 FY2026 transcript. Verbatim phrases (moved to notes): 'the new export controls on H20 did not provide a grace period to allow us to sell through our inventory'; 'In Q1, we recognized $4.6 billion in H20 revenue'; 'We were unable to ship $2.5 billion in H20 revenue in the first quarter.' $7.2B FY2026 provisions: FY2026 10-K.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-08",
@@ -1027,7 +1221,9 @@
         "transcripts/NVDA-2026-Q1",
         "sec/NVDA/10-k-2025-02-26"
       ],
-      "notes": "~$50B China AI market and competitive harm: Q1 FY2026 transcript (verbatim: 'Losing access to the China AI accelerator market, which we believe will grow to nearly $50 billion, would have a material adverse impact on our business going forward and benefit our foreign competitors in China and worldwide.'). FY2025 10-K competitive harm language (verbatim: 'Our competitive position has been harmed by the existing export controls, and our competitive position and future results may be further harmed, over the long term, if there are further changes in the USG's export controls.')."
+      "notes": "~$50B China AI market and competitive harm: Q1 FY2026 transcript (verbatim: 'Losing access to the China AI accelerator market, which we believe will grow to nearly $50 billion, would have a material adverse impact on our business going forward and benefit our foreign competitors in China and worldwide.'). FY2025 10-K competitive harm language (verbatim: 'Our competitive position has been harmed by the existing export controls, and our competitive position and future results may be further harmed, over the long term, if there are further changes in the USG's export controls.').",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-09",
@@ -1037,7 +1233,9 @@
       "answer_slugs": [
         "sec/NVDA/10-k-2026-02-25"
       ],
-      "notes": "71.1% vs 75.0% gross margin and $4.5B H20 attribution: FY2026 10-K MD&A (verbatim: 'Gross margins decreased to 71.1% in fiscal year 2026 from 75.0% in fiscal year 2025 as our business model transitioned from offering Hopper HGX systems to Blackwell full-scale datacenter solutions and a $4.5 billion charge associated with H20 excess inventory and purchase obligations in the first quarter of fiscal year 2026.' / 'Provisions for inventory and excess inventory purchase obligations totaled $7.2 billion and $3.7 billion for fiscal years 2026 and 2025, respectively.'). The 350–450 bps estimate is benchmark-author arithmetic, not stated in the 10-K; removed from answer."
+      "notes": "71.1% vs 75.0% gross margin and $4.5B H20 attribution: FY2026 10-K MD&A (verbatim: 'Gross margins decreased to 71.1% in fiscal year 2026 from 75.0% in fiscal year 2025 as our business model transitioned from offering Hopper HGX systems to Blackwell full-scale datacenter solutions and a $4.5 billion charge associated with H20 excess inventory and purchase obligations in the first quarter of fiscal year 2026.' / 'Provisions for inventory and excess inventory purchase obligations totaled $7.2 billion and $3.7 billion for fiscal years 2026 and 2025, respectively.'). The 350–450 bps estimate is benchmark-author arithmetic, not stated in the 10-K; removed from answer.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-10",
@@ -1048,7 +1246,9 @@
         "transcripts/NVDA-2025-Q2",
         "transcripts/NVDA-2026-Q1"
       ],
-      "notes": "Photomask change: Q2 FY2025 transcript (verbatim uses 'mass', likely transcription of 'mask': 'We executed a change to the Blackwell GPU mass to improve production yields.'). Yield improvement Q1 FY2026 (verbatim): 'we have seen a significant improvement in manufacturing yields, and rack shipments are moving to strong rates to end customers.' ~70% data center compute: Q1 FY2026 transcript."
+      "notes": "Photomask change: Q2 FY2025 transcript (verbatim uses 'mass', likely transcription of 'mask': 'We executed a change to the Blackwell GPU mass to improve production yields.'). Yield improvement Q1 FY2026 (verbatim): 'we have seen a significant improvement in manufacturing yields, and rack shipments are moving to strong rates to end customers.' ~70% data center compute: Q1 FY2026 transcript.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-11",
@@ -1058,7 +1258,9 @@
       "answer_slugs": [
         "transcripts/NVDA-2026-Q1"
       ],
-      "notes": "~1,000 NVL72 racks per week per hyperscaler: Q1 FY2026 transcript (verbatim: 'On average, major hyperscalers are each deploying nearly 1,000 NBL72 racks, or 72,000 Blackwell GPUs per week.'). Microsoft ramp and GB300 manufacturing continuity: same source (verbatim: 'Microsoft... has already deployed tens of thousands of Blackwell GPUs and is expected to ramp to hundreds of thousands of GB200s'; 'GB300 will leverage the same architecture, same physical footprint, and the same electrical and mechanical specifications as GB200.')."
+      "notes": "~1,000 NVL72 racks per week per hyperscaler: Q1 FY2026 transcript (verbatim: 'On average, major hyperscalers are each deploying nearly 1,000 NBL72 racks, or 72,000 Blackwell GPUs per week.'). Microsoft ramp and GB300 manufacturing continuity: same source (verbatim: 'Microsoft... has already deployed tens of thousands of Blackwell GPUs and is expected to ramp to hundreds of thousands of GB200s'; 'GB300 will leverage the same architecture, same physical footprint, and the same electrical and mechanical specifications as GB200.').",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-12",
@@ -1068,7 +1270,9 @@
       "answer_slugs": [
         "social/dylan522p/1820200553512841239"
       ],
-      "notes": "CoWoS-L vs CoWoS-S and Blackwell BOM: Dylan Patel Aug 4, 2024 tweet/analysis. Verbatim from tweet: 'CoWoS-L vs CoWoS-S' and 'NVLink Backplane, PCB, CCL, Substrate, BMC, Power Delivery'."
+      "notes": "CoWoS-L vs CoWoS-S and Blackwell BOM: Dylan Patel Aug 4, 2024 tweet/analysis. Verbatim from tweet: 'CoWoS-L vs CoWoS-S' and 'NVLink Backplane, PCB, CCL, Substrate, BMC, Power Delivery'.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-13",
@@ -1079,7 +1283,9 @@
         "sec/NVDA/10-k-2026-02-25",
         "sec/NVDA/8-k-2025-02-26"
       ],
-      "notes": "US/LatAm expansion: FY2026 10-K (verbatim: 'While currently our supply chain is mainly concentrated in Asia, we are expanding into the U.S. and Latin America.'). Stargate partner + cloud provider deployments: Q4 FY2025 8-K (verbatim: 'Announced that NVIDIA will serve as a key technology partner for the $500 billion Stargate Project.'). TSMC Arizona is not mentioned in these source documents; removed."
+      "notes": "US/LatAm expansion: FY2026 10-K (verbatim: 'While currently our supply chain is mainly concentrated in Asia, we are expanding into the U.S. and Latin America.'). Stargate partner + cloud provider deployments: Q4 FY2025 8-K (verbatim: 'Announced that NVIDIA will serve as a key technology partner for the $500 billion Stargate Project.'). TSMC Arizona is not mentioned in these source documents; removed.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-14",
@@ -1089,7 +1295,9 @@
       "answer_slugs": [
         "transcripts/NVDA-2025-Q2"
       ],
-      "notes": "Q2 FY2025 transcript (verbatim: 'We expect our software, SaaS and support revenue to approach a $2 billion annual run rate exiting this year, with NVIDIA AI Enterprise notably contributing to growth.'). The framing that software reduces supply chain dependence is benchmark-author interpretation, not a claim from the source; removed from answer."
+      "notes": "Q2 FY2025 transcript (verbatim: 'We expect our software, SaaS and support revenue to approach a $2 billion annual run rate exiting this year, with NVIDIA AI Enterprise notably contributing to growth.'). The framing that software reduces supply chain dependence is benchmark-author interpretation, not a claim from the source; removed from answer.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "supply-15",
@@ -1099,7 +1307,9 @@
       "answer_slugs": [
         "social/dylan522p/1871878908272128182"
       ],
-      "notes": "Wistron, Foxconn, Aspeed, Axiado: Dylan Patel Dec 25, 2024 GB300 BOM tweet. Note: tweet date is 2024-12-25, not 2025. FII Foxconn is listed verbatim in the tweet; changed to 'Foxconn (FII)' in answer to avoid exact match."
+      "notes": "Wistron, Foxconn, Aspeed, Axiado: Dylan Patel Dec 25, 2024 GB300 BOM tweet. Note: tweet date is 2024-12-25, not 2025. FII Foxconn is listed verbatim in the tweet; changed to 'Foxconn (FII)' in answer to avoid exact match.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-01",
@@ -1119,7 +1329,9 @@
         "financials/NVDA-2026-01-25"
       ],
       "notes": "10 quarters. Peak GM 78.4% in Q1 FY2025; compressed to 60.5% in Q1 FY2026 from H20 write-down; recovered to 75.0% by Q4 FY2026.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-02",
@@ -1141,7 +1353,9 @@
         "financials/META-2024-12-31"
       ],
       "notes": "12 quarters. Trough 19.9% in Q4 2022; recovered to 48.3% by Q4 2024 via Year of Efficiency cost cuts.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-03",
@@ -1163,7 +1377,9 @@
         "sec/GOOGL/8-k-2025-02-04"
       ],
       "notes": "12 quarters from GOOGL 8-K press release tables. Revenue doubled from $5.82B to $12.0B over 3 years.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-04",
@@ -1188,7 +1404,9 @@
         "sec/NVDA/8-k-2026-02-25"
       ],
       "notes": "15 quarters from NVDA 8-K earnings press releases. Inflection in Q2 FY2024: $4.28B → $10.32B (+141% QoQ) marks start of AI supercycle.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-05",
@@ -1210,7 +1428,9 @@
         "sec/AAPL/8-k-2025-07-31"
       ],
       "notes": "12 quarters from AAPL 8-K press releases. Consistent growth from $19.5B to $27.4B. Each AAPL 8-K sets a new all-time Services record.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-06",
@@ -1238,7 +1458,9 @@
         "sec/META/8-k-2026-04-29"
       ],
       "notes": "18 quarters from META 8-K earnings press releases. First decline in Mar 2026 (3.56B vs Dec 2025 3.58B).",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-07",
@@ -1268,7 +1490,9 @@
         "financials/NVDA-2026-01-25"
       ],
       "notes": "20 quarters. Gaming crash in Q2-Q4 FY2023; AI inflection in Q2 FY2024 ($7.19B → $13.51B, +88% QoQ).",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-08",
@@ -1296,7 +1520,9 @@
         "sec/MSFT/8-k-2026-04-29"
       ],
       "notes": "18 quarters from MSFT 8-K earnings press releases. Q4 seasonal jumps visible (Jun quarters) from enterprise renewals.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-09",
@@ -1323,7 +1549,9 @@
         "financials/GOOGL-2026-03-31"
       ],
       "notes": "17 quarters. Trough 23.9% in Q4 2022; recovery to 36.1% by Q1 2026 driven by Cloud growth and AI efficiency.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-10",
@@ -1351,7 +1579,9 @@
         "financials/AAPL-2026-03-28"
       ],
       "notes": "18 quarters. Gross margin steadily expanded from 42.3% (Q4 FY2022) to 49.3% (Q2 FY2026) as Services mix increased.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-11",
@@ -1367,7 +1597,9 @@
         "transcripts/MSFT-2026-Q3"
       ],
       "notes": "Product trajectory across 6 earnings calls spanning 4.5 years. Paid subscribers 0 → 4.7M; total users 0 → 26M+. Source quotes: Q2 FY2023 — 'the first at-scale AI product built for this era'; Q3 FY2024 — 'growth accelerating to over 35% quarter-over-quarter'; Q1 FY2026 — 'most popular AI pair programmer'; Q2 FY2026 — 'we have 4.7 million paid Copilot subscribers, up 75% year over year'; Q3 FY2026 — 'Nearly 140,000 organizations now use Github Copilot and enterprise subscribers have nearly tripled year-over-year'.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-12",
@@ -1386,7 +1618,9 @@
         "sec/META/10-q-2024-10-31"
       ],
       "notes": "Revenue highly seasonal (Q4 peaks on hardware gifting). Q3 2024 derived: $2,146M FY - $440M Q1 - $353M Q2 - $1,083M Q4. Op loss from 8-K operating income tables.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-13",
@@ -1409,7 +1643,9 @@
         "sec/NVDA/8-k-2026-02-25"
       ],
       "notes": "13 quarters from NVDA 8-K press releases. Q1 FY2026 was a record at $3.8B. Gaming stayed $2-4B while Data Center scaled 15x over the same period.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-14",
@@ -1435,7 +1671,9 @@
         "financials/NVDA-2026-01-25"
       ],
       "notes": "Cross-source question: DC revenue from 8-K press releases; total revenue from FMP financials pages. % ranged 86.8–91.4% — NVDA is effectively a Data Center company.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-15",
@@ -1450,7 +1688,9 @@
         "sec/META/10-k-2026-01-29"
       ],
       "notes": "Qualitative time series — answer tracks language evolution across 5 annual 10-Ks, not numbers. Tests cross-temporal document retrieval. Source quotes: #1 risk in all 5 years — 'If we fail to retain existing users or add new users, or if our users decrease their level of engagement with our products'; FY2023 10-K — 'we expect our RL operating losses to increase meaningfully in 2024'; FY2025 10-K — 'we expect our 2026 RL operating losses to remain similar to 2025'.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-16",
@@ -1472,7 +1712,9 @@
         "sec/NVDA/8-k-2026-02-25"
       ],
       "notes": "Product launch trajectory spanning substack (announcement), transcripts (yield fix), 8-Ks (quarterly revenue), and 10-Q (architecture disclosure). Cross-source question. Source quotes: Q2 FY2025 transcript — 'We executed a change to the Blackwell GPU mass to improve production yields. Blackwell production ramp is scheduled to begin in the fourth quarter'; Q4 FY2025 8-K — 'Demand for Blackwell is amazing'; Q2 FY2026 8-K — 'Blackwell Data Center revenue grew 17% sequentially'; Q3 FY2026 8-K — 'Blackwell sales are off the charts, cloud GPUs are sold out'; Q4 FY2026 8-K — 'Grace Blackwell with NVLink is the king of inference today'.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-17",
@@ -1490,7 +1732,9 @@
         "sec/NVDA/8-k-2025-02-26"
       ],
       "notes": "Announcement → export controls → first deliveries → AI supercycle. Revenue data from 8-K segment tables. Source quotes: May 2022 8-K — 'NVIDIA H100 Tensor Core GPU, the first Hopper-based GPU, featuring 80 billion transistors'; Nov 2022 8-K — 'Began shipping the NVIDIA H100 Tensor Core GPU based on the new NVIDIA Hopper architecture, with first systems available now'; Feb 2023 8-K — 'H100 and its Transformer Engine and Quantum-2 networking fabric, is in full production'.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-18",
@@ -1507,7 +1751,9 @@
         "transcripts/AAPL-2025-Q4"
       ],
       "notes": "Product launch trajectory using substack (announcement), transcripts (launch + updates), 10-Q (first official filing mention). No revenue data — Apple never disclosed Vision Pro separately. Source quotes: AAPL Q3 FY2023 transcript — 'we were so pleased to share the revolutionary Apple Vision Pro with the world, a bold new product unlike anything else created before'; AAPL 10-Q Aug 2023 — 'first spatial computer featuring its new visionOS, expected to be available in early 2024'.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-19",
@@ -1533,7 +1779,9 @@
         "sec/NVDA/8-k-2026-02-25"
       ],
       "notes": "16 quarters from NVDA 8-K press releases. Grew from $125M to $604M (+383%). Q4 FY2025 breakout to $570M marked acceleration from NVIDIA DRIVE adoption.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "time-series-20",
@@ -1553,7 +1801,9 @@
         "sec/GOOGL/8-k-2024-07-23"
       ],
       "notes": "10 quarters from GOOGL 8-K press release tables (prior-year / current-quarter format). Tabular data ends after Q2 2024 — later 8-Ks switched to narrative format. Q3-Q4 2022 showed YoY declines during ad market downturn.",
-      "temporal": true
+      "temporal": true,
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-01",
@@ -1565,7 +1815,9 @@
         "sec/NVDA/8-k-2023-05-24",
         "transcripts/NVDA-2024-Q1"
       ],
-      "notes": "First AI supercycle earnings. One of the largest single-day post-earnings moves in NVDA history. Significance methodology: 30-day baseline avg move ±1.74%; threshold ±3.48% (2×); actual move was 14× the baseline."
+      "notes": "First AI supercycle earnings. One of the largest single-day post-earnings moves in NVDA history. Significance methodology: 30-day baseline avg move ±1.74%; threshold ±3.48% (2×); actual move was 14× the baseline.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-02",
@@ -1576,7 +1828,9 @@
         "price/META-CY2022-Q4",
         "sec/META/8-k-2022-10-26"
       ],
-      "notes": "Peak bearish sentiment for META — stock had fallen ~70% YTD before this further -24.56% drop. Significance methodology: 30-day baseline avg ±2.14%; threshold ±4.28% (2×); actual move was 11× the baseline."
+      "notes": "Peak bearish sentiment for META — stock had fallen ~70% YTD before this further -24.56% drop. Significance methodology: 30-day baseline avg ±2.14%; threshold ±4.28% (2×); actual move was 11× the baseline.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-03",
@@ -1587,7 +1841,9 @@
         "price/META-CY2023-Q1",
         "sec/META/8-k-2023-02-01"
       ],
-      "notes": "Single-day reversal from the 2022 bear case — market rewarded the efficiency pivot immediately. Significance methodology: 30-day baseline avg ±1.95%; threshold ±3.91% (2×); actual move was 12× the baseline."
+      "notes": "Single-day reversal from the 2022 bear case — market rewarded the efficiency pivot immediately. Significance methodology: 30-day baseline avg ±1.95%; threshold ±3.91% (2×); actual move was 12× the baseline.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-04",
@@ -1598,7 +1854,9 @@
         "price/NVDA-CY2025-Q1",
         "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
       ],
-      "notes": "Jan 20 was a holiday (MLK Day); first trading day to absorb the news was Jan 27. Significance methodology: 30-day baseline avg ±2.29%; threshold ±4.57% (2×); actual move was 7.4× the baseline. 'Largest single-day market cap loss in history' phrase appears verbatim in source substack — paraphrased above."
+      "notes": "Jan 20 was a holiday (MLK Day); first trading day to absorb the news was Jan 27. Significance methodology: 30-day baseline avg ±2.29%; threshold ±4.57% (2×); actual move was 7.4× the baseline. 'Largest single-day market cap loss in history' phrase appears verbatim in source substack — paraphrased above.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-05",
@@ -1609,7 +1867,9 @@
         "price/MSFT-CY2023-Q1",
         "sec/MSFT/8-k-2023-01-24"
       ],
-      "notes": "Significance methodology: 30-day baseline avg move ±1.51%; threshold ±3.02% (2×). Move fell well below threshold — Azure deceleration guidance for Q3 likely offset any OpenAI partnership sentiment."
+      "notes": "Significance methodology: 30-day baseline avg move ±1.51%; threshold ±3.02% (2×). Move fell well below threshold — Azure deceleration guidance for Q3 likely offset any OpenAI partnership sentiment.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-06",
@@ -1621,7 +1881,9 @@
         "sec/NVDA/8-k-2022-08-31",
         "sec/NVDA/8-k-2022-09-01"
       ],
-      "notes": "First export control hit on NVDA's AI GPU line. Separate 8-K filed Sep 1 disclosed impact on H100 development revenue. Significance methodology: 30-day baseline avg ±2.90%; threshold ±5.79% (2×); actual move was 2.6× the baseline."
+      "notes": "First export control hit on NVDA's AI GPU line. Separate 8-K filed Sep 1 disclosed impact on H100 development revenue. Significance methodology: 30-day baseline avg ±2.90%; threshold ±5.79% (2×); actual move was 2.6× the baseline.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-07",
@@ -1632,7 +1894,9 @@
         "price/META-CY2023-Q4",
         "sec/META/8-k-2023-10-25"
       ],
-      "notes": "Counter-intuitive reaction — strong results produced a down day. 2024 capex guidance was the likely driver. No significant positive reaction may have been expected given the stock had run +160% YTD. Significance methodology: 30-day baseline avg ±1.60%; threshold ±3.20% (2×); actual move was 2.3× the baseline."
+      "notes": "Counter-intuitive reaction — strong results produced a down day. 2024 capex guidance was the likely driver. No significant positive reaction may have been expected given the stock had run +160% YTD. Significance methodology: 30-day baseline avg ±1.60%; threshold ±3.20% (2×); actual move was 2.3× the baseline.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-08",
@@ -1643,7 +1907,9 @@
         "price/NVDA-CY2024-Q1",
         "sec/NVDA/8-k-2024-02-21"
       ],
-      "notes": "Second consecutive massive post-earnings gap up for NVDA during the AI supercycle. Significance methodology: 30-day baseline avg ±1.89%; threshold ±3.77% (2×); actual move was 8.7× the baseline."
+      "notes": "Second consecutive massive post-earnings gap up for NVDA during the AI supercycle. Significance methodology: 30-day baseline avg ±1.89%; threshold ±3.77% (2×); actual move was 8.7× the baseline.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-09",
@@ -1654,7 +1920,9 @@
         "price/NVDA-CY2024-Q2",
         "sec/NVDA/8-k-2024-05-22"
       ],
-      "notes": "Pre-split prices shown. Post-split equivalent: $9.50 → $10.38. The split announcement amplified retail buying interest. Significance methodology: 30-day baseline avg ±2.63%; threshold ±5.26% (2×); actual move was 3.5× the baseline."
+      "notes": "Pre-split prices shown. Post-split equivalent: $9.50 → $10.38. The split announcement amplified retail buying interest. Significance methodology: 30-day baseline avg ±2.63%; threshold ±5.26% (2×); actual move was 3.5× the baseline.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-10",
@@ -1666,7 +1934,9 @@
         "sec/NVDA/8-k-2025-05-28",
         "transcripts/NVDA-2026-Q1"
       ],
-      "notes": "Classic confounded event — negative company-specific news (H20 ban) on a day of a massive positive macro catalyst (tariff pause). Real H20 impact was disclosed in Q1 FY2026 earnings. Significance methodology: 30-day baseline avg ±3.29%; threshold ±6.58% (2×)."
+      "notes": "Classic confounded event — negative company-specific news (H20 ban) on a day of a massive positive macro catalyst (tariff pause). Real H20 impact was disclosed in Q1 FY2026 earnings. Significance methodology: 30-day baseline avg ±3.29%; threshold ±6.58% (2×).",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-11",
@@ -1677,7 +1947,9 @@
         "price/MSFT-CY2023-Q2",
         "sec/NVDA/8-k-2023-05-24"
       ],
-      "notes": "Cross-company: NVDA Q1 FY2024 earnings triggered a significant move in MSFT. Significance methodology: MSFT 30-day baseline ±1.12%, threshold ±2.24% (2×), actual 3.85% = 3.4× threshold — significant. GOOGL baseline ±1.43%, move 2.13% — below threshold, not significant. META baseline ±1.40%, move 1.40% — at threshold, not significant."
+      "notes": "Cross-company: NVDA Q1 FY2024 earnings triggered a significant move in MSFT. Significance methodology: MSFT 30-day baseline ±1.12%, threshold ±2.24% (2×), actual 3.85% = 3.4× threshold — significant. GOOGL baseline ±1.43%, move 2.13% — below threshold, not significant. META baseline ±1.40%, move 1.40% — at threshold, not significant.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-12",
@@ -1688,7 +1960,9 @@
         "price/NVDA-CY2025-Q1",
         "sec/GOOGL/8-k-2025-02-04"
       ],
-      "notes": "Cross-company: GOOGL $75B capex announcement produced no significant NVDA reaction. Significance methodology: 30-day baseline avg ±3.14%; threshold ±6.27% (2×); actual 5.21% fell below threshold."
+      "notes": "Cross-company: GOOGL $75B capex announcement produced no significant NVDA reaction. Significance methodology: 30-day baseline avg ±3.14%; threshold ±6.27% (2×); actual 5.21% fell below threshold.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     },
     {
       "id": "market-reactions-13",
@@ -1699,7 +1973,9 @@
         "price/NVDA-CY2024-Q3",
         "sec/META/8-k-2024-07-31"
       ],
-      "notes": "Cross-company: META capex raise on Jul 31 2024; NVDA significant move the next day. Significance methodology: 30-day baseline avg ±3.29%; threshold ±6.58% (2×); actual 6.67% just exceeded threshold."
+      "notes": "Cross-company: META capex raise on Jul 31 2024; NVDA significant move the next day. Significance methodology: 30-day baseline avg ±3.29%; threshold ±6.58% (2×); actual 6.67% just exceeded threshold.",
+      "ai_reviewed": true,
+      "human_reviewed": false
     }
   ]
 }

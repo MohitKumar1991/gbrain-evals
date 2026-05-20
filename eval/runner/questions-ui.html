@@ -114,6 +114,14 @@
   /* Validated badge */
   .badge-validated{font-size:10px;padding:1px 6px;border-radius:8px;background:#dcfce7;color:#15803d;font-weight:600}
   .badge-unvalidated{font-size:10px;padding:1px 6px;border-radius:8px;background:#f1f5f9;color:#64748b;font-weight:600}
+  /* Review badges */
+  .badge-ai-yes{font-size:10px;padding:1px 6px;border-radius:8px;background:#eff6ff;color:#1d4ed8;font-weight:600;cursor:default}
+  .badge-ai-no{font-size:10px;padding:1px 6px;border-radius:8px;background:#f1f5f9;color:#94a3b8;font-weight:600;cursor:default}
+  .badge-human-yes{font-size:10px;padding:1px 6px;border-radius:8px;background:#dcfce7;color:#15803d;font-weight:600;cursor:pointer;border:none}
+  .badge-human-yes:hover{background:#bbf7d0}
+  .badge-human-no{font-size:10px;padding:1px 6px;border-radius:8px;background:#fef9c3;color:#92400e;font-weight:600;cursor:pointer;border:none}
+  .badge-human-no:hover{background:#fef08a}
+  .review-strip{display:flex;gap:4px;align-items:center;flex-wrap:wrap;margin-top:4px}
 
   /* Edit form */
   .q-edit-form{margin-top:10px;padding:10px;background:#f8fafc;border-radius:6px;border:1px solid #e2e8f0}
@@ -157,7 +165,7 @@
   .score-sum-item{font-size:12.5px;color:#374151;white-space:nowrap}
   .score-sum-item b{color:#1d4ed8}
   .scores-table-wrap{overflow-x:auto}
-  .score-row{display:grid;grid-template-columns:110px 1fr 34px 52px 52px 42px 42px 48px 1fr;align-items:start;padding:5px 12px;border-bottom:1px solid #f8fafc;gap:6px;cursor:pointer}
+  .score-row{display:grid;grid-template-columns:110px 1fr 34px 52px 52px 42px 48px 42px 48px 64px 64px 1fr;align-items:start;padding:5px 12px;border-bottom:1px solid #f8fafc;gap:6px;cursor:pointer}
   .score-row:last-child{border-bottom:none}
   .score-row:hover:not(.score-hdr){background:#f8fafc}
   .score-hdr{background:#f8fafc;font-size:10px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;cursor:default;border-bottom:2px solid #e5e7eb!important;padding:6px 12px}
@@ -197,16 +205,15 @@
 <div class="toast" id="toast"></div>
 <script>
 var CAT_INFO = [
-  {id:'financials',   label:'Financials',          sub:'Income, balance sheet, cash flow'},
-  {id:'transcript',   label:'Earnings Call Transcripts', sub:'Full Q&A transcripts'},
-  {id:'price',        label:'Price Data',           sub:'Quarterly & daily OHLCV'},
-  {id:'social',       label:'Twitter / Social',     sub:'@dylan522p tweets'},
-  {id:'substack',     label:'Substack Articles',    sub:'ai-supremacy.com'},
-  {id:'portfolio',    label:'Portfolio Holdings',   sub:'IBKR live snapshot'},
-  {id:'sec-8k',       label:'SEC 8-K Filings',      sub:'Current reports & press releases'},
-  {id:'sec-10k',      label:'SEC 10-K Annual',      sub:'Annual reports (Business, Risk, MD&A)'},
-  {id:'sec-10q',      label:'SEC 10-Q Quarterly',   sub:'Quarterly MD&A'},
-  {id:'cross',        label:'Cross-Source',         sub:'Multi-doc questions (GPU capex, etc.)'}
+  {id:'financials',       label:'Financials',          sub:'Income, balance sheet, cash flow'},
+  {id:'transcript',       label:'Earnings Transcripts', sub:'Full Q&A transcripts'},
+  {id:'sec',              label:'SEC Filings',          sub:'10-K, 10-Q, 8-K press releases'},
+  {id:'news',             label:'News & Social',        sub:'Substack + @dylan522p tweets'},
+  {id:'product',          label:'Product',              sub:'Specs, adoption, launches'},
+  {id:'supply-chain',     label:'Supply Chain',         sub:'Foundry, HBM, export controls'},
+  {id:'portfolio',        label:'Portfolio Holdings',   sub:'IBKR live snapshot'},
+  {id:'time-series',      label:'Time Series',          sub:'Multi-quarter data series'},
+  {id:'market-reactions', label:'Market Reactions',     sub:'Event-driven price moves'},
 ];
 
 var S = {cat:null, cats:[], pages:[], questions:[], allQ:[], sel:[], searchMatches:{}, scores:null, scoresAdapter:'keyword', scoresCat:'all'};
@@ -257,13 +264,20 @@ function renderSidebar(){
   '</div>';
   for(var i=0;i<CAT_INFO.length;i++){
     var ci=CAT_INFO[i];
-    var info=S.cats.find(function(c){return c.name===ci.id})||{total_slugs:0,question_count:0};
+    var info=S.cats.find(function(c){return c.name===ci.id})||{total_slugs:0,question_count:0,human_reviewed_count:0,ai_reviewed_count:0};
     var active=S.cat===ci.id?' active':'';
     var qc=info.question_count;
+    var hr=info.human_reviewed_count||0;
     var badgeColor=qc>=10?' green':qc>=5?' yellow':' gray';
+    var hrLabel=hr+'/'+qc+' &#10003;H';
+    var hrColor=hr===qc&&qc>0?' green':hr>0?' yellow':' gray';
     html+='<div class="sidebar-item'+active+'" onclick="selectCat(\''+ci.id+'\')">'+
-      '<div><div class="label">'+esc(ci.label)+'</div><div class="sublabel">'+esc(ci.sub)+'</div></div>'+
-      '<span class="badge'+badgeColor+'">'+qc+'/10</span>'+
+      '<div><div class="label">'+esc(ci.label)+'</div>'+
+      '<div class="sublabel">'+esc(ci.sub)+'</div></div>'+
+      '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:2px">'+
+        '<span class="badge'+badgeColor+'">'+qc+' Q</span>'+
+        '<span class="badge'+hrColor+'" style="font-size:9px" title="Human reviewed">'+hrLabel+'</span>'+
+      '</div>'+
     '</div>';
   }
   $('sidebar').innerHTML=html;
@@ -292,7 +306,7 @@ function catLabel(id){
 function renderContent(){
   var ci=CAT_INFO.find(function(c){return c.id===S.cat})||{label:S.cat,sub:''};
   var info=S.cats.find(function(c){return c.name===S.cat})||{total_slugs:0};
-  var isCross=(S.cat==='cross');
+  var isCross=['product','supply-chain','time-series','market-reactions'].indexOf(S.cat)>=0;
   // Browse card: cross uses corpus-wide search panel; others use page browser
   var browseCard=isCross?
     '<div class="card">'+
@@ -524,6 +538,12 @@ function renderQList(){
     var validBadge=q.validated
       ?'<span class="badge-validated">&#10003; validated</span>'
       :'<span class="badge-unvalidated">unvalidated</span>';
+    var aiBadge=q.ai_reviewed
+      ?'<span class="badge-ai-yes" title="AI reviewed (R1-R8)">AI &#10003;</span>'
+      :'<span class="badge-ai-no" title="Not AI reviewed">AI ?</span>';
+    var humanBadge=q.human_reviewed
+      ?'<button class="badge-human-yes" title="Human reviewed — click to unmark" onclick="toggleHumanReview(\''+esc(q.id)+'\',false)">Human &#10003;</button>'
+      :'<button class="badge-human-no" title="Not human reviewed — click to mark as reviewed" onclick="toggleHumanReview(\''+esc(q.id)+'\',true)">Human ?</button>';
     html+='<div class="q-item" id="qi-'+esc(q.id)+'">'+
       '<div class="q-header">'+
         '<span class="q-num">'+esc(q.id)+'</span>'+
@@ -533,12 +553,23 @@ function renderQList(){
         '<button class="btn-eval" id="eval-btn-'+esc(q.id)+'" onclick="runEval(\''+esc(q.id)+'\')">&#9654; Score</button>'+
         '<button class="btn-danger" onclick="delQ(\''+esc(q.id)+'\')">Delete</button>'+
       '</div>'+
+      '<div class="review-strip">'+aiBadge+humanBadge+'</div>'+
       answerHtml+
       '<div class="q-docs"><span class="q-docs-lbl">Source docs:</span>'+docs+pat+'</div>'+
       notesHtml+
     '</div>';
   }
   return html;
+}
+
+function toggleHumanReview(id, val){
+  jfetch('/api/questions/'+encodeURIComponent(id),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({human_reviewed:val})})
+    .then(function(res){
+      if(res.error){toast(res.error,false);return;}
+      S.questions=res.questions;S.allQ=res.allQuestions;
+      $('q-list').innerHTML=renderQList();
+      toast(val?'Marked as human reviewed':'Unmarked');
+    });
 }
 
 function addQ(){
@@ -587,14 +618,16 @@ function delQ(id){
 
 function runEval(id){
   var btn=document.getElementById('eval-btn-'+id);
-  var hasProxy=!!(window._hasProxy);  // set after first successful multi-adapter run
-  var slowWarn=hasProxy?' (~2 min)':'';
-  if(btn){btn.disabled=true;btn.innerHTML='&#9203; Scoring'+slowWarn+'…';}
+  if(btn){btn.disabled=true;btn.innerHTML='&#9203; Scoring…';}
   var prev=document.getElementById('eval-result-'+id);
   if(prev)prev.remove();
   jfetch('/api/eval/'+encodeURIComponent(id))
     .then(function(res){
       if(btn){btn.disabled=false;btn.innerHTML='&#9654; Score';}
+      if(res.indexing){
+        toast('Corpus still indexing ('+res.indexed+'/'+res.total+' pages) — try again in a moment',false);
+        return;
+      }
       if(res.error){toast(res.error,false);return;}
       // Detect whether multi-adapter ran and remember for next button label
       if(res.adapters_run&&res.adapters_run.length>1)window._hasProxy=true;
@@ -615,13 +648,19 @@ function runEval(id){
         var hitCls=sc.hit?'eval-hit':'eval-miss';
         var hitLbl=sc.hit?'&#10003;':'&#10007;';
         var ret=(sc.retrieved||[]).slice(0,3).join(', ');
+        var trCell = sc.temporal_recall!=null
+          ? '<td style="padding:2px 4px;font-size:11px;color:#7c3aed">TR:'+((sc.temporal_recall||0)*100).toFixed(0)+'%('+sc.covered_quarters+'/'+sc.gold_quarters+'Q)</td>'+
+            '<td style="padding:2px 4px;font-size:11px;color:#7c3aed">TP:'+((sc.temporal_precision||0)*100).toFixed(0)+'%</td>'
+          : '';
         return '<tr>'+
           '<td style="padding:2px 8px 2px 2px;font-size:11px;color:#64748b;white-space:nowrap">'+esc(adp)+'</td>'+
           '<td style="padding:2px 3px"><span class="eval-result '+hitCls+'" style="margin:0;padding:1px 5px;font-size:10.5px">'+hitLbl+'</span></td>'+
           '<td style="padding:2px 4px;font-size:11px">R:'+((sc.recall||0)*100).toFixed(0)+'%</td>'+
           '<td style="padding:2px 4px;font-size:11px">MRR:'+(sc.mrr||0).toFixed(2)+'</td>'+
           '<td style="padding:2px 4px;font-size:11px">P@K:'+((sc.precision||0)*100).toFixed(0)+'%</td>'+
+          '<td style="padding:2px 4px;font-size:11px">R-P:'+((sc.r_precision||0)*100).toFixed(0)+'%</td>'+
           '<td style="padding:2px 4px;font-size:11px">MAP:'+(sc.ap||0).toFixed(2)+'</td>'+
+          trCell+
           '<td style="padding:2px 4px;font-size:10px;font-family:monospace;color:#6b7280;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="'+esc((sc.retrieved||[]).join(', '))+'">'+esc(ret)+'</td>'+
         '</tr>';
       }).join('');
@@ -703,6 +742,8 @@ function renderScoresView(){
         '<span class="score-sum-item"><b>MRR</b> '+fmt3(adpSumm.mrr)+'</span>'+
         '<span class="score-sum-item"><b>P@K</b> '+fmt1(adpSumm.precision_mean)+'</span>'+
         '<span class="score-sum-item"><b>MAP</b> '+fmt3(adpSumm.map)+'</span>'+
+        (adpSumm.n_temporal>0?'<span class="score-sum-item" style="color:#7c3aed"><b>T-Recall</b> '+fmt1(adpSumm.temporal_recall_mean)+'</span>':'') +
+        (adpSumm.n_temporal>0?'<span class="score-sum-item" style="color:#7c3aed"><b>T-Prec</b> '+fmt1(adpSumm.temporal_precision_mean)+' <span style="font-size:10px;color:#94a3b8">(n='+adpSumm.n_temporal+')</span></span>':'') +
         '<span class="score-sum-item" style="color:#94a3b8">'+qs.length+' questions</span>'+
         '<select onchange="S.scoresCat=this.value;renderScoresView()" style="margin-left:auto;font-size:12px;padding:3px 8px;border-radius:5px;border:1.5px solid #e5e7eb">'+catOpts+'</select>'+
       '</div>'+
@@ -719,8 +760,11 @@ function renderScoresTable(qs,adapter){
     '<span class="sc-m">Recall</span>'+
     '<span class="sc-m">MRR</span>'+
     '<span class="sc-m">P@K</span>'+
+    '<span class="sc-m" title="R-Precision: matched in top-R / R (normalised for gold set size)">R-Prec</span>'+
     '<span class="sc-m">MAP</span>'+
     '<span class="sc-rank">Rank</span>'+
+    '<span class="sc-m" title="Temporal Recall — fraction of gold quarters covered (temporal questions only)">T-Recall</span>'+
+    '<span class="sc-m" title="Temporal Precision — fraction of K retrieved in gold quarter range">T-Prec</span>'+
     '<span class="sc-ret">Retrieved (top 3)</span>'+
   '</div>';
   var rows='';
@@ -752,8 +796,11 @@ function renderScoresTable(qs,adapter){
         '<span class="sc-m">'+recall+'</span>'+
         '<span class="sc-m">'+mrr+'</span>'+
         '<span class="sc-m">'+prec+'</span>'+
+        '<span class="sc-m">'+((sc.r_precision||0)*100).toFixed(0)+'%'+'</span>'+
         '<span class="sc-m">'+ap+'</span>'+
         '<span class="sc-rank">'+rank+'</span>'+
+        '<span class="sc-m">'+(sc.temporal_recall!=null?((sc.temporal_recall*100).toFixed(0)+'%<br><span style="font-size:9px;color:#94a3b8">'+sc.covered_quarters+'/'+sc.gold_quarters+'Q</span>'):'—')+'</span>'+
+        '<span class="sc-m">'+(sc.temporal_precision!=null?((sc.temporal_precision*100).toFixed(0)+'%'):'—')+'</span>'+
         '<span class="sc-ret">'+esc(retText.length>60?retText.slice(0,60)+'…':retText)+'</span>'+
         '<div class="sc-detail">'+
           '<div><b>Retrieved ('+((sc.retrieved||[]).length)+'):</b> '+retChips+'</div>'+
@@ -761,6 +808,7 @@ function renderScoresTable(qs,adapter){
           '<div style="margin-top:3px"><b>Matched:</b> '+(sc.matched_count||0)+'/'+q.answer_slugs.length+
             ' &nbsp;·&nbsp; <b>First hit rank:</b> '+(sc.first_hit_rank!=null?'#'+sc.first_hit_rank:'—')+
             ' &nbsp;·&nbsp; <b>Latency:</b> '+(sc.latency_ms||0)+'ms'+
+            (sc.temporal_recall!=null?' &nbsp;·&nbsp; <b style="color:#7c3aed">Temporal Recall:</b> '+(sc.temporal_recall*100).toFixed(0)+'% ('+sc.covered_quarters+'/'+sc.gold_quarters+' quarters) <b style="color:#7c3aed">T-Prec:</b> '+(sc.temporal_precision*100).toFixed(0)+'%':'')+
           '</div>'+
         '</div>'+
       '</div>';

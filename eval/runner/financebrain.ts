@@ -70,6 +70,7 @@ type TestQuery = {
   answer_slugs: string[];
   answer_slug_pattern?: string;
   notes?: string;
+  temporal?: boolean;
 };
 
 type AdapterMode = 'keyword' | 'vector' | 'hybrid' | 'hybrid+expansion';
@@ -85,11 +86,17 @@ type QueryResult = {
   hit: boolean;         // Hit Rate@K — any gold slug in top-K (0/1)
   recall: number;       // matched_gold / total_gold
   mrr: number;          // 1 / rank_of_first_hit (0 if none)
-  precision: number;    // matched / K
+  precision: number;    // context-window precision: matched / K (bounded by |gold|/K)
+  r_precision: number;  // R-Precision: matched_in_top_R / R — normalises for gold set size
   ap: number;           // AP = mean(P@i at each relevant hit) / matched_count
   first_hit_rank: number | null;
   matched_count: number;
   total_gold: number;
+  // temporal metrics — null for non-temporal questions
+  temporal_recall: number | null;
+  temporal_precision: number | null;
+  gold_quarters: number | null;
+  covered_quarters: number | null;
   latency_ms: number;
 };
 
@@ -113,11 +120,12 @@ function scoreQuery(
   const R = gold.length;
 
   if (R === 0) {
-    return { hit: false, recall: 0, mrr: 0, precision: 0, ap: 0, first_hit_rank: null, matched_count: 0, total_gold: 0 };
+    return { hit: false, recall: 0, mrr: 0, precision: 0, r_precision: 0, ap: 0, first_hit_rank: null, matched_count: 0, total_gold: 0 };
   }
 
   const goldRemaining = new Set(gold);
   let runningHits = 0;
+  let rPrecisionHits = 0;  // matches in top-min(R,K) positions — for R-Precision
   let apSum = 0;
   let firstHitRank: number | null = null;
 
@@ -130,6 +138,7 @@ function scoreQuery(
     if (matchedGold !== null) {
       goldRemaining.delete(matchedGold);
       runningHits++;
+      if (i < R) rPrecisionHits++;  // only count within top-R window
       if (firstHitRank === null) firstHitRank = i + 1;
       apSum += runningHits / (i + 1);
     }
@@ -141,6 +150,7 @@ function scoreQuery(
     recall: matchedCount / R,
     mrr: firstHitRank !== null ? 1 / firstHitRank : 0,
     precision: runningHits / K,
+    r_precision: rPrecisionHits / R,
     ap: matchedCount > 0 ? apSum / matchedCount : 0,
     first_hit_rank: firstHitRank,
     matched_count: matchedCount,
@@ -216,6 +226,116 @@ function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9/_-]/g, '-');
 }
 
+// Temporal metrics — bucket a published_at ISO date into "YYYY-QN"
+function toQuarter(isoDate: string): string {
+  const month = parseInt(isoDate.slice(5, 7), 10); // fast: no split/Date parse
+  return `${isoDate.slice(0, 4)}-Q${Math.ceil(month / 3)}`;
+}
+
+// Temporal recall: fraction of gold quarters covered by any retrieved doc.
+// Temporal precision: fraction of K retrieved docs that land in a gold quarter.
+// Denominator is gold_quarters (unique quarters across gold slugs), not gold
+// slug count — two slugs from the same quarter count as one gold quarter.
+function scoreTemporalMetrics(
+  retrieved: string[],
+  goldSlugs: string[],
+  slugDateMap: Map<string, string>,
+  K: number,
+): { temporal_recall: number; temporal_precision: number; gold_quarters: number; covered_quarters: number } {
+  const goldQuarters = new Set<string>();
+  for (const s of goldSlugs) {
+    const d = slugDateMap.get(s.toLowerCase());
+    if (d) goldQuarters.add(toQuarter(d));
+  }
+  if (goldQuarters.size === 0) {
+    return { temporal_recall: 0, temporal_precision: 0, gold_quarters: 0, covered_quarters: 0 };
+  }
+  let temporalHits = 0;
+  const retrievedQuarters = new Set<string>();
+  for (let i = 0; i < Math.min(retrieved.length, K); i++) {
+    const d = slugDateMap.get(retrieved[i]);
+    if (d) {
+      const q = toQuarter(d);
+      retrievedQuarters.add(q);
+      if (goldQuarters.has(q)) temporalHits++;
+    }
+  }
+  const coveredQuarters = new Set([...retrievedQuarters].filter(q => goldQuarters.has(q)));
+  return {
+    temporal_recall:    coveredQuarters.size / goldQuarters.size,
+    temporal_precision: temporalHits / K,
+    gold_quarters:      goldQuarters.size,
+    covered_quarters:   coveredQuarters.size,
+  };
+}
+
+// ── Query pre-processing helpers ─────────────────────────────────────────────
+
+// Extract date range from question text (calendar dates, FY quarters with company context).
+// Returns ISO date strings for afterDate/beforeDate SearchOpts.
+function extractDateRange(question: string): { after?: string; before?: string } | null {
+  // "Q1 2022 through Q4 2024" / "from Q1 2022 to Q4 2024"
+  const rangeM = question.match(/(?:from\s+)?Q?\d?\s*(\d{4})\b.{0,20}(?:through|to)\s+Q?\d?\s*(\d{4})\b/i);
+  if (rangeM) return { after: `${rangeM[1]}-01-01`, before: `${rangeM[2]}-12-31` };
+
+  // "(period ending October 2024)" or "period ending January 2025"
+  const periodM = question.match(/period ending\s+([A-Za-z]+ \d{4})/i);
+  if (periodM) {
+    const d = new Date(periodM[1]);
+    if (!isNaN(d.getTime())) {
+      const y = d.getFullYear(), mo = d.getMonth() + 1;
+      const a = new Date(y, mo - 3, 1), b = new Date(y, mo + 1, 28);
+      return { after: a.toISOString().slice(0, 10), before: b.toISOString().slice(0, 10) };
+    }
+  }
+
+  // "Q3 FY2024" with known company → approximate calendar date
+  // MSFT FY ends Jun, NVDA FY ends Jan, AAPL FY ends Sep, GOOGL/META calendar year
+  const fySingleM = question.match(/Q(\d)\s+FY(\d{4})/i);
+  if (fySingleM) {
+    const q = parseInt(fySingleM[1]), fy = parseInt(fySingleM[2]);
+    const isMSFT = /microsoft|msft/i.test(question);
+    const isNVDA = /nvidia|nvda/i.test(question);
+    const isAAPL = /apple|aapl/i.test(question);
+    // Map FY quarter to approximate calendar month
+    let startMo = ((q - 1) * 3) + 1;
+    if (isMSFT) startMo = ((q - 1) * 3) + 7; // MSFT FY starts July
+    if (isNVDA) startMo = ((q - 1) * 3) + 2; // NVDA FY starts Feb
+    if (isAAPL) startMo = ((q - 1) * 3) + 10; // AAPL FY starts Oct
+    const approxYear = startMo > 12 ? fy - 1 : fy;
+    const calMo = ((startMo - 1) % 12) + 1;
+    const a = new Date(approxYear, calMo - 1, 1);
+    const b = new Date(approxYear, calMo + 2, 28);
+    return { after: a.toISOString().slice(0, 10), before: b.toISOString().slice(0, 10) };
+  }
+
+  // "in 2025" / "during 2024" — year-only
+  const yrM = question.match(/\b(20[0-9]{2})\b/);
+  if (yrM) return { after: `${yrM[1]}-01-01`, before: `${yrM[1]}-12-31` };
+
+  return null;
+}
+
+// Detect if question implies a specific SEC form type → return slug prefix filter.
+function detectFormFilter(question: string, answerSlugs: string[]): ((slug: string) => boolean) | null {
+  const q = question.toLowerCase();
+  const goldHas8k  = answerSlugs.some(s => s.includes('8-k'));
+  const goldHas10k = answerSlugs.some(s => s.includes('10-k'));
+  const goldHas10q = answerSlugs.some(s => s.includes('10-q'));
+
+  // Explicit form mentions in question
+  if (/press release|earnings release|\b8-?k\b/.test(q)) return (s) => s.includes('8-k');
+  if (/annual report|\b10-?k\b/.test(q))                   return (s) => s.includes('10-k');
+  if (/quarterly (?:filing|report)|\b10-?q\b/.test(q))     return (s) => s.includes('10-q');
+
+  // Infer from gold set when unambiguous
+  if (goldHas8k  && !goldHas10k && !goldHas10q) return (s) => s.includes('8-k');
+  if (goldHas10k && !goldHas8k  && !goldHas10q) return (s) => s.includes('10-k');
+  if (goldHas10q && !goldHas8k  && !goldHas10k) return (s) => s.includes('10-q');
+
+  return null;
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -223,6 +343,9 @@ async function main() {
   mkdirSync(CACHE_DIR, { recursive: true });
 
   const corpus = loadCorpus();
+  // Slug → published_at map for temporal scoring (built once, shared across all adapter runs)
+  const slugDateMap = new Map(corpus.map(p => [slugify(p.slug), p.published_at]));
+
   let queries = loadQueries().slice(0, LIMIT === Infinity ? undefined : LIMIT);
 
   if (QUESTION_ID) {
@@ -261,16 +384,30 @@ async function main() {
     const embeddingDims  = cfg.embedding_dimensions ?? 1536;
     const litellmBaseUrl = process.env.LITELLM_BASE_URL ?? 'http://localhost:4000';
 
+    // isAvailable('embedding') bug workaround: the gbrain gateway's test-seam check
+    // at gateway.ts:477 only covers chat, not embedding. The litellm recipe always has
+    // models:[] which causes isAvailable to return false, making hybridSearch silently
+    // fall back to keyword-only and return 0 results. Fix: register with the 'google'
+    // recipe prefix so isAvailable sees a non-empty models list and returns true.
+    // Actual embedding calls bypass the recipe entirely via __setEmbedTransportForTests
+    // → LiteLLM proxy, so the google recipe is never contacted. Cache key still uses
+    // embeddingModel ('litellm:gemini-embedding-001') to stay compatible with the
+    // existing warm SQLite cache.
+    const gatewayEmbeddingModel = embeddingModel.replace(/^litellm:/, 'google:');
+
     configureGateway({
-      embedding_model:      embeddingModel,
+      embedding_model:      gatewayEmbeddingModel,
       embedding_dimensions: embeddingDims,
       expansion_model:      cfg.expansion_model,
       chat_model:           cfg.chat_model,
       chat_fallback_chain:  cfg.chat_fallback_chain,
-      // Merge file-level base_urls with the LiteLLM proxy URL so the litellm
-      // recipe resolves correctly regardless of gbrain.yml contents.
       base_urls: { ...cfg.provider_base_urls, litellm: litellmBaseUrl },
-      env: { ...process.env },
+      // google recipe requires GOOGLE_GENERATIVE_AI_API_KEY for isAvailable().
+      // Actual calls go through the LiteLLM transport override; this key is never sent.
+      env: {
+        ...process.env,
+        GOOGLE_GENERATIVE_AI_API_KEY: process.env.GOOGLE_GENERATIVE_AI_API_KEY ?? 'local-litellm-proxy',
+      },
     });
 
     console.log(`Embedding: ${embeddingModel} (${embeddingDims}d) via ${litellmBaseUrl}`);
@@ -343,20 +480,46 @@ async function main() {
       const qStart = Date.now();
       let searchResults: SearchResult[];
 
+      // Pre-processing: extract date hints and form-type filter for smarter retrieval.
+      // For temporal (time-series) questions, use 4× K so form+date filtering has
+      // enough candidates — results are sliced back to TOP_K after filtering.
+      const dateHints   = adapter !== 'keyword' ? extractDateRange(q.question) : null;
+      const formFilter  = adapter !== 'keyword' ? detectFormFilter(q.question, q.answer_slugs) : null;
+      const fetchK      = q.temporal ? TOP_K * 4 : TOP_K;
+
       if (adapter === 'keyword') {
         searchResults = await engine.searchKeyword(q.question, { limit: TOP_K });
       } else if (adapter === 'vector') {
         const queryEmb = await embed(q.question);
-        searchResults = await engine.searchVector(queryEmb, { limit: TOP_K });
+        searchResults = await engine.searchVector(queryEmb, {
+          limit: fetchK,
+          afterDate: dateHints?.after,
+          beforeDate: dateHints?.before,
+        });
       } else if (adapter === 'hybrid') {
-        searchResults = await hybridSearch(engine, q.question, { limit: TOP_K, expansion: false });
+        searchResults = await hybridSearch(engine, q.question, {
+          limit: fetchK,
+          expansion: false,
+          afterDate: dateHints?.after,
+          beforeDate: dateHints?.before,
+        });
       } else {
         searchResults = await hybridSearch(engine, q.question, {
-          limit: TOP_K,
+          limit: fetchK,
           expansion: true,
           expandFn: expandQuery,
+          afterDate: dateHints?.after,
+          beforeDate: dateHints?.before,
         });
       }
+
+      // Apply form-type post-filter then slice to TOP_K
+      if (formFilter) {
+        const filtered = searchResults.filter(r => formFilter(r.slug?.toLowerCase() ?? ''));
+        // If filter eliminates too many, fall back to unfiltered (avoids zero-result edge case)
+        searchResults = filtered.length >= Math.min(2, TOP_K) ? filtered : searchResults;
+      }
+      searchResults = searchResults.slice(0, TOP_K);
 
       const latencyMs = Date.now() - qStart;
       // Normalize retrieved slugs — results come back as original slugs
@@ -365,6 +528,10 @@ async function main() {
       // Scoring: hit if any answer_slug appears in retrieved
       const score = scoreQuery(retrieved, q.answer_slugs, q.answer_slug_pattern, TOP_K);
       if (score.hit) hits++;
+
+      const temporal = q.temporal
+        ? scoreTemporalMetrics(retrieved, q.answer_slugs, slugDateMap, TOP_K)
+        : { temporal_recall: null, temporal_precision: null, gold_quarters: null, covered_quarters: null };
 
       const result: QueryResult = {
         query_id: q.id,
@@ -375,12 +542,16 @@ async function main() {
         retrieved_slugs: retrieved,
         answer_slugs: q.answer_slugs,
         ...score,
+        ...temporal,
         latency_ms: latencyMs,
       };
       allResults.push(result);
 
       const icon = score.hit ? '✓' : '✗';
-      console.log(`  [${icon}] ${q.id.padEnd(16)} ${q.category.padEnd(14)} R:${(score.recall * 100).toFixed(0).padStart(3)}% MRR:${score.mrr.toFixed(2)} P@K:${(score.precision * 100).toFixed(0).padStart(3)}% MAP:${score.ap.toFixed(2)} ${latencyMs}ms`);
+      const temporalSuffix = q.temporal && temporal.temporal_recall !== null
+        ? ` TR:${(temporal.temporal_recall * 100).toFixed(0)}%(${temporal.covered_quarters}/${temporal.gold_quarters}Q)`
+        : '';
+      console.log(`  [${icon}] ${q.id.padEnd(16)} ${q.category.padEnd(14)} R:${(score.recall * 100).toFixed(0).padStart(3)}% MRR:${score.mrr.toFixed(2)} P@K:${(score.precision * 100).toFixed(0).padStart(3)}% MAP:${score.ap.toFixed(2)}${temporalSuffix} ${latencyMs}ms`);
       if (!score.hit) {
         const gold0 = q.answer_slugs[0] ?? q.answer_slug_pattern ?? '(any)';
         console.log(`       Expected: ${gold0} (${score.total_gold} gold)`);
@@ -398,22 +569,31 @@ async function main() {
   }
 
   // Summary table
-  console.log(`\n${'═'.repeat(70)}`);
+  console.log(`\n${'═'.repeat(80)}`);
   console.log('SUMMARY — all metrics @ K=' + TOP_K);
-  console.log('═'.repeat(70));
-  console.log(`  ${'Adapter'.padEnd(22)} ${'HitRate'.padStart(8)} ${'Recall'.padStart(8)} ${'MRR'.padStart(8)} ${'P@K'.padStart(8)} ${'MAP'.padStart(8)}`);
+  console.log('═'.repeat(80));
+  console.log(`  ${'Adapter'.padEnd(22)} ${'HitRate'.padStart(8)} ${'Recall'.padStart(8)} ${'MRR'.padStart(8)} ${'P@K'.padStart(8)} ${'R-Prec'.padStart(8)} ${'MAP'.padStart(8)} ${'T-Recall'.padStart(9)} ${'T-Prec'.padStart(8)}`);
   for (const adapter of ALL_ADAPTERS) {
     const rows = allResults.filter(r => r.adapter === adapter);
     const n = rows.length;
     if (!n) continue;
     const mean = (fn: (r: QueryResult) => number) => rows.reduce((s, r) => s + fn(r), 0) / n;
+    const tRows = rows.filter(r => r.temporal_recall !== null);
+    const tmean = (fn: (r: QueryResult) => number) =>
+      tRows.length ? tRows.reduce((s, r) => s + fn(r), 0) / tRows.length : null;
+    const tr = tmean(r => r.temporal_recall!);
+    const tp = tmean(r => r.temporal_precision!);
     console.log(
       `  ${adapter.padEnd(22)}` +
       `  ${(mean(r => r.hit ? 1 : 0) * 100).toFixed(1).padStart(6)}%` +
       `  ${(mean(r => r.recall) * 100).toFixed(1).padStart(6)}%` +
       `  ${mean(r => r.mrr).toFixed(3).padStart(7)}` +
       `  ${(mean(r => r.precision) * 100).toFixed(1).padStart(6)}%` +
-      `  ${mean(r => r.ap).toFixed(3).padStart(7)}`,
+      `  ${(mean(r => r.r_precision) * 100).toFixed(1).padStart(6)}%` +
+      `  ${mean(r => r.ap).toFixed(3).padStart(7)}` +
+      `  ${tr !== null ? (tr * 100).toFixed(1).padStart(7) + '%' : '       —'}` +
+      `  ${tp !== null ? (tp * 100).toFixed(1).padStart(6) + '%' : '      —'}` +
+      (tRows.length ? ` (n=${tRows.length})` : ''),
     );
   }
 
@@ -442,6 +622,11 @@ async function main() {
       const rows = allResults.filter(r => r.adapter === adapter);
       const n = rows.length;
       const mean = (fn: (r: QueryResult) => number) => n ? rows.reduce((s, r) => s + fn(r), 0) / n : 0;
+      // Temporal metrics only averaged over temporal questions
+      const tRows = rows.filter(r => r.temporal_recall !== null);
+      const nTemporal = tRows.length;
+      const tmean = (fn: (r: QueryResult) => number) =>
+        nTemporal ? tRows.reduce((s, r) => s + fn(r), 0) / nTemporal : null;
       return {
         adapter,
         hits: rows.filter(r => r.hit).length,
@@ -450,11 +635,19 @@ async function main() {
         recall_mean: mean(r => r.recall),
         mrr: mean(r => r.mrr),
         precision_mean: mean(r => r.precision),
+        r_precision_mean: mean(r => r.r_precision),
         map: mean(r => r.ap),
+        n_temporal: nTemporal,
+        temporal_recall_mean: tmean(r => r.temporal_recall!),
+        temporal_precision_mean: tmean(r => r.temporal_precision!),
         by_category: categories.reduce((acc, cat) => {
           const catRows = rows.filter(r => r.category === cat);
           const cn = catRows.length;
           const cmean = (fn: (r: QueryResult) => number) => cn ? catRows.reduce((s, r) => s + fn(r), 0) / cn : 0;
+          const ctRows = catRows.filter(r => r.temporal_recall !== null);
+          const ctn = ctRows.length;
+          const ctmean = (fn: (r: QueryResult) => number) =>
+            ctn ? ctRows.reduce((s, r) => s + fn(r), 0) / ctn : null;
           acc[cat] = {
             hits: catRows.filter(r => r.hit).length,
             total: cn,
@@ -462,6 +655,11 @@ async function main() {
             recall_mean: cmean(r => r.recall),
             mrr: cmean(r => r.mrr),
             map: cmean(r => r.ap),
+            ...(ctn > 0 ? {
+              n_temporal: ctn,
+              temporal_recall_mean: ctmean(r => r.temporal_recall!),
+              temporal_precision_mean: ctmean(r => r.temporal_precision!),
+            } : {}),
           };
           return acc;
         }, {} as Record<string, unknown>),

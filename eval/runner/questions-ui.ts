@@ -11,6 +11,16 @@
  */
 import { readdirSync, readFileSync, writeFileSync, existsSync, statSync } from "fs";
 import { join } from "path";
+import { PGLiteEngine } from "gbrain/pglite-engine";
+import { importFromContent } from "gbrain/import-file";
+import { hybridSearch } from "gbrain/search/hybrid";
+import { expandQuery } from "gbrain/search/expansion";
+import {
+  configureGateway,
+  __setEmbedTransportForTests,
+} from "../../node_modules/gbrain/src/core/ai/gateway.ts";
+import { embed } from "../../node_modules/gbrain/src/core/embedding.ts";
+import { EmbeddingCache, makeCachingTransport } from "./longmemeval-cache.ts";
 
 const DATA_DIR = join(import.meta.dirname, "../data/financebrain-v1");
 const QUESTIONS_FILE = join(DATA_DIR, "questions.json");
@@ -28,6 +38,8 @@ type Question = {
   answer_slug_pattern?: string;
   notes?: string;
   validated?: boolean;
+  ai_reviewed?: boolean;
+  human_reviewed?: boolean;
 };
 type QFile = { description: string; queries: Question[] };
 
@@ -104,57 +116,63 @@ function countSecDir(prefix: string): number {
   return n;
 }
 
+function allCorpusDocs(): PageMeta[] {
+  const all: PageMeta[] = [
+    ...loadDir("financials"),
+    ...loadDir("transcripts"),
+    ...loadDir("price"),
+    ...loadDir("social/dylan522p", f => f !== "_index.json"),
+    ...loadDir("substack"),
+    ...loadDir("portfolio", f => f !== "latest.json"),
+    ...loadSecDir("8-k"),
+    ...loadSecDir("10-k"),
+    ...loadSecDir("10-q"),
+  ];
+  return all.sort((a, b) => b.published_at.localeCompare(a.published_at));
+}
+
 function pagesForCategory(category: string): PageMeta[] {
   switch (category) {
-    case "financials": return loadDir("financials");
-    case "transcript": return loadDir("transcripts");
-    case "price":      return loadDir("price");
-    case "social":     return loadDir("social/dylan522p", f => f !== "_index.json");
-    case "substack":   return loadDir("substack");
-    case "portfolio":  return loadDir("portfolio", f => f !== "latest.json");
-    case "sec-8k":     return loadSecDir("8-k");
-    case "sec-10k":    return loadSecDir("10-k");
-    case "sec-10q":    return loadSecDir("10-q");
-    case "cross": {
-      const all: PageMeta[] = [
-        ...loadDir("financials"),
-        ...loadDir("transcripts"),
-        ...loadDir("price"),
-        ...loadDir("social/dylan522p", f => f !== "_index.json"),
-        ...loadDir("substack"),
-        ...loadDir("portfolio", f => f !== "latest.json"),
-        ...loadSecDir("8-k"),
-        ...loadSecDir("10-k"),
-        ...loadSecDir("10-q"),
-      ];
-      return all.sort((a, b) => b.published_at.localeCompare(a.published_at));
-    }
-    default:           return [];
+    case "financials":        return loadDir("financials");
+    case "transcript":        return loadDir("transcripts");
+    case "sec":               return [
+                                ...loadSecDir("8-k"),
+                                ...loadSecDir("10-k"),
+                                ...loadSecDir("10-q"),
+                              ].sort((a, b) => b.published_at.localeCompare(a.published_at));
+    case "news":              return [
+                                ...loadDir("social/dylan522p", f => f !== "_index.json"),
+                                ...loadDir("substack"),
+                              ].sort((a, b) => b.published_at.localeCompare(a.published_at));
+    case "portfolio":         return loadDir("portfolio", f => f !== "latest.json");
+    // These categories span multiple source types — show full corpus for slug browsing
+    case "product":
+    case "supply-chain":
+    case "time-series":
+    case "market-reactions":  return allCorpusDocs();
+    default:                  return [];
   }
 }
 
 function totalForCategory(category: string): number {
   switch (category) {
-    case "financials": return countDir("financials");
-    case "transcript": return countDir("transcripts");
-    case "price":      return countDir("price");
-    case "social":     return countDir("social/dylan522p", f => f !== "_index.json");
-    case "substack":   return countDir("substack");
-    case "portfolio":  return countDir("portfolio", f => f !== "latest.json");
-    case "sec-8k":     return countSecDir("8-k");
-    case "sec-10k":    return countSecDir("10-k");
-    case "sec-10q":    return countSecDir("10-q");
-    case "cross":
+    case "financials":   return countDir("financials");
+    case "transcript":   return countDir("transcripts");
+    case "sec":          return countSecDir("8-k") + countSecDir("10-k") + countSecDir("10-q");
+    case "news":         return countDir("social/dylan522p", f => f !== "_index.json") + countDir("substack");
+    case "portfolio":    return countDir("portfolio", f => f !== "latest.json");
+    case "product":
+    case "supply-chain":
+    case "time-series":
+    case "market-reactions":
       return countDir("financials") +
         countDir("transcripts") +
         countDir("price") +
         countDir("social/dylan522p", f => f !== "_index.json") +
         countDir("substack") +
         countDir("portfolio", f => f !== "latest.json") +
-        countSecDir("8-k") +
-        countSecDir("10-k") +
-        countSecDir("10-q");
-    default:           return 0;
+        countSecDir("8-k") + countSecDir("10-k") + countSecDir("10-q");
+    default: return 0;
   }
 }
 
@@ -266,9 +284,186 @@ function nextId(category: string, queries: Question[]): string {
   return `${category}-${String(n).padStart(2, "0")}`;
 }
 
+// ---------------------------------------------------------------------------
+// Warm keyword engine — indexed once on startup, reused for all Score requests
+// ---------------------------------------------------------------------------
+
+function slugify(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9/_-]/g, "-");
+}
+
+function walkCorpusJson(dir: string): string[] {
+  const results: string[] = [];
+  for (const f of readdirSync(dir)) {
+    const p = join(dir, f);
+    if (statSync(p).isDirectory()) results.push(...walkCorpusJson(p));
+    else if (f.endsWith(".json") && !f.startsWith("_") && f !== "test-queries.json" && f !== "questions.json" && !f.endsWith("QuestionRules.md")) results.push(p);
+  }
+  return results;
+}
+
+// Temporal helpers — mirrors financebrain.ts
+function toQuarter(isoDate: string): string {
+  const month = parseInt(isoDate.slice(5, 7), 10);
+  return `${isoDate.slice(0, 4)}-Q${Math.ceil(month / 3)}`;
+}
+
+function scoreTemporalMetrics(
+  retrieved: string[],
+  goldSlugs: string[],
+  slugDateMap: Map<string, string>,
+  K: number,
+) {
+  const goldQuarters = new Set<string>();
+  for (const s of goldSlugs) {
+    const d = slugDateMap.get(s.toLowerCase());
+    if (d) goldQuarters.add(toQuarter(d));
+  }
+  if (goldQuarters.size === 0) {
+    return { temporal_recall: 0, temporal_precision: 0, gold_quarters: 0, covered_quarters: 0 };
+  }
+  let temporalHits = 0;
+  const retrievedQuarters = new Set<string>();
+  for (let i = 0; i < Math.min(retrieved.length, K); i++) {
+    const d = slugDateMap.get(retrieved[i]);
+    if (d) {
+      const q = toQuarter(d);
+      retrievedQuarters.add(q);
+      if (goldQuarters.has(q)) temporalHits++;
+    }
+  }
+  const coveredQuarters = new Set([...retrievedQuarters].filter(q => goldQuarters.has(q)));
+  return {
+    temporal_recall:    coveredQuarters.size / goldQuarters.size,
+    temporal_precision: temporalHits / K,
+    gold_quarters:      goldQuarters.size,
+    covered_quarters:   coveredQuarters.size,
+  };
+}
+
+// Scoring (mirrors financebrain.ts scoreQuery)
+function scoreQuery(
+  retrieved: string[], answerSlugs: string[], patternSlug: string | undefined, K: number,
+) {
+  const isPattern = answerSlugs.length === 0 && !!patternSlug;
+  const gold = answerSlugs.length > 0
+    ? answerSlugs.map(s => s.toLowerCase())
+    : patternSlug ? [patternSlug.toLowerCase()] : [];
+  const R = gold.length;
+  if (R === 0) return { hit: false, recall: 0, mrr: 0, precision: 0, r_precision: 0, ap: 0, first_hit_rank: null, matched_count: 0, total_gold: 0 };
+  const goldRemaining = new Set(gold);
+  let runningHits = 0, rPrecisionHits = 0, apSum = 0, firstHitRank: number | null = null;
+  for (let i = 0; i < Math.min(retrieved.length, K); i++) {
+    const r = retrieved[i];
+    let matchedGold: string | null = null;
+    for (const g of goldRemaining) {
+      if (isPattern ? r.includes(g) : r === g) { matchedGold = g; break; }
+    }
+    if (matchedGold !== null) {
+      goldRemaining.delete(matchedGold);
+      runningHits++;
+      if (i < R) rPrecisionHits++;
+      if (firstHitRank === null) firstHitRank = i + 1;
+      apSum += runningHits / (i + 1);
+    }
+  }
+  const matchedCount = gold.length - goldRemaining.size;
+  return {
+    hit: matchedCount > 0,
+    recall: matchedCount / R,
+    mrr: firstHitRank !== null ? 1 / firstHitRank : 0,
+    precision: runningHits / K,
+    r_precision: rPrecisionHits / R,
+    ap: matchedCount > 0 ? apSum / matchedCount : 0,
+    first_hit_rank: firstHitRank,
+    matched_count: matchedCount,
+    total_gold: R,
+  };
+}
+
+type WarmEngineState =
+  | { status: "idle" }
+  | { status: "indexing"; indexed: number; total: number }
+  | { status: "ready"; engine: PGLiteEngine; total: number }
+  | { status: "error"; message: string };
+
+let warmState: WarmEngineState = { status: "idle" };
+let warmEngineHasEmbedding = false;  // true when proxy was available at startup
+const slugDateMap = new Map<string, string>();  // slug → published_at, for temporal scoring
+
+async function initWarmEngine(): Promise<void> {
+  if (warmState.status === "ready" || warmState.status === "indexing") return;
+
+  const litellmBaseUrl = process.env.LITELLM_BASE_URL;
+  const hasProxy = !!litellmBaseUrl;
+
+  // Wire embedding transport when proxy is available.
+  // Uses the same SQLite cache and isAvailable() workaround as financebrain.ts.
+  if (hasProxy) {
+    const embeddingModel = "litellm:gemini-embedding-001";
+    const embeddingDims  = 1536;
+    const modelId        = "gemini-embedding-001";
+    // google: prefix so isAvailable('embedding') returns true (litellm recipe has models:[])
+    configureGateway({
+      embedding_model:      embeddingModel.replace(/^litellm:/, "google:"),
+      embedding_dimensions: embeddingDims,
+      base_urls:            { litellm: litellmBaseUrl },
+      env: {
+        ...process.env,
+        GOOGLE_GENERATIVE_AI_API_KEY: process.env.GOOGLE_GENERATIVE_AI_API_KEY ?? "local-litellm-proxy",
+      },
+    });
+    const cacheKey  = `${embeddingModel}@${embeddingDims}`;
+    const cachePath = join(DATA_DIR, "embed-cache",
+      `embed-cache-${cacheKey.replace(/[^a-z0-9@-]/gi, "_")}.sqlite`);
+    const cache = new EmbeddingCache(cachePath, cacheKey);
+    const litellmApiKey = process.env.LITELLM_API_KEY;
+    const realTransport = async (params: { values: string[] } & Record<string, unknown>) => {
+      const res = await fetch(`${litellmBaseUrl}/embeddings`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", ...(litellmApiKey ? { Authorization: `Bearer ${litellmApiKey}` } : {}) },
+        body: JSON.stringify({ model: modelId, input: params.values, dimensions: embeddingDims }),
+      });
+      if (!res.ok) throw new Error(`LiteLLM ${res.status}: ${(await res.text()).slice(0, 200)}`);
+      const data = await res.json() as { data: Array<{ embedding: number[] }> };
+      return { embeddings: data.data.map((d: any) => d.embedding) };
+    };
+    __setEmbedTransportForTests(makeCachingTransport(realTransport, cache));
+    warmEngineHasEmbedding = true;
+    console.log(`Embedding: ${embeddingModel} (${embeddingDims}d) via ${litellmBaseUrl} — warm cache: ${cachePath}`);
+  }
+
+  const files = walkCorpusJson(DATA_DIR).filter(
+    f => !f.includes("/embed-cache/") && !f.includes("analyst-estimates") && !f.endsWith("questions.json")
+  );
+  warmState = { status: "indexing", indexed: 0, total: files.length };
+  try {
+    const engine = new PGLiteEngine();
+    await engine.connect({});
+    await engine.initSchema();
+    let indexed = 0;
+    for (const f of files) {
+      try {
+        const page = JSON.parse(readFileSync(f, "utf8")) as { slug?: string; compiled_truth?: string; published_at?: string };
+        if (page.slug && page.compiled_truth) {
+          await importFromContent(engine, slugify(page.slug), page.compiled_truth, { noEmbed: !hasProxy });
+          if (page.published_at) slugDateMap.set(slugify(page.slug), page.published_at);
+        }
+      } catch { /* skip malformed */ }
+      indexed++;
+      if (indexed % 200 === 0) warmState = { status: "indexing", indexed, total: files.length };
+    }
+    warmState = { status: "ready", engine, total: files.length };
+    console.log(`Engine ready — ${files.length} pages indexed (embedding: ${warmEngineHasEmbedding})`);
+  } catch (e: any) {
+    warmState = { status: "error", message: e.message };
+    console.error("Warm engine failed:", e.message);
+  }
+}
+
 const CATEGORIES = [
-  "financials", "transcript", "price", "social", "substack",
-  "portfolio", "sec-8k", "sec-10k", "sec-10q", "cross",
+  "financials", "transcript", "sec", "news", "product",
+  "supply-chain", "portfolio", "time-series", "market-reactions",
 ];
 
 // ---------------------------------------------------------------------------
@@ -284,6 +479,7 @@ function json(data: unknown, status = 200) {
 
 const server = Bun.serve({
   port: PORT,
+  idleTimeout: 0,  // eval endpoint spawns financebrain.ts (~30s); disable Bun's 10s default
   async fetch(req) {
     const url = new URL(req.url);
     const path = url.pathname;
@@ -302,6 +498,8 @@ const server = Bun.serve({
         name,
         total_slugs: totalForCategory(name),
         question_count: qfile.queries.filter(q => q.category === name).length,
+        human_reviewed_count: qfile.queries.filter(q => q.category === name && q.human_reviewed).length,
+        ai_reviewed_count: qfile.queries.filter(q => q.category === name && q.ai_reviewed).length,
       }));
       return json({ categories, questions: qfile.queries, savePath: QUESTIONS_FILE });
     }
@@ -345,6 +543,8 @@ const server = Bun.serve({
         ...(body.answer_slug_pattern ? { answer_slug_pattern: body.answer_slug_pattern } : {}),
         ...(body.notes ? { notes: body.notes } : {}),
         ...(body.validated !== undefined ? { validated: body.validated } : {}),
+        ai_reviewed: false,
+        human_reviewed: false,
       };
       qfile.queries.push(newQ);
       saveQFile(qfile);
@@ -364,12 +564,14 @@ const server = Bun.serve({
       const idx = qfile.queries.findIndex(q => q.id === id);
       if (idx === -1) return json({ error: "not found" }, 404);
       const q = qfile.queries[idx];
-      if (body.question !== undefined) q.question = body.question;
-      if (body.answer !== undefined) q.answer = body.answer;
+      if (body.question !== undefined) { q.question = body.question; q.human_reviewed = false; }
+      if (body.answer !== undefined) { q.answer = body.answer; q.human_reviewed = false; }
       if (body.answer_slugs !== undefined) q.answer_slugs = body.answer_slugs;
       if (body.answer_slug_pattern !== undefined) q.answer_slug_pattern = body.answer_slug_pattern;
       if (body.notes !== undefined) q.notes = body.notes;
       if (body.validated !== undefined) q.validated = body.validated;
+      if (body.ai_reviewed !== undefined) q.ai_reviewed = body.ai_reviewed;
+      if (body.human_reviewed !== undefined) q.human_reviewed = body.human_reviewed;
       saveQFile(qfile);
       const cat = q.category;
       return json({
@@ -439,7 +641,16 @@ const server = Bun.serve({
       });
     }
 
-    // GET /api/eval/:id — single-question eval (all adapters if proxy running, else keyword only)
+    // GET /api/eval/status — warm engine indexing progress
+    if (method === "GET" && path === "/api/eval/status") {
+      return json(warmState.status === "ready"
+        ? { status: "ready", total: warmState.total }
+        : warmState.status === "indexing"
+          ? { status: "indexing", indexed: warmState.indexed, total: warmState.total }
+          : warmState);
+    }
+
+    // GET /api/eval/:id — score using warm in-process engine (all adapters if embedding available)
     const evalMatch = path.match(/^\/api\/eval\/(.+)$/);
     if (method === "GET" && evalMatch) {
       const id = decodeURIComponent(evalMatch[1]);
@@ -447,54 +658,54 @@ const server = Bun.serve({
       const q = qfile.queries.find(x => x.id === id);
       if (!q) return json({ error: "not found" }, 404);
 
-      const projectRoot = join(import.meta.dirname, "../..");
-      const reportsDir = join(projectRoot, "eval/reports/financebrain");
+      if (warmState.status === "indexing") {
+        return json({ id, indexing: true, indexed: warmState.indexed, total: warmState.total });
+      }
+      if (warmState.status !== "ready") {
+        return json({ id, error: "engine not ready: " + (warmState.status === "error" ? warmState.message : warmState.status) }, 503);
+      }
 
-      let beforeFiles = new Set<string>();
-      try { beforeFiles = new Set(readdirSync(reportsDir)); } catch { /* dir may not exist yet */ }
-
-      // Run all adapters if LITELLM_BASE_URL is set, keyword-only otherwise.
-      const hasProxy = !!process.env.LITELLM_BASE_URL;
-      const adaptersArg = hasProxy ? "keyword,vector,hybrid,hybrid+expansion" : "keyword";
-
-      const proc = Bun.spawn(
-        ["bun", "eval/runner/financebrain.ts",
-          "--queries", QUESTIONS_FILE,
-          "--adapters", adaptersArg,
-          "--question-id", id,
-          "--top-k", "5"],
-        { cwd: projectRoot, stdout: "pipe", stderr: "pipe" },
-      );
-      await proc.exited;
-
-      type ReportRow = {
-        query_id: string; adapter: string; hit: boolean; recall: number; mrr: number;
-        precision: number; ap: number; first_hit_rank: number | null;
-        matched_count: number; total_gold: number; retrieved_slugs: string[]; latency_ms: number;
-      };
+      const TOP_K = 5;
+      const engine = warmState.engine;
       const byAdapter: Record<string, unknown> = {};
-      try {
-        const newFiles = readdirSync(reportsDir).filter(f => !beforeFiles.has(f) && f.endsWith(".json"));
-        if (newFiles.length > 0) {
-          const report = JSON.parse(readFileSync(join(reportsDir, newFiles[newFiles.length - 1]), "utf8")) as {
-            results: ReportRow[];
-          };
-          for (const row of report.results.filter(r => r.query_id === id)) {
-            byAdapter[row.adapter] = {
-              hit: row.hit, recall: row.recall ?? 0, mrr: row.mrr ?? 0,
-              precision: row.precision ?? 0, ap: row.ap ?? 0,
-              first_hit_rank: row.first_hit_rank ?? null,
-              matched_count: row.matched_count ?? 0, total_gold: row.total_gold ?? 0,
-              retrieved: row.retrieved_slugs ?? [], latency_ms: row.latency_ms,
-            };
-          }
-        }
-      } catch { /* return empty */ }
+      const adaptersRun: string[] = [];
 
-      const kw = byAdapter["keyword"] as { hit: boolean; retrieved: string[] } | undefined;
+      // Helper: score and package one adapter result (includes temporal metrics when q.temporal)
+      const runAdapter = async (adapterName: string, searchFn: () => Promise<any[]>) => {
+        const t0 = Date.now();
+        const results = await searchFn();
+        const retrieved = results.map((r: any) => r.slug?.toLowerCase() ?? "");
+        const score = scoreQuery(retrieved, q.answer_slugs, q.answer_slug_pattern, TOP_K);
+        const temporal = (q as any).temporal
+          ? scoreTemporalMetrics(retrieved, q.answer_slugs, slugDateMap, TOP_K)
+          : { temporal_recall: null, temporal_precision: null, gold_quarters: null, covered_quarters: null };
+        byAdapter[adapterName] = { ...score, ...temporal, retrieved, latency_ms: Date.now() - t0 };
+        adaptersRun.push(adapterName);
+      };
+
+      // Keyword — always
+      await runAdapter("keyword", () => engine.searchKeyword(q.question, { limit: TOP_K }));
+
+      // Vector + hybrid — only when warm engine has embeddings
+      if (warmEngineHasEmbedding) {
+        await runAdapter("vector", async () => {
+          const qEmb = await embed(q.question);
+          return engine.searchVector(qEmb, { limit: TOP_K });
+        });
+        await runAdapter("hybrid", () =>
+          hybridSearch(engine, q.question, { limit: TOP_K, expansion: false })
+        );
+        if (process.env.ANTHROPIC_API_KEY) {
+          await runAdapter("hybrid+expansion", () =>
+            hybridSearch(engine, q.question, { limit: TOP_K, expansion: true, expandFn: expandQuery })
+          );
+        }
+      }
+
+      const kw = byAdapter["keyword"] as { hit: boolean; retrieved: string[] };
       return json({
         id, hit: kw?.hit ?? null, retrieved: kw?.retrieved ?? [],
-        adapters_run: adaptersArg.split(","), by_adapter: byAdapter, top_k: 5,
+        adapters_run: adaptersRun, by_adapter: byAdapter, top_k: TOP_K,
       });
     }
 
@@ -504,4 +715,8 @@ const server = Bun.serve({
 
 console.log(`FinanceBrain Question Builder → http://localhost:${server.port}`);
 console.log(`Saving to: ${QUESTIONS_FILE}`);
-console.log(`(Search index builds lazily on first search — ~2s for 1,910 docs)`);
+const hasProxy = !!process.env.LITELLM_BASE_URL;
+console.log(`Indexing corpus${hasProxy ? " + embeddings (warm cache)" : ""} (~${hasProxy ? "60–90" : "30"}s)…`);
+
+// Index in background immediately — by the time user opens browser it's likely ready
+initWarmEngine();

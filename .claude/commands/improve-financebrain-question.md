@@ -8,6 +8,8 @@ A question has these fields:
 - `answer_slugs`: list of corpus document IDs the system must retrieve
 - `notes`: context the benchmark author knows but the user doesn't
 - `validated`: boolean
+- `ai_reviewed`: boolean — set true after AI rule pass; reset to false if question is manually edited
+- `human_reviewed`: boolean — set true only after a human confirms the question meets R1–R8
 
 **Your job:** apply the rules below to the question(s) given, output improved versions with a short rationale for each change. Do not change `id`, `category`, or `answer_slugs` unless explicitly asked — those require corpus verification. Flag slug issues separately.
 
@@ -50,25 +52,6 @@ Questions joined by "and" that test two independent facts require a larger gold 
 "question": "What does Alphabet's FY2024 10-K say is the primary risk from its revenue concentration in digital advertising?"
 "question": "What risk factors does Alphabet's FY2024 10-K disclose about competition and supply chain in AI?"
 ```
-
----
-
-### R3 — Phrase as a real user, not a benchmark author
-
-Questions should be phrased the way someone who *hasn't read the source* would ask. If the question presupposes knowledge of the source (references the article title, uses the source's own category labels, or contains a hint that makes the source obvious), it tests keyword matching, not retrieval.
-
-**Test:** would someone who has never read any of the answer_slugs phrase the question this way? If no, rewrite.
-
-**Before:**
-```
-"question": "What were the key ARR milestones for vibe coding platforms reported in the 2025 AI year-end recap?"
-```
-**After:**
-```
-"question": "How large was the AI code-generation startup market by end of 2025, and which companies led on ARR growth?"
-```
-
-**Special case — time-series questions:** it is acceptable to specify an exact date range ("Q1 FY2022 through Q3 FY2026") because the range is the substance of the question, not a source hint.
 
 ---
 
@@ -191,9 +174,7 @@ These failure modes appear repeatedly across the question bank:
 
 2. **Notes as confession.** If the notes field says "taxonomy derived by benchmark author" or "not labeled in source data," that's a red flag the question violates R7. Notes should explain context, not admit violations.
 
-3. **Questions written backwards from a known source.** The author read the source first and wrote a question the summary answers. These sound unnatural ("key ARR milestones reported in the 2025 year-end recap") and often fail R3. Apply the stranger test: would someone who never read this source phrase the question this way?
-
-4. **"Across / throughout / in each quarter" with a thin gold set.** R8 violation pattern. The question implies breadth the gold set doesn't cover.
+3. **"Across / throughout / in each quarter" with a thin gold set.** R8 violation pattern. The question implies breadth the gold set doesn't cover.
 
 5. **Answer contains editorial conclusions.** "Apple deliberately carries ~2x more debt — structured leverage for buybacks, not distress" is the author's interpretation. Facts in answer, interpretation in notes.
 
