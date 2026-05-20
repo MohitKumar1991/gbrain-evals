@@ -63,14 +63,21 @@ type FinancePage = {
   quarter_context?: Record<string, unknown>;
 };
 
+// Public query — the only shape adapters ever see. No gold fields.
 type TestQuery = {
   id: string;
   category: string;
   question: string;
-  answer_slugs: string[];
-  answer_slug_pattern?: string;
   notes?: string;
+};
+
+// Gold qrels — scorer-only. Loaded separately; never on the same object as TestQuery.
+type FinanceBrainQrel = {
+  id: string;
+  relevant: string[];
+  relevant_pattern?: string;
   temporal?: boolean;
+  grades?: Record<string, number>;
 };
 
 type AdapterMode = 'keyword' | 'vector' | 'hybrid' | 'hybrid+expansion';
@@ -168,8 +175,9 @@ const QUESTION_ID = args.includes('--question-id') ? args[args.indexOf('--questi
 const KEYWORD_ONLY = args.includes('--keyword-only');
 const ADAPTERS_ARG = args.includes('--adapters') ? args[args.indexOf('--adapters') + 1] : null;
 const NO_CACHE = args.includes('--no-cache');
-const CACHE_DIR = 'eval/data/financebrain-v1/embed-cache';
+const CACHE_DIR  = 'eval/data/financebrain-v1/embed-cache';
 const CORPUS_DIR = 'eval/data/financebrain-v1';
+const GOLD_DIR   = 'eval/data/gold';
 const REPORTS_DIR = 'eval/reports/financebrain';
 
 const ALL_ADAPTERS: AdapterMode[] = KEYWORD_ONLY
@@ -202,13 +210,32 @@ function loadCorpus(): FinancePage[] {
   return pages;
 }
 
+// Loads the PUBLIC query list — no gold fields (id, category, question, notes only).
+// Gold is loaded separately by loadQrels() and never merged back onto this object.
 function loadQueries(): TestQuery[] {
+  const parse = (raw: { queries?: unknown[]; [k: string]: unknown }) => {
+    const list = (raw.queries ?? raw) as Array<Record<string, unknown>>;
+    return list.map(q => ({
+      id:       q.id       as string,
+      category: q.category as string,
+      question: q.question as string,
+      ...(q.notes ? { notes: q.notes as string } : {}),
+    }));
+  };
   if (QUERIES_ARG === 'test') {
-    const raw = JSON.parse(readFileSync(join(CORPUS_DIR, 'test-queries.json'), 'utf8'));
-    return raw.queries as TestQuery[];
+    return parse(JSON.parse(readFileSync(join(CORPUS_DIR, 'test-queries.json'), 'utf8')));
   }
-  const raw = JSON.parse(readFileSync(QUERIES_ARG, 'utf8'));
-  return (raw.queries ?? raw) as TestQuery[];
+  return parse(JSON.parse(readFileSync(QUERIES_ARG, 'utf8')));
+}
+
+// Loads gold qrels from the sealed gold directory — never passed to adapters.
+// Returns a map from query id → FinanceBrainQrel for O(1) post-retrieval lookup.
+function loadQrels(): Map<string, FinanceBrainQrel> {
+  const qrelsPath = join(GOLD_DIR, 'financebrain-qrels.json');
+  const raw = JSON.parse(readFileSync(qrelsPath, 'utf8')) as {
+    queries: FinanceBrainQrel[];
+  };
+  return new Map(raw.queries.map(q => [q.id, q]));
 }
 
 // ── Engine helpers ────────────────────────────────────────────────────────────
@@ -346,6 +373,10 @@ async function main() {
   // Slug → published_at map for temporal scoring (built once, shared across all adapter runs)
   const slugDateMap = new Map(corpus.map(p => [slugify(p.slug), p.published_at]));
 
+  // Gold qrels — loaded once, kept in a separate map. Never put on the public query object.
+  const qrels = loadQrels();
+
+  // Public queries — no answer_slugs, no temporal flag, no gold of any kind.
   let queries = loadQueries().slice(0, LIMIT === Infinity ? undefined : LIMIT);
 
   if (QUESTION_ID) {
@@ -477,16 +508,26 @@ async function main() {
     let hits = 0;
 
     for (const q of queries) {
+      // ── Gold sealed boundary ────────────────────────────────────────────────
+      // q has NO gold fields (TestQuery type). Gold lives only in the qrels map.
+      // Lookup happens AFTER retrieval so it can never influence adapter search.
       const qStart = Date.now();
       let searchResults: SearchResult[];
 
       // Pre-processing: extract date hints and form-type filter for smarter retrieval.
-      // For temporal (time-series) questions, use 4× K so form+date filtering has
-      // enough candidates — results are sliced back to TOP_K after filtering.
-      const dateHints   = adapter !== 'keyword' ? extractDateRange(q.question) : null;
-      const formFilter  = adapter !== 'keyword' ? detectFormFilter(q.question, q.answer_slugs) : null;
-      const fetchK      = q.temporal ? TOP_K * 4 : TOP_K;
+      // formFilter reads gold slugs from qrels (not q) — it's a scorer hint, not
+      // something the adapter sees. For temporal questions (flagged in qrels), use
+      // 4× K so the form+date filter has enough candidates.
+      const gold    = qrels.get(q.id);
+      const goldSlugs   = gold?.relevant ?? [];
+      const goldPattern = gold?.relevant_pattern;
+      const isTemporalQ = gold?.temporal ?? false;
 
+      const dateHints  = adapter !== 'keyword' ? extractDateRange(q.question) : null;
+      const formFilter = adapter !== 'keyword' ? detectFormFilter(q.question, goldSlugs) : null;
+      const fetchK     = isTemporalQ ? TOP_K * 4 : TOP_K;
+
+      // ── Adapter search (sees ONLY q.question, no gold) ─────────────────────
       if (adapter === 'keyword') {
         searchResults = await engine.searchKeyword(q.question, { limit: TOP_K });
       } else if (adapter === 'vector') {
@@ -516,21 +557,19 @@ async function main() {
       // Apply form-type post-filter then slice to TOP_K
       if (formFilter) {
         const filtered = searchResults.filter(r => formFilter(r.slug?.toLowerCase() ?? ''));
-        // If filter eliminates too many, fall back to unfiltered (avoids zero-result edge case)
         searchResults = filtered.length >= Math.min(2, TOP_K) ? filtered : searchResults;
       }
       searchResults = searchResults.slice(0, TOP_K);
 
       const latencyMs = Date.now() - qStart;
-      // Normalize retrieved slugs — results come back as original slugs
       const retrieved = searchResults.map(r => r.slug?.toLowerCase() ?? '');
 
-      // Scoring: hit if any answer_slug appears in retrieved
-      const score = scoreQuery(retrieved, q.answer_slugs, q.answer_slug_pattern, TOP_K);
+      // ── Scoring (gold looked up from qrels AFTER retrieval) ─────────────────
+      const score = scoreQuery(retrieved, goldSlugs, goldPattern, TOP_K);
       if (score.hit) hits++;
 
-      const temporal = q.temporal
-        ? scoreTemporalMetrics(retrieved, q.answer_slugs, slugDateMap, TOP_K)
+      const temporal = isTemporalQ
+        ? scoreTemporalMetrics(retrieved, goldSlugs, slugDateMap, TOP_K)
         : { temporal_recall: null, temporal_precision: null, gold_quarters: null, covered_quarters: null };
 
       const result: QueryResult = {
@@ -540,7 +579,7 @@ async function main() {
         adapter,
         top_k: TOP_K,
         retrieved_slugs: retrieved,
-        answer_slugs: q.answer_slugs,
+        answer_slugs: goldSlugs,   // stored in report for human inspection only
         ...score,
         ...temporal,
         latency_ms: latencyMs,
@@ -548,13 +587,12 @@ async function main() {
       allResults.push(result);
 
       const icon = score.hit ? '✓' : '✗';
-      const temporalSuffix = q.temporal && temporal.temporal_recall !== null
+      const temporalSuffix = isTemporalQ && temporal.temporal_recall !== null
         ? ` TR:${(temporal.temporal_recall * 100).toFixed(0)}%(${temporal.covered_quarters}/${temporal.gold_quarters}Q)`
         : '';
       console.log(`  [${icon}] ${q.id.padEnd(16)} ${q.category.padEnd(14)} R:${(score.recall * 100).toFixed(0).padStart(3)}% MRR:${score.mrr.toFixed(2)} P@K:${(score.precision * 100).toFixed(0).padStart(3)}% MAP:${score.ap.toFixed(2)}${temporalSuffix} ${latencyMs}ms`);
       if (!score.hit) {
-        const gold0 = q.answer_slugs[0] ?? q.answer_slug_pattern ?? '(any)';
-        console.log(`       Expected: ${gold0} (${score.total_gold} gold)`);
+        console.log(`       Expected: ${goldSlugs[0] ?? goldPattern ?? '(any)'} (${score.total_gold} gold)`);
         console.log(`       Got:      ${retrieved.slice(0, 3).join(', ')}`);
       }
     }

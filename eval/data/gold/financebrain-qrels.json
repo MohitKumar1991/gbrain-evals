@@ -1,0 +1,1868 @@
+{
+  "version": 1,
+  "_comment": "FinanceBrain gold qrels. Scorer-only input — never loaded by adapters. Generated from questions.json; do not edit by hand. To regenerate: bun eval/runner/gen-qrels.ts",
+  "queries": [
+    {
+      "id": "financials-01",
+      "relevant": [
+        "financials/nvda-2024-10-27",
+        "sec/nvda/8-k-2024-11-20"
+      ],
+      "grades": {
+        "financials/nvda-2024-10-27": 3,
+        "sec/nvda/8-k-2024-11-20": 3
+      }
+    },
+    {
+      "id": "financials-02",
+      "relevant": [
+        "financials/meta-2024-12-31"
+      ],
+      "grades": {
+        "financials/meta-2024-12-31": 3
+      }
+    },
+    {
+      "id": "financials-03",
+      "relevant": [
+        "financials/msft-2025-03-31"
+      ],
+      "grades": {
+        "financials/msft-2025-03-31": 3
+      }
+    },
+    {
+      "id": "financials-04",
+      "relevant": [
+        "financials/aapl-2023-12-30"
+      ],
+      "grades": {
+        "financials/aapl-2023-12-30": 3
+      }
+    },
+    {
+      "id": "financials-05",
+      "relevant": [
+        "financials/nvda-2025-01-26"
+      ],
+      "grades": {
+        "financials/nvda-2025-01-26": 3
+      }
+    },
+    {
+      "id": "financials-06",
+      "relevant": [
+        "financials/googl-2024-12-31"
+      ],
+      "grades": {
+        "financials/googl-2024-12-31": 3
+      }
+    },
+    {
+      "id": "financials-07",
+      "relevant": [
+        "financials/meta-2024-12-31"
+      ],
+      "grades": {
+        "financials/meta-2024-12-31": 3
+      }
+    },
+    {
+      "id": "financials-08",
+      "relevant": [
+        "financials/aapl-2024-09-28"
+      ],
+      "grades": {
+        "financials/aapl-2024-09-28": 3
+      }
+    },
+    {
+      "id": "financials-09",
+      "relevant": [
+        "financials/nvda-2024-10-27"
+      ],
+      "grades": {
+        "financials/nvda-2024-10-27": 3
+      }
+    },
+    {
+      "id": "financials-10",
+      "relevant": [
+        "financials/msft-2024-06-30",
+        "sec/msft/8-k-2024-07-30"
+      ],
+      "grades": {
+        "financials/msft-2024-06-30": 3,
+        "sec/msft/8-k-2024-07-30": 3
+      }
+    },
+    {
+      "id": "financials-11",
+      "relevant": [
+        "financials/meta-2024-09-30"
+      ],
+      "grades": {
+        "financials/meta-2024-09-30": 3
+      }
+    },
+    {
+      "id": "financials-12",
+      "relevant": [
+        "financials/nvda-2024-10-27"
+      ],
+      "grades": {
+        "financials/nvda-2024-10-27": 3
+      }
+    },
+    {
+      "id": "financials-13",
+      "relevant": [
+        "financials/aapl-2023-12-30"
+      ],
+      "grades": {
+        "financials/aapl-2023-12-30": 3
+      }
+    },
+    {
+      "id": "financials-14",
+      "relevant": [
+        "financials/googl-2024-12-31"
+      ],
+      "grades": {
+        "financials/googl-2024-12-31": 3
+      }
+    },
+    {
+      "id": "financials-15",
+      "relevant": [
+        "sec/nvda/8-k-2024-11-20"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2024-11-20": 3
+      }
+    },
+    {
+      "id": "financials-16",
+      "relevant": [
+        "sec/msft/8-k-2025-04-30"
+      ],
+      "grades": {
+        "sec/msft/8-k-2025-04-30": 3
+      }
+    },
+    {
+      "id": "financials-17",
+      "relevant": [
+        "sec/googl/8-k-2025-02-04"
+      ],
+      "grades": {
+        "sec/googl/8-k-2025-02-04": 3
+      }
+    },
+    {
+      "id": "financials-18",
+      "relevant": [
+        "financials/nvda-2023-10-29",
+        "financials/nvda-2024-10-27"
+      ],
+      "grades": {
+        "financials/nvda-2023-10-29": 3,
+        "financials/nvda-2024-10-27": 3
+      }
+    },
+    {
+      "id": "financials-19",
+      "relevant": [
+        "financials/meta-2024-09-30",
+        "financials/meta-2024-12-31"
+      ],
+      "grades": {
+        "financials/meta-2024-09-30": 3,
+        "financials/meta-2024-12-31": 3
+      }
+    },
+    {
+      "id": "financials-20",
+      "relevant": [
+        "financials/msft-2024-06-30",
+        "financials/msft-2025-03-31"
+      ],
+      "grades": {
+        "financials/msft-2024-06-30": 3,
+        "financials/msft-2025-03-31": 3
+      }
+    },
+    {
+      "id": "transcript-01",
+      "relevant": [
+        "transcripts/nvda-2024-q3",
+        "transcripts/nvda-2025-q1"
+      ],
+      "grades": {
+        "transcripts/nvda-2024-q3": 3,
+        "transcripts/nvda-2025-q1": 3
+      }
+    },
+    {
+      "id": "transcript-02",
+      "relevant": [
+        "transcripts/nvda-2025-q1"
+      ],
+      "grades": {
+        "transcripts/nvda-2025-q1": 3
+      }
+    },
+    {
+      "id": "transcript-03",
+      "relevant": [
+        "transcripts/nvda-2024-q3",
+        "transcripts/nvda-2025-q2",
+        "transcripts/nvda-2026-q1"
+      ],
+      "grades": {
+        "transcripts/nvda-2024-q3": 3,
+        "transcripts/nvda-2025-q2": 3,
+        "transcripts/nvda-2026-q1": 3
+      }
+    },
+    {
+      "id": "transcript-04",
+      "relevant": [
+        "transcripts/meta-2024-q1",
+        "transcripts/meta-2024-q2",
+        "transcripts/meta-2024-q4"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q1": 3,
+        "transcripts/meta-2024-q2": 3,
+        "transcripts/meta-2024-q4": 3
+      }
+    },
+    {
+      "id": "transcript-05",
+      "relevant": [
+        "transcripts/googl-2023-q4",
+        "transcripts/googl-2024-q4"
+      ],
+      "grades": {
+        "transcripts/googl-2023-q4": 3,
+        "transcripts/googl-2024-q4": 3
+      }
+    },
+    {
+      "id": "transcript-06",
+      "relevant": [
+        "transcripts/nvda-2025-q2",
+        "transcripts/nvda-2026-q1"
+      ],
+      "grades": {
+        "transcripts/nvda-2025-q2": 3,
+        "transcripts/nvda-2026-q1": 3
+      }
+    },
+    {
+      "id": "transcript-07",
+      "relevant": [
+        "transcripts/nvda-2024-q3",
+        "transcripts/nvda-2025-q1",
+        "transcripts/nvda-2026-q1"
+      ],
+      "grades": {
+        "transcripts/nvda-2024-q3": 3,
+        "transcripts/nvda-2025-q1": 3,
+        "transcripts/nvda-2026-q1": 3
+      }
+    },
+    {
+      "id": "transcript-08",
+      "relevant": [
+        "transcripts/meta-2024-q4"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q4": 3
+      }
+    },
+    {
+      "id": "transcript-09",
+      "relevant": [
+        "transcripts/msft-2024-q3",
+        "transcripts/msft-2025-q2"
+      ],
+      "grades": {
+        "transcripts/msft-2024-q3": 3,
+        "transcripts/msft-2025-q2": 3
+      }
+    },
+    {
+      "id": "transcript-10",
+      "relevant": [
+        "transcripts/googl-2023-q4",
+        "transcripts/googl-2024-q4"
+      ],
+      "grades": {
+        "transcripts/googl-2023-q4": 3,
+        "transcripts/googl-2024-q4": 3
+      }
+    },
+    {
+      "id": "transcript-11",
+      "relevant": [
+        "transcripts/aapl-2023-q4",
+        "transcripts/aapl-2024-q1"
+      ],
+      "grades": {
+        "transcripts/aapl-2023-q4": 3,
+        "transcripts/aapl-2024-q1": 3
+      }
+    },
+    {
+      "id": "transcript-12",
+      "relevant": [
+        "transcripts/nvda-2024-q3",
+        "transcripts/nvda-2025-q1"
+      ],
+      "grades": {
+        "transcripts/nvda-2024-q3": 3,
+        "transcripts/nvda-2025-q1": 3
+      }
+    },
+    {
+      "id": "transcript-13",
+      "relevant": [
+        "transcripts/msft-2024-q3"
+      ],
+      "grades": {
+        "transcripts/msft-2024-q3": 3
+      }
+    },
+    {
+      "id": "transcript-14",
+      "relevant": [
+        "transcripts/meta-2024-q1",
+        "transcripts/meta-2024-q4"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q1": 3,
+        "transcripts/meta-2024-q4": 3
+      }
+    },
+    {
+      "id": "transcript-15",
+      "relevant": [
+        "transcripts/meta-2024-q2",
+        "transcripts/meta-2024-q4",
+        "transcripts/nvda-2025-q1"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q2": 3,
+        "transcripts/meta-2024-q4": 3,
+        "transcripts/nvda-2025-q1": 3
+      }
+    },
+    {
+      "id": "transcript-16",
+      "relevant": [
+        "transcripts/googl-2023-q4",
+        "transcripts/googl-2024-q4"
+      ],
+      "grades": {
+        "transcripts/googl-2023-q4": 3,
+        "transcripts/googl-2024-q4": 3
+      }
+    },
+    {
+      "id": "transcript-17",
+      "relevant": [
+        "transcripts/meta-2024-q2",
+        "transcripts/meta-2024-q4"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q2": 3,
+        "transcripts/meta-2024-q4": 3
+      }
+    },
+    {
+      "id": "transcript-18",
+      "relevant": [
+        "transcripts/googl-2023-q4",
+        "transcripts/googl-2024-q4"
+      ],
+      "grades": {
+        "transcripts/googl-2023-q4": 3,
+        "transcripts/googl-2024-q4": 3
+      }
+    },
+    {
+      "id": "transcript-19",
+      "relevant": [
+        "transcripts/msft-2024-q3",
+        "transcripts/msft-2025-q2"
+      ],
+      "grades": {
+        "transcripts/msft-2024-q3": 3,
+        "transcripts/msft-2025-q2": 3
+      }
+    },
+    {
+      "id": "transcript-20",
+      "relevant": [
+        "transcripts/meta-2024-q2",
+        "transcripts/meta-2024-q4",
+        "transcripts/googl-2023-q4",
+        "transcripts/googl-2024-q4",
+        "transcripts/nvda-2026-q1"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q2": 3,
+        "transcripts/meta-2024-q4": 3,
+        "transcripts/googl-2023-q4": 3,
+        "transcripts/googl-2024-q4": 3,
+        "transcripts/nvda-2026-q1": 3
+      }
+    },
+    {
+      "id": "sec-01",
+      "relevant": [
+        "sec/nvda/8-k-2025-02-26"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2025-02-26": 3
+      }
+    },
+    {
+      "id": "sec-02",
+      "relevant": [
+        "sec/nvda/8-k-2025-02-26",
+        "sec/nvda/8-k-2024-11-20"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2025-02-26": 3,
+        "sec/nvda/8-k-2024-11-20": 3
+      }
+    },
+    {
+      "id": "sec-03",
+      "relevant": [
+        "sec/nvda/8-k-2024-11-20"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2024-11-20": 3
+      }
+    },
+    {
+      "id": "sec-04",
+      "relevant": [
+        "sec/msft/8-k-2025-04-30"
+      ],
+      "grades": {
+        "sec/msft/8-k-2025-04-30": 3
+      }
+    },
+    {
+      "id": "sec-05",
+      "relevant": [
+        "sec/meta/8-k-2025-01-29"
+      ],
+      "grades": {
+        "sec/meta/8-k-2025-01-29": 3
+      }
+    },
+    {
+      "id": "sec-06",
+      "relevant": [
+        "sec/googl/10-k-2025-02-05"
+      ],
+      "grades": {
+        "sec/googl/10-k-2025-02-05": 3
+      }
+    },
+    {
+      "id": "sec-07",
+      "relevant": [
+        "sec/googl/10-k-2025-02-05"
+      ],
+      "grades": {
+        "sec/googl/10-k-2025-02-05": 3
+      }
+    },
+    {
+      "id": "sec-08",
+      "relevant": [
+        "sec/msft/10-k-2024-07-30"
+      ],
+      "grades": {
+        "sec/msft/10-k-2024-07-30": 3
+      }
+    },
+    {
+      "id": "sec-09",
+      "relevant": [
+        "sec/nvda/8-k-2025-02-26",
+        "sec/nvda/8-k-2024-11-20"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2025-02-26": 3,
+        "sec/nvda/8-k-2024-11-20": 3
+      }
+    },
+    {
+      "id": "sec-10",
+      "relevant": [
+        "sec/aapl/8-k-2025-01-30"
+      ],
+      "grades": {
+        "sec/aapl/8-k-2025-01-30": 3
+      }
+    },
+    {
+      "id": "sec-11",
+      "relevant": [
+        "sec/meta/10-k-2025-01-30",
+        "sec/meta/8-k-2025-01-29"
+      ],
+      "grades": {
+        "sec/meta/10-k-2025-01-30": 3,
+        "sec/meta/8-k-2025-01-29": 3
+      }
+    },
+    {
+      "id": "sec-12",
+      "relevant": [
+        "sec/meta/10-q-2024-10-31"
+      ],
+      "grades": {
+        "sec/meta/10-q-2024-10-31": 3
+      }
+    },
+    {
+      "id": "sec-13",
+      "relevant": [
+        "sec/meta/10-k-2025-01-30",
+        "sec/meta/10-q-2024-10-31"
+      ],
+      "grades": {
+        "sec/meta/10-k-2025-01-30": 3,
+        "sec/meta/10-q-2024-10-31": 3
+      }
+    },
+    {
+      "id": "sec-14",
+      "relevant": [
+        "sec/googl/10-k-2025-02-05",
+        "sec/googl/10-k-2026-02-05"
+      ],
+      "grades": {
+        "sec/googl/10-k-2025-02-05": 3,
+        "sec/googl/10-k-2026-02-05": 3
+      }
+    },
+    {
+      "id": "sec-15",
+      "relevant": [
+        "sec/msft/8-k-2025-04-30"
+      ],
+      "grades": {
+        "sec/msft/8-k-2025-04-30": 3
+      }
+    },
+    {
+      "id": "portfolio-01",
+      "relevant": [
+        "portfolio/holdings-2026-05-12"
+      ],
+      "grades": {
+        "portfolio/holdings-2026-05-12": 3
+      }
+    },
+    {
+      "id": "portfolio-02",
+      "relevant": [
+        "portfolio/holdings-2026-05-12"
+      ],
+      "grades": {
+        "portfolio/holdings-2026-05-12": 3
+      }
+    },
+    {
+      "id": "portfolio-03",
+      "relevant": [
+        "portfolio/holdings-2026-05-12"
+      ],
+      "grades": {
+        "portfolio/holdings-2026-05-12": 3
+      }
+    },
+    {
+      "id": "portfolio-04",
+      "relevant": [
+        "portfolio/holdings-2026-05-12"
+      ],
+      "grades": {
+        "portfolio/holdings-2026-05-12": 3
+      }
+    },
+    {
+      "id": "portfolio-05",
+      "relevant": [
+        "portfolio/holdings-2026-05-12",
+        "analyst-estimates/wolf",
+        "analyst-estimates/wyfi",
+        "analyst-estimates/rklb",
+        "analyst-estimates/nvda",
+        "analyst-estimates/msft",
+        "analyst-estimates/googl"
+      ],
+      "grades": {
+        "portfolio/holdings-2026-05-12": 3,
+        "analyst-estimates/wolf": 3,
+        "analyst-estimates/wyfi": 3,
+        "analyst-estimates/rklb": 3,
+        "analyst-estimates/nvda": 3,
+        "analyst-estimates/msft": 3,
+        "analyst-estimates/googl": 3
+      }
+    },
+    {
+      "id": "news-01",
+      "relevant": [
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "grades": {
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends": 3
+      }
+    },
+    {
+      "id": "news-02",
+      "relevant": [
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "grades": {
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends": 3
+      }
+    },
+    {
+      "id": "news-03",
+      "relevant": [
+        "social/dylan522p/1976771063942926649"
+      ],
+      "grades": {
+        "social/dylan522p/1976771063942926649": 3
+      }
+    },
+    {
+      "id": "news-04",
+      "relevant": [
+        "social/dylan522p/2051109332750835754"
+      ],
+      "grades": {
+        "social/dylan522p/2051109332750835754": 3
+      }
+    },
+    {
+      "id": "news-05",
+      "relevant": [
+        "social/dylan522p/2046373494380794338"
+      ],
+      "grades": {
+        "social/dylan522p/2046373494380794338": 3
+      }
+    },
+    {
+      "id": "news-06",
+      "relevant": [
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "grades": {
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends": 3
+      }
+    },
+    {
+      "id": "news-07",
+      "relevant": [
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "grades": {
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends": 3
+      }
+    },
+    {
+      "id": "news-08",
+      "relevant": [
+        "social/dylan522p/2042416273599185254"
+      ],
+      "grades": {
+        "social/dylan522p/2042416273599185254": 3
+      }
+    },
+    {
+      "id": "news-09",
+      "relevant": [
+        "social/dylan522p/2040213520411709565"
+      ],
+      "grades": {
+        "social/dylan522p/2040213520411709565": 3
+      }
+    },
+    {
+      "id": "news-10",
+      "relevant": [
+        "social/dylan522p/2047104466512400639"
+      ],
+      "grades": {
+        "social/dylan522p/2047104466512400639": 3
+      }
+    },
+    {
+      "id": "news-11",
+      "relevant": [
+        "social/dylan522p/2002135815233970295"
+      ],
+      "grades": {
+        "social/dylan522p/2002135815233970295": 3
+      }
+    },
+    {
+      "id": "news-12",
+      "relevant": [
+        "social/dylan522p/2017344503196103130"
+      ],
+      "grades": {
+        "social/dylan522p/2017344503196103130": 3
+      }
+    },
+    {
+      "id": "news-13",
+      "relevant": [
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "grades": {
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends": 3
+      }
+    },
+    {
+      "id": "news-14",
+      "relevant": [
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "grades": {
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends": 3
+      }
+    },
+    {
+      "id": "news-15",
+      "relevant": [
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "grades": {
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends": 3
+      }
+    },
+    {
+      "id": "product-01",
+      "relevant": [
+        "transcripts/nvda-2025-q2",
+        "sec/nvda/8-k-2025-02-26"
+      ],
+      "grades": {
+        "transcripts/nvda-2025-q2": 3,
+        "sec/nvda/8-k-2025-02-26": 3
+      }
+    },
+    {
+      "id": "product-02",
+      "relevant": [
+        "transcripts/nvda-2025-q2"
+      ],
+      "grades": {
+        "transcripts/nvda-2025-q2": 3
+      }
+    },
+    {
+      "id": "product-03",
+      "relevant": [
+        "transcripts/nvda-2025-q2"
+      ],
+      "grades": {
+        "transcripts/nvda-2025-q2": 3
+      }
+    },
+    {
+      "id": "product-04",
+      "relevant": [
+        "transcripts/msft-2025-q2"
+      ],
+      "grades": {
+        "transcripts/msft-2025-q2": 3
+      }
+    },
+    {
+      "id": "product-05",
+      "relevant": [
+        "transcripts/msft-2025-q2"
+      ],
+      "grades": {
+        "transcripts/msft-2025-q2": 3
+      }
+    },
+    {
+      "id": "product-06",
+      "relevant": [
+        "transcripts/msft-2025-q2"
+      ],
+      "grades": {
+        "transcripts/msft-2025-q2": 3
+      }
+    },
+    {
+      "id": "product-07",
+      "relevant": [
+        "transcripts/googl-2024-q4"
+      ],
+      "grades": {
+        "transcripts/googl-2024-q4": 3
+      }
+    },
+    {
+      "id": "product-08",
+      "relevant": [
+        "transcripts/googl-2024-q4"
+      ],
+      "grades": {
+        "transcripts/googl-2024-q4": 3
+      }
+    },
+    {
+      "id": "product-09",
+      "relevant": [
+        "transcripts/googl-2024-q4",
+        "sec/googl/10-k-2025-02-05"
+      ],
+      "grades": {
+        "transcripts/googl-2024-q4": 3,
+        "sec/googl/10-k-2025-02-05": 3
+      }
+    },
+    {
+      "id": "product-10",
+      "relevant": [
+        "transcripts/meta-2024-q4"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q4": 3
+      }
+    },
+    {
+      "id": "product-11",
+      "relevant": [
+        "transcripts/meta-2024-q4"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q4": 3
+      }
+    },
+    {
+      "id": "product-12",
+      "relevant": [
+        "transcripts/meta-2024-q4"
+      ],
+      "grades": {
+        "transcripts/meta-2024-q4": 3
+      }
+    },
+    {
+      "id": "product-13",
+      "relevant": [
+        "sec/aapl/10-k-2025-10-31",
+        "transcripts/aapl-2024-q1"
+      ],
+      "grades": {
+        "sec/aapl/10-k-2025-10-31": 3,
+        "transcripts/aapl-2024-q1": 3
+      }
+    },
+    {
+      "id": "product-14",
+      "relevant": [
+        "sec/aapl/10-k-2025-10-31"
+      ],
+      "grades": {
+        "sec/aapl/10-k-2025-10-31": 3
+      }
+    },
+    {
+      "id": "product-15",
+      "relevant": [
+        "sec/aapl/10-k-2025-10-31"
+      ],
+      "grades": {
+        "sec/aapl/10-k-2025-10-31": 3
+      }
+    },
+    {
+      "id": "supply-01",
+      "relevant": [
+        "sec/nvda/10-k-2025-02-26"
+      ],
+      "grades": {
+        "sec/nvda/10-k-2025-02-26": 3
+      }
+    },
+    {
+      "id": "supply-02",
+      "relevant": [
+        "sec/nvda/10-k-2025-02-26",
+        "social/dylan522p/1820200553512841239"
+      ],
+      "grades": {
+        "sec/nvda/10-k-2025-02-26": 3,
+        "social/dylan522p/1820200553512841239": 3
+      }
+    },
+    {
+      "id": "supply-03",
+      "relevant": [
+        "sec/nvda/10-k-2025-02-26",
+        "sec/nvda/10-k-2026-02-25"
+      ],
+      "grades": {
+        "sec/nvda/10-k-2025-02-26": 3,
+        "sec/nvda/10-k-2026-02-25": 3
+      }
+    },
+    {
+      "id": "supply-04",
+      "relevant": [
+        "social/dylan522p/1839034283589075239",
+        "transcripts/nvda-2026-q1"
+      ],
+      "grades": {
+        "social/dylan522p/1839034283589075239": 3,
+        "transcripts/nvda-2026-q1": 3
+      }
+    },
+    {
+      "id": "supply-05",
+      "relevant": [
+        "social/dylan522p/1871878908272128182"
+      ],
+      "grades": {
+        "social/dylan522p/1871878908272128182": 3
+      }
+    },
+    {
+      "id": "supply-06",
+      "relevant": [
+        "sec/nvda/10-k-2025-02-26"
+      ],
+      "grades": {
+        "sec/nvda/10-k-2025-02-26": 3
+      }
+    },
+    {
+      "id": "supply-07",
+      "relevant": [
+        "transcripts/nvda-2026-q1",
+        "sec/nvda/10-k-2026-02-25"
+      ],
+      "grades": {
+        "transcripts/nvda-2026-q1": 3,
+        "sec/nvda/10-k-2026-02-25": 3
+      }
+    },
+    {
+      "id": "supply-08",
+      "relevant": [
+        "transcripts/nvda-2026-q1",
+        "sec/nvda/10-k-2025-02-26"
+      ],
+      "grades": {
+        "transcripts/nvda-2026-q1": 3,
+        "sec/nvda/10-k-2025-02-26": 3
+      }
+    },
+    {
+      "id": "supply-09",
+      "relevant": [
+        "sec/nvda/10-k-2026-02-25"
+      ],
+      "grades": {
+        "sec/nvda/10-k-2026-02-25": 3
+      }
+    },
+    {
+      "id": "supply-10",
+      "relevant": [
+        "transcripts/nvda-2025-q2",
+        "transcripts/nvda-2026-q1"
+      ],
+      "grades": {
+        "transcripts/nvda-2025-q2": 3,
+        "transcripts/nvda-2026-q1": 3
+      }
+    },
+    {
+      "id": "supply-11",
+      "relevant": [
+        "transcripts/nvda-2026-q1"
+      ],
+      "grades": {
+        "transcripts/nvda-2026-q1": 3
+      }
+    },
+    {
+      "id": "supply-12",
+      "relevant": [
+        "social/dylan522p/1820200553512841239"
+      ],
+      "grades": {
+        "social/dylan522p/1820200553512841239": 3
+      }
+    },
+    {
+      "id": "supply-13",
+      "relevant": [
+        "sec/nvda/10-k-2026-02-25",
+        "sec/nvda/8-k-2025-02-26"
+      ],
+      "grades": {
+        "sec/nvda/10-k-2026-02-25": 3,
+        "sec/nvda/8-k-2025-02-26": 3
+      }
+    },
+    {
+      "id": "supply-14",
+      "relevant": [
+        "transcripts/nvda-2025-q2"
+      ],
+      "grades": {
+        "transcripts/nvda-2025-q2": 3
+      }
+    },
+    {
+      "id": "supply-15",
+      "relevant": [
+        "social/dylan522p/1871878908272128182"
+      ],
+      "grades": {
+        "social/dylan522p/1871878908272128182": 3
+      }
+    },
+    {
+      "id": "time-series-01",
+      "relevant": [
+        "financials/nvda-2023-10-29",
+        "financials/nvda-2024-01-28",
+        "financials/nvda-2024-04-28",
+        "financials/nvda-2024-07-28",
+        "financials/nvda-2024-10-27",
+        "financials/nvda-2025-01-26",
+        "financials/nvda-2025-04-27",
+        "financials/nvda-2025-07-27",
+        "financials/nvda-2025-10-26",
+        "financials/nvda-2026-01-25"
+      ],
+      "grades": {
+        "financials/nvda-2023-10-29": 3,
+        "financials/nvda-2024-01-28": 3,
+        "financials/nvda-2024-04-28": 3,
+        "financials/nvda-2024-07-28": 3,
+        "financials/nvda-2024-10-27": 3,
+        "financials/nvda-2025-01-26": 3,
+        "financials/nvda-2025-04-27": 3,
+        "financials/nvda-2025-07-27": 3,
+        "financials/nvda-2025-10-26": 3,
+        "financials/nvda-2026-01-25": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-02",
+      "relevant": [
+        "financials/meta-2022-03-31",
+        "financials/meta-2022-06-30",
+        "financials/meta-2022-09-30",
+        "financials/meta-2022-12-31",
+        "financials/meta-2023-03-31",
+        "financials/meta-2023-06-30",
+        "financials/meta-2023-09-30",
+        "financials/meta-2023-12-31",
+        "financials/meta-2024-03-31",
+        "financials/meta-2024-06-30",
+        "financials/meta-2024-09-30",
+        "financials/meta-2024-12-31"
+      ],
+      "grades": {
+        "financials/meta-2022-03-31": 3,
+        "financials/meta-2022-06-30": 3,
+        "financials/meta-2022-09-30": 3,
+        "financials/meta-2022-12-31": 3,
+        "financials/meta-2023-03-31": 3,
+        "financials/meta-2023-06-30": 3,
+        "financials/meta-2023-09-30": 3,
+        "financials/meta-2023-12-31": 3,
+        "financials/meta-2024-03-31": 3,
+        "financials/meta-2024-06-30": 3,
+        "financials/meta-2024-09-30": 3,
+        "financials/meta-2024-12-31": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-03",
+      "relevant": [
+        "sec/googl/8-k-2022-04-26",
+        "sec/googl/8-k-2022-07-26",
+        "sec/googl/8-k-2022-10-25",
+        "sec/googl/8-k-2023-02-02",
+        "sec/googl/8-k-2023-04-25",
+        "sec/googl/8-k-2023-07-25",
+        "sec/googl/8-k-2023-10-24",
+        "sec/googl/8-k-2024-01-30",
+        "sec/googl/8-k-2024-04-25",
+        "sec/googl/8-k-2024-07-23",
+        "sec/googl/8-k-2024-10-29",
+        "sec/googl/8-k-2025-02-04"
+      ],
+      "grades": {
+        "sec/googl/8-k-2022-04-26": 3,
+        "sec/googl/8-k-2022-07-26": 3,
+        "sec/googl/8-k-2022-10-25": 3,
+        "sec/googl/8-k-2023-02-02": 3,
+        "sec/googl/8-k-2023-04-25": 3,
+        "sec/googl/8-k-2023-07-25": 3,
+        "sec/googl/8-k-2023-10-24": 3,
+        "sec/googl/8-k-2024-01-30": 3,
+        "sec/googl/8-k-2024-04-25": 3,
+        "sec/googl/8-k-2024-07-23": 3,
+        "sec/googl/8-k-2024-10-29": 3,
+        "sec/googl/8-k-2025-02-04": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-04",
+      "relevant": [
+        "sec/nvda/8-k-2022-08-24",
+        "sec/nvda/8-k-2022-11-16",
+        "sec/nvda/8-k-2023-02-22",
+        "sec/nvda/8-k-2023-05-24",
+        "sec/nvda/8-k-2023-08-23",
+        "sec/nvda/8-k-2023-11-21",
+        "sec/nvda/8-k-2024-02-21",
+        "sec/nvda/8-k-2024-05-22",
+        "sec/nvda/8-k-2024-08-28",
+        "sec/nvda/8-k-2024-11-20",
+        "sec/nvda/8-k-2025-02-26",
+        "sec/nvda/8-k-2025-05-28",
+        "sec/nvda/8-k-2025-08-27",
+        "sec/nvda/8-k-2025-11-19",
+        "sec/nvda/8-k-2026-02-25"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2022-08-24": 3,
+        "sec/nvda/8-k-2022-11-16": 3,
+        "sec/nvda/8-k-2023-02-22": 3,
+        "sec/nvda/8-k-2023-05-24": 3,
+        "sec/nvda/8-k-2023-08-23": 3,
+        "sec/nvda/8-k-2023-11-21": 3,
+        "sec/nvda/8-k-2024-02-21": 3,
+        "sec/nvda/8-k-2024-05-22": 3,
+        "sec/nvda/8-k-2024-08-28": 3,
+        "sec/nvda/8-k-2024-11-20": 3,
+        "sec/nvda/8-k-2025-02-26": 3,
+        "sec/nvda/8-k-2025-05-28": 3,
+        "sec/nvda/8-k-2025-08-27": 3,
+        "sec/nvda/8-k-2025-11-19": 3,
+        "sec/nvda/8-k-2026-02-25": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-05",
+      "relevant": [
+        "sec/aapl/8-k-2022-01-27",
+        "sec/aapl/8-k-2022-07-28",
+        "sec/aapl/8-k-2022-10-27",
+        "sec/aapl/8-k-2023-02-02",
+        "sec/aapl/8-k-2023-05-04",
+        "sec/aapl/8-k-2023-11-02",
+        "sec/aapl/8-k-2024-02-01",
+        "sec/aapl/8-k-2024-08-01",
+        "sec/aapl/8-k-2024-10-31",
+        "sec/aapl/8-k-2025-01-30",
+        "sec/aapl/8-k-2025-05-01",
+        "sec/aapl/8-k-2025-07-31"
+      ],
+      "grades": {
+        "sec/aapl/8-k-2022-01-27": 3,
+        "sec/aapl/8-k-2022-07-28": 3,
+        "sec/aapl/8-k-2022-10-27": 3,
+        "sec/aapl/8-k-2023-02-02": 3,
+        "sec/aapl/8-k-2023-05-04": 3,
+        "sec/aapl/8-k-2023-11-02": 3,
+        "sec/aapl/8-k-2024-02-01": 3,
+        "sec/aapl/8-k-2024-08-01": 3,
+        "sec/aapl/8-k-2024-10-31": 3,
+        "sec/aapl/8-k-2025-01-30": 3,
+        "sec/aapl/8-k-2025-05-01": 3,
+        "sec/aapl/8-k-2025-07-31": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-06",
+      "relevant": [
+        "sec/meta/8-k-2022-02-02",
+        "sec/meta/8-k-2022-04-27",
+        "sec/meta/8-k-2022-07-27",
+        "sec/meta/8-k-2022-10-26",
+        "sec/meta/8-k-2023-02-01",
+        "sec/meta/8-k-2023-04-26",
+        "sec/meta/8-k-2023-07-26",
+        "sec/meta/8-k-2023-10-25",
+        "sec/meta/8-k-2024-02-01",
+        "sec/meta/8-k-2024-04-24",
+        "sec/meta/8-k-2024-07-31",
+        "sec/meta/8-k-2024-10-30",
+        "sec/meta/8-k-2025-01-29",
+        "sec/meta/8-k-2025-04-30",
+        "sec/meta/8-k-2025-07-30",
+        "sec/meta/8-k-2025-10-29",
+        "sec/meta/8-k-2026-01-28",
+        "sec/meta/8-k-2026-04-29"
+      ],
+      "grades": {
+        "sec/meta/8-k-2022-02-02": 3,
+        "sec/meta/8-k-2022-04-27": 3,
+        "sec/meta/8-k-2022-07-27": 3,
+        "sec/meta/8-k-2022-10-26": 3,
+        "sec/meta/8-k-2023-02-01": 3,
+        "sec/meta/8-k-2023-04-26": 3,
+        "sec/meta/8-k-2023-07-26": 3,
+        "sec/meta/8-k-2023-10-25": 3,
+        "sec/meta/8-k-2024-02-01": 3,
+        "sec/meta/8-k-2024-04-24": 3,
+        "sec/meta/8-k-2024-07-31": 3,
+        "sec/meta/8-k-2024-10-30": 3,
+        "sec/meta/8-k-2025-01-29": 3,
+        "sec/meta/8-k-2025-04-30": 3,
+        "sec/meta/8-k-2025-07-30": 3,
+        "sec/meta/8-k-2025-10-29": 3,
+        "sec/meta/8-k-2026-01-28": 3,
+        "sec/meta/8-k-2026-04-29": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-07",
+      "relevant": [
+        "financials/nvda-2021-05-02",
+        "financials/nvda-2021-08-01",
+        "financials/nvda-2021-10-31",
+        "financials/nvda-2022-01-30",
+        "financials/nvda-2022-05-01",
+        "financials/nvda-2022-07-31",
+        "financials/nvda-2022-10-30",
+        "financials/nvda-2023-01-29",
+        "financials/nvda-2023-04-30",
+        "financials/nvda-2023-07-30",
+        "financials/nvda-2023-10-29",
+        "financials/nvda-2024-01-28",
+        "financials/nvda-2024-04-28",
+        "financials/nvda-2024-07-28",
+        "financials/nvda-2024-10-27",
+        "financials/nvda-2025-01-26",
+        "financials/nvda-2025-04-27",
+        "financials/nvda-2025-07-27",
+        "financials/nvda-2025-10-26",
+        "financials/nvda-2026-01-25"
+      ],
+      "grades": {
+        "financials/nvda-2021-05-02": 3,
+        "financials/nvda-2021-08-01": 3,
+        "financials/nvda-2021-10-31": 3,
+        "financials/nvda-2022-01-30": 3,
+        "financials/nvda-2022-05-01": 3,
+        "financials/nvda-2022-07-31": 3,
+        "financials/nvda-2022-10-30": 3,
+        "financials/nvda-2023-01-29": 3,
+        "financials/nvda-2023-04-30": 3,
+        "financials/nvda-2023-07-30": 3,
+        "financials/nvda-2023-10-29": 3,
+        "financials/nvda-2024-01-28": 3,
+        "financials/nvda-2024-04-28": 3,
+        "financials/nvda-2024-07-28": 3,
+        "financials/nvda-2024-10-27": 3,
+        "financials/nvda-2025-01-26": 3,
+        "financials/nvda-2025-04-27": 3,
+        "financials/nvda-2025-07-27": 3,
+        "financials/nvda-2025-10-26": 3,
+        "financials/nvda-2026-01-25": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-08",
+      "relevant": [
+        "sec/msft/8-k-2022-01-25",
+        "sec/msft/8-k-2022-04-26",
+        "sec/msft/8-k-2022-07-26",
+        "sec/msft/8-k-2022-10-25",
+        "sec/msft/8-k-2023-01-24",
+        "sec/msft/8-k-2023-04-25",
+        "sec/msft/8-k-2023-07-25",
+        "sec/msft/8-k-2023-10-24",
+        "sec/msft/8-k-2024-01-30",
+        "sec/msft/8-k-2024-04-25",
+        "sec/msft/8-k-2024-07-30",
+        "sec/msft/8-k-2024-10-30",
+        "sec/msft/8-k-2025-01-29",
+        "sec/msft/8-k-2025-04-30",
+        "sec/msft/8-k-2025-07-30",
+        "sec/msft/8-k-2025-10-29",
+        "sec/msft/8-k-2026-01-28",
+        "sec/msft/8-k-2026-04-29"
+      ],
+      "grades": {
+        "sec/msft/8-k-2022-01-25": 3,
+        "sec/msft/8-k-2022-04-26": 3,
+        "sec/msft/8-k-2022-07-26": 3,
+        "sec/msft/8-k-2022-10-25": 3,
+        "sec/msft/8-k-2023-01-24": 3,
+        "sec/msft/8-k-2023-04-25": 3,
+        "sec/msft/8-k-2023-07-25": 3,
+        "sec/msft/8-k-2023-10-24": 3,
+        "sec/msft/8-k-2024-01-30": 3,
+        "sec/msft/8-k-2024-04-25": 3,
+        "sec/msft/8-k-2024-07-30": 3,
+        "sec/msft/8-k-2024-10-30": 3,
+        "sec/msft/8-k-2025-01-29": 3,
+        "sec/msft/8-k-2025-04-30": 3,
+        "sec/msft/8-k-2025-07-30": 3,
+        "sec/msft/8-k-2025-10-29": 3,
+        "sec/msft/8-k-2026-01-28": 3,
+        "sec/msft/8-k-2026-04-29": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-09",
+      "relevant": [
+        "financials/googl-2022-03-31",
+        "financials/googl-2022-06-30",
+        "financials/googl-2022-09-30",
+        "financials/googl-2022-12-31",
+        "financials/googl-2023-03-31",
+        "financials/googl-2023-06-30",
+        "financials/googl-2023-09-30",
+        "financials/googl-2023-12-31",
+        "financials/googl-2024-03-31",
+        "financials/googl-2024-06-30",
+        "financials/googl-2024-09-30",
+        "financials/googl-2024-12-31",
+        "financials/googl-2025-03-31",
+        "financials/googl-2025-06-30",
+        "financials/googl-2025-09-30",
+        "financials/googl-2025-12-31",
+        "financials/googl-2026-03-31"
+      ],
+      "grades": {
+        "financials/googl-2022-03-31": 3,
+        "financials/googl-2022-06-30": 3,
+        "financials/googl-2022-09-30": 3,
+        "financials/googl-2022-12-31": 3,
+        "financials/googl-2023-03-31": 3,
+        "financials/googl-2023-06-30": 3,
+        "financials/googl-2023-09-30": 3,
+        "financials/googl-2023-12-31": 3,
+        "financials/googl-2024-03-31": 3,
+        "financials/googl-2024-06-30": 3,
+        "financials/googl-2024-09-30": 3,
+        "financials/googl-2024-12-31": 3,
+        "financials/googl-2025-03-31": 3,
+        "financials/googl-2025-06-30": 3,
+        "financials/googl-2025-09-30": 3,
+        "financials/googl-2025-12-31": 3,
+        "financials/googl-2026-03-31": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-10",
+      "relevant": [
+        "financials/aapl-2021-12-25",
+        "financials/aapl-2022-03-26",
+        "financials/aapl-2022-06-25",
+        "financials/aapl-2022-09-24",
+        "financials/aapl-2022-12-31",
+        "financials/aapl-2023-04-01",
+        "financials/aapl-2023-07-01",
+        "financials/aapl-2023-09-30",
+        "financials/aapl-2023-12-30",
+        "financials/aapl-2024-03-30",
+        "financials/aapl-2024-06-29",
+        "financials/aapl-2024-09-28",
+        "financials/aapl-2024-12-28",
+        "financials/aapl-2025-03-29",
+        "financials/aapl-2025-06-28",
+        "financials/aapl-2025-09-27",
+        "financials/aapl-2025-12-27",
+        "financials/aapl-2026-03-28"
+      ],
+      "grades": {
+        "financials/aapl-2021-12-25": 3,
+        "financials/aapl-2022-03-26": 3,
+        "financials/aapl-2022-06-25": 3,
+        "financials/aapl-2022-09-24": 3,
+        "financials/aapl-2022-12-31": 3,
+        "financials/aapl-2023-04-01": 3,
+        "financials/aapl-2023-07-01": 3,
+        "financials/aapl-2023-09-30": 3,
+        "financials/aapl-2023-12-30": 3,
+        "financials/aapl-2024-03-30": 3,
+        "financials/aapl-2024-06-29": 3,
+        "financials/aapl-2024-09-28": 3,
+        "financials/aapl-2024-12-28": 3,
+        "financials/aapl-2025-03-29": 3,
+        "financials/aapl-2025-06-28": 3,
+        "financials/aapl-2025-09-27": 3,
+        "financials/aapl-2025-12-27": 3,
+        "financials/aapl-2026-03-28": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-11",
+      "relevant": [
+        "transcripts/msft-2022-q1",
+        "transcripts/msft-2023-q2",
+        "transcripts/msft-2024-q3",
+        "transcripts/msft-2026-q1",
+        "transcripts/msft-2026-q2",
+        "transcripts/msft-2026-q3"
+      ],
+      "grades": {
+        "transcripts/msft-2022-q1": 3,
+        "transcripts/msft-2023-q2": 3,
+        "transcripts/msft-2024-q3": 3,
+        "transcripts/msft-2026-q1": 3,
+        "transcripts/msft-2026-q2": 3,
+        "transcripts/msft-2026-q3": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-12",
+      "relevant": [
+        "sec/meta/8-k-2024-04-24",
+        "sec/meta/8-k-2024-07-31",
+        "sec/meta/8-k-2024-10-30",
+        "sec/meta/8-k-2025-01-29",
+        "sec/meta/8-k-2025-04-30",
+        "sec/meta/8-k-2025-07-30",
+        "sec/meta/8-k-2026-04-29",
+        "sec/meta/10-k-2025-01-30",
+        "sec/meta/10-q-2024-10-31"
+      ],
+      "grades": {
+        "sec/meta/8-k-2024-04-24": 3,
+        "sec/meta/8-k-2024-07-31": 3,
+        "sec/meta/8-k-2024-10-30": 3,
+        "sec/meta/8-k-2025-01-29": 3,
+        "sec/meta/8-k-2025-04-30": 3,
+        "sec/meta/8-k-2025-07-30": 3,
+        "sec/meta/8-k-2026-04-29": 3,
+        "sec/meta/10-k-2025-01-30": 3,
+        "sec/meta/10-q-2024-10-31": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-13",
+      "relevant": [
+        "sec/nvda/8-k-2022-11-16",
+        "sec/nvda/8-k-2023-05-24",
+        "sec/nvda/8-k-2023-08-23",
+        "sec/nvda/8-k-2023-11-21",
+        "sec/nvda/8-k-2024-02-21",
+        "sec/nvda/8-k-2024-05-22",
+        "sec/nvda/8-k-2024-08-28",
+        "sec/nvda/8-k-2024-11-20",
+        "sec/nvda/8-k-2025-02-26",
+        "sec/nvda/8-k-2025-05-28",
+        "sec/nvda/8-k-2025-08-27",
+        "sec/nvda/8-k-2025-11-19",
+        "sec/nvda/8-k-2026-02-25"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2022-11-16": 3,
+        "sec/nvda/8-k-2023-05-24": 3,
+        "sec/nvda/8-k-2023-08-23": 3,
+        "sec/nvda/8-k-2023-11-21": 3,
+        "sec/nvda/8-k-2024-02-21": 3,
+        "sec/nvda/8-k-2024-05-22": 3,
+        "sec/nvda/8-k-2024-08-28": 3,
+        "sec/nvda/8-k-2024-11-20": 3,
+        "sec/nvda/8-k-2025-02-26": 3,
+        "sec/nvda/8-k-2025-05-28": 3,
+        "sec/nvda/8-k-2025-08-27": 3,
+        "sec/nvda/8-k-2025-11-19": 3,
+        "sec/nvda/8-k-2026-02-25": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-14",
+      "relevant": [
+        "sec/nvda/8-k-2024-05-22",
+        "sec/nvda/8-k-2024-08-28",
+        "sec/nvda/8-k-2024-11-20",
+        "sec/nvda/8-k-2025-02-26",
+        "sec/nvda/8-k-2025-05-28",
+        "sec/nvda/8-k-2025-08-27",
+        "sec/nvda/8-k-2025-11-19",
+        "sec/nvda/8-k-2026-02-25",
+        "financials/nvda-2024-04-28",
+        "financials/nvda-2024-07-28",
+        "financials/nvda-2024-10-27",
+        "financials/nvda-2025-01-26",
+        "financials/nvda-2025-04-27",
+        "financials/nvda-2025-07-27",
+        "financials/nvda-2025-10-26",
+        "financials/nvda-2026-01-25"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2024-05-22": 3,
+        "sec/nvda/8-k-2024-08-28": 3,
+        "sec/nvda/8-k-2024-11-20": 3,
+        "sec/nvda/8-k-2025-02-26": 3,
+        "sec/nvda/8-k-2025-05-28": 3,
+        "sec/nvda/8-k-2025-08-27": 3,
+        "sec/nvda/8-k-2025-11-19": 3,
+        "sec/nvda/8-k-2026-02-25": 3,
+        "financials/nvda-2024-04-28": 3,
+        "financials/nvda-2024-07-28": 3,
+        "financials/nvda-2024-10-27": 3,
+        "financials/nvda-2025-01-26": 3,
+        "financials/nvda-2025-04-27": 3,
+        "financials/nvda-2025-07-27": 3,
+        "financials/nvda-2025-10-26": 3,
+        "financials/nvda-2026-01-25": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-15",
+      "relevant": [
+        "sec/meta/10-k-2022-02-03",
+        "sec/meta/10-k-2023-02-02",
+        "sec/meta/10-k-2024-02-02",
+        "sec/meta/10-k-2025-01-30",
+        "sec/meta/10-k-2026-01-29"
+      ],
+      "grades": {
+        "sec/meta/10-k-2022-02-03": 3,
+        "sec/meta/10-k-2023-02-02": 3,
+        "sec/meta/10-k-2024-02-02": 3,
+        "sec/meta/10-k-2025-01-30": 3,
+        "sec/meta/10-k-2026-01-29": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-16",
+      "relevant": [
+        "substack/nvidias-woodstock-of-ai-conference",
+        "transcripts/nvda-2024-q4",
+        "sec/nvda/8-k-2024-05-22",
+        "transcripts/nvda-2025-q1",
+        "sec/nvda/10-q-2024-05-29",
+        "transcripts/nvda-2025-q2",
+        "sec/nvda/8-k-2024-11-20",
+        "sec/nvda/8-k-2025-02-26",
+        "sec/nvda/8-k-2025-05-28",
+        "sec/nvda/8-k-2025-08-27",
+        "sec/nvda/8-k-2025-11-19",
+        "sec/nvda/8-k-2026-02-25"
+      ],
+      "grades": {
+        "substack/nvidias-woodstock-of-ai-conference": 3,
+        "transcripts/nvda-2024-q4": 3,
+        "sec/nvda/8-k-2024-05-22": 3,
+        "transcripts/nvda-2025-q1": 3,
+        "sec/nvda/10-q-2024-05-29": 3,
+        "transcripts/nvda-2025-q2": 3,
+        "sec/nvda/8-k-2024-11-20": 3,
+        "sec/nvda/8-k-2025-02-26": 3,
+        "sec/nvda/8-k-2025-05-28": 3,
+        "sec/nvda/8-k-2025-08-27": 3,
+        "sec/nvda/8-k-2025-11-19": 3,
+        "sec/nvda/8-k-2026-02-25": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-17",
+      "relevant": [
+        "sec/nvda/8-k-2022-05-25",
+        "sec/nvda/8-k-2022-08-31",
+        "sec/nvda/8-k-2022-09-01",
+        "sec/nvda/8-k-2022-11-16",
+        "sec/nvda/8-k-2023-02-22",
+        "sec/nvda/8-k-2023-08-23",
+        "sec/nvda/8-k-2023-10-17",
+        "sec/nvda/8-k-2025-02-26"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2022-05-25": 3,
+        "sec/nvda/8-k-2022-08-31": 3,
+        "sec/nvda/8-k-2022-09-01": 3,
+        "sec/nvda/8-k-2022-11-16": 3,
+        "sec/nvda/8-k-2023-02-22": 3,
+        "sec/nvda/8-k-2023-08-23": 3,
+        "sec/nvda/8-k-2023-10-17": 3,
+        "sec/nvda/8-k-2025-02-26": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-18",
+      "relevant": [
+        "substack/apples-wwdc-blew-me-away",
+        "transcripts/aapl-2023-q3",
+        "sec/aapl/10-q-2023-08-04",
+        "transcripts/aapl-2024-q1",
+        "transcripts/aapl-2024-q3",
+        "transcripts/aapl-2024-q4",
+        "transcripts/aapl-2025-q4"
+      ],
+      "grades": {
+        "substack/apples-wwdc-blew-me-away": 3,
+        "transcripts/aapl-2023-q3": 3,
+        "sec/aapl/10-q-2023-08-04": 3,
+        "transcripts/aapl-2024-q1": 3,
+        "transcripts/aapl-2024-q3": 3,
+        "transcripts/aapl-2024-q4": 3,
+        "transcripts/aapl-2025-q4": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-19",
+      "relevant": [
+        "sec/nvda/8-k-2022-02-16",
+        "sec/nvda/8-k-2022-05-25",
+        "sec/nvda/8-k-2022-11-16",
+        "sec/nvda/8-k-2023-02-22",
+        "sec/nvda/8-k-2023-05-24",
+        "sec/nvda/8-k-2023-08-23",
+        "sec/nvda/8-k-2023-11-21",
+        "sec/nvda/8-k-2024-02-21",
+        "sec/nvda/8-k-2024-05-22",
+        "sec/nvda/8-k-2024-08-28",
+        "sec/nvda/8-k-2024-11-20",
+        "sec/nvda/8-k-2025-02-26",
+        "sec/nvda/8-k-2025-05-28",
+        "sec/nvda/8-k-2025-08-27",
+        "sec/nvda/8-k-2025-11-19",
+        "sec/nvda/8-k-2026-02-25"
+      ],
+      "grades": {
+        "sec/nvda/8-k-2022-02-16": 3,
+        "sec/nvda/8-k-2022-05-25": 3,
+        "sec/nvda/8-k-2022-11-16": 3,
+        "sec/nvda/8-k-2023-02-22": 3,
+        "sec/nvda/8-k-2023-05-24": 3,
+        "sec/nvda/8-k-2023-08-23": 3,
+        "sec/nvda/8-k-2023-11-21": 3,
+        "sec/nvda/8-k-2024-02-21": 3,
+        "sec/nvda/8-k-2024-05-22": 3,
+        "sec/nvda/8-k-2024-08-28": 3,
+        "sec/nvda/8-k-2024-11-20": 3,
+        "sec/nvda/8-k-2025-02-26": 3,
+        "sec/nvda/8-k-2025-05-28": 3,
+        "sec/nvda/8-k-2025-08-27": 3,
+        "sec/nvda/8-k-2025-11-19": 3,
+        "sec/nvda/8-k-2026-02-25": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "time-series-20",
+      "relevant": [
+        "sec/googl/8-k-2022-04-26",
+        "sec/googl/8-k-2022-07-26",
+        "sec/googl/8-k-2022-10-25",
+        "sec/googl/8-k-2023-02-02",
+        "sec/googl/8-k-2023-04-25",
+        "sec/googl/8-k-2023-07-25",
+        "sec/googl/8-k-2023-10-24",
+        "sec/googl/8-k-2024-01-30",
+        "sec/googl/8-k-2024-04-25",
+        "sec/googl/8-k-2024-07-23"
+      ],
+      "grades": {
+        "sec/googl/8-k-2022-04-26": 3,
+        "sec/googl/8-k-2022-07-26": 3,
+        "sec/googl/8-k-2022-10-25": 3,
+        "sec/googl/8-k-2023-02-02": 3,
+        "sec/googl/8-k-2023-04-25": 3,
+        "sec/googl/8-k-2023-07-25": 3,
+        "sec/googl/8-k-2023-10-24": 3,
+        "sec/googl/8-k-2024-01-30": 3,
+        "sec/googl/8-k-2024-04-25": 3,
+        "sec/googl/8-k-2024-07-23": 3
+      },
+      "temporal": true
+    },
+    {
+      "id": "market-reactions-01",
+      "relevant": [
+        "price/nvda-cy2023-q2",
+        "sec/nvda/8-k-2023-05-24",
+        "transcripts/nvda-2024-q1"
+      ],
+      "grades": {
+        "price/nvda-cy2023-q2": 3,
+        "sec/nvda/8-k-2023-05-24": 3,
+        "transcripts/nvda-2024-q1": 3
+      }
+    },
+    {
+      "id": "market-reactions-02",
+      "relevant": [
+        "price/meta-cy2022-q4",
+        "sec/meta/8-k-2022-10-26"
+      ],
+      "grades": {
+        "price/meta-cy2022-q4": 3,
+        "sec/meta/8-k-2022-10-26": 3
+      }
+    },
+    {
+      "id": "market-reactions-03",
+      "relevant": [
+        "price/meta-cy2023-q1",
+        "sec/meta/8-k-2023-02-01"
+      ],
+      "grades": {
+        "price/meta-cy2023-q1": 3,
+        "sec/meta/8-k-2023-02-01": 3
+      }
+    },
+    {
+      "id": "market-reactions-04",
+      "relevant": [
+        "price/nvda-cy2025-q1",
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends"
+      ],
+      "grades": {
+        "price/nvda-cy2025-q1": 3,
+        "substack/ai-in-2025-recap-the-year-the-old-rules-ai-trends": 3
+      }
+    },
+    {
+      "id": "market-reactions-05",
+      "relevant": [
+        "price/msft-cy2023-q1",
+        "sec/msft/8-k-2023-01-24"
+      ],
+      "grades": {
+        "price/msft-cy2023-q1": 3,
+        "sec/msft/8-k-2023-01-24": 3
+      }
+    },
+    {
+      "id": "market-reactions-06",
+      "relevant": [
+        "price/nvda-cy2022-q3",
+        "sec/nvda/8-k-2022-08-31",
+        "sec/nvda/8-k-2022-09-01"
+      ],
+      "grades": {
+        "price/nvda-cy2022-q3": 3,
+        "sec/nvda/8-k-2022-08-31": 3,
+        "sec/nvda/8-k-2022-09-01": 3
+      }
+    },
+    {
+      "id": "market-reactions-07",
+      "relevant": [
+        "price/meta-cy2023-q4",
+        "sec/meta/8-k-2023-10-25"
+      ],
+      "grades": {
+        "price/meta-cy2023-q4": 3,
+        "sec/meta/8-k-2023-10-25": 3
+      }
+    },
+    {
+      "id": "market-reactions-08",
+      "relevant": [
+        "price/nvda-cy2024-q1",
+        "sec/nvda/8-k-2024-02-21"
+      ],
+      "grades": {
+        "price/nvda-cy2024-q1": 3,
+        "sec/nvda/8-k-2024-02-21": 3
+      }
+    },
+    {
+      "id": "market-reactions-09",
+      "relevant": [
+        "price/nvda-cy2024-q2",
+        "sec/nvda/8-k-2024-05-22"
+      ],
+      "grades": {
+        "price/nvda-cy2024-q2": 3,
+        "sec/nvda/8-k-2024-05-22": 3
+      }
+    },
+    {
+      "id": "market-reactions-10",
+      "relevant": [
+        "price/nvda-cy2025-q2",
+        "sec/nvda/8-k-2025-05-28",
+        "transcripts/nvda-2026-q1"
+      ],
+      "grades": {
+        "price/nvda-cy2025-q2": 3,
+        "sec/nvda/8-k-2025-05-28": 3,
+        "transcripts/nvda-2026-q1": 3
+      }
+    },
+    {
+      "id": "market-reactions-11",
+      "relevant": [
+        "price/msft-cy2023-q2",
+        "sec/nvda/8-k-2023-05-24"
+      ],
+      "grades": {
+        "price/msft-cy2023-q2": 3,
+        "sec/nvda/8-k-2023-05-24": 3
+      }
+    },
+    {
+      "id": "market-reactions-12",
+      "relevant": [
+        "price/nvda-cy2025-q1",
+        "sec/googl/8-k-2025-02-04"
+      ],
+      "grades": {
+        "price/nvda-cy2025-q1": 3,
+        "sec/googl/8-k-2025-02-04": 3
+      }
+    },
+    {
+      "id": "market-reactions-13",
+      "relevant": [
+        "price/nvda-cy2024-q3",
+        "sec/meta/8-k-2024-07-31"
+      ],
+      "grades": {
+        "price/nvda-cy2024-q3": 3,
+        "sec/meta/8-k-2024-07-31": 3
+      }
+    }
+  ]
+}
